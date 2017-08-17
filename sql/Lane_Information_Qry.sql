@@ -79,7 +79,7 @@ When LL.DIVIDERTYP = 5 THEN 'Combination of an Interrupted and a Solid Line'
 When LL.DIVIDERTYP = 6 THEN 'Interrupted Line with Short Lines'
 When LL.DIVIDERTYP = 15 THEN 'Toll Booth'
 When LL.DIVIDERTYP = 99 THEN 'Unknown'
-END as Lane_Diver_Type, 
+END as Lane_Divider_Type, 
 CASE
 When PM.PAYMENT = 1 THEN 'Cash'
 When PM.PAYMENT = 2 THEN 'Credit Card'
