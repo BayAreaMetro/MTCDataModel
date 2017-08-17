@@ -2,8 +2,8 @@
   
 #### Table of Contents  
 [Problem Statement](#problem-statement)   
-[Data Sources](#data-sources)
-[Analysis Parameters](#analysis-parameters)
+[Data Sources](#data-sources)  
+[Analysis Parameters](#analysis-parameters)  
 [Methodology](#methodology)   
 [Expected Outcome](#outcome)  
 
