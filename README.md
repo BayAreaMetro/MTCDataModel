@@ -1,5 +1,5 @@
-# MTCDataModel
-MTC Spatial Data Modeling Research  
+# MTC Data Model
+MTC Spatial Data Modeling Research and Data Processing ETL Scripts  
 
 This repo contains documentation on a draft Data Model and Data Processing scripts for the Integrated Regional Planning Program.  
 
@@ -10,4 +10,4 @@ Extract Transform Load Scripts and documentation for the Tom Tom Basemap Dataset
 [pdfs](https://github.com/BayAreaMetro/MTCDataModel/tree/master/pdfs)  
 Data Dictionary and UML Diagrams for Datasets.  
 
-[Past Data Processing Documentation](https://github.com/BayAreaMetro/MTCDataModel/tree/master/pdfs)  
+[Past Data Processing Documentation](https://github.com/BayAreaMetro/MTCDataModel/blob/master/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf)  
