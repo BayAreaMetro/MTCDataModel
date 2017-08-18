@@ -3,32 +3,33 @@
 #### Table of Contents  
 [Problem Statement](#problem-statement)   
 [Data Sources](#data-sources)  
-[Analysis Parameters](#analysis-parameters)  
 [Methodology](#methodology)   
 [Expected Outcome](#outcome)  
 
- 
-## Define the Problem Statement
+## Problem Statement  
 
-A problem statement is a brief description of the issues that need to be addressed by a problem solving team. It is used to center and focus the team at the onset of any spatial analysis efforts. It should keep the team on track during the effort, and will be used to validate that the effort delivered an outcome that solves the problem statement. In some ways the problem statement is more than just the ask. It should provide the context that the work assignment fits within, and identify any key stakeholders or major initiatives that relate to the solution.
+Make the source TomTom data accessible to various users at BayAreaMetro.  
 
 ## Data Sources
 
-List the potential data sources that you think are required to solve the problem. If you are unsure, you can discuss these with the Unit Manager prior to submitting your request for support.
+A bunch of DVD's from TomTom  
 
-## Analysis Parameters
+## Methodology
 
-Analysis parameters are definable, measurable, and can contain a constant or variable characteristic, dimension, property, or value, that is selected from a set of data (or population) because it is considered essential to understanding how to solve a problem. List the parameters that you think are required to solve this problem. Leave this blank if you are unsure of how to determine the analysis parameters for your project. The analyst assigned to the project will document this information.
+Pseudo-script based on [this detailed step by step doc](https://github.com/BayAreaMetro/MTCDataModel/blob/master/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf):
 
-## Methodology applied to solve problem
+1. Unzip all the shapefiles in the California Shapefiles DVD at the path 'nam2016_12\shpd\mn\usa\uc3' (this is what worked for 12/2016 data--may need to look into the rest of the paths (other parts of CA). Here's a [list](https://gist.github.com/tombuckley/2648c8fe9a776e2658d03a76769b07c4) of what the cryptic codes at the end of each file mean.  
+2. Unzip all the metadata, which should be all files that end in *.xml.gz  
+3. Create a list of all the shapefiles (df_sp)
+4. Separate out the non-spatial tables (df)
+5. Merge df and df_sp (`merge shapefiles.py` and `merge tables.py`)
+6. Clean up files for load into DB (e.g. remove filenames starting with a number)
+7. Make a fileGDB with the shapefiles `RegionalClipForDownload.py`
 
-The analyst assigned to the project will document this information. The analyst will review the methodology (if applicable) with the project team to ensure that it meets the requirements and expectations of the solution or problem.
+## Outcome
 
-## Expected Outcomes (if any)?
+- A FileGDB with TomTom Geometries
 
-Provide your expectations (if any) for the results of this work. Your expectations will form the basis for deciding if the work is complete, or if we need to revisit the problem statement and/or refine the methodology used to solve the problem.
+## Results  
 
-## Results
-
-Determine how close the solution is to the expected outcome. If the solution is acceptable, the work will be considered complete. If the solution is unacceptable, we will need to refine the problem statement or the methodology implemented to find the solution.
-
+links to come   
