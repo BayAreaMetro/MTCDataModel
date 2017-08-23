@@ -12,7 +12,7 @@ Make the source TomTom data accessible to various users at BayAreaMetro.
 
 ## Data Sources
 
-A bunch of DVD's from TomTom  
+[Tom Tom Dataset (MTC Staff Only)](https://mtcdrive.app.box.com/folder/35509938044)  
 
 ## Methodology
 
