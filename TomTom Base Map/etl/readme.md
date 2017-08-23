@@ -22,6 +22,7 @@ Pseudo-script based on [this detailed step by step doc](https://github.com/BayAr
 2. Unzip all the metadata, which should be all files that end in *.xml.gz  
 3. Create a list of all the shapefiles (df_sp)
 4. Separate out the non-spatial tables (df)
+4a. Review [2015_12 python script]()
 5. Merge df and df_sp (`merge shapefiles.py` and `merge tables.py`)
 6. Clean up files for load into DB (e.g. remove filenames starting with a number)
 7. Make a fileGDB with the shapefiles `RegionalClipForDownload.py`
