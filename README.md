@@ -6,7 +6,7 @@ This repo contains documentation on a draft Data Model and Data Processing scrip
 ## Repo Contents   
 ### TomTom Base Map   
 
-- [etl](https://github.com/BayAreaMetro/MTCDataModel/TomTom%20Base%20Map/etl/readme.md)  
+- [etl](https://github.com/BayAreaMetro/MTCDataModel/TomTom%20Base%20Map/etl/)  
 Extract Transform Load Scripts and documentation for the Tom Tom Basemap Datasets  
 
 - [pdfs](https://github.com/BayAreaMetro/MTCDataModel/tree/master/TomTom%20Base%20Map/pdfs)  
