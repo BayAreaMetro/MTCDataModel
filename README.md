@@ -18,5 +18,7 @@ Data Dictionary and UML Diagrams for Datasets.
 
 - [Past Data Processing Documentation](https://bayareametro.github.io/MTCDataModel/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf)  
 
-#### Useful Markdown Help
-[Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+#### Markdown Quickstart Guide
+1. [Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+2. For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
