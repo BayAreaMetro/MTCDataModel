@@ -1,6 +1,15 @@
 
+<table>
+<tr>
+<td>
 <a href="url"><img src="http://gis.mtc.ca.gov/mtcimages/mtcgisLogo.png" align="left" height="64" width="64" ></a>
-# MTC Data Model
+</td>
+<td># MTC Data Model
+</td>
+</tr>
+</table>
+
+
 MTC Spatial Data Modeling Research and Data Processing ETL Scripts  
 
 This repo contains documentation on a draft Data Model and Data Processing scripts for the Integrated Regional Planning Program.  
