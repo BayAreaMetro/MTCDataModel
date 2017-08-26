@@ -1,4 +1,5 @@
-# Data Processing and Documentation  
+<a href="url"><img src="http://gis.mtc.ca.gov/mtcimages/mtcgisLogo.png" align="left" height="64" width="64" ></a>  
+# Tom Tom Data Processing and Documentation  
   
 #### Table of Contents  
 [Problem Statement](#problem-statement)   
