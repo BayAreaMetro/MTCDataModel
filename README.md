@@ -10,13 +10,13 @@ This repo contains documentation on a draft Data Model and Data Processing scrip
 ## Repo Contents   
 ### TomTom Base Map   
 
-- [etl](https://bayareametro.github.io/MTCDataModel/TomTom%20Base%20Map/etl/)  
+- [etl](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/etl/)  
 Extract Transform Load Scripts and documentation for the Tom Tom Basemap Datasets  
 
-- [pdfs](https://bayareametro.github.io/MTCDataModel/TomTom%20Base%20Map/pdfs)  
+- [pdfs](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/pdfs)  
 Data Dictionary and UML Diagrams for Datasets.  
 
-- [Past Data Processing Documentation](https://bayareametro.github.io/MTCDataModel/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf)  
+- [Past Data Processing Documentation](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf)  
 
 
 #### Markdown Quickstart Guide
