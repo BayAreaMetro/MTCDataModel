@@ -52,8 +52,7 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ***********
 ### Conceptual Data Model Draft
 ***********
-
-  <iframe src="https://mtcdrive.app.box.com/embed/s/dto69z8fg6s0e67xmrpsp4yf1g3vav72" width="500" height="400" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe> 
+  <ing src="https://mtcdrive.app.box.com/embed/s/dto69z8fg6s0e67xmrpsp4yf1g3vav72"></img> 
 
 
 ***********
