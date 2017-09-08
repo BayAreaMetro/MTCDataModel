@@ -59,10 +59,24 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ### Conclusion
 ***********
 
+
+
 ***********
 ### Case Studies
 ***********
 
+Massachusetts Department of Transportation
+City of San Francisco
+United States Department of Transportation
+U.S. General Services Administration, Technology Transformation Service
+National Aeronautics and Space Administration
+Federal Geographic Data Committee
+Valley Transportation Authority
+State of New York Open Data
+State of California Open Data
+Chicago Regional Transportation Authority
+Rudin Center for Transportation Policy and Management
+LA Open Data
 
 #### Useful Markdown Help
 [Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
