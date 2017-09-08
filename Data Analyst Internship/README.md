@@ -48,12 +48,15 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ***********
 ### Results
 ***********
+<img src="Concept Map for Dataset.jpg"></img><br></br>
+<img src="Dataset Mind Map.png"></img><br></br>
+<img src="DatasetMindMap_Internship.png"></img><br></br>
 
 ***********
 ### Conceptual Data Model Draft
 ***********
   
- <img src="ConceptualDataModelDraft.jpg"></img>
+ <img src="HighLevelConceptualModel.jpg"></img>
 
 ***********
 ### Conclusion
@@ -65,18 +68,18 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ### Case Studies
 ***********
 
-Massachusetts Department of Transportation
-City of San Francisco
-United States Department of Transportation
-U.S. General Services Administration, Technology Transformation Service
-National Aeronautics and Space Administration
-Federal Geographic Data Committee
-Valley Transportation Authority
-State of New York Open Data
-State of California Open Data
-Chicago Regional Transportation Authority
-Rudin Center for Transportation Policy and Management
-LA Open Data
+Massachusetts Department of Transportation<br></br>
+City of San Francisco<br></br>
+United States Department of Transportation<br></br>
+U.S. General Services Administration, Technology Transformation Service<br></br>
+National Aeronautics and Space Administration<br></br>
+Federal Geographic Data Committee<br></br>
+Valley Transportation Authority<br></br>
+State of New York Open Data<br></br>
+State of California Open Data<br></br>
+Chicago Regional Transportation Authority<br></br>
+Rudin Center for Transportation Policy and Management<br></br>
+LA Open Data<br></br>
 
 #### Useful Markdown Help
 [Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
