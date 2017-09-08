@@ -45,6 +45,22 @@ This folder contains work products and research conducted by the 2017 Summer Int
 <p> Webform http://datasurvey.mtcanalytics.org/</p>
 
 
+***********
+### Results
+***********
+
+***********
+### Conceptual Data Model Draft
+***********
+
+***********
+### Conclusion
+***********
+
+***********
+### Case Studies
+***********
+
 
 #### Useful Markdown Help
 [Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
