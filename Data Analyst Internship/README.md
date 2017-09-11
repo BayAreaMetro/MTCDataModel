@@ -48,7 +48,6 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ***********
 ### Results
 ***********
-<img src="Concept Map for Dataset.jpg"></img><br></br>
 <img src="Dataset Mind Map.png"></img><br></br>
 
 
