@@ -34,9 +34,9 @@ This folder contains work products and research conducted by the 2017 Summer Int
 <li>Schedule short one-on-one interviews with all users that didn’t respond to the survey</li> 
 <li>Gather and document feedback on the Initial Data Survey</li> 
 <li>Analyze at least one source of data files that participants frequently referred to as location to evaluate whether or not comprehensive inventory of all data files/datasets is valuable</li>
-<li>Create Data Audit Form</li>
+<li>Draw Conceptual Data Model </li>
+<li>Suggetions for Data Audit Form</li>
 <li>Write up Data Strategy Document</li>
-<li>Draw Conceptual Data Model Plan</li>
 <li>Finalized the project</li>
 </ul>
 
