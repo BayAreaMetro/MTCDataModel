@@ -79,6 +79,3 @@ State of California Open Data<br></br>
 Chicago Regional Transportation Authority<br></br>
 Rudin Center for Transportation Policy and Management<br></br>
 LA Open Data<br></br>
-
-#### Useful Markdown Help
-[Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
