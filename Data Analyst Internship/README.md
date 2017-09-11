@@ -10,7 +10,7 @@ This folder contains work products and research conducted by the 2017 Summer Int
  <li>Executive Summary</li>
  <li>Approach Plan</li>
  <li>Results</li>
- <li>Conceptual Model Development Framework</li>
+ <li>Conceptual Model Development Draft</li>
  <li>Conclusion</li>
  <li>Case Studies</li>
 </ul>
