@@ -60,13 +60,14 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ***********
 ### Conclusion
 ***********
-Draft: With the information gathered via web survey, excel template, emails, in-person interviews and "drive-by"s it can be concluded that due to high volume of existing data and tasks it would be beneficial to have a mandatory Comprehensive Data Audit (not a survey where participation is voluntary) performed with the help of a Data Team. It is highly advisable to develope a clear and comprehensive Data Governance Model with on the entire organizations, that will help eliminate major cause of confusion when it comes to Data Quality Management, Data Development, Document and Content Management as well as Data Security and Operations Management. Quality DAta Governance Policy will also elimante skeptisism and increase data integrity.
+Draft: With the information gathered via web survey, excel template, emails, in-person interviews and "drive-by"s it can be concluded that due to high volume of existing data and tasks it would be beneficial to have a mandatory Comprehensive Data Audit (not a survey where participation is voluntary) performed with the help of a Data Team. It is highly advisable to develope a clear and comprehensive Data Governance Model with on the entire organizations, that will help eliminate major cause of confusion when it comes to Data Quality Management, Data Development, Document and Content Management as well as Data Security and Operations Management. Quality Data Governance Policy will also elimante skeptisism and increase data integrity.
 
 
 ***********
 ### Case Studies
 ***********
 
+US Open Data Initiative<br></br>
 Massachusetts Department of Transportation<br></br>
 City of San Francisco<br></br>
 United States Department of Transportation<br></br>
