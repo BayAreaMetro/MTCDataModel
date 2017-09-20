@@ -63,21 +63,26 @@ This folder contains work products and research conducted by the 2017 Summer Int
 Draft: With the information gathered via web survey, excel template, emails, in-person interviews and "drive-by"s it can be concluded that due to high volume of existing data and tasks it would be beneficial to have a mandatory Comprehensive Data Audit (not a survey where participation is voluntary) performed with the help of a Data Team. It is highly advisable to develope a clear and comprehensive Data Governance Model with on the entire organizations, that will help eliminate major cause of confusion when it comes to Data Quality Management, Data Development, Document and Content Management as well as Data Security and Operations Management. Flexible and Scalable Data Organization Model will also elimante skeptisism and increase data integrity.
 Suggestions:
 Datasets can be evaluated on a uniform set of criteria sych as value, quality and managebility. 
- Value: 40%
- Quality: 35%
- Managebility: 25%
+ <ul>
+ <li> Value: 40%</li>
+ <li>Quality: 35%</li>
+ <li>Managebility: 25%</li>
+ </ul>
  
  <img src="DatasetAppraisalMetrics.jpg"></img>
 Data Ontology should be started and shared with the team so everyone is on the same level of udnerstanding what is Data, Dataset, Data types, classifications and categories.
-Examples of Ontology entries:
-  Data - 
-  Dataset - a collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.
-Stages of Repeatable Data Organization Modeling Process
- Stage I: Preparation
- Stage II: Collection
- Stage III Evaluation and Organization
- Stage IV Implementation and Publishing (share)
- 
+<ul>
+ <li>Examples of Ontology entries:</li>
+  Data - </li>
+  <li>Dataset - a collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.</li>
+ </ul>
+ <ul>
+ <li>Stages of Repeatable Data Organization Modeling Process</li>
+ <li>Stage I: Preparation</li>
+ <li>Stage II: Collection</li>
+ <li>Stage III Evaluation and Organization</li>
+ <li>Stage IV Implementation and Publishing (share)</li>
+ </ul>
  
 
 ***********
