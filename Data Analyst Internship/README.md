@@ -70,12 +70,12 @@ Datasets can be evaluated on a uniform set of criteria sych as value, quality an
  </ul>
  
  <img src="DatasetAppraisalMetrics.jpg"></img>
-Data Ontology should be started and shared with the team so everyone is on the same level of udnerstanding what is Data, Dataset, Data types, classifications and categories.
-<ul>
- <li>Examples of Ontology entries:</li>
-  Data - </li>
-  <li>Dataset - a collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.</li>
- </ul>
+Data Ontology should be started and shared with the team so everyone is on the same level of udnerstanding what is Data, Dataset, Data types, classifications and categories.<br></br>
+
+ Examples of Ontology entries:<br></br>
+  Data - <br></br>
+  Dataset - a collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.<br></br>
+
  <ul>
  <li>Stages of Repeatable Data Organization Modeling Process</li>
  <li>Stage I: Preparation</li>
