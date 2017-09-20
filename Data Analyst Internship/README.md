@@ -69,8 +69,9 @@ Datasets can be evaluated on a uniform set of criteria sych as value, quality an
  <li>Managebility: 25%</li>
  </ul>
  
- <img src="DatasetAppraisalMetrics.jpg"></img>
-Data Ontology should be started and shared with the team so everyone is on the same level of udnerstanding what is Data, Dataset, Data types, classifications and categories.<br></br>
+ <img src="DatasetAppraisalMetrics.png"></img> <br></br>
+ 
+<b>Data Ontology</br> should be started and shared with the team so everyone is on the same level of udnerstanding what is Data, Dataset, Data types, classifications and categories. Data Ontologie is maintained by Data Stewarts<br></br>
 
  Examples of Ontology entries:<br></br>
   <b>Data</b> - <br></br>
