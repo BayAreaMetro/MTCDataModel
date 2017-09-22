@@ -55,7 +55,7 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ### Conceptual Data Model Draft
 ***********
   
- <img src="HighLevelConceptualModel.jpg"></img>
+ <img src="HighLevelConceptualModel.png"></img>
 
 ***********
 ### Conclusion
