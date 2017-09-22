@@ -78,15 +78,16 @@ Datasets can be evaluated on a uniform set of criteria sych as value, quality an
   <b>Dataset</b> - a collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.<br></br>
 
  <ul>
- <li>Stages of Repeatable Data Organization Modeling Process</li>
- <li>Stage I: Preparation</li>
- <li>Stage II: Collection</li>
- <li>Stage III Evaluation and Organization</li>
- <li>Stage IV Implementation and Publishing (share)</li>
+ <li>Phases of Repeatable Data Organization Modeling Process</li>
+ <li>Phase I: Preparation</li>
+ <li>Phase II: Collection</li>
+ <li>Phase III Evaluation and Organization</li>
+ <li>Phase IV Implementation and Publishing (share)</li>
  </ul>
- <br<</br>
- 
- <img src="BAM Data Organization Model Diagram.png"></img>
+ <br></br>
+ <img src="Phases of Data Organization Modeling.png"></img>
+ <br></br>
+  <img src="BAM Data Organization Model Diagram.png"></img>
 
 ***********
 ### Case Studies
