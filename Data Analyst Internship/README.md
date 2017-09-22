@@ -84,7 +84,9 @@ Datasets can be evaluated on a uniform set of criteria sych as value, quality an
  <li>Stage III Evaluation and Organization</li>
  <li>Stage IV Implementation and Publishing (share)</li>
  </ul>
+ <br<</br>
  
+ <img src="BAM Data Organization Model Diagram.png"></img>
 
 ***********
 ### Case Studies
