@@ -60,17 +60,18 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ***********
 ### Conclusion
 ***********
-Draft: With the information gathered via web survey, excel template, emails, in-person interviews and "drive-by"s it can be concluded that due to high volume of existing data and tasks it would be beneficial to have a mandatory Comprehensive Data Audit (not a survey where participation is voluntary) performed with the help of a Data Team. It is highly advisable to develope a clear and comprehensive Data Governance Model with on the entire organizations, that will help eliminate major cause of confusion when it comes to Data Quality Management, Data Development, Document and Content Management as well as Data Security and Operations Management. Flexible and Scalable Data Organization Model will also elimante skeptisism and increase data integrity.
-Suggestions:
-Datasets can be evaluated on a uniform set of criteria sych as value, quality and managebility. 
+With the information gathered via web survey, excel template, emails, in-person interviews and "drive-by"s it can be concluded that due to high volume of existing data and tasks it would be beneficial to have a mandatory Comprehensive Data Audit (not a survey where participation is voluntary) performed with the help of a Data Team. Auding can be done via email or online Dataset Submission Form. It is highly advisable to develope a clear and comprehensive Data Organization Model with in the entire organizations, that will help eliminate major cause of confusion when it comes to Data Quality Management, Data Development, Document and Content Management as well as Data Security and Data Operations Management. Flexible and Scalable Data Organization Model will elimante skeptisism and increase data integrity.<br></br>
+
+Suggestions:<br></br>
+Datasets can be evaluated on a uniform set of criteria sych as value, quality and managebility. <br></br>
  <ul>
  <li> Value: 40%</li>
  <li>Quality: 35%</li>
  <li>Managebility: 25%</li>
  </ul>
- 
+ <br></br>
  <img src="DatasetAssessmentMetrics.png"></img> <br></br>
- 
+ <br></br>
 <b>Data Ontology</b> should be started and shared with the team so everyone is on the same level of udnerstanding what is Data, Dataset, Data types, classifications and categories. Data Ontologie is maintained by Data Stewarts<br></br>
 
  Examples of Ontology entries:<br></br>
@@ -87,7 +88,7 @@ Datasets can be evaluated on a uniform set of criteria sych as value, quality an
  <br></br>
  <img src="Phases of Data Organization Modeling.png"></img>
  <br></br>
-  <img src="BAM Data Organization Model Diagram.png"></img>
+  <img src="BAM Data Organization Model Diagram.png"></img><br></br>
 
 ***********
 ### Case Studies
