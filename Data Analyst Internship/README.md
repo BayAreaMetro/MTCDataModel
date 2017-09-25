@@ -78,8 +78,9 @@ Datasets can be evaluated on a uniform set of criteria sych as value, quality an
   <b>Data</b> - Representations of facts, concepts, or instructions in a formalized manner suitable for communication, interpretation, or processing by human or automated means. The fundamental components of information <br></br>
   <b>Dataset</b> - a collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.<br></br>
 
+
+ <b>Phases of Repeatable Data Organization Modeling Process</b>
  <ul>
- <li>Phases of Repeatable Data Organization Modeling Process</li>
  <li>Phase I: Preparation</li>
  <li>Phase II: Collection</li>
  <li>Phase III Evaluation and Organization</li>
