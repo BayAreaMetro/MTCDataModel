@@ -90,6 +90,7 @@ Datasets can be evaluated on a uniform set of criteria such as value, quality an
  <img src="Phases of Data Organization Modeling.png"></img>
  <br></br>
   <img src="BAM Data Organization Model Diagram.png"></img><br></br>
+More information and documents can be found on https://mtcdrive.box.com/s/vzpgpburor6qs8ztd1hld20rslzkufxu
 
 ***********
 ### Case Studies
