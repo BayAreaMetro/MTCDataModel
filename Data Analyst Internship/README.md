@@ -72,7 +72,7 @@ Datasets can be evaluated on a uniform set of criteria such as value, quality an
  <br></br>
  <img src="DatasetAssessmentMetrics.png"></img> <br></br>
  <br></br>
-<b>Data Ontology</b> should be started and shared with the team so everyone is on the same level of udnerstanding what is Data, Dataset, Data types, classifications and categories. Data Ontologie is maintained by Data Stewarts<br></br>
+<b>Data Ontology</b> should be started and shared with the team so everyone is on the same level of understanding what is Data, Dataset, Data types, classifications and categories. Data Ontology is maintained by Data Administrator<br></br>
 
  Examples of Ontology entries:<br></br>
   <b>Data</b> - Representations of facts, concepts, or instructions in a formalized manner suitable for communication, interpretation, or processing by human or automated means. The fundamental components of information <br></br>
