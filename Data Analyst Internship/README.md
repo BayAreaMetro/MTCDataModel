@@ -40,7 +40,7 @@ This folder contains work products and research conducted by the 2017 Summer Int
 <li>Finalized the project</li>
 </ul>
 
-<p> Webform http://datasurvey.mtcanalytics.org/</p>
+
 
 
 ***********
@@ -48,6 +48,8 @@ This folder contains work products and research conducted by the 2017 Summer Int
 ***********
 <img src="Dataset Mind Map.png"></img><br></br>
 
+<p> Webform http://datasurvey.mtcanalytics.org/</p><br></br>
+<p>Intiial participation in the data survey was 28% due to high volume of existing tasks and datasets. Low priority level of the survey also influenced low participation. 
 
 ***********
 ### Conceptual Data Model Draft
