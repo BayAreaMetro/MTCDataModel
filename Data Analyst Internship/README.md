@@ -97,7 +97,9 @@ opendata.mtc.ca.gov
 <li>https://open-data-demo.mtc.ca.gov</li>
 <li>http://analytics.mtc.ca.gov/foswiki/Main/WebHome</li>
 </ul>
-Above sites may need to be either consolidated, streamlined or remanmed.
+Above sites may need to be either consolidated, streamlined or remanmed.<br></br>
+
+
 ***********
 ### Case Studies
 ***********
