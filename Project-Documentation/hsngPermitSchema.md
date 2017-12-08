@@ -1,4 +1,4 @@
-# Housing Schema - Residential Permit Attribute Table
+# Housing Schema - Residential Permit Attribute Table Structure
 
 ## Problem Statement
 Develop structure for residential permit attribute table in housing schema of enterprise database. Purpose is to set rules and restrictions on permit attribute values to make it easier to write queries against the table.
