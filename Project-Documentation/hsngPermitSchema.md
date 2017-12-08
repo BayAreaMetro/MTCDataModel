@@ -8,7 +8,7 @@ The attribute table structure, rules, and restrictions is found below. Full defi
 
 | Field Name |   Basic description   |       Note/Rule/Restrictions       |  Field  | Field  | Postgres | Default |
 |            |                       |                                    |  Type   | Length |  Column  |  Value  |
-| ---------- | --------------------- | ---------------------------------- | ------- | ------ | -------- | ------- |
+|------------|-----------------------|------------------------------------|:-------:|:------:|----------|:-------:|
 | joinid     | Connects feature to   | IDs formated by county. First new  |  Text   |   11   | char(11) |         |
 |            | attribute             | value for each year should be      |         |        | NOT NULL |         |
 |            |                       | incremented by 10 over previous    |         |        |          |         |
