@@ -6,7 +6,6 @@ Develop structure for residential permit attribute table in housing schema of en
 ## Outcome
 The Housing Schema is in a PostgreSQL database. The attribute table structure, rules, and restrictions is found below. Full definitions for field name and domain values are found in the metadata associated with the data and services available on the internal data portal.
 
-<html>
 <table style="width:100%>
  <tr>
   <th>Field</th>
@@ -27,6 +26,5 @@ The Housing Schema is in a PostgreSQL database. The attribute table structure, r
   <td> </td>
  </tr>
 </table>
-</html>
 
 ## Results
