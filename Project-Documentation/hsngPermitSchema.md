@@ -4,7 +4,9 @@
 Develop structure for residential permit attribute table in housing schema of enterprise database. Purpose is to set rules and restrictions on permit attribute values to make it easier to write queries against the table.
 
 ## Outcome
-The Housing Schema is in a PostgreSQL database. The attribute table structure, rules, and restrictions is found below. Full definitions for field name and domain values are found in the metadata associated with the data and services available on the internal data portal.
+The Housing Schema is in a PostgreSQL database. The attribute table structure, rules, and restrictions is found below. There is one table containing the attributes for each year. Queries and display for a particular year will be based on the permyear values. 
+
+Full definitions for field name and domain values are found in the metadata associated with the data and services available on the internal data portal and the MTC, public ArcGIS Online and Open Data portals.
 
 Field | Description | Rule, Restrictions, and Notes | Type | Length | Configuration | Default Value 
 --- | --- | --- | :---: | :---: | --- | :---:
@@ -43,3 +45,4 @@ mapped | Was permit geolocated? | Allowed values: <br/> Y - Permit was geolocate
 notes | Permit notes | | Text | 254 | text | 
  
 ## Results
+The residential permit attribute table has been created in the enterprise database and had the attributes for all permits gathered to date uploaded to it.
