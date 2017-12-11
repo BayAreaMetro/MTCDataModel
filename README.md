@@ -2,10 +2,10 @@
 
 <a href="url"><img src="http://gis.mtc.ca.gov/mtcimages/mtcgisLogo.png" align="top" height="84" width="84" ></a>  
 
-# MTC Data Services
-MTC Spatial Data Modeling Research, Documentation and Data Processing ETL Scripts  
+# MTC Data Services Projects
+MTC Spatial Data Modeling Research, Documentation and Data Processing ETL Scripts.  
 
-This repo contains documentation on a draft Data Model and Data Processing scripts for the Integrated Regional Planning Program.  
+This repo contains documentation on Data Services projects for the Integrated Regional Planning Program. Information on Data Services' policies and procedures can be found [here](../Best-Practices-Procedures/README.md).
 
 ## Repo Contents   
 ### TomTom Base Map   
