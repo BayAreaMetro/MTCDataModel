@@ -7,13 +7,14 @@ MTC Spatial Data Modeling Research, Documentation and Data Processing ETL Script
 
 This section contains documentation on Data Services projects for the Integrated Regional Planning Program. Information on Data Services' policies and procedures can be found in [Best Practices and Procedures](Best-Practices-Procedures/README.md).
 
-## Repo Contents   
-### TomTom Base Map   
+## Contents
+### Enterprise Database
 
-- [etl](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/etl/)  
+### TomTom Base Map   
+- [ETL](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/etl/)  
 Extract Transform Load Scripts and documentation for the Tom Tom Basemap Datasets  
 
-- [pdfs](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/pdfs)  
+- [PDFs](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/pdfs)  
 Data Dictionary and UML Diagrams for Datasets.  
 
 - [Past Data Processing Documentation](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf)  
