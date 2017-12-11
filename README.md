@@ -5,7 +5,7 @@
 # MTC Data Services Projects
 MTC Spatial Data Modeling Research, Documentation and Data Processing ETL Scripts.  
 
-This repo contains documentation on Data Services projects for the Integrated Regional Planning Program. Information on Data Services' policies and procedures can be found [here](../Best-Practices-Procedures/README.md).
+This repo contains documentation on Data Services projects for the Integrated Regional Planning Program. Information on Data Services' policies and procedures can be found [here](Best-Practices-Procedures/README.md).
 
 ## Repo Contents   
 ### TomTom Base Map   
