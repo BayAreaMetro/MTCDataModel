@@ -4,7 +4,7 @@
 ### Enterprise Database
   - Schema structure
   
-  - [Housing Permit Attributes - Table Structure](hsngPermitSchema.md) - Schema containing housing permit (feature table and attribute table) and policy information for the region.
+  - [Table Structure for Housing Permit Attributes](hsngPermitSchema.md) - Schema containing housing permit (feature table and attribute table) and policy information for the region.
 
 
 ### TomTom Base Map
