@@ -2,7 +2,7 @@
 
 <a href="url"><img src="http://gis.mtc.ca.gov/mtcimages/mtcgisLogo.png" align="top" height="84" width="84" ></a>  
 
-# MTC Data Services Projects
+# MTC Data Services
 MTC Spatial Data Modeling Research, Documentation and Data Processing ETL Scripts.  
 
 This section contains documentation on Data Services projects for the Integrated Regional Planning Program. Information on Data Services' policies and procedures can be found in [Best Practices and Procedures](Best-Practices-Procedures/README.md).
