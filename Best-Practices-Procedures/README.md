@@ -1,4 +1,4 @@
 # Policies and Procedures
 
 ## Contents
-### [Open Data](opendata/openDataSite.md)
+#### [Open Data](https://bayareametro.github.io/Spatial-Analysis-Mapping-Projects/Best-Practices-Procedures/opendata/openDataSite.md)
