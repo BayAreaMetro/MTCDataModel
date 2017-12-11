@@ -4,7 +4,8 @@
 ### Enterprise Database
   - Schema structure
   
-  - [Housing Schema](hsngPermitSchema.md) - Schema containing housing permit (feature table and attribute table) and policy information for the region.
+  - [Housing Permit Attributes - Table Structure](hsngPermitSchema.md) - Schema containing housing permit (feature table and attribute table) and policy information for the region.
+
 
 ### TomTom Base Map
 Documents and scripts to create file geodatabases of base map data for California and the San Francisco Bay Region
