@@ -8,7 +8,7 @@ The process to get data included in the enterprise database meets the majority o
 
  - Data obtained from a third-party that is included in the enterprise database in an unmodified form will not be distributed as a public resource by the MTC, even if the data itself is public.
 
-That said, there can be an exception to the prohibition on making unmodified, third-party data available as a public resource provided by MTC. The exception regards third-party data that is used to produce a final/adopted document, plan, or policy released/implemented by the MTC. Additional requirements for publishing third-party data as a public resource are:
+   That said, there can be an exception to the prohibition on making unmodified, third-party data available as a public resource provided by MTC. The exception regards third-party data that is used to produce a final/adopted document, plan, or policy released/implemented by the MTC. Additional requirements for publishing third-party data as a public resource are:
   - The metadata must prominantly state that the data may not necessarily be the most current version available from the third-party that produced the data.
   
   - The metadata must identify the final/adopted document, plan, or policy the data was used to produce.
