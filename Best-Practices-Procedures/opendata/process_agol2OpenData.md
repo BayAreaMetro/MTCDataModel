@@ -1,4 +1,4 @@
-## Promoting Content from ArcGIS Online to MTC's Open Data Site
+## Promoting Content from ArcGIS Online to the Metropolitan Transportation Commission's Open Data Site
 1. Ensure content meets minimum requirements for publishing content to an external audience.
     - [General posting requirements](openDataSite.md)
     - [Metadata requirements](requirements_openDataMetadata.md)
