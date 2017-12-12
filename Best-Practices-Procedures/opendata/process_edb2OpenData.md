@@ -13,6 +13,6 @@ The process to get data included in the enterprise database meets the majority o
   
     - The metadata must identify the final/adopted document, plan, or policy the data was used to produce.
   
-    - The metadata must include a link to the original data download source, provide contact information for the data provider so the public can obtain their own copy of the data, or both.
+    - The metadata must include a link to the original data download source so the public can download the data, provide contact information for the data provider so the public can contact them to request a copy of the data, or both. Ideally both pieces of information will be in the metadata so the public can contact the data provider with methodology or other questions as MTC would not be able to answer them.
   
     - The data itself will not be made available for download. It will only be made available as a feature service or web map that matches how it was used, or displayed, in the original MTC product.
