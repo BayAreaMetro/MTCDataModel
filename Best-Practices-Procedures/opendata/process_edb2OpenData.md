@@ -1,5 +1,9 @@
 ## Promoting Content from Enterprise Database to the Metropolitan Transportation Commission's Open Data Site
-The process to get data included in the enterprise database meets the majority of the requirements for posting resources to the Metropolitan Transportation Commission (MTC) Open Data site. There are some additional requirements, and they are as follows:
+The process to get data included in the enterprise database meets the majority of the requirements for posting resources to the Metropolitan Transportation Commission (MTC) Open Data site.
+
+There are some additional requirements, and they are as follows:
+ - Make sure the data meets the [general posting requirements](openDataSite.md) for posting to the open data site.
+ 
  - Only data developed/created by staff and used to produce a final/adopted document, plan, or policy released/implemented by the Commission are acceptable for promotion from the enterprise database to the open data site.
  
  - The enterprise database manager, acting as the open data manager, will work with the data creator to determine which license to apply to the data and add it to the metadata information along with the agency disclaimer. 
