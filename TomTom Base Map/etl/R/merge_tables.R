@@ -3,10 +3,6 @@ library(rgdal)
 library(foreign)
 library(dplyr)
 
-#gunzip all tables in bash:
-#gunzip -r 2016_12/
-# Process Tables from mn product
-
 path = "~/Documents/Projects/tomtom_tables/2016_12/nam2016_12/shpd/mn"
 
 # Step 1. Turn myTables into a Dataframe with 3 columns c("Folder","Name","Type") Type= Shape or Table
@@ -58,9 +54,86 @@ merge_files <- function(tbl1) {
   print("Writing to disk")
   print(shortname)
   write.dbf(file=shortname,dataset)
+  
+
+  
 }
 
 setwd(path)
 
 non_spatial_tables_grouped %>% do(merge_files(.))
+
+#add metrics:
+
+## Metrics:
+# How many tables have no records?
+# 
+# at each table read: count of records
+# 
+# product, name of the features (feature class name), record, type(table/shape)
+# 
+# How many records are there in a previous release?
+# 
+# How many features are corrupt?
+
+output_path = "/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/merged_tables/"
+
+#returns an integer vector of length 2 with row and column count
+dims <- function(dbf_df) {
+  return(dim(dbf_df))
+}
+
+merged_tables <- list.files(path=output_path, pattern="*.dbf", full.names=F, recursive=TRUE)
+
+merged_tables_tmp <- strsplit(merged_tables, "\\.")
+tbl_df2 <- data.frame(t(sapply(merged_tables_tmp,c)))
+shortnames <- tbl_df2[[1]]
+
+#get row count
+setwd(output_path)
+rows <- c()
+for (filename in merged_tables) {
+  df1 <- read.dbf(filename, as.is = FALSE)
+  rowcount <- dims(df1)[[1]]
+  rows <- append(rows, rowcount)
+}
+
+df_meta <- data.frame(filename=merged_tables,rowcount=rows,shortname=shortnames)
+
+setwd("~/Documents/Projects/DataServices/TomTom Base Map/etl")
+df_meta2 <- read_csv("metadata/2016_input_data_dictionary.csv")
+df_meta2['shortname'] <- sapply(df_meta2['abbrv'],FUN=tolower)
+df_meta3 <- inner_join(df_meta,df_meta2, by=shortname)
+df_meta4 <- df_meta3[,c('description','rowcount','feature_type','filename')]
+
+
+
+
+
+
+
+
+
+###scratch 
+
+headers <- function(dbf_df) {
+  return(names(dataset))
+}
+
+#returns 2 vectors in a list
+summarize_merged_table <- function(df1) {
+  the_dims <- dims(df1)
+  rows <- the_dims[[1]]
+  #columns <- the_dims[[2]]
+  #headers <- headers(df1)
+  #attributes_list <- list(rows, columns)
+  return(rows)
+}
+
+
+
+
+
+
+
 
