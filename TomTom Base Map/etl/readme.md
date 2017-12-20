@@ -16,27 +16,35 @@ Make the source TomTom data accessible to various users at BayAreaMetro.
 
 [Tom Tom Dataset (MTC Staff Only)](https://mtcdrive.app.box.com/folder/35509938044)  
 
-## Methodology
+## Environment
+
+This documentation assumes the user is running MacOS or similar. 
 
 Pseudo-script based on [this detailed step by step doc](https://github.com/BayAreaMetro/MTCDataModel/blob/master/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf):
 
-1. Unzip all the shapefiles in the California Shapefiles DVD at the path 'nam2016_12\shpd:  
+1. Download the source data. 
 
-e.g. in bash: `find . -type f -name "*.gz" -exec gzip -d {} \;`  
+For convenience, these are organized into zipfiles here:
 
-3. Create a list of all the shapefiles 
+[2015 Source Data]()
+[2016 Source Data]()
 
+2. Unzip everything (twice)
 
+After unzipping the downloaded zip file of choice, you need to unzip the tar.gz files for each source.
 
-4. Separate out the non-spatial tables 
+gunzip provides a useful recursive flag (`-r`) for this:  
+`gunzip -r 2016_12/`  
 
-4a. Review [2015_12 python script](https://github.com/BayAreaMetro/MTCDataModel/blob/master/TomTom%20Base%20Map/etl/2015_12_Processing.py)  
+3. Merge all the tables from each region together.   
 
-5. Merge df and df_sp (`merge shapefiles.py` and `merge tables.py`)  
+For example, using [this script](MTCDataModel/blob/master/TomTom Base Map/etl/R/merge_tables.R) 
 
-6. Clean up files for load into DB (e.g. remove filenames starting with a number)  
+4. Merge all the shapefiles from each region together.    
 
-7. Make a fileGDB with the shapefiles `RegionalClipForDownload.py`  
+--Script forthcoming. 
+
+6. Output all the tables in the structure that is outlined in [2015 output schema](MTCDataModel/blob/master/TomTom Base Map/etl/metadata/2015_output_schema.json)  
 
 ## Outcome
 
