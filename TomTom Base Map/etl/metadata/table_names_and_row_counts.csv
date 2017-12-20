@@ -1,0 +1,78 @@
+description,rowcount,feature_type,filename
+Level 2 Road,8818272,Table,2r.dbf
+Address   Areas Extended Attributes,0,Table,aaea.dbf
+Address   Areas Names,0,Table,aanm.dbf
+Address   Area Boundary Element Belonging to Address Area,0,Table,ab.dbf
+Administrative   Area Structure Definitions,0,Table,ad.dbf
+Administrative   Area Extended Attributes,47793,Table,ae.dbf
+Area   Replaced by Index Area,0,Table,ai.dbf
+Administrative   Area Names,40536,Table,an.dbf
+Composite   Sign Color Information,90882,Table,axas.dbf
+Composite   Sign Color Information,90882,Table,axav.dbf
+Built   Up Area in Named Area,5305,Table,ba.dbf
+Built   Up Area Extended Attributes,404,Table,be.dbf
+Built   Up Area Names,1044,Table,bn.dbf
+Census Enhanced   Geocoding,3259651,Table,cegc.dbf
+Conversion   Records,13540,Table,cn.dbf
+Administrative   Place Extended Attributes,0,Table,ep.dbf
+Intersection   Index,2393878,Table,ig.dbf
+Intermediate House   Numbers,20,Table,ih.dbf
+Intersection,1986839,Table,is.dbf
+Intersection Names,4734,Table,isnm.dbf
+Junction Extended   Attributes,28,Table,jcea.dbf
+Lane   Direction Information,270148,Table,ld.dbf
+Lane   End,9673,Table,le.dbf
+Direction   of Traffic Flow for Lane,1035138,Table,lf.dbf
+Lane   Type Information,61822,Table,li.dbf
+Lane   Divider Information,1034158,Table,ll.dbf
+Lane Connectivity   Path,1290301,Table,lp.dbf
+Time   Domains for Direction of Traffic Flow,28348,Table,lt.dbf
+Land Use and Land   Cover Extended Attributes,94,Table,lxea.dbf
+Land Use and Land   Cover Names,20769,Table,lxnm.dbf
+Maneuver Path Index,486850,Table,mp.dbf
+Administrative Place Names,1574,Table,np.dbf
+Network Extended   Attributes,381220,Table,nwea.dbf
+Other   Named Areas Extended Attribues,0,Table,oaea.dbf
+Other   Named Areas Names,1049,Table,oanm.dbf
+Official   Languages,40455,Table,ol.dbf
+Postal   Code Information on Transportation Element,4337722,Table,pc.dbf
+Postal   Code Name Information,3820,Table,pcnm.dbf
+Postal   Districts Extended Attributes,0,Table,pdea.dbf
+Postal   District Names,4015,Table,pdnm.dbf
+Point of Interest   Composite Attributes,26357,Table,pias.dbf
+Point of Interest   Composite Attribute Values,24274,Table,piav.dbf
+Extended POI   Attributes,11660,Table,piea.dbf
+POI Names,8939,Table,pinm.dbf
+Lane Dependent Toll   Payment Method,242,Table,pm.dbf
+Place within Place   Relation,0,Table,pp.dbf
+Service   POI Belonging to Service POI,8696,Table,pr.dbf
+TMC Information along   Road Element,2213367,Table,rd.dbf
+Reference Point Name,350,Table,rfnm.dbf
+Route Nuimbers,338456,Table,rn.dbf
+Railway Extended   Attributes,18845,Table,rrea.dbf
+Railway Names,15929,Table,rrnm.dbf
+Restriction,1004968,Table,rs.dbf
+Service in Named Area,48540,Table,sa.dbf
+Official Street Codes,0,Table,sc.dbf
+Structure   Transportation Elements Relation,324580,Table,se.dbf
+Signpost Information,181759,Table,si.dbf
+Speed Restriction per   Lane,0,Table,sl.dbf
+Centers of   Settlements Extended Attributes,8719,Table,smea.dbf
+Centers of   Settlements Names,4547,Table,smnm.dbf
+Signpost Path Index,95774,Table,sp.dbf
+Speed Restrictions,1088816,Table,sr.dbf
+Speed Restriction   Time Domains,49020,Table,st.dbf
+Structures Extended   Attributes,0,Table,sxea.dbf
+Structures Names,233,Table,sxnm.dbf
+Transportation   Element Belonging to Area,20850654,Table,ta.dbf
+TMC   Location Index,308275,Table,tc.dbf
+Time Domain,14081,Table,td.dbf
+TMC Path Index,1982189,Table,tg.dbf
+TMC Location,70760,Table,tl.dbf
+Tourist   Roads,36680,Table,to.dbf
+TMC   Path,19534,Table,tp.dbf
+Traffic   Sign Along Road Element,1601,Table,tt.dbf
+Vicinity   Relation,4,Table,vr.dbf
+WaterLines and Areas   Extended Attributes,0,Table,wxea.dbf
+WaterLines and Areas   Names,55376,Table,wxnm.dbf
+XML Object References,6308,Table,xo.dbf
