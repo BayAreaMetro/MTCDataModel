@@ -103,7 +103,7 @@ df_meta <- data.frame(filename=merged_tables,rowcount=rows,shortname=shortnames)
 setwd("~/Documents/Projects/DataServices/TomTom Base Map/etl")
 df_meta2 <- read_csv("metadata/2016_input_data_dictionary.csv")
 df_meta2['shortname'] <- sapply(df_meta2['abbrv'],FUN=tolower)
-df_meta3 <- inner_join(df_meta,df_meta2, by=shortname)
+df_meta3 <- inner_join(df_meta,df_meta2, by='shortname')
 df_meta4 <- df_meta3[,c('description','rowcount','feature_type','filename')]
 
 
@@ -131,9 +131,65 @@ summarize_merged_table <- function(df1) {
 }
 
 
+path = "~/Documents/Projects/tomtom_tables/2016_12/"
 
+shp1 <- "nam2016_12/shpd/mn/uc1/usauc1___________02.shp"
 
+setwd(path)
 
+df_shp_meta_tmp <- inner_join(shp_df1,df_meta2, by='shortname')
+
+df_shp_meta <- df_shp_meta_tmp[,c('description','shortname','feature_type','path','merge_into')]
+
+df_shp_meta$longname <- gsub(" ","_", df_shp_meta$description)
+
+merge_files_spatial <- function(tbl1) {
+  paths <- tbl1[['path']]
+  csv_shortname <- paste("/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/merged_spatial_csvs/",
+                     tbl1[['longname']][[1]],
+                     ".csv",sep="")
+  shp_shortname <- paste("/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/merged_shapefiles/",
+                         tbl1[['longname']][[1]],
+                         ".shp",sep="")
+  print("merging")
+  print(shp_shortname)
+  for (currentFile in paths) {
+    print(currentFile)
+    if (!exists("dataset")){
+      dataset <- st_read(currentFile)
+      print("names")
+      print(names(dataset))
+    }
+    # 
+    if (exists("dataset")){
+      temp_dataset <- st_read(currentFile)
+      st_crs(temp_dataset) <- st_crs(dataset)
+      print(names(dataset))
+      dataset<-rbind(dataset, temp_dataset)
+      rm(temp_dataset)
+    }
+  }
+  print("Writing to disk")
+  print(shp_shortname)
+  st_write(dataset,shp_shortname)
+  st_write(dataset,csv_shortname, 
+           layer_options = "GEOMETRY=AS_WKT", 
+           delete_dsn=TRUE)
+  rowcount <- dims(dataset)[[1]]
+  rm(dataset)
+  return(rowcount)
+}
+
+#non_spatial_tables_grouped %>% do(merge_files(.))
+
+#df_shp_meta %>% do(merge_files_spatial(.))
+
+setwd("~/Documents/Projects/tomtom_tables/2016_12/nam2016_12/shpd/mn")
+rows2 <- c()
+
+df_shp_meta_grouped <- group_by(df_shp_meta, shortname)
+
+rows2 <- append(rows2,df_shp_meta_grouped %>% do(merge_files_spatial(.)))
 
 
 
