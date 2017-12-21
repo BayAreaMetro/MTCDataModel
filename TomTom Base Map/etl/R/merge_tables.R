@@ -3,40 +3,14 @@ library(rgdal)
 library(foreign)
 library(dplyr)
 
-path = "~/Documents/Projects/tomtom_tables/2016_12/nam2016_12/shpd/mn"
+####
+#set up functions
+####
 
-# Step 1. Turn myTables into a Dataframe with 3 columns c("Folder","Name","Type") Type= Shape or Table
-myShapes <- list.files(path=path, pattern="*.shp", full.names=F, recursive=TRUE)
-myTables <- list.files(path=path, pattern="*.dbf", full.names=F, recursive=TRUE)
 
-myShapes2 <- gsub("___________","_", myShapes)
-myShapes2 <- gsub("____","_", myShapes2)
-myTables2 <- gsub("___________","_", myTables)
-myTables2 <- gsub("____","_", myTables2)
-
-tbl_df_temp <- strsplit(myTables2, "/|\\\\|\\.|_")
-shp_df_temp <- strsplit(myShapes2, "/|\\\\|\\.|_")
-
-#from https://stackoverflow.com/questions/4227223/r-list-to-data-frame
-tbl_df1 <- data.frame(t(sapply(tbl_df_temp,c)))
-shp_df1 <- data.frame(t(sapply(shp_df_temp,c)))
-
-names(tbl_df1) <- c('folder1','folder2','shortname','file_ending')
-names(shp_df1) <- c('folder1','folder2','shortname','file_ending')
-
-tbl_df1['path'] <- myTables
-shp_df1['path'] <- myShapes
-
-library(dplyr)
-non_spatial_tables <- anti_join(x = tbl_df1, y = shp_df1, by = c("folder1","folder2","shortname"))
-
-# Step 2. Populate value for Type from myShapes
-
-non_spatial_tables_grouped <- group_by(non_spatial_tables, shortname)
-
-merge_files <- function(tbl1) {
+merge_files <- function(tbl1,output_path,product="") {
   paths <- tbl1[['path']]
-  shortname <- paste("/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/merged_tables/",tbl1[['shortname']][[1]],".dbf",sep="")
+  shortname <- paste(output_path,product,tbl1[['shortname']][[1]],".dbf",sep="")
   print("merging")
   print(shortname)
   for (currentFile in paths) {
@@ -54,102 +28,15 @@ merge_files <- function(tbl1) {
   print("Writing to disk")
   print(shortname)
   write.dbf(file=shortname,dataset)
-  
-
-  
 }
 
-setwd(path)
-
-non_spatial_tables_grouped %>% do(merge_files(.))
-
-#add metrics:
-
-## Metrics:
-# How many tables have no records?
-# 
-# at each table read: count of records
-# 
-# product, name of the features (feature class name), record, type(table/shape)
-# 
-# How many records are there in a previous release?
-# 
-# How many features are corrupt?
-
-output_path = "/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/merged_tables/"
-
-#returns an integer vector of length 2 with row and column count
-dims <- function(dbf_df) {
-  return(dim(dbf_df))
-}
-
-merged_tables <- list.files(path=output_path, pattern="*.dbf", full.names=F, recursive=TRUE)
-
-merged_tables_tmp <- strsplit(merged_tables, "\\.")
-tbl_df2 <- data.frame(t(sapply(merged_tables_tmp,c)))
-shortnames <- tbl_df2[[1]]
-
-#get row count
-setwd(output_path)
-rows <- c()
-for (filename in merged_tables) {
-  df1 <- read.dbf(filename, as.is = FALSE)
-  rowcount <- dims(df1)[[1]]
-  rows <- append(rows, rowcount)
-}
-
-df_meta <- data.frame(filename=merged_tables,rowcount=rows,shortname=shortnames)
-
-setwd("~/Documents/Projects/DataServices/TomTom Base Map/etl")
-df_meta2 <- read_csv("metadata/2016_input_data_dictionary.csv")
-df_meta2['shortname'] <- sapply(df_meta2['abbrv'],FUN=tolower)
-df_meta3 <- inner_join(df_meta,df_meta2, by='shortname')
-df_meta4 <- df_meta3[,c('description','rowcount','feature_type','filename')]
-
-
-
-
-
-
-
-
-
-###scratch 
-
-headers <- function(dbf_df) {
-  return(names(dataset))
-}
-
-#returns 2 vectors in a list
-summarize_merged_table <- function(df1) {
-  the_dims <- dims(df1)
-  rows <- the_dims[[1]]
-  #columns <- the_dims[[2]]
-  #headers <- headers(df1)
-  #attributes_list <- list(rows, columns)
-  return(rows)
-}
-
-
-path = "~/Documents/Projects/tomtom_tables/2016_12/"
-
-shp1 <- "nam2016_12/shpd/mn/uc1/usauc1___________02.shp"
-
-setwd(path)
-
-df_shp_meta_tmp <- inner_join(shp_df1,df_meta2, by='shortname')
-
-df_shp_meta <- df_shp_meta_tmp[,c('description','shortname','feature_type','path','merge_into')]
-
-df_shp_meta$longname <- gsub(" ","_", df_shp_meta$description)
-
-merge_files_spatial <- function(tbl1) {
+merge_files_spatial <- function(tbl1, output_path, product) {
   paths <- tbl1[['path']]
-  csv_shortname <- paste("/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/merged_spatial_csvs/",
-                     tbl1[['longname']][[1]],
-                     ".csv",sep="")
+  csv_shortname <- paste(output_path,product,
+                         tbl1[['shortname']][[1]],
+                         ".csv",sep="")
   shp_shortname <- paste("/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/merged_shapefiles/",
-                         tbl1[['longname']][[1]],
+                         tbl1[['shortname']][[1]],
                          ".shp",sep="")
   print("merging")
   print(shp_shortname)
@@ -180,16 +67,221 @@ merge_files_spatial <- function(tbl1) {
   return(rowcount)
 }
 
-#non_spatial_tables_grouped %>% do(merge_files(.))
 
-#df_shp_meta %>% do(merge_files_spatial(.))
+
+####
+## process lpoi
+####
+
+source_path = "~/Documents/Projects/tomtom_tables/2016_12/nam2016_12/shpd/lpoi"
+output_path = "/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/lpoi/"
+
+# Step 1. Turn myTables into a Dataframe with 3 columns c("Folder","Name","Type") Type= Shape or Table
+myShapes <- list.files(path=source_path, pattern="*.shp", full.names=F, recursive=TRUE)
+myTables <- list.files(path=source_path, pattern="*.dbf", full.names=F, recursive=TRUE)
+
+myShapes2 <- gsub("___________","_", myShapes)
+myShapes2 <- gsub("____","_", myShapes2)
+myTables2 <- gsub("___________","_", myTables)
+myTables2 <- gsub("____","_", myTables2)
+
+tbl_df_temp <- strsplit(myTables2, "/|\\\\|\\.|_")
+shp_df_temp <- strsplit(myShapes2, "/|\\\\|\\.|_")
+
+#from https://stackoverflow.com/questions/4227223/r-list-to-data-frame
+tbl_df1 <- data.frame(t(sapply(tbl_df_temp,c)))
+shp_df1 <- data.frame(t(sapply(shp_df_temp,c)))
+
+names(tbl_df1) <- c('folder1','product','shortname','file_ending')
+names(shp_df1) <- c('folder1','product','shortname','file_ending')
+
+tbl_df1['path'] <- myTables
+shp_df1['path'] <- myShapes
+
+non_spatial_tables <- anti_join(x = tbl_df1, y = shp_df1, by = c("folder1","product","shortname"))
+non_spatial_tables_grouped <- group_by(non_spatial_tables, shortname)
+
+setwd(source_path)
+
+####
+###do the merge
+####
+
+non_spatial_tables_grouped %>% do(merge_files(.,output_path,product="lpoi_"))
+
+#add metrics:
+
+## Metrics:
+# How many tables have no records?
+# 
+# at each table read: count of records
+# 
+# product, name of the features (feature class name), record, type(table/shape)
+# 
+# How many records are there in a previous release?
+# 
+# How many features are corrupt?
+
+merged_tables <- list.files(path=output_path, pattern="*.dbf", full.names=F, recursive=TRUE)
+
+merged_tables_tmp <- strsplit(merged_tables, "\\.")
+tbl_df2 <- data.frame(t(sapply(merged_tables_tmp,c)))
+shortnames <- tbl_df2[[1]]
+
+#get row count for merged tables
+setwd(output_path)
+rows <- c()
+for (filename in merged_tables) {
+  df1 <- read.dbf(filename, as.is = FALSE)
+  rowcount <- dim(dbf_df)[[1]]
+  rows <- append(rows, rowcount)
+}
+
+df_meta <- data.frame(filename=merged_tables,rowcount=rows,shortname=shortnames)
+
+setwd("~/Documents/Projects/DataServices/TomTom Base Map/etl")
+df_meta2 <- read_csv("metadata/2016_input_data_dictionary.csv")
+df_meta2['shortname'] <- sapply(df_meta2['abbrv'],FUN=tolower)
+df_meta3 <- inner_join(df_meta,df_meta2, by='shortname')
+df_meta4 <- df_meta3[,c('description','rowcount','feature_type','filename')]
+write_csv(df_meta4,paste(output_path,"lpoi_table_names_and_row_counts.csv",sep=""))
+
+######
+##Process MN
+####
+#copied and pasted from above, should just put this all in a function
+
+source_path = "~/Documents/Projects/tomtom_tables/2016_12/nam2016_12/shpd/mn"
+output_path = "/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/multinet/"
+
+# Step 1. Turn myTables into a Dataframe with 3 columns c("Folder","Name","Type") Type= Shape or Table
+myShapes <- list.files(path=source_path, pattern="*.shp", full.names=F, recursive=TRUE)
+myTables <- list.files(path=source_path, pattern="*.dbf", full.names=F, recursive=TRUE)
+
+myShapes2 <- gsub("___________","_", myShapes)
+myShapes2 <- gsub("____","_", myShapes2)
+myTables2 <- gsub("___________","_", myTables)
+myTables2 <- gsub("____","_", myTables2)
+
+tbl_df_temp <- strsplit(myTables2, "/|\\\\|\\.|_")
+shp_df_temp <- strsplit(myShapes2, "/|\\\\|\\.|_")
+
+#from https://stackoverflow.com/questions/4227223/r-list-to-data-frame
+tbl_df1 <- data.frame(t(sapply(tbl_df_temp,c)))
+shp_df1 <- data.frame(t(sapply(shp_df_temp,c)))
+
+names(tbl_df1) <- c('folder1','product','shortname','file_ending')
+names(shp_df1) <- c('folder1','product','shortname','file_ending')
+
+tbl_df1['path'] <- myTables
+shp_df1['path'] <- myShapes
+
+non_spatial_tables <- anti_join(x = tbl_df1, y = shp_df1, by = c("folder1","product","shortname"))
+non_spatial_tables_grouped <- group_by(non_spatial_tables, shortname)
+
+setwd(source_path)
+
+####
+###do the merge
+####
+
+non_spatial_tables_grouped %>% do(merge_files(.,output_path,product="mn_"))
+
+#add metrics:
+
+## Metrics:
+# How many tables have no records?
+# 
+# at each table read: count of records
+# 
+# product, name of the features (feature class name), record, type(table/shape)
+# 
+# How many records are there in a previous release?
+# 
+# How many features are corrupt?
+
+merged_tables <- list.files(path=output_path, pattern="*.dbf", full.names=F, recursive=TRUE)
+
+merged_tables_tmp <- strsplit(merged_tables, "\\.")
+tbl_df2 <- data.frame(t(sapply(merged_tables_tmp,c)))
+shortnames <- tbl_df2[[1]]
+
+#get row count for merged tables
+setwd(output_path)
+rows <- c()
+for (filename in merged_tables) {
+  df1 <- read.dbf(filename, as.is = FALSE)
+  rowcount <- dim(dbf_df)[[1]]
+  rows <- append(rows, rowcount)
+}
+
+df_meta <- data.frame(filename=merged_tables,rowcount=rows,shortname=shortnames)
+
+setwd("~/Documents/Projects/DataServices/TomTom Base Map/etl")
+df_meta2 <- read_csv("metadata/2016_input_data_dictionary.csv")
+df_meta2['shortname'] <- sapply(df_meta2['abbrv'],FUN=tolower)
+df_meta3 <- inner_join(df_meta,df_meta2, by='shortname')
+df_meta4 <- df_meta3[,c('description','rowcount','feature_type','filename')]
+write_csv(df_meta4,paste(output_path,"mn_table_names_and_row_counts.csv",sep=""))
+
+####
+##Process mn spatial
+####
+
+input_path = "~/Documents/Projects/tomtom_tables/2016_12/"
+output_path = "/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/mn/"
+product="mn"
+
+setwd(input_path)
+
+df_shp_meta_tmp <- inner_join(shp_df1,df_meta2, by='shortname')
+
+df_shp_meta <- df_shp_meta_tmp[,c('description','shortname','feature_type','path','merge_into')]
+
+df_shp_meta$longname <- gsub(" ","_", df_shp_meta$description)
 
 setwd("~/Documents/Projects/tomtom_tables/2016_12/nam2016_12/shpd/mn")
+
 rows2 <- c()
-
 df_shp_meta_grouped <- group_by(df_shp_meta, shortname)
+rows2 <- append(rows2,df_shp_meta_grouped %>% do(merge_files_spatial(.),output_path,product))
 
-rows2 <- append(rows2,df_shp_meta_grouped %>% do(merge_files_spatial(.)))
+####
+##Process poi spatial
+####
+
+input_path = "~/Documents/Projects/tomtom_tables/2016_12/"
+output_path = "/Users/tommtc/Box/DataViz\ Projects/Data\ Services/2016_12/TomTom2016/mn/"
+product="lpoi"
+
+setwd(input_path)
+
+df_shp_meta_tmp <- inner_join(shp_df1,df_meta2, by='shortname')
+
+df_shp_meta <- df_shp_meta_tmp[,c('description','shortname','feature_type','path','merge_into')]
+
+df_shp_meta$longname <- gsub(" ","_", df_shp_meta$description)
+
+setwd("~/Documents/Projects/tomtom_tables/2016_12/nam2016_12/shpd/lpoi")
+
+rows2 <- c()
+df_shp_meta_grouped <- group_by(df_shp_meta, shortname)
+rows2 <- append(rows2,df_shp_meta_grouped %>% do(merge_files_spatial(.),output_path,product))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
