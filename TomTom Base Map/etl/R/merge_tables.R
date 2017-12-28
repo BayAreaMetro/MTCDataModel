@@ -1,4 +1,15 @@
-tt_data_path <- file.path("~/Downloads/zippedArchives/")
+##copy the files off the disk
+#cp -R /Volumes/mn612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
+##change permissions to allow file and folder changes in that directory
+#chmod -R ug+rw ~/Data/tt16
+##move them to one directory
+#mv ~/Data/tt16/mn/usa/*/*.gz ~Data/tt16/mn/usa
+##remove the (now empty) directories
+#rm -rf ax uc*
+##unzip all the files:
+#gunzip -r .
+
+tt_data_path <- file.path("~/Data/tt16/mn/usa")
 prefix <- "tt_"
 
 ####
@@ -66,7 +77,7 @@ shapefile_layers$filenames <- apply(shapefile_layers,1,
                                                                  tt_data_path))
 
 ####
-##segment the files into tables first
+##segment the files into shapefiles
 ####
 
 table_filenames <- shapefile_layers[with(shapefile_layers,
@@ -103,16 +114,16 @@ append_tables <- paste("ogr2ogr -f ''SQLite'' db.sqlite -append -nln",
 ###
 #Move the merged tables to PostGIS
 ###
-first_tables <- unlist(lapply(table_filenames,function(x) x[1]))
-shortnames <- sapply(first_tables, tt_parse, USE.NAMES=FALSE)
-shortnames <- paste0(prefix,shortnames)
+shortnames_pg <- sapply(first_tables, tt_parse, USE.NAMES=FALSE)
+shortnames_pg <- paste0(prefix,shortnames)
 
-local_pg <- "psql -U tom -d tomtom -h 0.0.0.0"
+local_pg <- "psql -U tom -d analysis_scratch -h 0.0.0.0"
+schema_name <- "tt."
 move_sqlite_to_pg <- paste0("ogr2ogr --config PG_USE_COPY YES -f PGDump ",
                             "-sql 'select * from ",
-                            shortnames,
-                            "' /vsistdout/ -nln ",
-                            shortnames, " db.sqlite ", "| PGPASSWORD=tomtom ",
+                            shortnames_pg,
+                            "' /vsistdout/ -nln ",schema_name,
+                            shortnames_pg, " db.sqlite ", "| PGPASSWORD=temp_pass ",
                             local_pg)
 
 ###
@@ -126,20 +137,34 @@ shape_filenames <- shapefile_layers[shapefile_layers$feature_type %in%
 emptyv <- sapply(shape_filenames,vector.is.empty)
 shape_filenames <- shape_filenames[!emptyv]
 
-first_tables <- unlist(lapply(shape_filenames,function(x) x[1]))
-shortnames <- sapply(first_tables, tt_parse, USE.NAMES=FALSE)
+first_shapefiles <- unlist(lapply(shape_filenames,function(x) x[1]))
+shortnames <- sapply(first_shapefiles, tt_parse, USE.NAMES=FALSE)
 shortnames <- paste0(prefix,shortnames)
 create_shapefiles <- paste0("ogr2ogr -f 'ESRI Shapefile' ",
                             shortnames, ".shp -nln ",
-                            shortnames, " ", first_tables)
+                            shortnames, " ", first_shapefiles)
 
-other_tables <- unlist(lapply(shape_filenames,function(x) x[2:length(x)]))
-shortnames <- sapply(other_tables, tt_parse, USE.NAMES=FALSE)
+other_shapefiles <- unlist(lapply(shape_filenames,function(x) x[2:length(x)]))
+shortnames <- sapply(other_shapefiles, tt_parse, USE.NAMES=FALSE)
 shortnames <- paste0(prefix,shortnames)
 append_shapefiles <- paste0("ogr2ogr -f 'ESRI Shapefile' ",
                             shortnames, ".shp -append -nln ",
-                            shortnames, " ", first_tables)
+                            shortnames, " ", other_shapefiles)
 
+###prep output in other formats (shapefile 2gb max reached)
+first_gpkg <- unlist(lapply(shape_filenames,function(x) x[1]))
+shortnames <- sapply(first_gpkg, tt_parse, USE.NAMES=FALSE)
+shortnames <- paste0(prefix,shortnames)
+create_gpkg <- paste0("ogr2ogr -f 'GPKG' ",
+                            "db.gpkg -append -nln ",
+                            shortnames, " ", first_gpkg)
+
+other_gpkg <- unlist(lapply(shape_filenames,function(x) x[2:length(x)]))
+shortnames <- sapply(other_gpkg, tt_parse, USE.NAMES=FALSE)
+shortnames <- paste0(prefix,shortnames)
+append_gpkg <- paste0("ogr2ogr -f 'GPKG' ",
+                            "db.gpkg -append -nln ",
+                            shortnames, " ", other_gpkg)
 
 
 ###
@@ -152,18 +177,21 @@ setwd(tt_data_path)
 results <- sapply(create_tables, function(x) try(system(x)))
 is.error <- function(x) inherits(x, "try-error")
 succeeded0 <- !vapply(results, is.error, logical(1))
+print(table(succeeded0))
 get.error.message <- function(x) {attr(x,"condition")$message}
 message0 <- vapply(results[!succeeded0], get.error.message, "")
 
 results <- sapply(append_tables, function(x) try(system(x)))
 is.error <- function(x) inherits(x, "try-error")
 succeeded1 <- !vapply(results, is.error, logical(1))
+print(table(succeeded1))
 get.error.message <- function(x) {attr(x,"condition")$message}
 message1 <- vapply(results[!succeeded1], get.error.message, "")
 
-results <- sapply(move_sqlite_to_pg, function(x) try(system(x)))
+results <- sapply(move_sqlite_to_pg[move_sqlite_to_pg], function(x) try(system(x)))
 is.error <- function(x) inherits(x, "try-error")
 succeeded2 <- !vapply(results, is.error, logical(1))
+print(table(succeeded2))
 get.error.message <- function(x) {attr(x,"condition")$message}
 message2 <- vapply(results[!succeeded2], get.error.message, "")
 
@@ -178,3 +206,15 @@ is.error <- function(x) inherits(x, "try-error")
 succeeded4 <- !vapply(results, is.error, logical(1))
 get.error.message <- function(x) {attr(x,"condition")$message}
 message4 <- vapply(results[!succeeded4], get.error.message, "")
+
+results <- sapply(create_gpkg, function(x) try(system(x)))
+is.error <- function(x) inherits(x, "try-error")
+succeeded5 <- !vapply(results, is.error, logical(1))
+get.error.message <- function(x) {attr(x,"condition")$message}
+message3 <- vapply(results[!succeeded5], get.error.message, "")
+
+results <- sapply(append_gpkg[append_gpkg], function(x) try(system(x)))
+is.error <- function(x) inherits(x, "try-error")
+succeeded6 <- !vapply(results, is.error, logical(1))
+get.error.message <- function(x) {attr(x,"condition")$message}
+message4 <- vapply(results[!succeeded6], get.error.message, "")
