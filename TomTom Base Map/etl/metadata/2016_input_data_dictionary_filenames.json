@@ -1,0 +1,1928 @@
+[
+    {
+        "abbrv": "00",
+        "description": " Street   0 (streets with FRC = 0)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________00.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________00.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________00.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________00.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________00.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________00.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "01",
+        "description": " Street   1 (streets with FRC = 1)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________01.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________01.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________01.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________01.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________01.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________01.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "02",
+        "description": " Street   2 (streets with FRC = 2)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________02.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________02.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________02.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________02.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________02.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________02.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "03",
+        "description": " Street   3 (streets with FRC = 3)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________03.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________03.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________03.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________03.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________03.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________03.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "04",
+        "description": " Street   4 (streets with FRC = 4)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________04.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________04.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________04.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________04.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________04.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________04.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "05",
+        "description": " Street   5 (streets with FRC = 5)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________05.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________05.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________05.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________05.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________05.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________05.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "06",
+        "description": " Street   6 (streets with FRC = 6)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________06.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________06.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________06.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________06.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________06.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________06.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "07",
+        "description": " Street   7 (streets with FRC = 7)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________07.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________07.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________07.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________07.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________07.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________07.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "08",
+        "description": " Street   8 (streets with FRC = 8)",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________08.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________08.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________08.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________08.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________08.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________08.shp"
+        ],
+        "merge_into": "streets"
+    },
+    {
+        "abbrv": "2R",
+        "description": " Level 2 Road",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________2r.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________2r.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________2r.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________2r.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________2r.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________2r.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "A0",
+        "description": " Administrative Area   Order 0",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a0.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a0.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a0.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a0.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a0.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a0.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a0.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A1",
+        "description": " Administrative Area   Order 1",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a1.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a1.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a1.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a1.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a1.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a1.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a1.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A2",
+        "description": " Administrative Area   Order 2",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a2.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a2.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a2.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a2.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a2.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a2.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a2.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A3",
+        "description": " Administrative Area   Order 3",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a3.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a3.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a3.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a3.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a3.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a3.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a3.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A4",
+        "description": " Administrative Area   Order 4",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a4.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a4.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a4.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a4.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a4.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a4.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a4.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A5",
+        "description": " Administrative Area   Order 5",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a5.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a5.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a5.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a5.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a5.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a5.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a5.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A6",
+        "description": " Administrative Area   Order 6",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a6.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a6.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a6.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a6.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a6.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a6.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a6.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A7",
+        "description": " Administrative Area   Order 7",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a7.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a7.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a7.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a7.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a7.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a7.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a7.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A8",
+        "description": " Administrative Area   Order 8",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a8.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a8.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a8.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a8.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a8.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a8.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a8.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "A9",
+        "description": " Administrative Area   Order 9",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________a9.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________a9.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________a9.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________a9.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________a9.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________a9.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________a9.shp"
+        ],
+        "merge_into": "admin"
+    },
+    {
+        "abbrv": "AA",
+        "description": " Address   Areas",
+        "feature_type": " Area",
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AAEA",
+        "description": " Address   Areas Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________aaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________aaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________aaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________aaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________aaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________aaea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AANM",
+        "description": " Address   Areas Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________aanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________aanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________aanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________aanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________aanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________aanm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AB",
+        "description": " Address   Area Boundary Element Belonging to Address Area",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ab.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ab.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ab.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ab.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ab.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ab.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AD",
+        "description": " Administrative   Area Structure Definitions",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ad.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ad.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ad.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ad.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ad.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ad.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AE",
+        "description": " Administrative   Area Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________ae.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ae.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ae.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ae.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ae.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ae.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ae.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AI",
+        "description": " Area   Replaced by Index Area",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ai.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ai.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ai.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ai.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ai.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ai.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AN",
+        "description": " Administrative   Area Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________an.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________an.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________an.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________an.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________an.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________an.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________an.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AP",
+        "description": " Administrative   Places",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ap.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ap.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ap.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ap.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ap.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ap.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AS",
+        "description": " Area   Structures",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________as.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________as.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________as.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________as.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________as.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________as.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AXAS",
+        "description": " Composite   Sign Color Information",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________axas.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________axas.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________axas.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________axas.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________axas.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________axas.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________axas.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "AXAV",
+        "description": " Composite   Sign Color Information",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________axav.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________axav.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________axav.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________axav.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________axav.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________axav.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________axav.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "BA",
+        "description": " Built   Up Area in Named Area",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ba.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ba.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ba.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ba.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ba.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ba.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "BE",
+        "description": " Built   Up Area Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________be.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________be.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________be.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________be.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________be.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________be.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "BL",
+        "description": " Boundary  Line",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________bl.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________bl.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________bl.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________bl.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________bl.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________bl.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________bl.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "BN",
+        "description": " Built   Up Area Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________bn.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________bn.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________bn.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________bn.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________bn.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________bn.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "BU",
+        "description": " Built-up Area",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________bu.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________bu.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________bu.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________bu.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________bu.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________bu.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "CEGC",
+        "description": " Census Enhanced   Geocoding",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________cegc.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________cegc.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________cegc.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________cegc.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________cegc.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________cegc.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "CF",
+        "description": " Center Point of   Freeway",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________cf.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________cf.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________cf.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________cf.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________cf.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________cf.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "CN",
+        "description": " Conversion   Records",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________cn.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________cn.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________cn.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________cn.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________cn.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________cn.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "EP",
+        "description": " Administrative   Place Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ep.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ep.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ep.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ep.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ep.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ep.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "FE",
+        "description": " Ferries",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________fe.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________fe.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________fe.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________fe.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________fe.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________fe.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "GC",
+        "description": " Geocode",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________gc.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________gc.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________gc.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________gc.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________gc.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________gc.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "IG",
+        "description": " Intersection   Index",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ig.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ig.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ig.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ig.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ig.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ig.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "IH",
+        "description": " Intermediate House   Numbers",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ih.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ih.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ih.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ih.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ih.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ih.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "IS",
+        "description": " Intersection",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________is.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________is.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________is.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________is.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________is.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________is.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "ISNM",
+        "description": " Intersection Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________isnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________isnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________isnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________isnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________isnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________isnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "JC",
+        "description": " Junction",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________jc.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________jc.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________jc.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________jc.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________jc.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________jc.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "JCEA",
+        "description": " Junction Extended   Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________jcea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________jcea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________jcea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________jcea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________jcea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________jcea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LC",
+        "description": " Land Cover",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________lc.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________lc.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________lc.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________lc.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________lc.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________lc.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LD",
+        "description": " Lane   Direction Information",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ld.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ld.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ld.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ld.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ld.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ld.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LE",
+        "description": " Lane   End",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________le.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________le.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________le.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________le.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________le.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________le.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LF",
+        "description": " Direction   of Traffic Flow for Lane",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________lf.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________lf.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________lf.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________lf.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________lf.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________lf.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LI",
+        "description": " Lane   Type Information",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________li.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________li.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________li.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________li.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________li.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________li.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LL",
+        "description": " Lane   Divider Information",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ll.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ll.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ll.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ll.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ll.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ll.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LN",
+        "description": " Lane Connectivity   Information",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ln.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ln.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ln.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ln.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ln.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ln.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LP",
+        "description": " Lane Connectivity   Path",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________lp.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________lp.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________lp.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________lp.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________lp.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________lp.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LS",
+        "description": "Line   Structures",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ls.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ls.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ls.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ls.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ls.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ls.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LT",
+        "description": " Time   Domains for Direction of Traffic Flow",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________lt.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________lt.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________lt.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________lt.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________lt.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________lt.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LU",
+        "description": " Land Use",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________lu.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________lu.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________lu.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________lu.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________lu.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________lu.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LXEA",
+        "description": " Land Use and Land   Cover Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________lxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________lxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________lxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________lxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________lxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________lxea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "LXNM",
+        "description": " Land Use and Land   Cover Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________lxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________lxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________lxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________lxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________lxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________lxnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "MN",
+        "description": " Maneuver",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________mn.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________mn.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________mn.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________mn.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________mn.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________mn.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "MP",
+        "description": " Maneuver Path Index",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________mp.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________mp.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________mp.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________mp.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________mp.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________mp.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "NM",
+        "description": " Names",
+        "feature_type": "Table",
+        "filenames": [],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "NP",
+        "description": " Administrative Place Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________np.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________np.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________np.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________np.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________np.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________np.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "NW",
+        "description": " Network",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________nw.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________nw.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________nw.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________nw.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________nw.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________nw.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "NWEA",
+        "description": " Network Extended   Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________nwea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________nwea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________nwea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________nwea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________nwea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________nwea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "OA",
+        "description": " Other   Named Areas",
+        "feature_type": "Polygon",
+        "filenames": [],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA01",
+        "description": " Census   Tract (U.S. only)",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa01.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa01.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa01.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa01.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa01.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa01.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA02",
+        "description": " Census   Block Group (U.S. only)",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa02.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa02.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa02.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa02.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa02.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa02.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA03",
+        "description": " Census   Blocks (U.S. only)",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa03.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa03.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa03.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa03.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa03.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa03.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA04",
+        "description": " Census   Urbanized Areas",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa04.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa04.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa04.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa04.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa04.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa04.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA05",
+        "description": " Core   Based Statistical Areas (U.S. only)",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa05.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa05.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa05.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa05.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa05.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa05.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA06",
+        "description": " Index   Areas",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa06.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa06.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa06.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa06.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa06.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa06.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA07",
+        "description": " Urban   Agglomeration",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa07.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa07.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa07.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa07.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa07.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa07.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA08",
+        "description": " Native   Reservation",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa08.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa08.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa08.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa08.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa08.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa08.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA09",
+        "description": " Special   Charge Area",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa09.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa09.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa09.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa09.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa09.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa09.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA10",
+        "description": " Neighborhoods",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa10.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa10.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa10.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa10.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa10.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa10.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OA11",
+        "description": " Low   Emission Zones",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oa11.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oa11.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oa11.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oa11.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oa11.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oa11.shp"
+        ],
+        "merge_into": "other_admin"
+    },
+    {
+        "abbrv": "OAEA",
+        "description": " Other   Named Areas Extended Attribues",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oaea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oaea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "OANM",
+        "description": " Other   Named Areas Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________oanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________oanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________oanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________oanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________oanm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________oanm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "OL",
+        "description": " Official   Languages",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\ax\\usa______________ol.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ol.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ol.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ol.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ol.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ol.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ol.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PC",
+        "description": " Postal   Code Information on Transportation Element",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pc.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pc.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pc.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pc.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pc.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pc.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PCNM",
+        "description": " Postal   Code Name Information",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pcnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pcnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pcnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pcnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pcnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pcnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PD",
+        "description": " Postal   Districts",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pd.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pd.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pd.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pd.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pd.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pd.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PDEA",
+        "description": " Postal   Districts Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pdea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pdea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pdea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pdea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pdea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pdea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PDNM",
+        "description": " Postal   District Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pdnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pdnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pdnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pdnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pdnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pdnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PI",
+        "description": "Point of Interest",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\lpoi\\uc1\\usauc1___________pi.shp",
+            "nam2016_12\\shpd\\lpoi\\uc2\\usauc2___________pi.shp",
+            "nam2016_12\\shpd\\lpoi\\uc3\\usauc3___________pi.shp",
+            "nam2016_12\\shpd\\lpoi\\uc4\\usauc4___________pi.shp",
+            "nam2016_12\\shpd\\lpoi\\uc5\\usauc5___________pi.shp",
+            "nam2016_12\\shpd\\lpoi\\uc6\\usauc6___________pi.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pi.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pi.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pi.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pi.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pi.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pi.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PIAS",
+        "description": "Point of Interest   Composite Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\lpoi\\uc1\\usauc1___________pias.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc2\\usauc2___________pias.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc3\\usauc3___________pias.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc4\\usauc4___________pias.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc5\\usauc5___________pias.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc6\\usauc6___________pias.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pias.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pias.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pias.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pias.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pias.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pias.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PIAV",
+        "description": "Point of Interest   Composite Attribute Values",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\lpoi\\uc1\\usauc1___________piav.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc2\\usauc2___________piav.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc3\\usauc3___________piav.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc4\\usauc4___________piav.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc5\\usauc5___________piav.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc6\\usauc6___________piav.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________piav.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________piav.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________piav.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________piav.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________piav.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________piav.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PIEA",
+        "description": " Extended POI   Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________piea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________piea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________piea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________piea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________piea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________piea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PINM",
+        "description": " POI Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\lpoi\\uc1\\usauc1___________pinm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc2\\usauc2___________pinm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc3\\usauc3___________pinm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc4\\usauc4___________pinm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc5\\usauc5___________pinm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc6\\usauc6___________pinm.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pinm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pinm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pinm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pinm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pinm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pinm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PM",
+        "description": " Lane Dependent Toll   Payment Method",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PP",
+        "description": " Place within Place   Relation",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pp.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pp.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pp.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pp.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pp.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pp.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PR",
+        "description": " Service   POI Belonging to Service POI",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________pr.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________pr.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________pr.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________pr.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________pr.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________pr.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "PS",
+        "description": "Point   Structures",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ps.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ps.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ps.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ps.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ps.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ps.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RD",
+        "description": " TMC Information along   Road Element",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rd.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rd.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rd.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rd.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rd.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rd.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RF",
+        "description": " Reference Point",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rf.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rf.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rf.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rf.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rf.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rf.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RFNM",
+        "description": " Reference Point Name",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rfnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rfnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rfnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rfnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rfnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rfnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RN",
+        "description": " Route Nuimbers",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rn.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rn.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rn.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rn.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rn.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rn.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RR",
+        "description": " Railway",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rr.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rr.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rr.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rr.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rr.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rr.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RREA",
+        "description": " Railway Extended   Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rrea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rrea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rrea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rrea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rrea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rrea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RRNM",
+        "description": " Railway Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rrnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rrnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rrnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rrnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rrnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rrnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "RS",
+        "description": " Restriction",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________rs.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________rs.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________rs.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________rs.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________rs.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________rs.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SA",
+        "description": " Service in Named Area",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sa.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sa.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sa.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sa.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sa.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sa.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SC",
+        "description": " Official Street Codes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sc.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sc.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sc.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sc.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sc.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sc.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SE",
+        "description": " Structure   Transportation Elements Relation",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________se.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________se.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________se.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________se.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________se.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________se.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SG",
+        "description": " Signpost",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sg.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sg.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sg.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sg.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sg.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sg.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SI",
+        "description": " Signpost Information",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________si.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________si.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________si.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________si.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________si.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________si.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SL",
+        "description": " Speed Restriction per   Lane",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sl.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sl.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sl.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sl.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sl.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sl.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SM",
+        "description": " Centers of   Settlements",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\lpoi\\uc1\\usauc1___________sm.shp",
+            "nam2016_12\\shpd\\lpoi\\uc2\\usauc2___________sm.shp",
+            "nam2016_12\\shpd\\lpoi\\uc3\\usauc3___________sm.shp",
+            "nam2016_12\\shpd\\lpoi\\uc4\\usauc4___________sm.shp",
+            "nam2016_12\\shpd\\lpoi\\uc5\\usauc5___________sm.shp",
+            "nam2016_12\\shpd\\lpoi\\uc6\\usauc6___________sm.shp",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sm.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sm.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sm.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sm.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sm.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sm.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SMEA",
+        "description": " Centers of   Settlements Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\lpoi\\uc1\\usauc1___________smea.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc2\\usauc2___________smea.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc3\\usauc3___________smea.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc4\\usauc4___________smea.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc5\\usauc5___________smea.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc6\\usauc6___________smea.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________smea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________smea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________smea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________smea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________smea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________smea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SMNM",
+        "description": " Centers of   Settlements Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\lpoi\\uc1\\usauc1___________smnm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc2\\usauc2___________smnm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc3\\usauc3___________smnm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc4\\usauc4___________smnm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc5\\usauc5___________smnm.dbf",
+            "nam2016_12\\shpd\\lpoi\\uc6\\usauc6___________smnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________smnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________smnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________smnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________smnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________smnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________smnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SP",
+        "description": " Signpost Path Index",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sp.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sp.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sp.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sp.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sp.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sp.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SR",
+        "description": " Speed Restrictions",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sr.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sr.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sr.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sr.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sr.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sr.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "ST",
+        "description": " Speed Restriction   Time Domains",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________st.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________st.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________st.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________st.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________st.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________st.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SXEA",
+        "description": " Structures Extended   Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sxea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "SXNM",
+        "description": " Structures Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________sxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________sxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________sxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________sxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________sxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________sxnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TA",
+        "description": " Transportation   Element Belonging to Area",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ta.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ta.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ta.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ta.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ta.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ta.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TC",
+        "description": " TMC   Location Index",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________tc.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________tc.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________tc.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________tc.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________tc.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________tc.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TD",
+        "description": " Time Domain",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________td.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________td.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________td.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________td.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________td.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________td.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TG",
+        "description": " TMC Path Index",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________tg.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________tg.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________tg.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________tg.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________tg.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________tg.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TI",
+        "description": " TMC Path Index   Location",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ti.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ti.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ti.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ti.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ti.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ti.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TL",
+        "description": " TMC Location",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________tl.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________tl.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________tl.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________tl.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________tl.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________tl.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TO",
+        "description": " Tourist   Roads",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________to.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________to.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________to.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________to.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________to.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________to.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TP",
+        "description": " TMC   Path",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________tp.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________tp.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________tp.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________tp.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________tp.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________tp.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TS",
+        "description": " Traffic   Sign",
+        "feature_type": "Point",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________ts.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________ts.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________ts.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________ts.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________ts.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________ts.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "TT",
+        "description": " Traffic   Sign Along Road Element",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________tt.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________tt.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________tt.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________tt.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________tt.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________tt.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "VR",
+        "description": " Vicinity   Relation",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________vr.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________vr.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________vr.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________vr.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________vr.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________vr.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "WA",
+        "description": " Water Area",
+        "feature_type": "Polygon",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________wa.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________wa.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________wa.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________wa.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________wa.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________wa.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "WL",
+        "description": " Water (Center/Border)  Lines",
+        "feature_type": "Line",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________wl.shp",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________wl.shp",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________wl.shp",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________wl.shp",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________wl.shp",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________wl.shp"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "WXEA",
+        "description": " WaterLines and Areas   Extended Attributes",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________wxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________wxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________wxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________wxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________wxea.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________wxea.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "WXNM",
+        "description": " WaterLines and Areas   Names",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________wxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________wxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________wxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________wxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________wxnm.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________wxnm.dbf"
+        ],
+        "merge_into": "same"
+    },
+    {
+        "abbrv": "XO",
+        "description": " XML Object References",
+        "feature_type": "Table",
+        "filenames": [
+            "nam2016_12\\shpd\\mn\\uc1\\usauc1___________xo.dbf",
+            "nam2016_12\\shpd\\mn\\uc2\\usauc2___________xo.dbf",
+            "nam2016_12\\shpd\\mn\\uc3\\usauc3___________xo.dbf",
+            "nam2016_12\\shpd\\mn\\uc4\\usauc4___________xo.dbf",
+            "nam2016_12\\shpd\\mn\\uc5\\usauc5___________xo.dbf",
+            "nam2016_12\\shpd\\mn\\uc6\\usauc6___________xo.dbf"
+        ],
+        "merge_into": "same"
+    }
+]
