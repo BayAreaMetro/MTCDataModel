@@ -14,43 +14,68 @@ Make the source TomTom data accessible to various users at BayAreaMetro.
 
 ## Data Sources
 
-[Unzipped 2016 Tom Tom Dataset and Documentation (MTC Staff Only)](https://mtcdrive.app.box.com/folder/35509938044)  
+### Environment
 
-## Environment
+This documentation assumes the user is running MacOS or similar with GDAL 1.11.5 or >.   
 
-This documentation assumes the user is running MacOS or similar. 
+#### Notes on GDAL Install. 
 
-Pseudo-script based on [this detailed step by step doc](https://github.com/BayAreaMetro/MTCDataModel/blob/master/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf):
+We use GDAL because it gracefully handles the types in the DBF files that these data are delivered in.  
+
+You may already have gdal installed. You can check at the command line with:  
+
+`ogr2ogr --version` 
+
+You should see something like: `GDAL 1.11.5, released 2016/07/01`
+
+If not, we recommend installing GDAL via [homebrew](https://brew.sh/):  
+
+`brew install gdal`
 
 ### Download the source data. 
 
-For convenience, these are organized into zipfiles here:
+For convenience, these are organized into ISO files here:
 
-- [2015 Source Data](https://mtcdrive.box.com/s/w5c4ofvh09uam2sornp2rc8nzo2r2i58)   
-- [2016 Source Data](https://mtcdrive.box.com/s/b22pidd6h00zsbbkmadrkwsvmfea6uoq)    
+- [MultiNet 2016 Source Data (MTC Staff Only)](https://s3-us-west-2.amazonaws.com/tomtomdisks/tomtom_mn_2016_12.iso)    
+- [Local Points of Interest 2016 Source Data (MTC Staff Only)](https://s3-us-west-2.amazonaws.com/tomtomdisks/tomtom_lpoi_2016_12.iso)    
 
-### Unzip everything (twice)
+### Set up Files Up For Processing
 
-After unzipping the downloaded zip file of choice, you need to unzip the tar.gz files for each source.
+Below we provide examples on how to set the files up. Please feel free to use, adapt, or use your own preferred method.
 
-gunzip provides a useful recursive flag (`-r`): `gunzip -r 2016_12/`  
+Copy the files off the disk after mounting it (in MacOS, double click on the ISO file).     
 
-### Merge all the tables from each region together.   
+`cp -R /Volumes/mn612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16`. 
+
+Change permissions to allow file and folder changes in that directory. 
+
+`chmod -R ug+rw ~/Data/tt16`
+
+Move the files all into one directory (our script expects this).  
+
+`mv ~/Data/tt16/mn/usa/*/*.gz ~/Data/tt16/mn/usa`  
+
+Remove the (now empty) directories  
+
+`rm -rf ax uc*`
+
+Unzip all the files:
+
+`gunzip -r ~/Data/tt16/mn/usa`
+
+### Merge all the tables and shapefiles from each region together.   
+
+TomTom delivers the data partitioned by geographic regions that are not relevant to us. Therefore, we merge them all together. 
+
+You can use the following script to scan the directory of prepped files and execute (or optionally export) the necessary bash scripts to merge the tables and shapefiles together, output them to a sqlite database, and (optionally) write them to a PostgreSQL database.   
 
 For example, using [this script](https://github.com/BayAreaMetro/DataServices/blob/tomtom-etl-1/TomTom%20Base%20Map/etl/R/merge_tables.R)
 
-### Merge all the shapefiles from each region together.      
+## Outcomes
 
---Script forthcoming. 
+### Multinet 2016.  
+- [Spatial Data - GeoPackage (MTC Staff Only)](https://mtcdrive.box.com/s/tjyqowk1q1x5be1q73dvnbtdwyw3jdhj). 
+- [Tables - SQLite3 (MTC Staff Only)](https://mtcdrive.box.com/s/epjifl9dhh2k62wwizt16xbwu95ik74s). 
 
-### Output according to custom schema   
-
-In the structure that is outlined in [2015 output schema](https://github.com/BayAreaMetro/DataServices/blob/tomtom-etl-1/TomTom%20Base%20Map/etl/metadata/2015_output_schema.json)  
-
-## Outcome
-
-- A FileGDB with TomTom Geometries
-
-## Results  
-
-links to come   
+### Local Points of Interest.
+- In Progress. 

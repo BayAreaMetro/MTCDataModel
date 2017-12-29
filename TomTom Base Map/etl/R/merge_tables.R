@@ -1,14 +1,3 @@
-##copy the files off the disk
-#cp -R /Volumes/mn612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
-##change permissions to allow file and folder changes in that directory
-#chmod -R ug+rw ~/Data/tt16
-##move them to one directory
-#mv ~/Data/tt16/mn/usa/*/*.gz ~Data/tt16/mn/usa
-##remove the (now empty) directories
-#rm -rf ax uc*
-##unzip all the files:
-#gunzip -r .
-
 tt_data_path <- file.path("~/Data/tt16/mn/usa")
 prefix <- "tt_"
 
@@ -77,7 +66,7 @@ shapefile_layers$filenames <- apply(shapefile_layers,1,
                                                                  tt_data_path))
 
 ####
-##segment the files into shapefiles
+##segment the files into tables
 ####
 
 table_filenames <- shapefile_layers[with(shapefile_layers,
@@ -112,13 +101,13 @@ append_tables <- paste("ogr2ogr -f ''SQLite'' db.sqlite -append -nln",
 
 ######
 ###
-#Move the merged tables to PostGIS
+#Move the merged tables to PostgreSQL
 ###
 shortnames_pg <- sapply(first_tables, tt_parse, USE.NAMES=FALSE)
 shortnames_pg <- paste0(prefix,shortnames)
 
 local_pg <- "psql -U tom -d analysis_scratch -h 0.0.0.0"
-schema_name <- "tt."
+schema_name <- "mn."
 move_sqlite_to_pg <- paste0("ogr2ogr --config PG_USE_COPY YES -f PGDump ",
                             "-sql 'select * from ",
                             shortnames_pg,
@@ -126,46 +115,92 @@ move_sqlite_to_pg <- paste0("ogr2ogr --config PG_USE_COPY YES -f PGDump ",
                             shortnames_pg, " db.sqlite ", "| PGPASSWORD=temp_pass ",
                             local_pg)
 
+
+
+
 ###
-#Do the same for Shapefiles
-#In this case writing back out to Shapefile
-#Alternatively, write to GeoJSON, GeoPackage, tt_data_pathectly to PostGIS, etc
+#Do the same for Shapefiles/GeoJSON/etc
+#In this case writing back out to geojson
 ###
-#shapefiles
 shape_filenames <- shapefile_layers[shapefile_layers$feature_type %in%
                                       c("point","line","polygon","area"),]$filenames
 emptyv <- sapply(shape_filenames,vector.is.empty)
 shape_filenames <- shape_filenames[!emptyv]
-
-first_shapefiles <- unlist(lapply(shape_filenames,function(x) x[1]))
-shortnames <- sapply(first_shapefiles, tt_parse, USE.NAMES=FALSE)
-shortnames <- paste0(prefix,shortnames)
-create_shapefiles <- paste0("ogr2ogr -f 'ESRI Shapefile' ",
-                            shortnames, ".shp -nln ",
-                            shortnames, " ", first_shapefiles)
-
-other_shapefiles <- unlist(lapply(shape_filenames,function(x) x[2:length(x)]))
-shortnames <- sapply(other_shapefiles, tt_parse, USE.NAMES=FALSE)
-shortnames <- paste0(prefix,shortnames)
-append_shapefiles <- paste0("ogr2ogr -f 'ESRI Shapefile' ",
-                            shortnames, ".shp -append -nln ",
-                            shortnames, " ", other_shapefiles)
 
 ###prep output in other formats (shapefile 2gb max reached)
 first_gpkg <- unlist(lapply(shape_filenames,function(x) x[1]))
 shortnames <- sapply(first_gpkg, tt_parse, USE.NAMES=FALSE)
 shortnames <- paste0(prefix,shortnames)
 create_gpkg <- paste0("ogr2ogr -f 'GPKG' ",
-                            "db.gpkg -append -nln ",
-                            shortnames, " ", first_gpkg)
+                      "db.gpkg -append -nln ",
+                      shortnames, " ", first_gpkg)
 
 other_gpkg <- unlist(lapply(shape_filenames,function(x) x[2:length(x)]))
 shortnames <- sapply(other_gpkg, tt_parse, USE.NAMES=FALSE)
 shortnames <- paste0(prefix,shortnames)
 append_gpkg <- paste0("ogr2ogr -f 'GPKG' ",
-                            "db.gpkg -append -nln ",
-                            shortnames, " ", other_gpkg)
+                      "db.gpkg -append -nln ",
+                      shortnames, " ", other_gpkg)
 
+###GeoJSON--optional
+
+first_geojson <- unlist(lapply(shape_filenames,function(x) x[1]))
+shortnames <- sapply(first_geojson, tt_parse, USE.NAMES=FALSE)
+shortnames <- paste0(prefix,shortnames)
+create_geojson <- paste0("ogr2ogr -f 'GeoJSON' ",
+                            shortnames, ".shp -nln ",
+                            shortnames, " ", first_geojson)
+
+other_geojson <- unlist(lapply(shape_filenames,function(x) x[2:length(x)]))
+shortnames <- sapply(other_geojson, tt_parse, USE.NAMES=FALSE)
+shortnames <- paste0(prefix,shortnames)
+append_geojson <- paste0("ogr2ogr -f 'GeoJSON' ",
+                            shortnames, ".shp -append -nln ",
+                            shortnames, " ", other_geojson)
+
+######
+###
+#Move the merged gpkg to PostGIS
+###
+
+###
+#Special Treatment for Shapefile Polygons 
+###
+
+shape_filenames_non_poly <- shapefile_layers[shapefile_layers$feature_type %in%
+                                      c("point","line"),]$filenames
+emptyv <- sapply(shape_filenames_non_poly,vector.is.empty)
+shape_filenames_non_poly <- shape_filenames_non_poly[!emptyv]
+first_non_poly <- unlist(lapply(shape_filenames_non_poly,function(x) x[1]))
+
+shortnames_pgs <- sapply(first_non_poly, tt_parse, USE.NAMES=FALSE)
+shortnames_pgs <- paste0(prefix,shortnames_pgs)
+
+local_pg <- "psql -U tom -d analysis_scratch -h 0.0.0.0"
+schema_name <- "mn_sp."
+move_gpkg_to_pg_non_poly <- paste0("ogr2ogr --config PG_USE_COPY YES -f PGDump ",
+                            "-sql 'select * from ",
+                            shortnames_pgs,
+                            "' /vsistdout/ -nln ",schema_name,
+                            shortnames_pgs, " db.gpkg ", "| PGPASSWORD=temp_pass ",
+                            local_pg)
+
+
+shape_filenames_poly <- shapefile_layers[shapefile_layers$feature_type %in%
+                                      c("area","polygon"),]$filenames
+emptyv <- sapply(shape_filenames_poly,vector.is.empty)
+shape_filenames_poly <- shape_filenames_poly[!emptyv]
+first_poly <- unlist(lapply(shape_filenames_poly,function(x) x[1]))
+
+shortnames_mpgs <- sapply(first_poly, tt_parse, USE.NAMES=FALSE)
+shortnames_mpgs <- paste0(prefix,shortnames_mpgs)
+
+move_gpkg_to_pg_poly <- paste0("ogr2ogr --config PG_USE_COPY YES -f PGDump ",
+                            "-sql 'select * from ",
+                            shortnames_mpgs,
+                            "' /vsistdout/ -nlt PROMOTE_TO_MULTI -nln ",schema_name,
+                            shortnames_mpgs, " db.gpkg ", "| PGPASSWORD=temp_pass ",
+                            local_pg)
 
 ###
 #Execute the load for each table creation
@@ -174,47 +209,23 @@ append_gpkg <- paste0("ogr2ogr -f 'GPKG' ",
 #optionally, uncomment to write to file and execute at shell
 #write(create_tables, file="move_db_to_sqlite.sh")
 setwd(tt_data_path)
-results <- sapply(create_tables, function(x) try(system(x)))
-is.error <- function(x) inherits(x, "try-error")
-succeeded0 <- !vapply(results, is.error, logical(1))
-print(table(succeeded0))
-get.error.message <- function(x) {attr(x,"condition")$message}
-message0 <- vapply(results[!succeeded0], get.error.message, "")
 
-results <- sapply(append_tables, function(x) try(system(x)))
-is.error <- function(x) inherits(x, "try-error")
-succeeded1 <- !vapply(results, is.error, logical(1))
-print(table(succeeded1))
-get.error.message <- function(x) {attr(x,"condition")$message}
-message1 <- vapply(results[!succeeded1], get.error.message, "")
+results_create_tables <- sapply(create_tables, function(x) try(system(x,intern=TRUE)))
 
-results <- sapply(move_sqlite_to_pg[move_sqlite_to_pg], function(x) try(system(x)))
-is.error <- function(x) inherits(x, "try-error")
-succeeded2 <- !vapply(results, is.error, logical(1))
-print(table(succeeded2))
-get.error.message <- function(x) {attr(x,"condition")$message}
-message2 <- vapply(results[!succeeded2], get.error.message, "")
+results_append_tables <- sapply(append_tables, function(x) try(system(x,intern=TRUE)))
 
-results <- sapply(create_shapefiles, function(x) try(system(x)))
-is.error <- function(x) inherits(x, "try-error")
-succeeded3 <- !vapply(results, is.error, logical(1))
-get.error.message <- function(x) {attr(x,"condition")$message}
-message3 <- vapply(results[!succeeded3], get.error.message, "")
+results_move_sqlite_to_pg <- sapply(move_sqlite_to_pg[move_sqlite_to_pg], function(x) try(system(x,intern=TRUE)))
 
-results <- sapply(append_shapefiles, function(x) try(system(x)))
-is.error <- function(x) inherits(x, "try-error")
-succeeded4 <- !vapply(results, is.error, logical(1))
-get.error.message <- function(x) {attr(x,"condition")$message}
-message4 <- vapply(results[!succeeded4], get.error.message, "")
+results_create_gpkg <- sapply(create_gpkg, function(x) try(system(x,intern=TRUE)))
 
-results <- sapply(create_gpkg, function(x) try(system(x)))
-is.error <- function(x) inherits(x, "try-error")
-succeeded5 <- !vapply(results, is.error, logical(1))
-get.error.message <- function(x) {attr(x,"condition")$message}
-message3 <- vapply(results[!succeeded5], get.error.message, "")
+results_append_gpkg <- sapply(append_gpkg[append_gpkg], function(x) try(system(x,intern=TRUE)))
 
-results <- sapply(append_gpkg[append_gpkg], function(x) try(system(x)))
-is.error <- function(x) inherits(x, "try-error")
-succeeded6 <- !vapply(results, is.error, logical(1))
-get.error.message <- function(x) {attr(x,"condition")$message}
-message4 <- vapply(results[!succeeded6], get.error.message, "")
+results_move_gpkg_to_pg_non_poly <- sapply(move_gpkg_to_pg_non_poly, function(x) try(system(x,intern=TRUE)))
+
+results_move_gpkg_to_pg_poly <- sapply(move_gpkg_to_pg_poly, function(x) try(system(x,intern=TRUE)))
+
+results_create_geojson <- sapply(create_geojson, function(x) try(system(x,intern=TRUE)))
+
+results_append_geojson <- sapply(append_geojson, function(x) try(system(x,intern=TRUE)))
+
+
