@@ -9,7 +9,7 @@ library(readr)
 library(readxl)
 library(stringr)
 
-shapefile_layers <- read_excel("~../metadata/mapdoc_mn_gdf_3-6-6_vs_mn_shape_4-8_v1-0-1.xlsx",
+shapefile_layers <- read_excel("~/Documents/Projects/DataServices/TomTom Base Map/etl/metadata/mapdoc_mn_gdf_3-6-6_vs_mn_shape_4-8_v1-0-1.xlsx",
                                sheet = "Shapefile Layers",
                                skip = 2,
                                col_types=c("text","text","text"),
@@ -19,6 +19,10 @@ shapefile_layers <- read_excel("~../metadata/mapdoc_mn_gdf_3-6-6_vs_mn_shape_4-8
 shapefile_layers$abbrv <- str_pad(shapefile_layers$abbrv, 2, pad="0")
 shapefile_layers$abbrv <- str_to_lower(shapefile_layers$abbrv)
 shapefile_layers$feature_type <- str_to_lower(shapefile_layers$feature_type)
+
+
+#utility function
+vector.is.empty <- function(x) return(length(x) ==0 )
 
 ###
 #define a function to get filenames for each shapefile layer
@@ -72,7 +76,6 @@ shapefile_layers$filenames <- apply(shapefile_layers,1,
 table_filenames <- shapefile_layers[with(shapefile_layers,
                                          feature_type == "table"),]$filenames
 #drop nulls
-vector.is.empty <- function(x) return(length(x) ==0 )
 emptyv <- sapply(table_filenames,vector.is.empty)
 table_filenames <- table_filenames[!emptyv]
 
@@ -164,7 +167,7 @@ append_geojson <- paste0("ogr2ogr -f 'GeoJSON' ",
 ###
 
 ###
-#Special Treatment for Shapefile Polygons 
+#Special Treatment for Shapefile Polygons
 ###
 
 shape_filenames_non_poly <- shapefile_layers[shapefile_layers$feature_type %in%
@@ -202,6 +205,28 @@ move_gpkg_to_pg_poly <- paste0("ogr2ogr --config PG_USE_COPY YES -f PGDump ",
                             shortnames_mpgs, " db.gpkg ", "| PGPASSWORD=temp_pass ",
                             local_pg)
 
+
+#######
+##Move GeoPackage to FileGDB
+######
+
+
+shape_tablenames_non_poly <- shapefile_layers[shapefile_layers$feature_type %in%
+											 	c("point","line","polygon","area"),]$abbrv
+emptyv <- sapply(shape_tablenames_non_poly,vector.is.empty)
+shape_tablenames_non_poly <- shape_tablenames_non_poly[!emptyv]
+
+local_pg <- "psql -U tom -d analysis_scratch -h 0.0.0.0"
+move_gpkg_to_filegdb_non_poly <- paste0("ogr2ogr ",
+								   "-f FileGDB ",
+								   "-append ",
+								   "-sql 'select ST_MakeValid(geom) as geom, * from tt_",
+								   shape_tablenames_non_poly,
+								   "' -mapFieldType 'Integer64=Integer', db.gdb -nln tt_",
+								   shape_tablenames_non_poly,
+								   " db.gpkg")
+
+
 ###
 #Execute the load for each table creation
 ###
@@ -227,5 +252,33 @@ results_move_gpkg_to_pg_poly <- sapply(move_gpkg_to_pg_poly, function(x) try(sys
 results_create_geojson <- sapply(create_geojson, function(x) try(system(x,intern=TRUE)))
 
 results_append_geojson <- sapply(append_geojson, function(x) try(system(x,intern=TRUE)))
+
+system("ogr2ogr --long-usage")
+
+#this command (writing to filegdb) requires a specific ogr2ogr install--
+#specifically:
+# brew unlink gdal
+# brew tap osgeo/osgeo4mac && brew tap --repair
+# brew install proj
+# brew install geos
+# brew install udunits
+# brew install gdal2-filegdb
+# brew link --force gdal2
+#for some reason R's system command sees another GDAL install
+#rather than debug the R environment, here we write out to a file to execute in shell/bash
+#results_move_to_filegdb <- sapply(move_gpkg_to_filegdb_non_poly, function(x) try(system(x,intern=TRUE)))
+
+write(move_gpkg_to_filegdb_non_poly, file="/Users/tommtc/Data/tt16/mn/usa/move_gpkg_to_filegdb_non_poly.sh")
+
+
+####also try it without makevalid
+move_gpkg_to_filegdb <- paste0("ogr2ogr ",
+								"-f FileGDB ",
+								"-append ",
+								"-sql 'select * from tt_",
+								shape_tablenames_non_poly,
+								"' -mapFieldType 'Integer64=Integer', db.gdb -nln tt_",
+								shape_tablenames_non_poly,
+								" db.gpkg")
 
 
