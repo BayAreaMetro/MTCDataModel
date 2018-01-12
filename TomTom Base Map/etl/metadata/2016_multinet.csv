@@ -1,0 +1,134 @@
+abbrv,description,feature_type,layer_name,feature_count
+00,Street 0 (streets with FRC = 0),line,tt_00,4424
+01,Street 1 (streets with FRC = 1),line,tt_01,5679
+02,Street 2 (streets with FRC = 2),line,tt_02,1315
+03,Street 3 (streets with FRC = 3),line,tt_03,9244
+04,Street 4 (streets with FRC = 4),line,tt_04,45444
+05,Street 5 (streets with FRC = 5),line,tt_05,29143
+06,Street 6 (streets with FRC = 6),line,tt_06,1060312
+07,Street 7 (streets with FRC = 7),line,tt_07,1367160
+08,Street 8 (streets with FRC = 8),line,tt_08,52138
+2r,Level 2 Road,table,tt_2r,7503289
+a0,Administrative Area Order 0,polygon,tt_a0,7
+a1,Administrative Area Order 1,polygon,tt_a1,60
+a2,Administrative Area Order 2,polygon,tt_a2,0
+a3,Administrative Area Order 3,polygon,tt_a3,0
+a4,Administrative Area Order 4,polygon,tt_a4,0
+a5,Administrative Area Order 5,polygon,tt_a5,0
+a6,Administrative Area Order 6,polygon,tt_a6,0
+a7,Administrative Area Order 7,polygon,tt_a7,0
+a8,Administrative Area Order 8,polygon,tt_a8,3282
+a9,Administrative Area Order 9,polygon,tt_a9,37083
+aa,Address Areas,area,tt_aa,0
+aaea,Address Areas Extended Attributes,table,tt_aaea,0
+aanm,Address Areas Names,table,tt_aanm,0
+ab,Address Area Boundary Element Belonging to Address Area,table,tt_ab,0
+ad,Administrative Area Structure Definitions,table,tt_ad,0
+ae,Administrative Area Extended Attributes,table,tt_ae,47765
+ai,Area Replaced by Index Area,table,tt_ai,0
+an,Administrative Area Names,table,tt_an,40506
+ap,Administrative Places,polygon,tt_ap,1526
+as,Area Structures,polygon,tt_as,0
+axas,Composite Sign Color Information,table,tt_axas,90750
+axav,Composite Sign Color Information,table,tt_axav,90750
+ba,Built Up Area in Named Area,table,tt_ba,4389
+be,Built Up Area Extended Attributes,table,tt_be,370
+bl,Boundary Line,line,tt_bl,327130
+bn,Built Up Area Names,table,tt_bn,1001
+bu,Built-up Area,polygon,tt_bu,996
+cegc,Census Enhanced Geocoding,table,tt_cegc,2771785
+cf,Center Point of Freeway,point,tt_cf,3346
+cn,Conversion Records,table,tt_cn,12615
+ep,Administrative Place Extended Attributes,table,tt_ep,0
+fe,Ferries,line,tt_fe,151
+gc,Geocode,line,tt_gc,3283791
+ig,Intersection Index,table,tt_ig,2225938
+ih,Intermediate House Numbers,table,tt_ih,20
+is,Intersection,table,tt_is,1589718
+isnm,Intersection Names,table,tt_isnm,3924
+jc,Junction,point,tt_jc,2837649
+jcea,Junction Extended Attributes,table,tt_jcea,27
+lc,Land Cover,polygon,tt_lc,0
+ld,Lane Direction Information,table,tt_ld,200054
+le,Lane End,table,tt_le,7775
+lf,Direction of Traffic Flow for Lane,table,tt_lf,935439
+li,Lane Type Information,table,tt_li,48706
+ll,Lane Divider Information,table,tt_ll,922918
+ln,Lane Connectivity Information,point,tt_ln,1151318
+lp,Lane Connectivity Path,table,tt_lp,1202655
+ls,Line Structures,line,tt_ls,13661
+lt,Time Domains for Direction of Traffic Flow,table,tt_lt,24473
+lu,Land Use,polygon,tt_lu,17305
+lxea,Land Use and Land Cover Extended Attributes,table,tt_lxea,87
+lxnm,Land Use and Land Cover Names,table,tt_lxnm,17303
+mn,Maneuver,point,tt_mn,188770
+mp,Maneuver Path Index,table,tt_mp,399332
+np,Administrative Place Names,table,tt_np,1533
+nw,Network,line,tt_nw,3429674
+nwea,Network Extended Attributes,table,tt_nwea,310774
+oa01,Census Tract (U.S. only),polygon,tt_oa01,8057
+oa02,Census Block Group (U.S. only),polygon,tt_oa02,23212
+oa03,Census Blocks (U.S. only),polygon,tt_oa03,697576
+oa04,Census Urbanized Areas,polygon,tt_oa04,0
+oa05,Core Based Statistical Areas (U.S. only),polygon,tt_oa05,35
+oa06,Index Areas,polygon,tt_oa06,0
+oa07,Urban Agglomeration,polygon,tt_oa07,38
+oa08,Native Reservation,polygon,tt_oa08,105
+oa09,Special Charge Area,polygon,tt_oa09,0
+oa10,Neighborhoods,polygon,tt_oa10,750
+oa11,Low Emission Zones,polygon,tt_oa11,0
+oaea,Other Named Areas Extended Attribues,table,tt_oaea,0
+oanm,Other Named Areas Names,table,tt_oanm,929
+ol,Official Languages,table,tt_ol,40432
+pc,Postal Code Information on Transportation Element,table,tt_pc,3504549
+pcnm,Postal Code Name Information,table,tt_pcnm,3146
+pd,Postal Districts,polygon,tt_pd,1754
+pdea,Postal Districts Extended Attributes,table,tt_pdea,0
+pdnm,Postal District Names,table,tt_pdnm,3146
+pi,Point of Interest,point,tt_pi,10807
+pias,Point of Interest Composite Attributes,table,tt_pias,23007
+piav,Point of Interest Composite Attribute Values,table,tt_piav,23008
+piea,Extended POI Attributes,table,tt_piea,9452
+pinm,POI Names,table,tt_pinm,7812
+pm,Lane Dependent Toll Payment Method,table,tt_pm,173
+pp,Place within Place Relation,table,tt_pp,0
+pr,Service POI Belonging to Service POI,table,tt_pr,7713
+ps,Point Structures,point,tt_ps,141391
+rd,TMC Information along Road Element,table,tt_rd,1724686
+rf,Reference Point,point,tt_rf,311
+rfnm,Reference Point Name,table,tt_rfnm,332
+rn,Route Nuimbers,table,tt_rn,320287
+rr,Railway,line,tt_rr,16711
+rrea,Railway Extended Attributes,table,tt_rrea,16711
+rrnm,Railway Names,table,tt_rrnm,15387
+rs,Restriction,table,tt_rs,919135
+sa,Service in Named Area,table,tt_sa,42749
+sc,Official Street Codes,table,tt_sc,0
+se,Structure Transportation Elements Relation,table,tt_se,295491
+sg,Signpost,point,tt_sg,29042
+si,Signpost Information,table,tt_si,150610
+sl,Speed Restriction per Lane,table,tt_sl,0
+sm,Centers of Settlements,point,tt_sm,3895
+smea,Centers of Settlements Extended Attributes,table,tt_smea,7929
+smnm,Centers of Settlements Names,table,tt_smnm,4114
+sp,Signpost Path Index,table,tt_sp,89557
+sr,Speed Restrictions,table,tt_sr,1004265
+st,Speed Restriction Time Domains,table,tt_st,36133
+sxea,Structures Extended Attributes,table,tt_sxea,0
+sxnm,Structures Names,table,tt_sxnm,232
+ta,Transportation Element Belonging to Area,table,tt_ta,19423525
+tc,TMC Location Index,table,tt_tc,245458
+td,Time Domain,table,tt_td,13083
+tg,TMC Path Index,table,tt_tg,1688960
+ti,TMC Path Index Location,table,tt_ti,0
+tl,TMC Location,table,tt_tl,60410
+to,Tourist Roads,table,tt_to,32707
+tp,TMC Path,table,tt_tp,15800
+ts,Traffic Sign,point,tt_ts,1511
+tt,Traffic Sign Along Road Element,table,tt_tt,1511
+vr,Vicinity Relation,table,tt_vr,4
+wa,Water Area,polygon,tt_wa,13818
+wl,Water (Center/Border) Lines,line,tt_wl,132186
+wxea,Water Lines and Areas Extended Attributes,table,tt_wxea,0
+wxnm,Water Lines and Areas Names,table,tt_wxnm,54497
+xo,XML Object References,table,tt_xo,4385
