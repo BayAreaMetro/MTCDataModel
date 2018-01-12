@@ -15,6 +15,8 @@ shapefile_layers <- read_excel("~/Documents/Projects/DataServices/TomTom Base Ma
                                col_types=c("text","text","text"),
                                col_names=c("abbrv","description","feature_type"))
 
+
+
 #pad and lower abbreviations to match files
 shapefile_layers$abbrv <- str_pad(shapefile_layers$abbrv, 2, pad="0")
 shapefile_layers$abbrv <- str_to_lower(shapefile_layers$abbrv)
@@ -282,4 +284,22 @@ move_gpkg_to_filegdb <- paste0("ogr2ogr ",
 								" db.gpkg")
 
 write(move_gpkg_to_filegdb, file="/Users/tommtc/Data/tt16/mn/usa/move_gpkg_to_filegdb_not_makevalid.sh")
+
+
+
+
+###check out feature counts in output
+##ogrinfo to get text, then cut and paste into csv's
+## for example:
+## ogrinfo /Users/tommtc/Downloads/db.sqlite -so -al | grep "Feature Count" > tbl_feature_count
+## ogrinfo /Users/tommtc/Downloads/db.sqlite -so -al | grep "Layer name" > tbl_feature_names
+
+gdb_fc <- read_csv("~/Documents/Projects/DataServices/TomTom Base Map/etl/metadata/multinet_gdb_feature_count.csv")
+gpk_fc <- read_csv("~/Documents/Projects/DataServices/TomTom Base Map/etl/metadata/multinet_gpkg_feature_count.csv")
+sql_fc <- read_csv("~/Documents/Projects/DataServices/TomTom Base Map/etl/metadata/multinet_tables_sqlite_feature_count.csv")
+
+#check that feature count in gpkg is the same as in gdb
+#df_fc <- inner_join(gdb_fc,gpk_fc,by="layer_name",suffix=c("gdb","gpk"))
+#View(df_fc)
+#true
 
