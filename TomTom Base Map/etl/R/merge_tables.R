@@ -210,13 +210,13 @@ move_gpkg_to_pg_poly <- paste0("ogr2ogr --config PG_USE_COPY YES -f PGDump ",
 ##Move GeoPackage to FileGDB
 ######
 
+emptyv <- sapply(shapefile_layers$filenames,vector.is.empty)
+shapefile_layers_no_null_files <- shapefile_layers[!emptyv,]
 
-shape_tablenames_non_poly <- shapefile_layers[shapefile_layers$feature_type %in%
+shape_tablenames_non_poly <- shapefile_layers_no_null_files[shapefile_layers_no_null_files$feature_type %in%
 											 	c("point","line","polygon","area"),]$abbrv
-emptyv <- sapply(shape_tablenames_non_poly,vector.is.empty)
-shape_tablenames_non_poly <- shape_tablenames_non_poly[!emptyv]
 
-local_pg <- "psql -U tom -d analysis_scratch -h 0.0.0.0"
+
 move_gpkg_to_filegdb_non_poly <- paste0("ogr2ogr ",
 								   "-f FileGDB ",
 								   "-append ",
@@ -268,17 +268,18 @@ system("ogr2ogr --long-usage")
 #rather than debug the R environment, here we write out to a file to execute in shell/bash
 #results_move_to_filegdb <- sapply(move_gpkg_to_filegdb_non_poly, function(x) try(system(x,intern=TRUE)))
 
-write(move_gpkg_to_filegdb_non_poly, file="/Users/tommtc/Data/tt16/mn/usa/move_gpkg_to_filegdb_non_poly.sh")
+write(move_gpkg_to_filegdb_non_poly, file="/Users/tommtc/Data/tt16/mn/usa/move_gpkg_to_filegdb_non_poly3.sh")
 
 
 ####also try it without makevalid
 move_gpkg_to_filegdb <- paste0("ogr2ogr ",
 								"-f FileGDB ",
-								"-append ",
+								"-append -skipfailures ",
 								"-sql 'select * from tt_",
 								shape_tablenames_non_poly,
-								"' -mapFieldType 'Integer64=Integer', db.gdb -nln tt_",
+								"' -mapFieldType 'Integer64=Integer' db_not_makevalid.gdb -nln tt_",
 								shape_tablenames_non_poly,
 								" db.gpkg")
 
+write(move_gpkg_to_filegdb, file="/Users/tommtc/Data/tt16/mn/usa/move_gpkg_to_filegdb_not_makevalid.sh")
 
