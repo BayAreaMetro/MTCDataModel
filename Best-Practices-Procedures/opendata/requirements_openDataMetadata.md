@@ -13,7 +13,7 @@ How GitHub relates
   
   3. **Description/Abstract** - Detailed information regarding the resource. Information can include, but is not limited to, the following: What it is, intended uses, limitations on use, and how it was developed (including identification of third-party data/resources used in its development).
   
-  4. **Contact information for resource developer** - Name, title, phone number, e-mail address, agency name, and building address. Position or unit names can also be used, and in some cases are preferrable as the creator may leave or change roles and the time cost of updating resource metadata is not insignificant if the person was a prolific developer of public resources.
+  4. **Contact information for resource developer** - Name, title, phone number, e-mail address, agency name, and building address. Position or unit names can also be used, and in some cases are preferable as the creator may leave or change roles and the time cost of updating resource metadata is not insignificant if the person was a prolific developer of public resources.
   
   5. **Date of resource** - Day, month, and year of the resource. One thing to consider here is the date of any source data used in its development. A resource created today using data that is six months old is really six months old, not current.
   
@@ -21,11 +21,11 @@ How GitHub relates
   
   7. **Date of update** - For a resource that has been updated, rather than released as a new version, the day, month, and year the update was completed.
   
-  8. **Field descriptions** - A definition must be provided for every table column. This covers both shapefile/feature set attribute tables and stand-alone data (spreadsheet, DBF, CSV, etc.). If the values in a column use codes to represent a limited range of values (i.e. numeric codes used for counties, acronymns used for housing types, etc.) then definitions need to be provided for each code value as well. 
+  8. **Field descriptions** - A definition must be provided for every table column. This covers both shapefile/feature set attribute tables and stand-alone data (spreadsheet, DBF, CSV, etc.). If the values in a column use codes to represent a limited range of values (i.e. numeric codes used for counties, acronyms used for housing types, etc.) then definitions need to be provided for each code value as well. 
 
 
 ## Metadata related to content using one or more third-party resources must:
-  1. Prominantly state the third-party that created it,
+  1. Prominently state the third-party that created it,
   
   2. Identify the final/adopted document, plan, or policy the resource was used for,
   
