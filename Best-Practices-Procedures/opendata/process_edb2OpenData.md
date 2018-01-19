@@ -19,4 +19,4 @@ There are some additional requirements, and they are as follows:
 
     - The metadata must include a link to the original data download source so the public can download the data, provide contact information for the data provider so the public can contact them to request a copy of the data, or both. Ideally both pieces of information will be in the metadata so the public can contact the data provider with methodology or other questions as MTC would not be able to answer them.
 
-    - The data itself will not be made available for download. It will only be made available as a feature service or web map that matches how it was used, or displayed, in the original MTC product, but does not allow the data itself to be downloaded.
+    - The data itself will not be made available for download. It will only be made available as a feature service or web map that matches how it was used, or displayed, in the original MTC product, but does not allow the data itself to be downloaded.x
