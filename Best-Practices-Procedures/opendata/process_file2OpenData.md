@@ -4,7 +4,7 @@
 
 - Create metadata for resource. Metadata requirements can be found [HERE](requirements_openDataMetadata.md).
 
-- Move resource and metadata to review directory at S:\Project\OpenDataReview. If there are multiple files, either ensure the file names have consistent naming so they are naturally grouped or ZIP them in a single, compressed file
+- Move resource and metadata to review directory at J:\SECTION\PLANNING\OpenDataReview. If there are multiple files, either ensure the file names have consistent naming so they are naturally grouped or ZIP them in a single, compressed file
 
 - Notify open data manager by sending them an e-mail at msmith@bayareametro.gov to let them know a resource is ready for review
 
