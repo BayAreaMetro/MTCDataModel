@@ -98,3 +98,4 @@ One key question is does the 2017 data have a spreadsheet with a list of layers 
 
 https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/R/merge_tables.R#L12-L16
 
+Another is: is the data from 2017 PSQL data?
