@@ -67,6 +67,8 @@ Unzip all the files:
 
 TomTom delivers the data partitioned by geographic regions that are not relevant to us. Therefore, we merge them all together. 
 
+It might make sense to check whether the geographic partitions cross important boundaries (e.g. cities?) and if so, what happens to the shapes that cross those boundaries.
+
 You can use the following script to scan the directory of prepped files and execute (or optionally export) the necessary bash scripts to merge the tables and shapefiles together, output them to a sqlite database, and (optionally) write them to a PostgreSQL database.   
 
 For example, using [this script](https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/R/merge_tables.R)
