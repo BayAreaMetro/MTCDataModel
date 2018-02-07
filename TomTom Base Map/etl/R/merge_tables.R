@@ -237,23 +237,23 @@ move_gpkg_to_filegdb_non_poly <- paste0("ogr2ogr ",
 #write(create_tables, file="move_db_to_sqlite.sh")
 setwd(tt_data_path)
 
-results_create_tables <- sapply(create_tables, function(x) try(system(x,intern=TRUE)))
+#results_create_tables <- sapply(create_tables, function(x) try(system(x,intern=TRUE)))
 
-results_append_tables <- sapply(append_tables, function(x) try(system(x,intern=TRUE)))
+#results_append_tables <- sapply(append_tables, function(x) try(system(x,intern=TRUE)))
 
-results_move_sqlite_to_pg <- sapply(move_sqlite_to_pg[move_sqlite_to_pg], function(x) try(system(x,intern=TRUE)))
+#results_move_sqlite_to_pg <- sapply(move_sqlite_to_pg[move_sqlite_to_pg], function(x) try(system(x,intern=TRUE)))
 
-results_create_gpkg <- sapply(create_gpkg, function(x) try(system(x,intern=TRUE)))
+#results_create_gpkg <- sapply(create_gpkg, function(x) try(system(x,intern=TRUE)))
 
-results_append_gpkg <- sapply(append_gpkg[append_gpkg], function(x) try(system(x,intern=TRUE)))
+#results_append_gpkg <- sapply(append_gpkg[append_gpkg], function(x) try(system(x,intern=TRUE)))
 
-results_move_gpkg_to_pg_non_poly <- sapply(move_gpkg_to_pg_non_poly, function(x) try(system(x,intern=TRUE)))
+#results_move_gpkg_to_pg_non_poly <- sapply(move_gpkg_to_pg_non_poly, function(x) try(system(x,intern=TRUE)))
 
-results_move_gpkg_to_pg_poly <- sapply(move_gpkg_to_pg_poly, function(x) try(system(x,intern=TRUE)))
+#results_move_gpkg_to_pg_poly <- sapply(move_gpkg_to_pg_poly, function(x) try(system(x,intern=TRUE)))
 
-results_create_geojson <- sapply(create_geojson, function(x) try(system(x,intern=TRUE)))
+#results_create_geojson <- sapply(create_geojson, function(x) try(system(x,intern=TRUE)))
 
-results_append_geojson <- sapply(append_geojson, function(x) try(system(x,intern=TRUE)))
+#results_append_geojson <- sapply(append_geojson, function(x) try(system(x,intern=TRUE)))
 
 system("ogr2ogr --long-usage")
 
