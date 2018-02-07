@@ -89,3 +89,12 @@ See [here](https://github.com/BayAreaMetro/DataServices/blob/55e08ab3d0bb20df625
 
 ### Local Points of Interest.
 - In Progress. 
+
+### Multinet 2017. 
+
+These are some notes on thinking about the 2017 update. 
+
+One key question is does the 2017 data have a spreadsheet with a list of layers like the one here:
+
+https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/R/merge_tables.R#L12-L16
+
