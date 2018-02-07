@@ -69,7 +69,7 @@ TomTom delivers the data partitioned by geographic regions that are not relevant
 
 You can use the following script to scan the directory of prepped files and execute (or optionally export) the necessary bash scripts to merge the tables and shapefiles together, output them to a sqlite database, and (optionally) write them to a PostgreSQL database.   
 
-For example, using [this script](https://github.com/BayAreaMetro/DataServices/blob/tomtom-etl-1/TomTom%20Base%20Map/etl/R/merge_tables.R)
+For example, using [this script](https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/R/merge_tables.R)
 
 ## Outcomes
 
