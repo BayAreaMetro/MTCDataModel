@@ -45,23 +45,44 @@ Below we provide examples on how to set the files up. Please feel free to use, a
 
 Copy the files off the disk after mounting it (in MacOS, double click on the ISO file).     
 
-`cp -R /Volumes/mn612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16`. 
+```
+cp -R /Volumes/mn612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
+cp -R /Volumes/lpo612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
+cp -R /Volumes/mnap612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
+```
+
 
 Change permissions to allow file and folder changes in that directory. 
 
-`chmod -R ug+rw ~/Data/tt16`
+```
+chmod -R ug+rw ~/Data/tt16
+chmod -R ug+rw ~/Data/tt16
+chmod -R ug+rw ~/Data/tt16
+```
 
 Move the files all into one directory (our script expects this).  
 
-`mv ~/Data/tt16/mn/usa/*/*.gz ~/Data/tt16/mn/usa`  
+```
+mv ~/Data/tt16/mn/usa/*/*.gz ~/Data/tt16/mn/usa
+mv ~/Data/tt16/lpoi/usa/*/*.gz ~/Data/tt16/lpoi/usa
+mv ~/Data/tt16/mnap/usa/*/*.gz ~/Data/tt16/lpoi/usa
+```
 
 Remove the (now empty) directories  
 
-`rm -rf ax uc*`
+```
+rm -rf ax tt16/mn/uc*
+rm -rf ax tt16/mnap/uc*
+rm -rf ax tt16/lpoi/uc*
+```
 
 Unzip all the files:
 
-`gunzip -r ~/Data/tt16/mn/usa`
+```
+gunzip -r ~/Data/tt16/mn/usa
+gunzip -r ~/Data/tt16/lpoi/usa
+gunzip -r ~/Data/tt16/mnap/usa
+```
 
 ### Merge all the tables and shapefiles from each region together.   
 
