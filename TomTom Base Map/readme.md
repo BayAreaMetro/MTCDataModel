@@ -42,7 +42,7 @@ A list of the tables available in the TomTom data, their type (table, line, poly
 ## Data
 
 ### Desktop Client Usage (E.G. ESRI, R, Python, Javascript)
-- [Spatial Data - File Geodatabase (MTC Staff Only)](https://mtcdrive.box.com/s/qpxt802z2rv0k6fr5v2v3x571y312bqr).
+- [Spatial Data - File Geodatabase (MTC Staff Only)](https://mtcdrive.box.com/s/u8rkmbnnzk2p8hn1knc8ek9e9ycccvxd).
 - [Tables - SQLite3 (MTC Staff Only)](https://mtcdrive.box.com/s/42o3wmgwy4s3r8qav39b1pv4yomhrkhw). 
 
 ### Database Usage:
