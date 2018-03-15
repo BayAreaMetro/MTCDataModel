@@ -35,9 +35,34 @@ In short, the goal below is to provide an overview of every attribute feature th
 
 A comprehensive list of attributes across all tables is available [here](https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/metadata/attributes_by_table.md)
 
+A sample of the table is below:
+
+| Layer                                                                               | Field Name                                                                                                                   | Code | Name                                                       | Type |
+|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------------------|------|
+| A0                                                                                  | MUNIT                                                                                                                        | 1F   | Unit of Measurement                                        | N    |
+| OAO4                                                                                | ATTYP                                                                                                                        | 1G   | Military   Service Branch                                  | C    |
+| LU                                                                                  | CLASS                                                                                                                        | 1H   | Classification                                             | N    |
+| LU                                                                                  | IMPORT                                                                                                                       | 1I   | Park   Importance                                          | N    |
+| LU                                                                                  | CLASS                                                                                                                        | 1J   | Park   Classification                                      | N    |
+| RN                                                                                  | RTEPRIOR                                                                                                                     | 1K   | Route   Number Priority                                    | N    |
+| RD                                                                                  | TMCPATHID                                                                                                                    | 1L   | TMC   Path ID                                              | N    |
+
 ## Tables
 
 A list of the tables available in the TomTom data, their type (table, line, polygon) and the count of features in them is available [here](https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/metadata/2016_multinet.csv):
+
+A sample of this table:
+
+| abbrv | description                    | feature_type | layer_name | feature_count | 
+|-------|--------------------------------|--------------|------------|---------------| 
+| np    | Administrative Place Names     | table        | tt_np      | 1533          | 
+| nw    | Network                        | line         | tt_nw      | 3429674       | 
+| nwea  | Network Extended Attributes    | table        | tt_nwea    | 310774        | 
+| oa01  | Census Tract (U.S. only)       | polygon      | tt_oa01    | 8057          | 
+| oa02  | Census Block Group (U.S. only) | polygon      | tt_oa02    | 23212         | 
+| oa03  | Census Blocks (U.S. only)      | polygon      | tt_oa03    | 697576        | 
+
+
 
 ## Data
 
