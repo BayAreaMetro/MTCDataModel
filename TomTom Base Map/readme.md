@@ -5,9 +5,9 @@
 #### Table of Contents  
 [Main Guide](#Main-Guide)   
 [Detailed Guide](#Detailed-Guide)  
-[Attributes](#Attributes)   
-[Tables](#Tables) 
-[Data](#Data)  
+[Attributes](#Attributes)    
+[Tables](#Tables)  
+[Data](#Data)   
 
 # Main Guide
 
