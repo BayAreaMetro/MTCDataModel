@@ -17,10 +17,22 @@ Data Dictionary and UML Diagrams for Datasets.
 
 #### Transit
 
+[Regional Transit Database](https://github.com/MetropolitanTransportationCommission/RegionalTransitDatabase)   
+Source: Transit Operators (via MTC 511)    
+Input: [Google Transit Feed Specification](https://developers.google.com/transit/gtfs/) Text Files    
+Output: Multiple, Bus Frequency by Geometry    
+Dependencies: ~SQL Server~, Python, R, GDAL
+
 - [Transit Stops]()  
 
 - [Transit Lines]()  
 
 ### Policy
 
+[Housing Permits]()
+- [Permit Geocode]()
 - [Housing Schema](hsngPermitSchema.md) - Schema containing housing permit (feature table and attribute table) and policy information for the region.
+
+[Priority Development Areas]()
+
+
