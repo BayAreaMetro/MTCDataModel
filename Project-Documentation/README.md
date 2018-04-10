@@ -29,10 +29,11 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 
 ### Policy
 
+[Priority Development Areas]()
+
+### Projects
+
 [Housing Permits]()
 - [Permit Geocode]()
 - [Housing Schema](hsngPermitSchema.md) - Schema containing housing permit (feature table and attribute table) and policy information for the region.
-
-[Priority Development Areas]()
-
 
