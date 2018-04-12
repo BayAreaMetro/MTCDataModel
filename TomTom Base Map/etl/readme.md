@@ -14,25 +14,111 @@ Make the source TomTom data accessible to various users at BayAreaMetro.
 
 ## Data Sources
 
-[Tom Tom Dataset (MTC Staff Only)](https://mtcdrive.app.box.com/folder/35509938044)  
+### Environment
 
-## Methodology
+This documentation assumes the user is running MacOS or similar with GDAL 1.11.5 or >.   
 
-Pseudo-script based on [this detailed step by step doc](https://github.com/BayAreaMetro/MTCDataModel/blob/master/TomTom%20Base%20Map/pdfs/Procedures%20for%20Processing%20New%20TomTom%20Basemap%20Data.pdf):
+#### Notes on GDAL Install. 
 
-1. Unzip all the shapefiles in the California Shapefiles DVD at the path 'nam2016_12\shpd\mn\usa\uc3' (this is what worked for 12/2016 data--may need to look into the rest of the paths (other parts of CA). Here's a [list](https://gist.github.com/tombuckley/2648c8fe9a776e2658d03a76769b07c4) of what the cryptic codes at the end of each file mean.  
-2. Unzip all the metadata, which should be all files that end in *.xml.gz  
-3. Create a list of all the shapefiles (df_sp)
-4. Separate out the non-spatial tables (df)
-4a. Review [2015_12 python script](https://github.com/BayAreaMetro/MTCDataModel/blob/master/TomTom%20Base%20Map/etl/2015_12_Processing.py)
-5. Merge df and df_sp (`merge shapefiles.py` and `merge tables.py`)
-6. Clean up files for load into DB (e.g. remove filenames starting with a number)
-7. Make a fileGDB with the shapefiles `RegionalClipForDownload.py`
+We use GDAL because it gracefully handles the types in the DBF files that these data are delivered in.  
 
-## Outcome
+You may already have gdal installed. You can check at the command line with:  
 
-- A FileGDB with TomTom Geometries
+`ogr2ogr --version` 
 
-## Results  
+You should see something like: `GDAL 1.11.5, released 2016/07/01`
 
-links to come   
+If not, we recommend installing GDAL via [homebrew](https://brew.sh/):  
+
+`brew install gdal`
+
+### Download the source data. 
+
+For convenience, these are organized into ISO files here:
+
+- [MultiNet 2016 Source Data (MTC Staff Only)](https://s3-us-west-2.amazonaws.com/tomtomdisks/tomtom_mn_2016_12.iso)    
+- [Local Points of Interest 2016 Source Data (MTC Staff Only)](https://s3-us-west-2.amazonaws.com/tomtomdisks/tomtom_lpoi_2016_12.iso)    
+
+### Set up Files Up For Processing
+
+Below we provide examples on how to set the files up. Please feel free to use, adapt, or use your own preferred method.
+
+Copy the files off the disk after mounting it (in MacOS, double click on the ISO file).     
+
+```
+cp -R /Volumes/mn612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
+cp -R /Volumes/lpo612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
+cp -R /Volumes/mnap612ushd_ca_dvd1/nam2016_12/shpd/. ~/Data/tt16
+```
+
+
+Change permissions to allow file and folder changes in that directory. 
+
+```
+chmod -R ug+rw ~/Data/tt16
+chmod -R ug+rw ~/Data/tt16
+chmod -R ug+rw ~/Data/tt16
+```
+
+Move the files all into one directory (our script expects this).  
+
+```
+mv ~/Data/tt16/mn/usa/*/*.gz ~/Data/tt16/mn/usa
+mv ~/Data/tt16/lpoi/usa/*/*.gz ~/Data/tt16/lpoi/usa
+mv ~/Data/tt16/mnap/usa/*/*.gz ~/Data/tt16/lpoi/usa
+```
+
+Remove the (now empty) directories  
+
+```
+rm -rf ax tt16/mn/uc*
+rm -rf ax tt16/mnap/uc*
+rm -rf ax tt16/lpoi/uc*
+```
+
+Unzip all the files:
+
+```
+gunzip -r ~/Data/tt16/mn/usa
+gunzip -r ~/Data/tt16/lpoi/usa
+gunzip -r ~/Data/tt16/mnap/usa
+```
+
+### Merge all the tables and shapefiles from each region together.   
+
+TomTom delivers the data partitioned by geographic regions that are not relevant to us. Therefore, we merge them all together. 
+
+It might make sense to check whether the geographic partitions cross important boundaries (e.g. cities?) and if so, what happens to the shapes that cross those boundaries.
+
+You can use the following script to scan the directory of prepped files and execute (or optionally export) the necessary bash scripts to merge the tables and shapefiles together, output them to a sqlite database, and (optionally) write them to a PostgreSQL database.   
+
+For example, using [this script](https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/R/merge_tables.R)
+
+## Outcomes
+
+### Multinet 2016. 
+
+#### Feature Counts and Metadata. 
+
+See [here](https://github.com/BayAreaMetro/DataServices/blob/55e08ab3d0bb20df6252a2e48302ccab2850b62a/TomTom%20Base%20Map/etl/metadata/2016_multinet.csv)
+
+#### Data. 
+
+- [Spatial Data - GeoPackage (MTC Staff Only)](https://mtcdrive.box.com/s/u8rkmbnnzk2p8hn1knc8ek9e9ycccvxd). 
+- [Spatial Data - SQL/PGDump (MTC Staff Only)](https://mtcdrive.box.com/s/qpxt802z2rv0k6fr5v2v3x571y312bqr)
+- [Spatial Data - File Geodatabase (MTC Staff Only)](https://mtcdrive.box.com/s/qpxt802z2rv0k6fr5v2v3x571y312bqr).
+- [Tables - SQLite3 (MTC Staff Only)](https://mtcdrive.box.com/s/42o3wmgwy4s3r8qav39b1pv4yomhrkhw). 
+- [Tables - SQL/PGDump (MTC Staff Only)](https://mtcdrive.box.com/s/yn40apz8skg9os09bk49q7b4ld9xpj1a). 
+
+### Local Points of Interest.
+- In Progress. 
+
+### Multinet 2017. 
+
+These are some notes on thinking about the 2017 update. 
+
+One key question is does the 2017 data have a spreadsheet with a list of layers like the one here:
+
+https://github.com/BayAreaMetro/DataServices/blob/master/TomTom%20Base%20Map/etl/R/merge_tables.R#L12-L16
+
+Another is: is the data from 2017 PSQL data?
