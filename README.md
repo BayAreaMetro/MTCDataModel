@@ -3,9 +3,9 @@
 <a href="url"><img src="http://gis.mtc.ca.gov/mtcimages/mtcgisLogo.png" align="top" height="84" width="84" ></a>  
 
 # MTC Data Services
-- [Projects](Project-Documentation/README.md)
+- [Projects](https://bayareametro.github.io/DataServices/Project-Documentation/)
 
-- [Policies and procedures](Best-Practices-Procedures/README.md).
+- [Policies and procedures](https://bayareametro.github.io/DataServices/Best-Practices-Procedures/).
 
 
 
