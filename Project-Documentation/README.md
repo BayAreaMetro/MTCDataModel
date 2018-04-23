@@ -1,10 +1,9 @@
 # Data Services: Project Documentation
 
 ## Contents
-### Enterprise Database Categories
 
 ### TomTom Base Map
-Documents and scripts to create file geodatabases of base map data for California and the San Francisco Bay Region
+Documents and scripts for processing new TomTom Basemap data to create file geodatabases for distribution to Congestion Management Agencies and Transit Agencies in the San Francisco Bay Region.
   - [ETL](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/etl/)  
 Extract Transform Load Scripts and documentation for the Tom Tom Basemap Datasets  
 
