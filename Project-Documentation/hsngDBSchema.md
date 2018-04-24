@@ -17,6 +17,7 @@ The housing database has been designed, for the most part, to place few restrict
 
 
 #### dbo.county
+
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 id | int | No | 
