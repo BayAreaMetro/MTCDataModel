@@ -14,14 +14,14 @@ The housing database has been designed, for the most part, to place few restrict
 
 [dbo.county](#dbocounty)<br/>
 [dbo.jurisdiction](#dbojurisdiction)<br/>
-[dbo.jurisdictionPolicy](#dbojurisdictionPolicy)<br/>
+[dbo.jurisdictionPolicy](#dbojurisdictionpolicy)<br/>
 [dbo.permit](#dbopermit)<br/>
 [dbo.permit_new](#dbopermit_new)<br/>
-[dbo.permitDataDictionary](#dbopermitDataDictionary)<br/>
-[dbo.permitDataDomainValues](#dbopermitDataDomainValues)<br/>
-[dbo.permitFeature](#dbopermitFeature)<br/>
+[dbo.permitDataDictionary](#dbopermitdatadictionary)<br/>
+[dbo.permitDataDomainValues](#dbopermitdatadomainvalues)<br/>
+[dbo.permitFeature](#dbopermitfeature)<br/>
 [dbo.policy](#dbopolicy)<br/>
-[dbo.policyCategory](#dbopolicyCategory)<br/>
+[dbo.policyCategory](#dbopolicycategory)<br/>
 [dbo.rhna_2015-2035](#dborhna_2015-2035)
 
 
