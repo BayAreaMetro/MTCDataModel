@@ -35,5 +35,5 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 [Housing Permits]()
 - [Permit Geocode]()
 - [Housing Database Schema](hsngDBSchema.md) - Schemas for the tables comprising the housing database.
-- [Entity Relation Diagram](https://mtcdrive.box.com/s/z01pzgfoc4eeoiubbatwz9x9okou78b3) - Diagram of views in the housing database.
+- [Entity Relation Diagram](https://mtcdrive.box.com/shared/static/l1wkdbw2lwj6o2gizmvd9ip9zwbsktca.pdf) - Diagram of views in the housing database.
 
