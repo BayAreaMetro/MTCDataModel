@@ -17,7 +17,7 @@ The housing database has been designed, for the most part, to place few restrict
 
 
 #### dbo.county
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 id | int | No | 
@@ -93,7 +93,7 @@ jurisdictionId | int | Yes | Value to query residential building permits by juri
 
 
 #### dbo.permit_new
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 joinid | nvarchar(255) | No | Value to join attributes to mapped permits. 
@@ -131,7 +131,7 @@ jurisdictionId | int | Yes | Value to query residential building permits by juri
 
 
 #### dbo.permitDataDictionary
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 id | int | No | 
@@ -140,7 +140,7 @@ description | nvarchar(500) | Yes |
 
 
 #### dbo.permitDataDomainValues
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 id | int | No | 
@@ -150,7 +150,7 @@ description | nvarchar(500) | Yes |
 
 
 #### dbo.permitFeature
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 OBJECTID | int | No | 
@@ -162,7 +162,7 @@ Shape | geometry | Yes |
 
 
 #### dbo.policy
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 id | int | No | 
@@ -179,7 +179,7 @@ tags | nvarchar(500) | Yes |
 
 
 #### dbo.policyCategory
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 _id | int | No | 
@@ -188,7 +188,7 @@ category | nvarchar(50) | Yes |
 
 
 #### dbo.rhna_2015-2035
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 Jurisdiction Name | nvarchar(255) | Yes | 
