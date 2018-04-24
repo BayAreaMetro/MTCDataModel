@@ -23,7 +23,7 @@ The housing database has been designed, for the most part, to place few restrict
 [dbo.policy](#dbopolicy)<br/>
 [dbo.policyCategory](#dbopolicycategory)<br/>
 [dbo.rhna_2015-2035](#dborhna_2015-2035)
-
+ 
 
 #### dbo.county
   
