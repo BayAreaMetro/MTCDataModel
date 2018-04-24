@@ -17,13 +17,13 @@ The housing database has been designed, for the most part, to place few restrict
 
 
 #### dbo.county
-Column Name | Column Type | Allow Nulls | Definition |
---- | --- | :---: | --- |
-id | int | No | |
-name | nvarchar(50) | Yes | |
-countyId | int | Yes | |
-shape | geometry | Yes | |
-wkt | nvarchar(MAX) | Yes | |
+| Column Name | Column Type | Allow Nulls | Definition |
+| --- | --- | :---: | --- |
+| id | int | No | |
+| name | nvarchar(50) | Yes | |
+| countyId | int | Yes | |
+| shape | geometry | Yes | |
+| wkt | nvarchar(MAX) | Yes | |
 
 
 #### dbo.jurisdiction
