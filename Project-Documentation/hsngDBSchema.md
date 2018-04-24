@@ -28,7 +28,7 @@ wkt | nvarchar(MAX) | Yes |
 
 
 #### dbo.jurisdiction
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 id | int | No | 
@@ -41,7 +41,7 @@ shape | geometry | Yes |
 
 
 #### dbo.jurisdictionPolicy
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 id | int | No | 
@@ -51,7 +51,7 @@ categoryID | int | Yes |
 
 
 #### dbo.permit
-
+  
 Column Name | Column Type | Allow Nulls | Definition 
 --- | --- | :---: | --- 
 joinid | nvarchar(255) | No | Value to join attributes to mapped permits. 
