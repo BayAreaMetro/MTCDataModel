@@ -12,18 +12,18 @@ The housing database has been designed, for the most part, to place few restrict
 
 ## Database Table Schemas
 
-[dbo.county](#dbocounty)<br/>
-[dbo.jurisdiction](#dbojurisdiction)<br/>
-[dbo.jurisdictionPolicy](#dbojurisdictionpolicy)<br/>
-[dbo.permit](#dbopermit)<br/>
-[dbo.permit_new](#dbopermit_new)<br/>
-[dbo.permitDataDictionary](#dbopermitdatadictionary)<br/>
-[dbo.permitDataDomainValues](#dbopermitdatadomainvalues)<br/>
-[dbo.permitFeature](#dbopermitfeature)<br/>
-[dbo.policy](#dbopolicy)<br/>
-[dbo.policyCategory](#dbopolicycategory)<br/>
+[dbo.county](#dbocounty) <br/> 
+[dbo.jurisdiction](#dbojurisdiction) <br/> 
+[dbo.jurisdictionPolicy](#dbojurisdictionpolicy) <br/> 
+[dbo.permit](#dbopermit) <br/> 
+[dbo.permit_new](#dbopermit_new) <br/> 
+[dbo.permitDataDictionary](#dbopermitdatadictionary) <br/> 
+[dbo.permitDataDomainValues](#dbopermitdatadomainvalues) <br/> 
+[dbo.permitFeature](#dbopermitfeature) <br/> 
+[dbo.policy](#dbopolicy) <br/> 
+[dbo.policyCategory](#dbopolicycategory) <br/> 
 [dbo.rhna_2015-2035](#dborhna_2015-2035)
- 
+
 
 #### dbo.county
   
