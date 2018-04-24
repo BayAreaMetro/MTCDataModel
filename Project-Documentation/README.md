@@ -34,6 +34,6 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 
 [Housing Permits]()
 - [Permit Geocode]()
-- [Housing Database Schema](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/hsngDBSchema.md) - Schemas for the tables comprising the housing database.
+- [Housing Database Schema](https://github.com/BayAreaMetro/DataServices/Project-Documentation/hsngDBSchema.md) - Schemas for the tables comprising the housing database.
 - [Entity Relation Diagram](https://bayareametro.github.io/DataServices/Project-Documentation/erd/housingDatabaseERD.pdf) - Diagram of views in the housing database.
 
