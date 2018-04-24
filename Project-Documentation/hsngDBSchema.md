@@ -12,18 +12,18 @@ The housing database has been designed, for the most part, to place few restrict
 
 ## Database Table Schemas
 
-[dbo.county](hsngDBSchemas.md#dbo.county)
+[dbo.county](hsngDBSchemas.md#dbo.county)<br/>
 [dbo.jurisction](hsngDBSchemas.md#dbo.jurisdiction)
 
 
 #### dbo.county
-Column Name | Column Type | Allow Nulls | Definition 
---- | --- | :---: | --- 
-id | int | No | 
-name | nvarchar(50) | Yes | 
-countyId | int | Yes | 
-shape | geometry | Yes | 
-wkt | nvarchar(MAX) | Yes | 
+Column Name | Column Type | Allow Nulls | Definition |
+--- | --- | :---: | --- |
+id | int | No | |
+name | nvarchar(50) | Yes | |
+countyId | int | Yes | |
+shape | geometry | Yes | |
+wkt | nvarchar(MAX) | Yes | |
 
 
 #### dbo.jurisdiction

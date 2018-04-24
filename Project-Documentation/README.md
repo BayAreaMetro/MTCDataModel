@@ -34,5 +34,6 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 
 [Housing Permits]()
 - [Permit Geocode]()
-- [Housing Schema](hsngPermitSchema.md) - Schema containing housing permit (feature table and attribute table) and policy information for the region.
+- [Housing Database Schema](hsngDBSchema.md) - Schemas for the tables comprising the housing database.
+- [Entity Relation Diagram](erd/housingDatabaseERD.pdf) - Diagram of views in the housing database.
 
