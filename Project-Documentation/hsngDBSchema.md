@@ -12,8 +12,8 @@ The housing database has been designed, for the most part, to place few restrict
 
 ## Database Table Schemas
 
-[dbo.county](hsngDBSchemas.md#dbo.county)<br/>
-[dbo.jurisction](hsngDBSchemas.md#dbo.jurisdiction)
+[dbo.county](#dbo.county)<br/>
+[dbo.jurisction](#dbo.jurisdiction)
 
 
 #### dbo.county
