@@ -1,6 +1,9 @@
 # Redshift Database - Greenprint Fishnet
 
-## About the Feature Set
+## Problem Statement
+Blah Blah Blah Blah
+
+## Outcome
 Blah Blah Blah Blah
 
 
