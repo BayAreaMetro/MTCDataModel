@@ -1,10 +1,13 @@
 # Redshift Database - Greenprint Fishnet
 
 ## Problem Statement
-Blah Blah Blah Blah
+The [Bay Area Greenprint tool](https://www.bayareagreenprint.org) can only have one shapefile submitted for analysis at a time by any user. In addition, analysis results from the tool are derived from the complete shapefile so, if there are polygons for multiple projects in a shapefile then the analysis results would be for all the polygons as a single project instead of each, individual polygon/project. This would mean analysis of multiple projects would need to be submitted as individual shapefiles.
+
+Since Data & Visualization has an ongoing need to evaluate projects for potential environmental impact, often for multiple projects at a time, using the Greenprint tool was impractical for its needs. To accomodate its analysis needs the decision was made to download the data used for the Greenprint tool for use by the group.
+
 
 ## Outcome
-Blah Blah Blah Blah
+After downloading the data from Greenprint ([data link](https://www.bayareagreenprint.org/download)), the feature table was converted to CSV and uploaded to Amazon Redshift for use in developing map application for the group to analyse projects in-house.
 
 
 #### Greenprint fishnet table structure
