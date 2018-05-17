@@ -27,7 +27,7 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 - [Transit Lines]()  
 
 ### Policy
-[Greenprint environmental data](redshift/greenprintFishnet.md)
+[Greenprint](https://bayareametro.github.io/DataServices/Project-Documentation/redshift/greenprintFishnet.md) - Table structure for Greenprint table
 [Priority Development Areas]()
 
 ### Projects
