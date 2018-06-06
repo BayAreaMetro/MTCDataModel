@@ -7,7 +7,21 @@
 
 - [Policies and procedures](https://bayareametro.github.io/DataServices/Best-Practices-Procedures/).
 
+- [Data Categories]
+Major Category | Subcategories
+------------ | -------------
+Transportation |    
+Forecast & Modeling | 
+Housing | 
+Administrative Areas | 
+Assessment Information | 
+Demography | 
+Physical | 
+Environmental | 
+Policy | 
+Projects |
 
+- [Data Model]
 
 
 #### Markdown Quickstart Guide
