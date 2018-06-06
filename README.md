@@ -7,7 +7,7 @@
 
 - [Policies and procedures](https://bayareametro.github.io/DataServices/Best-Practices-Procedures/).
 
-- [Data Categories]
+- [Data Categories]  
 Major Category | Subcategories
 ------------ | -------------
 Transportation |    
