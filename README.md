@@ -9,7 +9,7 @@
 
 - [Data Categories]  
 Major Category | Subcategories
------------- | -------------
+------------ | -------------  
 Transportation |    
 Forecast & Modeling | 
 Housing | 
