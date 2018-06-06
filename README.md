@@ -5,24 +5,26 @@
 # MTC Data Services
 - [Projects](https://bayareametro.github.io/DataServices/Project-Documentation/)
 
-- [Policies and procedures](https://bayareametro.github.io/DataServices/Best-Practices-Procedures/).
+- [Policies and procedures](https://bayareametro.github.io/DataServices/Best-Practices-Procedures/)
 
-- [Data Categories]  
-Major Category | Subcategories
------------- | -------------  
-Transportation |    
-Forecast & Modeling | 
-Housing | 
-Administrative Areas | 
-Assessment Information | 
-Demography | 
-Physical | 
-Environmental | 
-Policy | 
-Projects |
+## Data Categories  
 
-- [Data Model]
+Major Category | Subcategories  
+------------   | -------------  
+Transportation |    text  
+Forecast & Modeling | text  
+Housing | text  
+Administrative Areas | text  
+Assessment Information | text  
+Demography | text  
+Physical | text  
+Environmental | text  
+Policy | text  
+Projects | text  
 
+## Data Model  
+
+## Data Tools  
 
 #### Markdown Quickstart Guide
 1. [Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
