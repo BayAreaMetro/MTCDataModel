@@ -37,7 +37,7 @@ These tables now have sortkeys on important join fields, documented below. We've
 
 |table name|description|
 |-----------|--------|
-|`ctp.y2015`|anonymized transactions for year 2015|
+|`y2015`|anonymized transactions for year 2015|
 |`y2016`|anonymized transactions for year 2016|
 |`y2017`|anonymized transactions for year 2017|
 |`locations`|describes the `locationid` columns from transactions|
