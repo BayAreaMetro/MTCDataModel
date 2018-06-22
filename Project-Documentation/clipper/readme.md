@@ -68,43 +68,71 @@ These are meant as examples and the user should check them as neede before use.
 
 ##### operator_id to name
 
+Small query:
 ```
-select ctp.operators.operatorname,
-ctp.y2015.operatorid
-from ctp.y2015 left join
-ctp.operators on
-ctp.y2015.operatorid=ctp.operators.operatorid
+    select
+        ctp.operators.operatorname,
+        cy2015.operatorid 
+    from
+        (select
+            * 
+        from
+            ctp.y2015 limit 10) as cy2015 
+    left join
+        ctp.operators 
+            on cy2015.operatorid=ctp.operators.operatorid
+```
+
+Larger Query:
+```
+    select
+        ctp.operators.operatorname,
+        ctp.y2015.operatorid 
+    from
+        ctp.y2015 
+    left join
+        ctp.operators 
+            on ctp.y2015.operatorid=ctp.operators.operatorid
 ```  
 
 ##### operators (transfers) to name
 
 ```
-select ctp.operators.operatorname as transferoperatorname,
-ctp.y2015.operatorid
-from ctp.y2015 left join
-ctp.operators on
-ctp.y2015.transferoperator=ctp.operators.operatorid
+select
+        ctp.operators.operatorname as transferoperatorname,
+        ctp.y2015.operatorid 
+    from
+        ctp.y2015 
+    left join
+        ctp.operators 
+            on ctp.y2015.transferoperator=ctp.operators.operatorid
 ```
 
 ##### route_id to name
 
 ```
-select ctp.routes.routename,
-ctp.y2015.operatorid
-from ctp.routes left join
-ctp.y2015.operatorid=ctp.routes.operatorid AND 
-ctp.y2015.routeid=ctp.routes.routeid
+select
+        ctp.routes.routename,
+        ctp.y2015.operatorid 
+    from
+        ctp.routes 
+    left join
+        ctp.y2015.operatorid=ctp.routes.operatorid 
+        AND  ctp.y2015.routeid=ctp.routes.routeid
 ```
 
 ##### locations (origins) id to name
 
 ```
-select ctp.locations.locationname,
-ctp.y2015.operatorid
-from ctp.y2015 left join
-ctp.routes ON
-ctp.y2015.originlocation=ctp.locations.locationcode 
-AND ctp.y2015.operatorid=locationsoperatorid
+    select
+        ctp.locations.locationname,
+        ctp.y2015.operatorid 
+    from
+        ctp.y2015 
+    left join
+        ctp.routes 
+            ON ctp.y2015.originlocation=ctp.locations.locationcode  
+            AND ctp.y2015.operatorid=locationsoperatorid
 ```
 
 #### locations (destinations) id to name
