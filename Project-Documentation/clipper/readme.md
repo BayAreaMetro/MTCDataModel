@@ -6,7 +6,7 @@
 	- [`ctp` schema:](#ctp-schema)
 		- [Key Fields](#key-fields)
 			- [Generationtime](#generationtime)
-			- [Join Fields](#join-fields)
+			- [Human-readable names for transactions](#human-readable-names-for-transactions)
 				- [operator_id to name](#operator_id-to-name)
 				- [operators \(transfers\) to name](#operators-transfers-to-name)
 				- [route_id to name](#route_id-to-name)
@@ -37,7 +37,7 @@ These tables now have sortkeys on important join fields, documented below. We've
 
 |table name|description|
 |-----------|--------|
-|`y2015`|anonymized transactions for year 2015|
+|`ctp.y2015`|anonymized transactions for year 2015|
 |`y2016`|anonymized transactions for year 2016|
 |`y2017`|anonymized transactions for year 2017|
 |`locations`|describes the `locationid` columns from transactions|
@@ -48,17 +48,17 @@ These tables now have sortkeys on important join fields, documented below. We've
 
 #### Generationtime
 
-This field is on the transaction tables (e.g. `y2015`). 
+This field is on the transaction tables (e.g. `ctp.y2015`). 
 
 It is the timestamp of the transaction on the transaction tables. 
 
 It is in UTC timezone.
 
-#### Join Fields 
+#### Human-readable names for transactions
 
-Put human-readable names on transactions or summaries of them. 
+The following is a sketch of how to put human-readable names on transactions or summaries of them. 
 
-What follows are pseudocode joins.
+What follows are pseudocode joins in SQL. 
 
 If possible, these joins should happen after a relevant filter on the transactions table, for performance reasons. 
 
@@ -69,48 +69,48 @@ These are meant as examples and the user should check them as neede before use.
 ##### operator_id to name
 
 ```
-select operators.operatorname,
-y2015.operatorid
-from y2015 left join
-operators on
-y2015.operatorid=operators.operatorid
+select ctp.operators.operatorname,
+ctp.y2015.operatorid
+from ctp.y2015 left join
+ctp.operators on
+ctp.y2015.operatorid=ctp.operators.operatorid
 ```  
 
 ##### operators (transfers) to name
 
 ```
-select operators.operatorname as transferoperatorname,
-y2015.operatorid
-from y2015 left join
-operators on
-y2015.transferoperator=operators.operatorid
+select ctp.operators.operatorname as transferoperatorname,
+ctp.y2015.operatorid
+from ctp.y2015 left join
+ctp.operators on
+ctp.y2015.transferoperator=ctp.operators.operatorid
 ```
 
 ##### route_id to name
 
 ```
-select routes.routename,
-y2015.operatorid
-from routes left join
-y2015.operatorid=routes.operatorid AND 
-y2015.routeid=routes.routeid
+select ctp.routes.routename,
+ctp.y2015.operatorid
+from ctp.routes left join
+ctp.y2015.operatorid=ctp.routes.operatorid AND 
+ctp.y2015.routeid=ctp.routes.routeid
 ```
 
 ##### locations (origins) id to name
 
 ```
-select locations.locationname,
-y2015.operatorid
-from y2015 left join
-routes ON
-y2015.originlocation=locations.locationcode 
-AND y2015.operatorid=locationsoperatorid
+select ctp.locations.locationname,
+ctp.y2015.operatorid
+from ctp.y2015 left join
+ctp.routes ON
+ctp.y2015.originlocation=ctp.locations.locationcode 
+AND ctp.y2015.operatorid=locationsoperatorid
 ```
 
 #### locations (destinations) id to name
 
 ```
-y2015.destinationlocation=locations.locationcode 
-AND y2015.operatorid=locations.participantid
+ctp.y2015.destinationlocation=ctp.locations.locationcode 
+AND ctp.y2015.operatorid=ctp.locations.participantid
 ```
 
