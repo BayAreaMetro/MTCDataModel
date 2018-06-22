@@ -1,16 +1,17 @@
 <!-- MarkdownTOC bracket="round" autolink="true"  -->
 
 - [Goal](#goal)
-- [Method](#method)
-- [Outcome](#outcome)
-	- [Tables on the `ctp` schema:](#tables-on-the-ctp-schema)
-	- [Key Fields](#key-fields)
-		- [Generationtime](#generationtime)
-		- [operator_id to name](#operator_id-to-name)
-		- [operators \(transfers\) to name](#operators-transfers-to-name)
-		- [route_id to name](#route_id-to-name)
-		- [locations \(origins\) id to name](#locations-origins-id-to-name)
-		- [locations \(destinations\) id to name](#locations-destinations-id-to-name)
+- [Background](#background)
+- [Tables](#tables)
+	- [`ctp` schema:](#ctp-schema)
+		- [Key Fields](#key-fields)
+			- [Generationtime](#generationtime)
+			- [Join Fields](#join-fields)
+				- [operator_id to name](#operator_id-to-name)
+				- [operators \(transfers\) to name](#operators-transfers-to-name)
+				- [route_id to name](#route_id-to-name)
+				- [locations \(origins\) id to name](#locations-origins-id-to-name)
+			- [locations \(destinations\) id to name](#locations-destinations-id-to-name)
 
 <!-- /MarkdownTOC -->
 
@@ -19,7 +20,7 @@
 
 Document anonymized clipper tables on the datalake. 
 
-# Method
+# Background
 
 The `clipper` schema on the datalake is a large collection of analysis tables from the [usf-practicum](https://github.com/BayAreaMetro/usf-practicum). 
 
@@ -30,9 +31,9 @@ In order to clarify and optimize the table names, usage, and query perfomance fo
 
 These tables now have sortkeys on important join fields, documented below. We've also simplified some column names, with a focus on describing analytical outcomes rather than business transactions. 
 
-# Outcome
+# Tables
 
-## Tables on the `ctp` schema:
+## `ctp` schema:
 
 |table name|description|
 |-----------|--------|
@@ -43,37 +44,73 @@ These tables now have sortkeys on important join fields, documented below. We've
 |`operators`|describes the `operatorid` columns from transactions|
 |`routes`|describes the `routeid` column from transactions|
 
-## Key Fields
+### Key Fields
 
-### Generationtime
+#### Generationtime
 
-This is the timestamp of the transaction on the transaction tables. It is in UTC timezone.
+This field is on the transaciton tables (e.g. `y2015`). 
 
-Key join fields for the transactions table. 
+It is the timestamp of the transaction on the transaction tables. 
 
-Basically, the relationships that give the id's on the anonymized transactions table human-readable names. 
+It is in UTC timezone.
 
-These are pseudocode, so that the user can use them as needed. 
+#### Join Fields 
 
-### operator_id to name
+Put human-readable names on transactions or summaries of them. 
 
-operatorid=operatorid
-    
-### operators (transfers) to name
+What follows are pseudocode joins.
 
-transferoperator=operatorid
+If possible, these joins should happen after a relevant filter on the transactions table, for performance reasons. 
 
-### route_id to name
+The first example is a pseudocode query in SQL, with the rest leaving the user to determine the full queries. These can be combined as needed, and rewritten for another language as needed. 
 
-operatorid=operatorid AND routeid=routeid
-  
-### locations (origins) id to name
+These are meant as examples and the user should check them as neede before use. 
 
-originlocation=locationcode AND operatorid=operatorid
-  
-### locations (destinations) id to name
+##### operator_id to name
 
-destinationlocation=locationcode AND operatorid=participantid
+```
+select operators.operatorname,
+y2015.operatorid
+from y2015 left join
+operators on
+y2015.operatorid=operators.operatorid
+```  
 
+##### operators (transfers) to name
 
+```
+select operators.operatorname as transferoperatorname,
+y2015.operatorid
+from y2015 left join
+operators on
+y2015.transferoperator=operators.operatorid
+```
+
+##### route_id to name
+
+```
+select routes.routename,
+y2015.operatorid
+from routes left join
+y2015.operatorid=routes.operatorid AND 
+y2015.routeid=routes.routeid
+```
+
+##### locations (origins) id to name
+
+```
+select locations.locationname,
+y2015.operatorid
+from y2015 left join
+routes ON
+y2015.originlocation=locations.locationcode 
+AND y2015.operatorid=locationsoperatorid
+```
+
+#### locations (destinations) id to name
+
+```
+y2015.destinationlocation=locations.locationcode 
+AND y2015.operatorid=locations.participantid
+```
 
