@@ -3,15 +3,15 @@
 - [Goal](#goal)
 - [Background](#background)
 - [Tables](#tables)
-	- [`ctp` schema:](#ctp-schema)
-		- [Key Fields](#key-fields)
-			- [Generationtime](#generationtime)
-			- [Human-readable names for transactions](#human-readable-names-for-transactions)
-				- [operator_id to name](#operator_id-to-name)
-				- [operators \(transfers\) to name](#operators-transfers-to-name)
-				- [route_id to name](#route_id-to-name)
-				- [locations \(origins\) id to name](#locations-origins-id-to-name)
-			- [locations \(destinations\) id to name](#locations-destinations-id-to-name)
+    - [`ctp` schema](#ctp-schema)
+        - [Key Fields](#key-fields)
+            - [Generationtime](#generationtime)
+            - [Human-readable names for transactions](#human-readable-names-for-transactions)
+                - [operator_id to name](#operator_id-to-name)
+                - [operators \(transfers\) to name](#operators-transfers-to-name)
+                - [route_id to name](#route_id-to-name)
+                - [locations \(origins\) id to name](#locations-origins-id-to-name)
+            - [locations \(destinations\) id to name](#locations-destinations-id-to-name)
 
 <!-- /MarkdownTOC -->
 
@@ -33,7 +33,9 @@ These tables now have sortkeys on important join fields, documented below. We've
 
 # Tables
 
-## `ctp` schema:
+## `ctp` schema
+
+Here's how the ctp schema is set up: [ctp_schema_setup.sql](ctp_schema_setup.sql). 
 
 |table name|description|
 |-----------|--------|
