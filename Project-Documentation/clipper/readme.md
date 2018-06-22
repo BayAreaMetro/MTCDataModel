@@ -48,7 +48,7 @@ These tables now have sortkeys on important join fields, documented below. We've
 
 #### Generationtime
 
-This field is on the transaciton tables (e.g. `y2015`). 
+This field is on the transaction tables (e.g. `y2015`). 
 
 It is the timestamp of the transaction on the transaction tables. 
 
