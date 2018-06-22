@@ -62,9 +62,9 @@ What follows are pseudocode joins in SQL.
 
 If possible, these joins should happen after a relevant filter on the transactions table, for performance reasons. 
 
-The first example is a pseudocode query in SQL, with the rest leaving the user to determine the full queries. These can be combined as needed, and rewritten for another language as needed. 
+These can be combined as needed.
 
-These are meant as examples and the user should check them as neede before use. 
+These are meant as examples only. The user should check them as needed before use. 
 
 ##### operator_id to name
 
