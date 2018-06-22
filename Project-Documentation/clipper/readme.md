@@ -49,25 +49,31 @@ These tables now have sortkeys on important join fields, documented below. We've
 
 This is the timestamp of the transaction on the transaction tables. It is in UTC timezone.
 
-Key join fields for the transactions table. Basically, the relationships that give the id's on the anonymized transactions table human-readable names. 
+Key join fields for the transactions table. 
+
+Basically, the relationships that give the id's on the anonymized transactions table human-readable names. 
+
+These are pseudocode, so that the user can use them as needed. 
 
 ### operator_id to name
-operators, operatorid=operatorid
+
+operatorid=operatorid
     
 ### operators (transfers) to name
+
 transferoperator=operatorid
 
 ### route_id to name
-operatorid=operatorid,
-routeid=routeid
+
+operatorid=operatorid AND routeid=routeid
   
 ### locations (origins) id to name
-originlocation=locationcode,
-operatorid=operatorid
+
+originlocation=locationcode AND operatorid=operatorid
   
 ### locations (destinations) id to name
-destinationlocation=locationcode
-operatorid=participantid
+
+destinationlocation=locationcode AND operatorid=participantid
 
 
 
