@@ -46,6 +46,8 @@ Here's how the ctp schema is set up: [ctp_schema_setup.sql](ctp_schema_setup.sql
 |`operators`|describes the `operatorid` columns from transactions|
 |`routes`|describes the `routeid` column from transactions|
 
+A rough Entity Relationship Diagram is available [here (staff)](https://mtcdrive.box.com/s/dsz86g3z6qbqb8d1w349oxei9osfz0gy)
+
 ### Key Fields
 
 #### Generationtime
