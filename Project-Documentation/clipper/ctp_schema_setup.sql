@@ -1,28 +1,4 @@
 create schema ctp;
-create table ctp.y2013
-SORTKEY(operatorid,
-        routeid,
-        originlocation, 
-        destinationlocation, 
-        transferoperator,
-        generationtime)
-AS SELECT *
-FROM clipper.sfofaretransaction 
-    WHERE generationtime > '2013-01-01 00:00:00'
-    AND generationtime < '2014-01-01 00:00:00';
-
-create table ctp.y2014
-SORTKEY(operatorid,
-        routeid,
-        originlocation, 
-        destinationlocation, 
-        transferoperator,
-        generationtime)
-AS SELECT *
-FROM clipper.sfofaretransaction 
-    WHERE generationtime > '2014-01-01 00:00:00'
-    AND generationtime < '2015-01-01 00:00:00';
-
 create table ctp.y2015
 SORTKEY(operatorid,
         routeid,
@@ -58,6 +34,7 @@ AS SELECT *
 FROM clipper.sfofaretransaction 
     WHERE generationtime > '2017-01-01 00:00:00'
     AND generationtime < '2018-01-01 00:00:00';
+
 
 create table ctp.operators
 SORTKEY(operatorid)
