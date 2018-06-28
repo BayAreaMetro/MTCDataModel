@@ -39,6 +39,8 @@ Here's how the ctp schema is set up: [ctp_schema_setup.sql](ctp_schema_setup.sql
 
 |table name|description|
 |-----------|--------|
+|`y2013`|anonymized transactions for year 2013|
+|`y2014`|anonymized transactions for year 2014|
 |`y2015`|anonymized transactions for year 2015|
 |`y2016`|anonymized transactions for year 2016|
 |`y2017`|anonymized transactions for year 2017|
