@@ -9,4 +9,3 @@ This section covers content promoted to the Open Data site. The terms data and r
 - Processes
   - [ArcGIS Online to Open Data](process_agol2OpenData.md)
   - [File (Shapefile, Table, PDF, etc.) to Open Data](process_file2OpenData.md)
-  - [Enterprise Database to Open Data](process_edb2OpenData.md)
