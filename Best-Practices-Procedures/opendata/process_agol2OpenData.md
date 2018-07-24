@@ -1,7 +1,5 @@
 ## Promoting Content from ArcGIS Online to the Metropolitan Transportation Commission's Open Data Site
-1. Ensure content meets minimum requirements for publishing content to an external audience.
-    - [General posting requirements](openDataSite.md)
-    - [Metadata requirements](requirements_openDataMetadata.md)
+1. Ensure [metadata](requirements_openDataMetadata.md) meets minimum requirements for publishing content to an external audience.
 2. If publishing a web layer, ensure coordinate reference system is set to WGS84 (EPSG/SRID: 4326)
 3. Tag with appropriate open data category tag - **Note: if content not tagged, content will not be organized by category on open data site**
 
