@@ -2,16 +2,14 @@
 
 - [Goal](#goal)
 - [Background](#background)
-- [Tables](#tables)
-    - [`ctp` schema](#ctp-schema)
-        - [Key Fields](#key-fields)
-            - [Generationtime](#generationtime)
-            - [Human-readable names for transactions](#human-readable-names-for-transactions)
-                - [operator_id to name](#operator_id-to-name)
-                - [operators \(transfers\) to name](#operators-transfers-to-name)
-                - [route_id to name](#route_id-to-name)
-                - [locations \(origins\) id to name](#locations-origins-id-to-name)
-            - [locations \(destinations\) id to name](#locations-destinations-id-to-name)
+    - [Key Fields](#key-fields)
+        - [Generationtime](#generationtime)
+        - [Human-readable names for transactions](#human-readable-names-for-transactions)
+            - [operator_id to name](#operator_id-to-name)
+            - [operators \(transfers\) to name](#operators-transfers-to-name)
+            - [route_id to name](#route_id-to-name)
+            - [locations \(origins\) id to name](#locations-origins-id-to-name)
+        - [locations \(destinations\) id to name](#locations-destinations-id-to-name)
 
 <!-- /MarkdownTOC -->
 
@@ -32,19 +30,6 @@ In order to clarify and optimize the table names, usage, and query perfomance fo
 These tables now have sortkeys on important join fields, documented below. We've also simplified some column names, with a focus on describing analytical outcomes rather than business transactions. 
 
 # Tables
-
-## `ctp` schema
-
-Here's how the ctp schema is set up: [ctp_schema_setup.sql](ctp_schema_setup.sql). 
-
-|table name|description|
-|-----------|--------|
-|`y2015`|anonymized transactions for year 2015|
-|`y2016`|anonymized transactions for year 2016|
-|`y2017`|anonymized transactions for year 2017|
-|`locations`|describes the `locationid` columns from transactions|
-|`operators`|describes the `operatorid` columns from transactions|
-|`routes`|describes the `routeid` column from transactions|
 
 A rough Entity Relationship Diagram is available [here (staff)](https://mtcdrive.box.com/s/dsz86g3z6qbqb8d1w349oxei9osfz0gy)
 
