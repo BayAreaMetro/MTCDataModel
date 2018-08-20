@@ -7,7 +7,7 @@
 
 ### Notes
 
-`contract_operator` has 3 more tuples than `contractprodtypemap` and `contractprodtypemap` has 1 tuple that `contract_operator` doesn't have. 
+`contract_operator` has 3 more tuples than `contractprodtypemap`— however, a query of those tuples on fare transaction data produces no results, meaning that this has no effect on analysis.
 
 ## Goal 
 
