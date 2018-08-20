@@ -31,3 +31,11 @@ The primary goal of this directory is to:
 ## Tables
 
 - [sfofaretransaction](sfofaretransaction.md) - this is the main table of transactions
+- [products](products.md) - this table provides metadata on products that can be joined to transactions  
+
+
+## Attributes
+
+When the attributes of a given table must be understood in more detail for a given analysis, we can track the meaning that particular values take in the context of an analysis below:
+
+
