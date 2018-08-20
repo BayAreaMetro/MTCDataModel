@@ -1,3 +1,14 @@
+## Tables
+
+- contract_operator
+- contractprodtypemap
+- products
+- productcategories
+
+### Notes
+
+`contract_operator` has 3 more tuples than `contractprodtypemap` and `contractprodtypemap` has 1 tuple that `contract_operator` doesn't have. 
+
 ## Goal 
 
 For product string values, this is a very rough draft of those that have a 'less than cash' ticket price. 
