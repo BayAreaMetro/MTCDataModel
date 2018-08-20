@@ -1,7 +1,5 @@
 <!-- MarkdownTOC bracket="round" autolink="true"  -->
 
-- [Goal](#goal)
-- [Goal](#goal-1)
 - [Overview](#overview)
     - [Entity Relationship Diagram](#entity-relationship-diagram)
     - [Tables](#tables)
@@ -12,8 +10,6 @@
 # Goal
 
 Document anonymized clipper tables on the datalake. 
-
-# Goal
 
 One of the key lessons learned from the [usf-practicum](https://github.com/BayAreaMetro/usf-practicum) was that the data lake tables need to be more fully documented in order to ease ad-hoc analytical work on clipper data. 
 
