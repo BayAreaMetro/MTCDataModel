@@ -24,6 +24,8 @@ The primary goal of this directory is to:
 
 ![](clipper_data_store_erd.png)
 
+[Interactive version (PDF format)](https://github.com/BayAreaMetro/DataServices/raw/master/Project-Documentation/clipper/clipper_data_store_erd.pdf)
+
 ## Tables
 
 - [sfofaretransaction](sfofaretransaction.md) - this is the main table of transactions
