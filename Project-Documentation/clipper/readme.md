@@ -24,7 +24,7 @@ The primary goal of this directory is to:
 
 ![](clipper_data_store_erd.png)
 
-[Interactive version (PDF format)](https://github.com/BayAreaMetro/DataServices/raw/master/Project-Documentation/clipper/clipper_data_store_erd.pdf)
+[Interactive version (PDF)](https://github.com/BayAreaMetro/DataServices/raw/master/Project-Documentation/clipper/clipper_data_store_erd.pdf)
 
 ## Tables
 
