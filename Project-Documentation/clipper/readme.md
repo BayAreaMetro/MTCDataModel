@@ -26,7 +26,7 @@ The primary goal of this directory is to:
 
 [Interactive version (PDF)](https://github.com/BayAreaMetro/DataServices/raw/master/Project-Documentation/clipper/clipper_data_store_erd.pdf)
 
-## Tables
+## Key Tables
 
 - [sfofaretransaction](sfofaretransaction.md) - this is the main table of transactions
 - [products](products.md) - this table provides metadata on products that can be joined to transactions  
