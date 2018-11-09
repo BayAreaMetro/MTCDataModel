@@ -2,7 +2,7 @@
 
 - [Overview](#overview)
     - [Entity Relationship Diagram](#entity-relationship-diagram)
-    - [Tables](#tables)
+    - [Tables](#key-tables)
 
 <!-- /MarkdownTOC -->
 
