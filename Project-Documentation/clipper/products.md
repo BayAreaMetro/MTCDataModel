@@ -6,3 +6,5 @@
 | `producttype`                       | Product ID               | 
 | `productcategory`                                     | Maps to `productcategories` table                   | 
 | `description`                                   | Product name               | 
+
+
