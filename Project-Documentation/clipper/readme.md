@@ -2,7 +2,8 @@
 
 - [Overview](#overview)
     - [Entity Relationship Diagram](#entity-relationship-diagram)
-    - [Tables](#key-tables)
+    - [Tables](#tables)
+        - [Key Tables](#key-tables)
 
 <!-- /MarkdownTOC -->
 
@@ -26,14 +27,18 @@ The primary goal of this directory is to:
 
 [Interactive version (PDF)](https://github.com/BayAreaMetro/DataServices/raw/master/Project-Documentation/clipper/clipper_data_store_erd.pdf)
 
-## Key Tables
+## Tables
 
 - [sfofaretransaction](sfofaretransaction.md) - this is the main table of transactions
-- [products](products.md) - this table provides metadata on products that can be joined to transactions  
+
+#### Key Tables 
+
+- [products](https://mtcdrive.box.com/s/g5a95emac8qpcwaaz4cew5nzjpfto268) - this table provides metadata on products that can be joined to transactions  
+- [routes](https://mtcdrive.box.com/s/r95mtasr7f7b4muy4zy1efnvr4sc62y9) - this table provides metadata on routes that can be joined to transactions
+- [participants](https://mtcdrive.box.com/s/rfvfg8groylba24s69s13vn7w3rvu0k7) - this table provides metadata on participants that can be joined to transactions
+- [locations](https://mtcdrive.box.com/s/iyaleoyl4k5ltarce33k6fqb8mgs66hz) - this table provides metadata on locations that can be joined to transactions
 
 
-## Attributes
 
-When the attributes of a given table must be understood in more detail for a given analysis, we can track the meaning that particular values take in the context of an analysis below:
 
 
