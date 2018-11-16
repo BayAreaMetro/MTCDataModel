@@ -23,9 +23,9 @@ The primary goal of this directory is to:
 
 ## Entity Relationship Diagram
 
-![](clipper_data_store_erd.png)
+![](clipper-data-store-erd.png)
 
-[Interactive version (PDF)](https://github.com/BayAreaMetro/DataServices/raw/master/Project-Documentation/clipper/clipper_data_store_erd.pdf)
+[Interactive version (PDF)](https://github.com/BayAreaMetro/DataServices/raw/master/Project-Documentation/clipper/clipper-data-store-erd.pdf)
 
 ## Tables
 
