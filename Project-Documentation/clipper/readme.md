@@ -34,8 +34,10 @@ The primary goal of this directory is to:
 #### Key Tables 
 
 - [products](https://mtcdrive.box.com/s/g5a95emac8qpcwaaz4cew5nzjpfto268) - this table provides metadata on products that can be joined to transactions  
+    - issuer ID corresponds to participants
 - [routes](https://mtcdrive.box.com/s/r95mtasr7f7b4muy4zy1efnvr4sc62y9) - this table provides metadata on routes that can be joined to transactions
 - [participants](https://mtcdrive.box.com/s/rfvfg8groylba24s69s13vn7w3rvu0k7) - this table provides metadata on participants that can be joined to transactions
+    - participants consist of both transit operators and vendors of Clipper  
 - [locations](https://mtcdrive.box.com/s/iyaleoyl4k5ltarce33k6fqb8mgs66hz) - this table provides metadata on locations that can be joined to transactions
 
 
