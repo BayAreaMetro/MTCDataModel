@@ -29,6 +29,8 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 ### Policy
 - [Greenprint](redshift/greenprintFishnet.md) - Table structure for data acquired from Bay Area Greenprint
 - [Priority Development Areas]()
+#### BASIS Datasets
+- [Potential Land Use](basis/plu_readme.md)
 
 ### Projects
 
