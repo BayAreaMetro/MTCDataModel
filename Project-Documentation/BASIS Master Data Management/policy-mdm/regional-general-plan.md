@@ -22,7 +22,7 @@ Currently this view is private and for internal agency viewers exclusively and R
 ## Data Processing
 This data is generated using a combination of sources and methods (mainly ArcGIS Spatial Processing and MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
 
-![Data Processing Model](BASIS Master Data Management/images/dataset-processing.png)
+![Data Processing Model](../images/dataset-processing.png)
 
 The inital data processing was performed on the Top 20 jurisdictions in the region with the largest population.  Digital data was collected from these jurisdictions and processed using ArcGIS and MSSQL Server using a simple point in poly method which assigns land use codes to parcel geometry based upon the location of the polygon centroid of each parcel in relation to the land use polygons contained in the source spatial datasets for these jurisdictions. See the figure below for a high level view of the data processing that was performed. 
 
