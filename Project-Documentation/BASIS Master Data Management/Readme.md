@@ -15,7 +15,8 @@ The following list contains the master data in use for the Bay Area Spatial Info
 - Data Format
 - Unit of Analysis (County, City, Zip, Tract, Block, Parcel, etc.)  
 
-The figure below illustrates the details included in the
+The figure below illustrates the details described above.
+![MDM Detail](images/dataset-detail.png) 
 
 ## The List (by Primary Category)
 The list of all inventoried datasets can be found on the [BASIS Website](http://basis.bayareametro.gov/results)
