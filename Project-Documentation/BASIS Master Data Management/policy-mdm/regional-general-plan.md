@@ -28,4 +28,4 @@ The documentation and metadata details for this data can be viewed here: [Genera
 Note:
 Attribute Definitions can be viewed using the link above.
 
-This data is related to the [Parcel Geometry](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.
+This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.

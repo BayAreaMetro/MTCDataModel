@@ -1,3 +1,5 @@
+-- Draft --
+
 # Data Services: Project Documentation
 
 ## BASIS Master Data Management List
@@ -24,16 +26,23 @@ The figure below illustrates the details described above.
 The list of all inventoried datasets can be found on the [BASIS Website](http://basis.bayareametro.gov/results)
 
 ### Administrative Boundaries
+-- Not Yet Added To Inventory --
+
+### Environment  
+
+#### Tabulation Layers
+- [Greenprint (Click to View)](redshift/greenprintFishnet.md) - Table structure for data acquired from Bay Area Greenprint
+
+[Data Processing Notes (Click to View)](https://www.bayareagreenprint.org/glossary/)
 
 ### Policy
-Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses  
+Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses.  
 
 #### Land Use  
 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Data Processing Notes (Click to View)](policy-mdm/regional-general-plan.md)
- - [Greenprint (Click to View)](redshift/greenprintFishnet.md) - Table structure for data acquired from Bay Area Greenprint
-
+ 
 #### Regional Policy Layers
 - [Priority Development Areas]() -- Not Yet Added To Inventory
 - [Transit Priority Areas]() -- Not Yet Added To Inventory  
