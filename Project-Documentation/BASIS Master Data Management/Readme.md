@@ -34,7 +34,7 @@ The following list contains the master data in use for the Bay Area Spatial Info
 **Policy**: 
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses  
 
-Dataset (Click to View) | Data Processing
---- | ---
- [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) | [View Here](policy-mdm/regional-general-plan.md)
+**Category** | Dataset (Click to View) | Data Processing
+--- | --- | ---
+Policy | [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) | [View Here](policy-mdm/regional-general-plan.md)
 
