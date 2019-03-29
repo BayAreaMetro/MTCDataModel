@@ -27,11 +27,14 @@ The following list contains the master data in use for the Bay Area Spatial Info
 - Data Format
 - Unit of Analysis (County, City, Zip, Tract, Block, Parcel, etc.)
 
+## Data Collection and Inventory List
+
+
 ## The List (by Primary Category)
 **Policy**: 
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses  
 
-Dataset | Subcategory | Description | Documentation
+Dataset | Subcategory | View Data | Data Processing
 --- | --- | --- | ---
- Regional General Plan | Planned Land Use | Land Use Policies designated by local jurisdictions to manage future development and growth within their respective jurisdictions. | [View Here](policy-mdm/regional-general-plan.md)
+ Planning and Zoning 2018 | [BASE PARCEL 2018](https://mtc.data.socrata.com/dataset/BASE-PARCEL-2018/udk3-z2d5) | [View Here](policy-mdm/regional-general-plan.md)
 
