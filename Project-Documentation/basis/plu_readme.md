@@ -1,11 +1,20 @@
-# Documentation
+# Existing, Planned and Zoning Land Use Information for the Nine County San Francisco Bay Area Region
 
 
 ### Define the Problem Statement  
 
+
+
+
+*** Marked for Removal or Rewording ***
+
+***
+
 How do we inform our 9-county regional land use model of the local land use plans?
 
-This land use model feeds into the travel demand model thereby determining levels of transportation infrastructure investment. In order to capture Bay Area land use, MTC has developed a process for accounting for the small-scale decision-making at the jurisdictional level. Thanks to the BASIS (Bay Area Spatial Information System) effort we have been able to collect all 101 Bay Area jurisdiction's current planning documents and spatial datasets. For this particular effort, zoning, general plans, and specific plans were leveraged to determine the current land use for all 2.14 million parcels in the Bay Area region. Not only were we able to determine current land use, we constructed a decision tree to help land use modelers predict land development for various long-range planning scenarios.
+This land use model feeds into the travel demand model thereby determining levels of transportation infrastructure investment. In order to capture Bay Area land use, MTC has developed a process for accounting for the small-scale decision-making at the jurisdictional level. Thanks to the BASIS (Bay Area Spatial Information System) effort we have been able to collect all 101 Bay Area jurisdiction's current planning documents and spatial datasets. For this particular effort, zoning, general plans, and specific plans were leveraged to determine the current land use for all 2.14 million parcels in the Bay Area region. Not only were we able to determine current land use, we constructed a decision tree to help land use modelers predict land development for various long-range planning scenarios. 
+
+***
 
 
 ### Project Management 
@@ -23,7 +32,7 @@ This land use model feeds into the travel demand model thereby determining level
 
 ## Data Sources  
 
-[CalEnviroScreen 3.0 Data 'CES3FINAL_AGOL'](https://mtc.maps.arcgis.com/home/item.html?id=98b9a819a670470c96babc63d6857959)  
+Through the BASIS Data Initiative, staff contacted the top 20 most populated cities in the region to collect land use data in a digital file format for use in assigning local land use categories to a regional parcel dataset managed by the Data & Visualization team at MTC. The local jurisdictions were contacted to provide 
  
 ## Analysis Parameters  
   
