@@ -31,9 +31,8 @@ The list of all inventoried datasets can be found on the [BASIS Website](http://
 ### Environment  
 
 #### Tabulation Layers
-- [Greenprint (Click to View)](redshift/greenprintFishnet.md) - Table structure for data acquired from Bay Area Greenprint
-
-[Data Processing Notes (Click to View)](https://www.bayareagreenprint.org/glossary/)
+- [Greenprint (Click to View)](redshift/greenprintFishnet.md) | [Data Processing Notes (Click to View)](https://www.bayareagreenprint.org/glossary/)
+Table structure for data acquired from Bay Area Greenprint
 
 ### Policy
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses.  
@@ -41,7 +40,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 #### Land Use  
 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
- | [Data Processing Notes (Click to View)](policy-mdm/regional-general-plan.md)
+ | [Data Processing Notes (Click to View)](BASIS Master Data Management/policy-mdm/regional-general-plan.md)
  
 #### Regional Policy Layers
 - [Priority Development Areas]() -- Not Yet Added To Inventory

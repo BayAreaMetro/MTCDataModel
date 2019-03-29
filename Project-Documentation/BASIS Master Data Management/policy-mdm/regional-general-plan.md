@@ -8,7 +8,7 @@ Land Use Policies designated by local jurisdictions to manage future development
 Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
 
 ## Data Collection
-This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  A Document inventory was developed to track key infomration important for processing this data.
+This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  A Document inventory was developed to track key information collected and used to process this data for regional modeling and policy based uses.
 
 ### Regional General Plan Zoning Document Inventory
 This dataset is used to manage the collection of key documents used in the preparation of the Planning and Zoning 2018 dataset.  [Click Here to View the Inventory](https://mtc.data.socrata.com/dataset/Regional_General_Plan_Zoning_Document_Inventory/akeh-uvij). Currently this view is private and for internal agency viewers exclusively and Requires Socrata Login Credentials to view.  Contact a DataViz Team Member Should you require access to this inventory list.  This list is also available to authenticated users of the BASIS System (Will be enabled soon). 
