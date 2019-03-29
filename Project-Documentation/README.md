@@ -27,7 +27,7 @@ The list of all inventoried datasets can be found on the [BASIS Website](http://
 
 ### Cadastral
 
-- [Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g)
+- [Parcels 2018 (Click to View)](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Data Processing Notes (Click to View)]()
 - [Parcels 2015]() -- Not Yet Added To Inventory
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
@@ -36,8 +36,8 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 #### Land Use  
 
-- [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
- | [Data Processing Notes](policy-mdm/regional-general-plan.md)
+- [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
+ | [Data Processing Notes (Click to View)](policy-mdm/regional-general-plan.md)
 
 ### Transportation
 
