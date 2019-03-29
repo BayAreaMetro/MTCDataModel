@@ -40,7 +40,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 #### Land Use  
 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
- | [Data Processing Notes](mdm/policy-mdm/regional-general-plan.md)
+ | [Data Processing Notes (Click to View)](mdm/policy-mdm/regional-general-plan.md)
  
 #### Regional Policy Layers
 - [Priority Development Areas]() -- Not Yet Added To Inventory
