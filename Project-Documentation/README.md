@@ -25,12 +25,6 @@ The list of all inventoried datasets can be found on the [BASIS Website](http://
 
 ### Administrative Boundaries
 
-### Cadastral
-
-- [Parcels 2018 (Click to View)](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Data Processing Notes (Click to View)]()
-- [Parcels 2015]() -- Not Yet Added To Inventory
-- [Parcels 2010]() -- Not Yet Added To Inventory
-
 ### Policy
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses  
 
@@ -38,8 +32,26 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Data Processing Notes (Click to View)](policy-mdm/regional-general-plan.md)
+ - [Greenprint (Click to View)](redshift/greenprintFishnet.md) - Table structure for data acquired from Bay Area Greenprint
+
+#### Regional Policy Layers
+- [Priority Development Areas]() -- Not Yet Added To Inventory
+- [Transit Priority Areas]() -- Not Yet Added To Inventory  
+
+### Land & People
+Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
+
+#### Cadastral
+
+- [Parcels 2018 (Click to View)](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Data Processing Notes (Click to View)]()
+- [Parcels 2015]() -- Not Yet Added To Inventory
+- [Parcels 2010]() -- Not Yet Added To Inventory
+
+#### Housing
+- [Residential Permits]() -- Not Yet Added To Inventory  
 
 ### Transportation
+Includes data that depicts and describes the region's Transportation Systems
 
 #### Transit
 
@@ -49,15 +61,13 @@ Input: [Google Transit Feed Specification](https://developers.google.com/transit
 Output: Multiple, Bus Frequency by Geometry    
 Dependencies: ~SQL Server~, Python, R, GDAL
 
-- [Transit Stops]()  
-
-- [Transit Lines]()  
+- [Transit Stops]() -- Not Yet Added To Inventory  
+- [Transit Lines]() -- Not Yet Added To Inventory  
 
 ### Policy
-- [Greenprint](redshift/greenprintFishnet.md) - Table structure for data acquired from Bay Area Greenprint
-- [Priority Development Areas]()
+
 - [Regional Land Uses](BASIS Master Data Management/readme.md)
-- [Permit Geocode]()  
+
 
 Note: Add the following sections to the data processing details for the residential housing permits data  
 
