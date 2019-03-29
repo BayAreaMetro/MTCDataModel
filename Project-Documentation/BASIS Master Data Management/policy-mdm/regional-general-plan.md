@@ -16,7 +16,11 @@ This dataset is used to manage the collection of key documents used in the prepa
 [Data Lens - Read Only](https://mtc.data.socrata.com/view/dwzg-k3ei)
 
 ## Data Processing
-This data is generated using a combination of sources and methods.  The inital capture for the top 20 jurisdictions in the region with the largest population was processed using digital data collected from these jurisdictions.  Spatial processing was performed on this data using a simple point in poly method which assigns land use codes to parcel geometry based upon the location of the polygon centroid of each parcel in relation to the land use polygons contained in the source spatial datasets for these jurisdictions.  
+This data is generated using a combination of sources and methods (mainly ArcGIS Spatial Processing and MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
+
+![Data Processing Model](images/dataset-processing.png)
+
+The inital data processing was performed on the top 20 jurisdictions in the region with the largest population.  Digital data was collected from these jurisdictions and processed using ArcGIS and MSSQL Server using a simple point in poly method which assigns land use codes to parcel geometry based upon the location of the polygon centroid of each parcel in relation to the land use polygons contained in the source spatial datasets for these jurisdictions. See the figure below for a high level view of the data processing that was performed. 
 
 ## Data Model and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5)
