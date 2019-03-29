@@ -23,8 +23,18 @@ The figure below illustrates the details described above.
 ## The List (by Primary Category)
 The list of all inventoried datasets can be found on the [BASIS Website](http://basis.bayareametro.gov/results)
 
+### Administrative Boundaries
+
+### Cadastral
+
+- [Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g)
+- [Parcels 2015]() -- Not Yet Added To Inventory
+- [Parcels 2010]() -- Not Yet Added To Inventory
+
 ### Policy
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses  
+
+#### Land Use  
 
 - [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Data Processing Notes](policy-mdm/regional-general-plan.md)
