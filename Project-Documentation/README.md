@@ -3,7 +3,9 @@
 # Data Services: Project Documentation
 
 ## BASIS Master Data Management List
-The following list contains the master data in use for the Bay Area Spatial Information System platform.  These datasets support all or part of MTC's Analytical Services, and drive decision making and policy development across the agency.  The data is grouped into five primary categories, and includes the following descriptive attributes:  
+The following list contains the master data in use for the Bay Area Spatial Information System platform.  These datasets support all or part of MTC's Analytical Services, and drive decision making and policy development across the agency.  The data is managed by the Data & Visualizatoin Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud DaaS Platform (SCGC).  
+
+The data is grouped into five primary categories, and includes the following descriptive attributes:  
 
 - Data Set Name
 - Description
@@ -12,7 +14,7 @@ The following list contains the master data in use for the Bay Area Spatial Info
 - Date Added to MDM Inventory
 - Update Frequency
 - Date Last Published for Open use
-- Publishing Status ()
+- Publishing Status
 - Sharing Permissions (Private/ Internal, Public/ External)
 - Category (Policy, Transportation, Land & People, Administrative Boundaries, Environment)
 - Subcategory
@@ -22,11 +24,12 @@ The following list contains the master data in use for the Bay Area Spatial Info
 The figure below illustrates the details described above.
 ![MDM Detail](images/dataset-detail.png) 
 
-## The List (by Primary Category)
-The list of all inventoried datasets can be found on the [BASIS Website](http://basis.bayareametro.gov/results)
+This list contains all of the inventoried datasets as found on the [BASIS Website](http://basis.bayareametro.gov/results)
 
 ### Administrative Boundaries
 -- Not Yet Added To Inventory --
+- [LAFCO SOI Boundaries](). --Not Yet Added to Inventory
+- [Jurisdiction Boundaries](). --Not Yet Added to Inventory
 
 ### Environment  
 
@@ -43,8 +46,9 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
  | [Data Processing Notes (Click to View)](mdm/policy-mdm/regional-general-plan.md)
  
 #### Regional Policy Layers
-- [Priority Development Areas]() -- Not Yet Added To Inventory
-- [Transit Priority Areas]() -- Not Yet Added To Inventory  
+- [Priority Development Areas (Parcel Based)]() -- Not Yet Added To Inventory
+- [Transit Priority Areas (Parcel Based)]() -- Not Yet Added To Inventory  
+- [Urban Limit Lines and Growth Management Areas (Parcel Based)](). --Not Yet Added to Inventory
 
 ### Land & People
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
@@ -82,7 +86,7 @@ Note: Add the following sections to the data processing details for the resident
 - [Housing Database Schema](hsngDBSchema.md) - Schemas for the tables comprising the housing database.
 - [Entity Relation Diagram](https://bayareametro.github.io/DataServices/Project-Documentation/erd/housingDatabaseERD.pdf) - Diagram of views in the housing database.
 
-### TomTom Base Map
+### Base Map (Tom Tom North America)
 Documents and scripts for processing new TomTom Basemap data to create file geodatabases for distribution to Congestion Management Agencies and Transit Agencies in the San Francisco Bay Region.
   - [ETL](https://bayareametro.github.io/DataServices/TomTom%20Base%20Map/etl/)  
 Extract Transform Load Scripts and documentation for the Tom Tom Basemap Datasets  
