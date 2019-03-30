@@ -1,9 +1,9 @@
 -- Draft --
 
-# Data Services: Project Documentation
+# Data Services
 
 ## BASIS Master Data Management List
-The following list contains the master data in use for the Bay Area Spatial Information System platform.  These datasets support all or part of MTC's Analytical Services, and drive decision making and policy development across the agency.  The data is managed by the Data & Visualizatoin Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud DaaS Platform (SCGC).  
+The following list contains the master data in use for the Bay Area Spatial Information System platform.  These datasets support all or part of MTC's Analytical Services, and drive decision making and policy development across the agency.  The data is managed by the Data & Visualization Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud Data as a Service (DaaS) Platform.  
 
 The data is grouped into five primary categories, and includes the following descriptive attributes:  
 
