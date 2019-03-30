@@ -2,7 +2,7 @@
 
 # Data Services
 
-## BASIS Master Data Management List
+## BASIS Master Data Management (MDM) Data Store
 The following list contains the master data in use for the Bay Area Spatial Information System platform.  These datasets support all or part of MTC's Analytical Services, and drive decision making and policy development across the agency.  The data is managed by the Data & Visualization Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud Data as a Service (DaaS) Platform.  
 
 The data is grouped into five primary categories, and includes the following descriptive attributes:  
@@ -24,7 +24,7 @@ The data is grouped into five primary categories, and includes the following des
 The figure below illustrates the details described above.
 ![MDM Detail](images/dataset-detail.png) 
 
-This list contains all of the inventoried datasets as found on the [BASIS Website](http://basis.bayareametro.gov/results)
+This list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
 ### Administrative Boundaries
 -- Not Yet Added To Inventory --
