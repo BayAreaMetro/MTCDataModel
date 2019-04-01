@@ -40,11 +40,18 @@ Table structure for data acquired from Bay Area Greenprint
 ### Policy
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses.  
 
-#### Land Use  
+#### POTENTIAL LAND USES
+Defintion Required
+
+#### Planned Land Uses
+
+#### Zoning
 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Data Processing Notes (Click to View)](mdm/policy-mdm/regional-general-plan.md)
  
+
+
 #### Regional Policy Layers
 - [Priority Development Areas (Parcel Based)]() -- Not Yet Added To Inventory
 - [Transit Priority Areas (Parcel Based)]() -- Not Yet Added To Inventory  
