@@ -33,7 +33,7 @@ Figure 2. Land Use Data Processing Steps
 ## Data Model and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5)
 
-Figure 3. General Plan and ZOning Entity Relationship Diagram
+Figure 3. General Plan and Zoning Entity Relationship Diagram
 
 
 
