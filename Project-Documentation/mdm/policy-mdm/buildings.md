@@ -1,7 +1,7 @@
 # Buildings
 
 ## Description
-text here
+The parcel/building data includes the unique parcel identifier (APN) as well as attributes about the parcel (county, land value, if the parcel can’t be developed) and buildings (year assessed, square feet, number of stories, if the building is historic). Includes Historic and Commercial Bldgs. (basis)
 
 ## Purpose and Use  
 Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
