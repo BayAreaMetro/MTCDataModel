@@ -30,6 +30,8 @@ This list contains key datasets listed on the [BASIS Website](http://basis.bayar
 -- Not Yet Added To Inventory --
 - [LAFCO SOI Boundaries](). --Not Yet Added to Inventory
 - [Jurisdiction Boundaries](). --Not Yet Added to Inventory
+- [Urban Service Areas](). --Not Yet Added to Inventory
+
 
 ### Environment  
 
@@ -40,25 +42,45 @@ Table structure for data acquired from Bay Area Greenprint
 ### Policy
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses.  
 
-#### POTENTIAL LAND USES
-Defintion Required
+**Growth Management Boundaries and Policies**
 
-#### Planned Land Uses
+- [Urban Growth Boundaries](). --Not Yet Added to Inventory
+- [Urban Limit Lines and Growth Management Areas (Parcel Based)](). --Not Yet Added to Inventory
+- [Urban Limit Lines](). --Not Yet Added to Inventory
 
-#### Zoning
+**Land Uses**
 
+#### Potential Land Use - UrbanSim Team to Finalize Name and Document Processing Steps
+Defintion Required - Here is what I know so far: [UrbanSim Petrale Docs](https://github.com/BayAreaMetro/petrale/tree/master/policies)
+
+#### Existing (From Assessor Parcels) - DataViz to document
+
+#### General Plan/ Zoning (From Local Jurisdictions) 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Data Processing Notes (Click to View)](mdm/policy-mdm/regional-general-plan.md)
  
 
-
 #### Regional Policy Layers
 - [Priority Development Areas (Parcel Based)]() -- Not Yet Added To Inventory
 - [Transit Priority Areas (Parcel Based)]() -- Not Yet Added To Inventory  
-- [Urban Limit Lines and Growth Management Areas (Parcel Based)](). --Not Yet Added to Inventory
+
 
 ### Land & People
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
+
+Each of the following Datsets are related to the Assessor Parcel Records (Parcels 2018):  
+- [Buildings]() -- Not Yet Added To Inventory
+- [Deed Restricted Units]() -- Not Yet Added To Inventory
+- [Development Pipeline]() -- Not Yet Added To Inventory
+- [Institutions]() -- Not Yet Added To Inventory
+- [Landmarks]() -- Not Yet Added To Inventory
+- [Nondevelopment Sites]() -- Not Yet Added To Inventory
+
+
+
+
+
+
 
 #### Cadastral
 
