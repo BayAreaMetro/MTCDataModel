@@ -20,7 +20,7 @@ The data is grouped into five primary categories, and includes the following des
 - Unit of Analysis (County, City, Zip, Tract, Block, Parcel, etc.)  
 
 The figure below illustrates the details described above.
-![MDM Detail](images/dataset-detail.png) 
+![MDM Detail](../images/dataset-detail.png) 
 
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
@@ -48,13 +48,13 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 **Land Uses**
 
 #### Potential Land Use (UrbanSim Team to Finalize Name and Document Processing Steps)
-- [Zoning Lookup]() | [Data Processing Notes (Click to View)](mdm/policy-mdm/plu.md) -- Not Yet Added to Inventory
+- [Zoning Lookup]() | [Data Processing Notes (Click to View)](policy-mdm/plu.md) -- Not Yet Added to Inventory
 
 #### Existing (From Assessor Parcels/ DataViz to Document)
 
 #### General Plan/ Zoning (From Local Jurisdictions) 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
- | [Data Processing Notes (Click to View)](mdm/policy-mdm/regional-general-plan.md)
+ | [Data Processing Notes (Click to View)](policy-mdm/regional-general-plan.md)
  
 
 #### Regional Policy Layers
@@ -87,7 +87,7 @@ Includes data that depicts and describes the region's Transportation Systems
 
 #### Transit
 
-[Regional Transit Database](https://github.com/MetropolitanTransportationCommission/RegionalTransitDatabase)   
+[Regional Transit Database](https://github.com/bayareametro/RegionalTransitDatabase)   
 Source: Transit Operators (via MTC 511)    
 Input: [Google Transit Feed Specification](https://developers.google.com/transit/gtfs/) Text Files    
 Output: Multiple, Bus Frequency by Geometry    
@@ -103,5 +103,5 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 
 Note: Add the following sections to the data processing details for the residential housing permits data  
 
-- [Housing Database Schema](hsngDBSchema.md) - Schemas for the tables comprising the housing database.
+- [Housing Database Schema](../hsngDBSchema.md) - Schemas for the tables comprising the housing database.
 - [Entity Relation Diagram](https://bayareametro.github.io/DataServices/Project-Documentation/erd/housingDatabaseERD.pdf) - Diagram of views in the housing database.
