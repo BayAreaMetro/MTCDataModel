@@ -3,7 +3,7 @@
 # Data Services
 
 ## BASIS Master Data Management (MDM) Data Store
-The following list contains the master data in use for the Bay Area Spatial Information System platform.  These datasets support all or part of MTC's Analytical Services, and drive decision making and policy development across the agency.  The data is managed by the Data & Visualization Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud Data as a Service (DaaS) Platform.  
+The following list identifies data that has been collected for the Bay Area Spatial Information System platform.  These datasets support MTC's Analytical Services and Long Range Planning efforts and drive decision making and policy development across the agency.  The data is managed by the Data & Visualization Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud Data as a Service (DaaS) Platform.  
 
 The data is grouped into five primary categories, and includes the following descriptive attributes:  
 
@@ -28,9 +28,9 @@ This list contains key datasets listed on the [BASIS Website](http://basis.bayar
 
 ### Administrative Boundaries
 -- Not Yet Added To Inventory --
-- [LAFCO SOI Boundaries](). --Not Yet Added to Inventory
-- [Jurisdiction Boundaries](). --Not Yet Added to Inventory
-- [Urban Service Areas](). --Not Yet Added to Inventory
+- [LAFCO SOI Boundaries](). -- Not Yet Added to Inventory
+- [Jurisdiction Boundaries](). -- Not Yet Added to Inventory
+- [Urban Service Areas](). -- Not Yet Added to Inventory
 
 
 ### Environment  
@@ -44,14 +44,14 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 **Growth Management Boundaries and Policies**
 
-- [Urban Growth Boundaries](). --Not Yet Added to Inventory
-- [Urban Limit Lines and Growth Management Areas (Parcel Based)](). --Not Yet Added to Inventory
-- [Urban Limit Lines](). --Not Yet Added to Inventory
+- [Urban Growth Boundaries](). -- Not Yet Added to Inventory
+- [Urban Limit Lines and Growth Management Areas (Parcel Based)](). -- Not Yet Added to Inventory
+- [Urban Limit Lines](). -- Not Yet Added to Inventory
 
 **Land Uses**
 
 #### Potential Land Use (UrbanSim Team to Finalize Name and Document Processing Steps)
-- [Zoning Lookup]() | [Data Processing Notes (Click to View)](mdm/policy-mdm/plu.md)- Not Yet Added to Inventory
+- [Zoning Lookup]() | [Data Processing Notes (Click to View)](mdm/policy-mdm/plu.md) -- Not Yet Added to Inventory
 
 #### Existing (From Assessor Parcels/ DataViz to Document)
 
