@@ -3,10 +3,12 @@
 Note:  
 Please add any additional sections as required.  
 
-# Potential Land Use  
+# Potential Land Use OR ZONING LOOKUP??
 
 ## Description (UrbanSim Team to Define)  
-Add Description here...  
+Add Description here...
+
+Defintion or Description of Dataset is Required - Here is what I know so far: [UrbanSim Petrale Docs](https://github.com/BayAreaMetro/petrale/tree/master/policies)
 
 ## Purpose and Use (UrbanSim Team to Define)   
 Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research. (Expand, document as needed)
