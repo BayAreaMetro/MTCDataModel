@@ -22,22 +22,22 @@ Currently this view is private and for internal agency viewers exclusively and R
 ## Data Processing
 This data is generated using a combination of sources and methods (mainly ArcGIS Spatial Processing and MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
 
-Figure 1. BASIS Data Processing Overview
+**Figure 1. BASIS Data Processing Overview**
 ![Data Processing Model](images/dataset-processing.png)
 
 The inital data processing was performed on the Top 20 jurisdictions in the region with the largest population.  Digital data was collected from these jurisdictions and processed using ArcGIS and MSSQL Server using a simple point in poly method which assigns land use codes to parcel geometry based upon the location of the polygon centroid of each parcel in relation to the land use polygons contained in the source spatial datasets for these jurisdictions. See the figure below for a high level view of the data processing that was performed. 
 
-Figure 2. Land Use Data Processing Steps
+**Figure 2. Data Processing Steps**
 ![Data Processing Model](images/gp-zn-data-modeling.png)
 
 ## Entity Relationship Diagram and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5)
 
-Figure 3. General Plan and Zoning Entity Relationship Diagram
+**Figure 3. Entity Relationship Diagram**
 ![Land Use Data Model](images/Land-Use-Data-ERD.png)
 Click [Here](https://www.lucidchart.com/documents/view/1fe3f1ba-8879-428e-8eb6-66157baf78b7/1) for interactive versions of Figures 2 and 3.
 
-Note:
+**Note**:
 Attribute Definitions can be viewed [Here](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5).
 
 This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.
