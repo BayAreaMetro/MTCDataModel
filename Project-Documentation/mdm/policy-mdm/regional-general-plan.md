@@ -11,7 +11,7 @@ Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
 This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  A Document inventory was developed to track key information collected and used to process this data for regional modeling and policy based uses.
 
 ### Regional General Plan and Zoning Document Inventory
-This dataset is used to manage the collection of key documents used in the preparation of the Planning and Zoning 2018 dataset.  
+This dataset is used to manage the collection of key documents used in the preparation of the Planning and Zoning 2018 dataset. It contains key information used to develop the Regional General Plan and Zoning Datasets such as source documents, maps and links to jurisdiction general plan and zoning documents. 
 
 [Click Here to View the Inventory](https://mtc.data.socrata.com/dataset/Regional_General_Plan_Zoning_Document_Inventory/akeh-uvij). 
 
