@@ -35,9 +35,9 @@ The documentation and metadata details for this data can be viewed here: [Genera
 
 Figure 3. General Plan and Zoning Entity Relationship Diagram
 ![Land Use Data Model](images/Land-Use-Data-ERD.png)
-Click [Here](https://www.lucidchart.com/documents/view/1fe3f1ba-8879-428e-8eb6-66157baf78b7/1) for interactive versions of Figures 1 and 2.
+Click [Here](https://www.lucidchart.com/documents/view/1fe3f1ba-8879-428e-8eb6-66157baf78b7/1) for interactive versions of Figures 2 and 3.
 
 Note:
-Attribute Definitions can be viewed using the link above.
+Attribute Definitions can be viewed [Here](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5).
 
 This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.
