@@ -3,9 +3,9 @@
 <a href="url"><img src="http://gis.mtc.ca.gov/mtcimages/mtcgisLogo.png" align="top" height="84" width="84" ></a>  
 
 # MTC Data Services
-- [Projects](https://bayareametro.github.io/DataServices/Project-Documentation/)
+- [Projects](/Project-Documentation/)
 
-- [Policies and procedures](https://bayareametro.github.io/DataServices/Best-Practices-Procedures/)  
+- [Policies and procedures](/Best-Practices-Procedures/)  
 
 #### Markdown Quickstart Guide
 1. [Check out this MarkDown Cheatsheet to get started](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
