@@ -55,7 +55,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 Defintion Required - Here is what I know so far: [UrbanSim Petrale Docs](https://github.com/BayAreaMetro/petrale/tree/master/policies)
 
-#### Existing (From Assessor Parcels) (DataViz to Document)
+#### Existing (From Assessor Parcels/ DataViz to Document)
 
 #### General Plan/ Zoning (From Local Jurisdictions) 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
@@ -70,7 +70,7 @@ Defintion Required - Here is what I know so far: [UrbanSim Petrale Docs](https:/
 ### Land & People
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
 
-Each of the following Datsets are related to the Assessor Parcel Records (Parcels 2018):  
+Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
 - [Buildings]() -- Not Yet Added To Inventory
 - [Deed Restricted Units]() -- Not Yet Added To Inventory
 - [Development Pipeline]() -- Not Yet Added To Inventory
