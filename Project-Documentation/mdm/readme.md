@@ -20,7 +20,7 @@ The data is grouped into five primary categories, and includes the following des
 - Unit of Analysis (County, City, Zip, Tract, Block, Parcel, etc.)  
 
 The figure below illustrates the details described above.
-![MDM Detail](images/dataset-detail.png) 
+![MDM Detail](../images/dataset-detail.png) 
 
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
