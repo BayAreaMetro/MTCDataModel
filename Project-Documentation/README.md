@@ -50,10 +50,12 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 **Land Uses**
 
-#### Potential Land Use - UrbanSim Team to Finalize Name and Document Processing Steps
+#### Potential Land Use (UrbanSim Team to Finalize Name and Document Processing Steps)
+- [Zoning Lookup]() | [Data Processing Notes (Click to View)](mdm/policy-mdm/plu.md)- Not Yet Added to Inventory
+
 Defintion Required - Here is what I know so far: [UrbanSim Petrale Docs](https://github.com/BayAreaMetro/petrale/tree/master/policies)
 
-#### Existing (From Assessor Parcels) - DataViz to document
+#### Existing (From Assessor Parcels) (DataViz to Document)
 
 #### General Plan/ Zoning (From Local Jurisdictions) 
 - [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
@@ -75,12 +77,6 @@ Each of the following Datsets are related to the Assessor Parcel Records (Parcel
 - [Institutions]() -- Not Yet Added To Inventory
 - [Landmarks]() -- Not Yet Added To Inventory
 - [Nondevelopment Sites]() -- Not Yet Added To Inventory
-
-
-
-
-
-
 
 #### Cadastral
 
