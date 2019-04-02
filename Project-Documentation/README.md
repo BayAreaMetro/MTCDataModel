@@ -53,8 +53,6 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 #### Potential Land Use (UrbanSim Team to Finalize Name and Document Processing Steps)
 - [Zoning Lookup]() | [Data Processing Notes (Click to View)](mdm/policy-mdm/plu.md)- Not Yet Added to Inventory
 
-Defintion Required - Here is what I know so far: [UrbanSim Petrale Docs](https://github.com/BayAreaMetro/petrale/tree/master/policies)
-
 #### Existing (From Assessor Parcels/ DataViz to Document)
 
 #### General Plan/ Zoning (From Local Jurisdictions) 
