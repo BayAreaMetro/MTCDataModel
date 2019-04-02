@@ -24,14 +24,13 @@ The data is grouped into five primary categories, and includes the following des
 The figure below illustrates the details described above.
 ![MDM Detail](images/dataset-detail.png) 
 
-This list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
+The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
 ### Administrative Boundaries
 -- Not Yet Added To Inventory --
 - [LAFCO SOI Boundaries](). -- Not Yet Added to Inventory
 - [Jurisdiction Boundaries](). -- Not Yet Added to Inventory
 - [Urban Service Areas](). -- Not Yet Added to Inventory
-
 
 ### Environment  
 
@@ -44,9 +43,9 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 **Growth Management Boundaries and Policies**
 
-- [Urban Growth Boundaries](). -- Not Yet Added to Inventory
-- [Urban Limit Lines and Growth Management Areas (Parcel Based)](). -- Not Yet Added to Inventory
-- [Urban Limit Lines](). -- Not Yet Added to Inventory
+- [Urban Growth Boundaries]() -- Not Yet Added to Inventory
+- [Urban Limit Lines and Growth Management Areas (Parcel Based)]() -- Not Yet Added to Inventory
+- [Urban Limit Lines]() -- Not Yet Added to Inventory
 
 **Land Uses**
 
