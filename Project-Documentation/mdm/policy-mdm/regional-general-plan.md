@@ -30,7 +30,7 @@ The inital data processing was performed on the Top 20 jurisdictions in the regi
 Figure 2. Land Use Data Processing Steps
 ![Data Processing Model](images/gp-zn-data-modeling.png)
 
-## Data Model and Attribute Definitions
+## Entity Relationship Diagram and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5)
 
 Figure 3. General Plan and Zoning Entity Relationship Diagram
