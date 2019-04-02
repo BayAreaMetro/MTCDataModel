@@ -17,6 +17,6 @@ This data was compiled using local information collected from each of the 109 ju
 ## Data Processing (UrbanSim Team to Define)  
 
 ## Entity Relationship Diagram and Attribute Definitions (DataViz Team Will Produce)  
-The documentation and metadata details for this data can be viewed here: [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5)  
+The documentation and metadata details for this data can be viewed here: [Insert Dataset Name Here]()  
 
 ### Related Works (DataViz Team Will Produce)
