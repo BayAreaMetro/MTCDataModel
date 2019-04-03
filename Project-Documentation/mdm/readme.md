@@ -4,23 +4,13 @@
 The following list identifies data that has been collected for the Bay Area Spatial Information System platform.  These datasets support MTC's Analytical Services and Long Range Planning efforts and drive decision making and policy development across the agency.  The data is managed by the Data & Visualization Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud Data as a Service (DaaS) Platform.  
 
 The data is grouped into five primary categories, and includes the following descriptive attributes:  
-
-- Data Set Name
-- Description
-- Data Steward
-- Data Source
-- Date Added to MDM Inventory
-- Update Frequency
-- Date Last Published for Open use
-- Publishing Status
-- Sharing Permissions (Private/ Internal, Public/ External)
-- Category (Policy, Transportation, Land & People, Administrative Boundaries, Environment)
-- Subcategory
-- Data Format
-- Unit of Analysis (County, City, Zip, Tract, Block, Parcel, etc.)  
-
-The figure below illustrates the details described above.
 ![MDM Detail](../images/dataset-detail.png) 
+
+The domain values for the list above include the following:
+- Sharing Permissions Domains: Private/ Internal, Public/ External
+- Category Domains: Policy, Transportation, Land & People, Administrative Boundaries, Environment
+- Data Format Domains: Geographic, Tabular, Document
+- Unit of Analysis Domains: County, City, Zip, Tract, Block, Parcel, etc.  
 
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
