@@ -15,7 +15,7 @@ The domain values for the list above include the following:
 Most of the data that is collected for BASIS and included in the MDM has been identified for its usefulness when conducting policy based analytical work.  Much of the data comes from local jurisdictions in the nine county San Francisco Bay Area region, while a few datasets come from Federal, State or Local Agencies.  The following figure provides a high level overview of the BASIS Data Processing Flow.
 
 **Figure 1. BASIS Data Processing Overview** 
-![Data Processing Model](../images/dataset-processing.png)  
+![Data Processing Model](policy-mdm/images/dataset-processing.png)  
 
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
