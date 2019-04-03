@@ -20,23 +20,17 @@ Currently this view is private and for internal agency viewers exclusively and R
 [Data Lens - Read Only](https://mtc.data.socrata.com/view/dwzg-k3ei)
 
 ## Data Processing
-This data is generated using a combination of sources and methods (mainly ArcGIS Spatial Processing and MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
+This data is generated using a combination of sources and methods (mainly ArcGIS Spatial Processing and MSSQL Spatial Queries). The inital data processing was performed on the Top 20 jurisdictions in the region with the largest population.  Digital data was collected from these jurisdictions and processed using ArcGIS and MSSQL Server using a simple point in poly method which assigns land use codes to parcel geometry based upon the location of the polygon centroid of each parcel in relation to the land use polygons contained in the source spatial datasets for these jurisdictions. See the figure below for a high level view of the data processing that was performed. 
 
-**Figure 1. BASIS Data Processing Overview** 
-![Data Processing Model](images/dataset-processing.png) . 
-(Not Sure I Need this here or on the main MDM Page where this is described briefly)
-
-The inital data processing was performed on the Top 20 jurisdictions in the region with the largest population.  Digital data was collected from these jurisdictions and processed using ArcGIS and MSSQL Server using a simple point in poly method which assigns land use codes to parcel geometry based upon the location of the polygon centroid of each parcel in relation to the land use polygons contained in the source spatial datasets for these jurisdictions. See the figure below for a high level view of the data processing that was performed. 
-
-**Figure 2. Data Processing Steps**
+**Figure 1. Data Processing Steps**
 ![Data Processing Model](images/gp-zn-data-modeling.png)
 
 ## Entity Relationship Diagram and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5)
 
-**Figure 3. Entity Relationship Diagram**
+**Figure 2. Entity Relationship Diagram**
 ![Land Use Data Model](images/Land-Use-Data-ERD.png)
-Click [Here](https://www.lucidchart.com/documents/view/1fe3f1ba-8879-428e-8eb6-66157baf78b7/1) for interactive versions of Figures 2 and 3.
+Click [Here](https://www.lucidchart.com/documents/view/1fe3f1ba-8879-428e-8eb6-66157baf78b7/1) for interactive versions of Figures 1 and 2.
 
 **Note**:
 Attribute Definitions can be viewed [Here](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5).
