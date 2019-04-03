@@ -5,7 +5,6 @@ The following list identifies data that has been collected for the Bay Area Spat
 
 The data is grouped into five primary categories, and includes the following descriptive attributes:  
 ![MDM Detail](../images/dataset-detail.png) 
-
 The domain values for the list above include the following:
 - Sharing Permissions Domains: Private/ Internal, Public/ External
 - Category Domains: Policy, Transportation, Land & People, Administrative Boundaries, Environment
