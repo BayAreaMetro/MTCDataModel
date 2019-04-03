@@ -52,7 +52,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 #### General Plan/ Zoning (From Local Jurisdictions) 
 - [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
- | [Data Processing Notes (Click to View)](policy-mdm/regional-general-plan.md)
+ | [Data Processing Notes](policy-mdm/regional-general-plan.md)
  
 
 #### Regional Policy Layers
