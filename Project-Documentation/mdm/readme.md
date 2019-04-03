@@ -25,15 +25,14 @@ The figure below illustrates the details described above.
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
 ### Administrative Boundaries
--- Not Yet Added To Inventory --
-- [LAFCO SOI Boundaries](). -- Not Yet Added to Inventory
-- [Jurisdiction Boundaries](). -- Not Yet Added to Inventory
-- [Urban Service Areas](). -- Not Yet Added to Inventory
+- [LAFCO SOI Boundaries]() -- Not Yet Added to Inventory
+- [Jurisdiction Boundaries]() -- Not Yet Added to Inventory
+- [Urban Service Areas]() -- Not Yet Added to Inventory
 
 ### Environment  
 
 #### Tabulation Layers
-- [Greenprint (Click to View)](redshift/greenprintFishnet.md) | [Data Processing Notes (Click to View)](https://www.bayareagreenprint.org/glossary/)
+- [Greenprint (Click to View)](redshift/greenprintFishnet.md) | [Data Processing Notes](https://www.bayareagreenprint.org/glossary/)
 Table structure for data acquired from Bay Area Greenprint
 
 ### Policy
@@ -41,18 +40,18 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 **Growth Management Boundaries and Policies**
 
-- [Urban Growth Boundaries](policy-mdm/urban-growth-boundaries.md) | [Data Processing Notes (Click to View)](policy-mdm/urban-growth-boundaries.md) -- Not Yet Added to Inventory
+- [Urban Growth Boundaries]() | [Data Processing Notes](policy-mdm/urban-growth-boundaries.md) -- Not Yet Added to Inventory
     - Includes both Urban Limit Lines and Growth Management Areas (Parcel Based)
 
 **Land Uses**
 
 #### Potential Land Use (UrbanSim Team to Finalize Name and Document Processing Steps)
-- [Zoning Lookup]() | [Data Processing Notes (Click to View)](policy-mdm/plu.md) -- Not Yet Added to Inventory
+- [Zoning Lookup]() | [Data Processing Notes](policy-mdm/plu.md) -- Not Yet Added to Inventory
 
 #### Existing (From Assessor Parcels/ DataViz to Document)
 
 #### General Plan/ Zoning (From Local Jurisdictions) 
-- [General Plan and Zoning 2018 (Click to View)](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
+- [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Data Processing Notes (Click to View)](policy-mdm/regional-general-plan.md)
  
 
@@ -65,12 +64,12 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
 
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
-- [Buildings]() | [Data Processing Notes (Click to View)](land-people-mdm/buildings.md) -- Not Yet Added to Inventory
-- [Deed Restricted Units]()  | [Data Processing Notes (Click to View)](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
-- [Development Pipeline]()  | [Data Processing Notes (Click to View)](land-people-mdm/development-pipeline.md) -- Not Yet Added to Inventory
-- [Institutions]()  | [Data Processing Notes (Click to View)](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
-- [Landmarks]()  | [Data Processing Notes (Click to View)](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
-- [Nondevelopment Sites]()  | [Data Processing Notes (Click to View)](land-people-mdm/nondevelopmentsites.md) -- Not Yet Added to Inventory
+- [Buildings]() | [Data Processing Notes](land-people-mdm/buildings.md) -- Not Yet Added to Inventory
+- [Deed Restricted Units]()  | [Data Processing Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
+- [Development Pipeline]()  | [Data Processing Notes](land-people-mdm/development-pipeline.md) -- Not Yet Added to Inventory
+- [Institutions]()  | [Data Processing Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
+- [Landmarks]()  | [Data Processing Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
+- [Nondevelopment Sites]()  | [Data Processing Notes](land-people-mdm/nondevelopmentsites.md) -- Not Yet Added to Inventory
 
 #### Cadastral
 
@@ -79,7 +78,7 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
 #### Housing
-- [Residential Permits]()  | [Data Processing Notes (Click to View)](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
+- [Residential Permits]()  | [Data Processing Notes](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
 Note: Add the following sections to the data processing details for the residential housing permits data  
 
 ### Transportation
