@@ -27,7 +27,7 @@ The following list contains key datasets listed on the [BASIS Website](http://ba
 ### Environment  
 
 #### Tabulation Layers
-- [Greenprint (Click to View)](redshift/greenprintFishnet.md) | [Data Processing Notes](https://www.bayareagreenprint.org/glossary/)
+- [Greenprint](redshift/greenprintFishnet.md) | [Data Processing Notes](https://www.bayareagreenprint.org/glossary/)
 Table structure for data acquired from Bay Area Greenprint
 
 ### Policy
