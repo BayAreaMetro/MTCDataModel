@@ -1,6 +1,6 @@
 -- Draft --
 
-# BASIS Master Data Management (MDM) Data Store
+# BASIS Master Data Management (MDM)
 The following list identifies data that has been collected for the Bay Area Spatial Information System platform.  These datasets support MTC's Analytical Services and Long Range Planning efforts and drive decision making and policy development across the agency.  The data is managed by the Data & Visualization Team, with assistance from key staff that have been identified as Data Stewards in various units across the agency. Data is stored and managed within MTC's Enterprise Data Lake, and disseminated through the Socrata Connected Government Cloud Data as a Service (DaaS) Platform.  
 
 The data is grouped into five primary categories, and includes the following descriptive attributes:  
@@ -65,11 +65,11 @@ Includes data that depicts local development, cadastral, buildings and structure
 
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
 - [Buildings]() | [Data Processing Notes](land-people-mdm/buildings.md) -- Not Yet Added to Inventory
-- [Deed Restricted Units]()  | [Data Processing Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
-- [Development Pipeline]()  | [Data Processing Notes](land-people-mdm/development-pipeline.md) -- Not Yet Added to Inventory
-- [Institutions]()  | [Data Processing Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
-- [Landmarks]()  | [Data Processing Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
-- [Nondevelopment Sites]()  | [Data Processing Notes](land-people-mdm/nondevelopmentsites.md) -- Not Yet Added to Inventory
+- [Deed Restricted Units]() | [Data Processing Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
+- [Development Pipeline]() | [Data Processing Notes](land-people-mdm/development-pipeline.md) -- Not Yet Added to Inventory
+- [Institutions]() | [Data Processing Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
+- [Landmarks]() | [Data Processing Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
+- [Nondevelopment Sites]( | [Data Processing Notes](land-people-mdm/nondevelopmentsites.md) -- Not Yet Added to Inventory
 
 #### Cadastral
 
