@@ -26,3 +26,5 @@ Click [Here]() for interactive versions of Figures 1 and 2. -- Lucidcharts
 Attribute Definitions can be viewed [Here](). -- Socrata
 
 This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.
+
+Data Steward: UrbanSim Team

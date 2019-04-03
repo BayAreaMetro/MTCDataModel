@@ -1,7 +1,7 @@
-# Buildings
+# Non-Developable Sites
 
 ## Description
-The parcel/building data includes the unique parcel identifier (APN) as well as attributes about the parcel (county, land value, if the parcel can’t be developed) and buildings (year assessed, square feet, number of stories, if the building is historic). Includes Historic and Commercial Bldgs. (basis)
+Sites designated by local jurisdictions where development cannot occur. (These sites can be determined based upon bldg. type)
 
 ## Purpose and Use  
 Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
@@ -16,7 +16,7 @@ This data is generated using a combination of sources and methods (mainly Spatia
 ![Data Processing Model]() -- Lucidcharts
 
 ## Entity Relationship Diagram and Attribute Definitions
-The documentation and metadata details for this data can be viewed here: [Buildings 2018]() -- Socrata
+The documentation and metadata details for this data can be viewed here: [Non-Developable Sites 2018]() -- Socrata
 
 **Figure 2. Entity Relationship Diagram**
 ![Land Use Data Model]() -- Lucidcharts

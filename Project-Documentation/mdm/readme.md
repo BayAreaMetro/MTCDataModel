@@ -80,7 +80,8 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
 #### Housing
-- [Residential Permits]() -- Not Yet Added To Inventory  
+- [Residential Permits]() -- Not Yet Added To Inventory 
+Note: Add the following sections to the data processing details for the residential housing permits data  
 
 ### Transportation
 Includes data that depicts and describes the region's Transportation Systems
@@ -95,13 +96,3 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 
 - [Transit Stops]() -- Not Yet Added To Inventory  
 - [Transit Lines]() -- Not Yet Added To Inventory  
-
-### Policy
-
-- [Regional Land Uses](BASIS Master Data Management/readme.md)
-
-
-Note: Add the following sections to the data processing details for the residential housing permits data  
-
-- [Housing Database Schema](../hsngDBSchema.md) - Schemas for the tables comprising the housing database.
-- [Entity Relation Diagram](https://bayareametro.github.io/DataServices/Project-Documentation/erd/housingDatabaseERD.pdf) - Diagram of views in the housing database.
