@@ -19,8 +19,8 @@ This data is generated using a combination of sources and methods (mainly Spatia
 The documentation and metadata details for this data can be viewed here: [Residential Housing Permits]() -- Socrata
 
 **Figure 2. Entity Relationship Diagram**
-![Data Model]() -- Add PNG Version Here
-Click [Here]() for interactive versions of Figures 1 and 2. -- Lucidcharts
+![Data Model]() -- Add PNG Version Here   
+[Click Here]() for interactive versions of Figures 1 and 2. -- Lucidcharts
 
 [Entity Relation Diagram](https://bayareametro.github.io/DataServices/Project-Documentation/erd/housingDatabaseERD.pdf) - Diagram of views in the housing database.
 
