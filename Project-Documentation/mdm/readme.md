@@ -74,7 +74,6 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 
 #### Housing
 - [Residential Permits]() | [Data Processing Notes](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
-Note: Add the following sections to the data processing details for the residential housing permits data  
 
 ### Transportation
 Includes data that depicts and describes the region's Transportation Systems
