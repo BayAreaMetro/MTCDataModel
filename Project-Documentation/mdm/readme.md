@@ -73,12 +73,12 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 
 #### Cadastral
 
-- [Parcels 2018 (Click to View)](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Data Processing Notes (Click to View)]()
+- [Parcels 2018 (Click to View)](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Data Processing Notes]()
 - [Parcels 2015]() -- Not Yet Added To Inventory
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
 #### Housing
-- [Residential Permits]()  | [Data Processing Notes](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
+- [Residential Permits]() | [Data Processing Notes](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
 Note: Add the following sections to the data processing details for the residential housing permits data  
 
 ### Transportation
