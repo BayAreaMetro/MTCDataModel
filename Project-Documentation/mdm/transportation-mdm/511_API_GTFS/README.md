@@ -24,17 +24,8 @@ https://community.periscopedata.com/t/80fhrg/using-python-to-write-a-create-tabl
 Create 511.org Developer API Key [here](https://511.org/developers/list/tokens/create)
 
 
-**Kaya's 511.org Developer API Key**: c29e6173-f8a7-47b1-993a-63b92a316115
-
-**Kearey's 511.org Developer API Key**: d6e9ad64-06b3-41d2-a4b2-2e3f540dd8f6
-
-
-### Notes:
-
-Swiftly works directly with agencies to monitor real-time bus locations, but as far as we can tell, all the data they provide is also publicly available through the 511 API (currently verifying for AC Transit). 
-
-
 ### Links to Resources:  
+
 [511 Developer Resources](https://511.org/developers/list/resources/)   
 
 [Transit Service Data Processing boxnote](https://mtcdrive.app.box.com/notes/437400246543)
