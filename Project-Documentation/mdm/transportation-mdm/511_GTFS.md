@@ -1,5 +1,6 @@
 # 511 GTFS API Data Documentation
 
+
 ## 511 Transit GTFS API
 
 The 511 Transit GTFS API is the **static** API for Operator IDs and GTFS feeds. Its API Base is http://api.511.org/transit.
@@ -12,7 +13,6 @@ This is the 511 API for pulling a table of Operator IDs and names.
 
 **API call format**: http://api.511.org/transit/operators?api_key={YOUR 511 API KEY}&Format=XML
 
-**Example API call**: http://api.511.org/transit/operators?api_key=c29e6173-f8a7-47b1-993a-63b92a316115&Format=XML
 
 The function **`get_operator_ids_from_511()`** in `ingest_511_GTFS.py` pulls a dictionary of Operator IDs and names and adds it to `config.py` as 511_OPERATOR_IDS. It is a combination of **`get_511_orgs_dict()`** and **`get_org_acronyms_from_511(dictionary)`** from Tom's file [`get_511_current_gtfs_metadata_and_gtfs.py` ](https://github.com/BayAreaMetro/RegionalTransitDatabase/blob/master/rtd/etl/get_511_current_gtfs_metadata_and_gtfs.py)
 
@@ -108,9 +108,28 @@ This is the API for pulling static GTFS feeds for each operator ID. By default t
 
 **API call format**: http://api.511.org/transit/datafeeds?api_key={YOUR 511 API KEY}&operator_id={OPERATOR ID}  
 
-**Example API call**: http://api.511.org/transit/datafeeds?api_key=c29e6173-f8a7-47b1-993a-63b92a316115&operator_id=3D
+**Example API call**: http://api.511.org/transit/datafeeds?api_key={YOUR 511 API KEY}&operator_id=3D
 
 The function **`pull_511_gtfs_static()`** in `ingest_511_GTFS.py` iterates through provided Operator IDs, loads their GTFS feed zipfile into memory, and appends their GTFS feed files to master feed DataFrames. Optionally writes these datafames to csv files (e.g. `stops_all_agencies.csv`), otherwise returns a dictionary of GTFS feed filenames and their master feed DataFrame
 
 e.g. {'agency.txt': pandas DataFrame of concatenated agency.txt files from all agencies,  
       'calendar.txt': pandas DataFrame of concatenated calendar.txt files from all agencies, ...}  
+      
+
+
+## 511 Transit GTFS-Realtime API
+
+This 
+
+example real-time call:  http://api.511.org/Transit/TripUpdates?api_key={YOUR 511 API KEY}&agency=AC
+
+OR
+
+ http://api.511.org/Transit/VehiclePositions?api_key={YOUR 511 API KEY}&agency=AC
+
+
+
+### GTFS-Realtime Trip Updates API
+
+
+### GTFS-Realtime Vehicle Positions API
