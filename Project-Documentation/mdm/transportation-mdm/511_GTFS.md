@@ -119,17 +119,70 @@ e.g. {'agency.txt': pandas DataFrame of concatenated agency.txt files from all a
 
 ## 511 Transit GTFS-Realtime API
 
-This 
-
-example real-time call:  http://api.511.org/Transit/TripUpdates?api_key={YOUR 511 API KEY}&agency=AC
-
-OR
-
- http://api.511.org/Transit/VehiclePositions?api_key={YOUR 511 API KEY}&agency=AC
-
+The 511 Transit GTFS-Realtime API is the **dynamic** API real-time GTFS trip updates and vehicle locations. Its API Base is http://api.511.org/Transit.
 
 
 ### GTFS-Realtime Trip Updates API
 
+**API Base**: http://api.511.org/Transit/TripUpdates?
+
+**API call format**: http://api.511.org/Transit/TripUpdates?api_key={YOUR 511 API KEY}&agency={OPERATOR ID}
+
+**Example API call**: http://api.511.org/Transit/TripUpdates?api_key={YOUR 511 API KEY}&agency=AC
+
+The agencies for which there are no real-time GTFS Trip Update data available on the 511 API are below. The error messages are listed for each agency.
+
+```python
+ {'5E': <HTTPError 404: 'Not Found'>,
+ '5F': <HTTPError 404: 'Not Found'>,
+ '5O': <HTTPError 404: 'Not Found'>,
+ '5S': <HTTPError 404: 'Not Found'>,
+ 'CE': <HTTPError 404: 'Not Found'>,
+ 'AM': <HTTPError 404: 'Not Found'>,
+ 'CM': <HTTPError 404: 'Not Found'>,
+ 'EM': <HTTPError 404: 'Not Found'>,
+ 'SS': <HTTPError 404: 'Not Found'>,
+ 'GF': <HTTPError 404: 'Not Found'>,
+ 'PE': <HTTPError 404: 'Not Found'>,
+ 'RV': <HTTPError 404: 'Not Found'>,
+ 'SB': <HTTPError 404: 'Not Found'>,
+ 'SA': <HTTPError 404: 'Not Found'>,
+ 'MS': <HTTPError 404: 'Not Found'>,
+ 'TD': <HTTPError 404: 'Not Found'>,
+ 'UC': <HTTPError 404: 'Not Found'>,
+ 'VC': <HTTPError 404: 'Not Found'>,
+ 'NV': <HTTPError 404: 'Not Found'>}
+ ```
 
 ### GTFS-Realtime Vehicle Positions API
+
+**API Base**: http://api.511.org/Transit/VehiclePositions?
+
+**API call format**: http://api.511.org/Transit/VehiclePositions?api_key={YOUR 511 API KEY}&agency={OPERATOR ID}
+
+**Example API call**: http://api.511.org/Transit/VehiclePositions?api_key={YOUR 511 API KEY}&agency=AC
+
+The agencies for which there are no real-time GTFS Vehicle Position data available on the 511 API are below. The error messages are listed for each agency.
+
+```python
+{'5E': <HTTPError 404: 'Not Found'>,
+ '5F': <HTTPError 404: 'Not Found'>,
+ '5O': <HTTPError 404: 'Not Found'>,
+ '5S': <HTTPError 404: 'Not Found'>,
+ 'CE': <HTTPError 404: 'Not Found'>,
+ 'AM': <HTTPError 404: 'Not Found'>,
+ 'CM': <HTTPError 404: 'Not Found'>,
+ 'EM': <HTTPError 404: 'Not Found'>,
+ 'SS': <HTTPError 404: 'Not Found'>,
+ 'GF': <HTTPError 404: 'Not Found'>,
+ 'WH': <HTTPError 500: 'Internal Server Error'>,
+ 'PE': <HTTPError 404: 'Not Found'>,
+ 'RV': <HTTPError 404: 'Not Found'>,
+ 'SB': <HTTPError 404: 'Not Found'>,
+ 'SA': <HTTPError 404: 'Not Found'>,
+ 'MS': <HTTPError 404: 'Not Found'>,
+ 'TD': <HTTPError 404: 'Not Found'>,
+ 'UC': <HTTPError 404: 'Not Found'>,
+ 'VC': <HTTPError 404: 'Not Found'>,
+ 'NV': <HTTPError 404: 'Not Found'>}
+```
