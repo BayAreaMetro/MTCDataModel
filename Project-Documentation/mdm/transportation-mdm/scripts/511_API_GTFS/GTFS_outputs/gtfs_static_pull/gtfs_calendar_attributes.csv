@@ -1,0 +1,256 @@
+service_id,service_description,agency_id,agency_name
+72969,Weekday,3D,Tri Delta Transit
+72970,Weekday,3D,Tri Delta Transit
+72971,Weekday,3D,Tri Delta Transit
+74637,Saturday,3D,Tri Delta Transit
+74638,Saturday,3D,Tri Delta Transit
+74639,Saturday,3D,Tri Delta Transit
+74640,Sunday,3D,Tri Delta Transit
+74641,Sunday,3D,Tri Delta Transit
+74642,Sunday,3D,Tri Delta Transit
+74317,Wednesday only,AC,AC Transit
+74315,"Weekday, before midnight",AC,AC Transit
+74316,Weekday except Wednesday,AC,AC Transit
+74312,Sunday,AC,AC Transit
+74314,Weekday,AC,AC Transit
+74313,Saturday late night/evening,AC,AC Transit
+72905,Sunday,AC,AC Transit
+72906,Saturday late night/evening,AC,AC Transit
+72907,Weekday,AC,AC Transit
+72908,Wednesday only,AC,AC Transit
+72909,Friday only,AC,AC Transit
+72910,Weekday except Wednesday,AC,AC Transit
+74206,Weekday,AC,AC Transit
+73210,Weekday,AC,AC Transit
+73211,Saturday,AC,AC Transit
+74318,Weekday except Wednesday,AC,AC Transit
+73212,Friday late night/evening,AC,AC Transit
+74319,Thursday only,AC,AC Transit
+73213,Sunday,AC,AC Transit
+74320,Weekday except Thursday,AC,AC Transit
+73214,Weekday,AC,AC Transit
+74321,Friday only,AC,AC Transit
+73215,Wednesday only,AC,AC Transit
+74322,Weekday except Friday,AC,AC Transit
+73216,Weekday except Thursday,AC,AC Transit
+74323,Tuesday only,AC,AC Transit
+74207,Weekday except Wednesday,AC,AC Transit
+74324,Weekday except Tuesday,AC,AC Transit
+73218,Thursday only,AC,AC Transit
+74325,Wednesday only,AC,AC Transit
+73219,Weekday,AC,AC Transit
+74326,"Mon, Tue, Fri",AC,AC Transit
+73220,Saturday,AC,AC Transit
+74327,Wednesday and Thursday,AC,AC Transit
+74295,Sunday,AC,AC Transit
+74328,Weekday,AC,AC Transit
+74296,Saturday late night/evening,AC,AC Transit
+74329,Weekday,AC,AC Transit
+74297,Weekday,AC,AC Transit
+74330,Saturday,AC,AC Transit
+74298,"Weekday, before midnight",AC,AC Transit
+74331,Friday late night/evening,AC,AC Transit
+74299,"Mon, Wed, Fri",AC,AC Transit
+74300,Tuesday and Thursday,AC,AC Transit
+74301,Friday only,AC,AC Transit
+74302,Wednesday only,AC,AC Transit
+74303,Weekday except Wednesday,AC,AC Transit
+74304,Weekday except Wednesday,AC,AC Transit
+74305,Wednesday only,AC,AC Transit
+74306,Wednesday only,AC,AC Transit
+74307,Weekday,AC,AC Transit
+74308,Weekday,AC,AC Transit
+74309,Weekday,AC,AC Transit
+74310,Saturday,AC,AC Transit
+74311,Friday late night/evening,AC,AC Transit
+72761,Weekend,AM,Capitol Corridor Joint Powers Authority
+72762,Weekday,AM,Capitol Corridor Joint Powers Authority
+72953,Weekday,BA,Bay Area Rapid Transit
+72954,Saturday,BA,Bay Area Rapid Transit
+72955,Sunday,BA,Bay Area Rapid Transit
+73059,Saturday,CC,County Connection
+73060,Sunday,CC,County Connection
+74338,"Thurs, Fri",CC,County Connection
+74339,Mon-Thurs,CC,County Connection
+74340,Weekday,CC,County Connection
+74341,Friday,CC,County Connection
+72777,Weekday,CE,Altamont Corridor Express
+73306,Midpoint Second (Monday-Friday),CM,Commute.org Shuttles
+74709,Year Round (Monday-Friday),CM,Commute.org Shuttles
+74710,Year Round (Monday only),CM,Commute.org Shuttles
+72981,Year Round Weekend (Weekend),CT,Caltrain
+72982,Year Round Saturday (Saturday only),CT,Caltrain
+72983,Year Round Weekday (Monday-Friday),CT,Caltrain
+74732,SpecialService,CT,Caltrain
+74733,SpecialService,CT,Caltrain
+74734,SpecialService,CT,Caltrain
+74735,SpecialService,CT,Caltrain
+74736,SpecialService,CT,Caltrain
+74737,SpecialService,CT,Caltrain
+74738,SpecialService,CT,Caltrain
+74739,SpecialService,CT,Caltrain
+74740,SpecialService,CT,Caltrain
+72781,Weekday,DE,Dumbarton Express Consortium
+72790,Year Round (Sunday only),EM,Emery Go-Round
+72791,Year Round (Saturday only),EM,Emery Go-Round
+72792,Year Round (Monday-Friday),EM,Emery Go-Round
+72801,Year Round (Saturday only),FS,Fairfield and Suisun Transit
+72802,Year Round (Monday-Friday),FS,Fairfield and Suisun Transit
+72803,Year Round (Friday only),FS,Fairfield and Suisun Transit
+72804,Year Round (Monday-Thursday),FS,Fairfield and Suisun Transit
+72805,School Year (Monday-Friday),FS,Fairfield and Suisun Transit
+73394,School Year (Monday-Friday),FS,Fairfield and Suisun Transit
+73395,School Year (Monday-Friday),FS,Fairfield and Suisun Transit
+74008,School Year (Monday-Friday),FS,Fairfield and Suisun Transit
+72813,Weekday,GF,Golden Gate Ferry
+72814,Saturday,GF,Golden Gate Ferry
+72815,Sunday,GF,Golden Gate Ferry
+73017,Sunday,GG,Golden Gate Transit
+74285,Weekday,GG,Golden Gate Transit
+74463,Weekday,GG,Golden Gate Transit
+74612,Weekday,GG,Golden Gate Transit
+74722,Saturday,GG,Golden Gate Transit
+72918,18-19 School Calendar Spring (Thursday only),MA,Marin Transit
+72919,18-19 School Calendar Spring (Wednesday only),MA,Marin Transit
+72920,18-19 School Calendar Spring (Tuesday only),MA,Marin Transit
+72921,18-19 School Calendar Spring (Friday only),MA,Marin Transit
+72922,18-19 School Calendar Spring (Monday only),MA,Marin Transit
+72923,61 Stagecoach 2019 Summer (Sunday only),MA,Marin Transit
+72924,61 Stagecoach 2019 Summer (Saturday only),MA,Marin Transit
+72925,COM Spring 2019 (Thursday only),MA,Marin Transit
+72926,COM Spring 2019 (Wednesday only),MA,Marin Transit
+72927,COM Spring 2019 (Tuesday only),MA,Marin Transit
+74665,COM Spring 2019 (Friday only),MA,Marin Transit
+74666,COM Spring 2019 (Monday only),MA,Marin Transit
+74667,March 2019 SIGNUP (Sunday only),MA,Marin Transit
+74668,March 2019 SIGNUP (Saturday only),MA,Marin Transit
+74669,March 2019 SIGNUP (Monday-Friday),MA,Marin Transit
+73075,Weekday (Ex Univ Holidays),MS,Stanford Marguerite Shuttle
+73076,Weekend (Summer),MS,Stanford Marguerite Shuttle
+73077,Weekday,MS,Stanford Marguerite Shuttle
+73078,Weekday,MS,Stanford Marguerite Shuttle
+73079,Weekend,MS,Stanford Marguerite Shuttle
+73080,Daily,MS,Stanford Marguerite Shuttle
+73081,Weekday (Incl Univ Holidays),MS,Stanford Marguerite Shuttle
+73082,Weekday,MS,Stanford Marguerite Shuttle
+73503,Weekend,MS,Stanford Marguerite Shuttle
+72835,Nonschool Day service (Monday-Friday),PE,Petaluma Transit
+72836,Nonschool Day service (Saturday only),PE,Petaluma Transit
+72837,Nonschool Day service (Sunday only),PE,Petaluma Transit
+72838,Nonschool Day service (Monday-Friday),PE,Petaluma Transit
+72839,Nonschool Day service (Saturday only),PE,Petaluma Transit
+72840,Nonschool Day service (Sunday only),PE,Petaluma Transit
+74537,SCHOOLDAY SERVICE,PE,Petaluma Transit
+74538,SCHOOLDAY SERVICE (Monday-Friday),PE,Petaluma Transit
+74539,SCHOOLDAY SERVICE (Saturday only),PE,Petaluma Transit
+74540,SCHOOLDAY SERVICE (Wednesday only),PE,Petaluma Transit
+74541,SCHOOLDAY SERVICE (Sunday only),PE,Petaluma Transit
+74542,SCHOOLDAY SERVICE,PE,Petaluma Transit
+74543,SCHOOLDAY SERVICE (Monday-Friday),PE,Petaluma Transit
+74544,SCHOOLDAY SERVICE (Saturday only),PE,Petaluma Transit
+74545,SCHOOLDAY SERVICE (Wednesday only),PE,Petaluma Transit
+74546,SCHOOLDAY SERVICE (Sunday only),PE,Petaluma Transit
+74547,SCHOOLDAY SERVICE,PE,Petaluma Transit
+74548,SCHOOLDAY SERVICE (Monday-Friday),PE,Petaluma Transit
+74549,SCHOOLDAY SERVICE (Saturday only),PE,Petaluma Transit
+74550,SCHOOLDAY SERVICE (Wednesday only),PE,Petaluma Transit
+74551,SCHOOLDAY SERVICE (Sunday only),PE,Petaluma Transit
+74552,SpecialService,PE,Petaluma Transit
+74553,SpecialService,PE,Petaluma Transit
+74554,SpecialService,PE,Petaluma Transit
+72849,Year Round Calendar (Monday-Friday),RV,Rio Vista Delta Breeze
+73343,Weekdays,SA,Sonoma Marin Area Rail Transit
+73344,Weekends/Holiday,SA,Sonoma Marin Area Rail Transit
+72855,Richmond Route starting 2/14/19 (Weekday),SB,San Francisco Bay Ferry
+72856,President's Day (All days of week),SB,San Francisco Bay Ferry
+74239,Richmond Route Ending 2/13/19 (Weekday),SB,San Francisco Bay Ferry
+74411,Harbor Bay Route (Weekday),SB,San Francisco Bay Ferry
+74451,Alameda/Oakland Routes (Weekend),SB,San Francisco Bay Ferry
+74534,Alameda/Oakland Routes (Weekday),SB,San Francisco Bay Ferry
+74618,South San Francisco Route (Weekday),SB,San Francisco Bay Ferry
+74646,Vallejo Routes (Weekend),SB,San Francisco Bay Ferry
+74654,Vallejo Routes (Weekday),SB,San Francisco Bay Ferry
+72914,Weekdays,SC,VTA
+72915,Saturday,SC,VTA
+72916,Sunday,SC,VTA
+74716,April 13th Special Service,SC,VTA
+73692,Weekday,SF,San Francisco Municipal Transportation Agency
+73693,Saturday,SF,San Francisco Municipal Transportation Agency
+73694,Sunday,SF,San Francisco Municipal Transportation Agency
+73025,Sunday,SM,SamTrans
+73026,Weekday,SM,SamTrans
+73027,Weekday,SM,SamTrans
+73028,Weekday,SM,SamTrans
+73029,Thu,SM,SamTrans
+73030,Mon Tue Wed Fri,SM,SamTrans
+73031,Mon Tue Thu Fri,SM,SamTrans
+73032,Wed,SM,SamTrans
+73033,Wed Thu,SM,SamTrans
+73034,Mon Tue Fri,SM,SamTrans
+73035,Mon Wed Thu Fri,SM,SamTrans
+73036,Tue,SM,SamTrans
+73037,Tue Thu,SM,SamTrans
+73038,Saturday,SM,SamTrans
+73086,School Trippers (Wednesday only),SO,Sonoma County Transit LastGenerated
+73087,School Trippers (Monday-Friday),SO,Sonoma County Transit LastGenerated
+73088,"School Trippers (Monday, Tuesday, Thursday, Friday)",SO,Sonoma County Transit LastGenerated
+73089,Year Round Beginning 3/10/19 (Weekend),SO,Sonoma County Transit LastGenerated
+73720,Year Round Beginning 3/10/19 (Saturday only),SO,Sonoma County Transit LastGenerated
+73721,Year Round Beginning 3/10/19 (Monday-Friday),SO,Sonoma County Transit LastGenerated
+73722,Year Round (Weekend),SO,Sonoma County Transit LastGenerated
+73838,Year Round (Saturday only),SO,Sonoma County Transit LastGenerated
+74187,Year Round (Monday-Friday),SO,Sonoma County Transit LastGenerated
+74188,SpecialService,SO,Sonoma County Transit LastGenerated
+74189,SpecialService,SO,Sonoma County Transit LastGenerated
+74691,SpecialService,SO,Sonoma County Transit LastGenerated
+74692,SpecialService,SO,Sonoma County Transit LastGenerated
+73068,Saturday,SR,Santa Rosa CityBus LastGenerated
+73069,Sunday,SR,Santa Rosa CityBus LastGenerated
+73070,Mon - Fri,SR,Santa Rosa CityBus LastGenerated
+73005,Year Round Eff 10 Mar 2019 (Sunday only),ST,SolTrans LastGenerated
+73006,Year Round Eff 10 Mar 2019 (Saturday only),ST,SolTrans LastGenerated
+73007,Year Round Eff 10 Mar 2019 (Monday-Friday),ST,SolTrans LastGenerated
+73008,Year Round Eff 10 Mar 2019 (Friday only),ST,SolTrans LastGenerated
+73009,Year Round Eff 10 Mar 2019 (Monday-Thursday),ST,SolTrans LastGenerated
+73991,Route 20 (Monday-Friday),ST,SolTrans LastGenerated
+74346,Weekday,TD,Tideline Marine Group Inc LastGenerated
+72865,Saturday,UC,Union City Transit LastGenerated
+72866,Weekday,UC,Union City Transit LastGenerated
+72867,Sunday,UC,Union City Transit LastGenerated
+72877,RT2 Non-School (Saturday only),VC,Vacaville City Coach LastGenerated
+72878,RT2 Non-School (Monday-Friday),VC,Vacaville City Coach LastGenerated
+74262,RT2 Non-School (Saturday only),VC,Vacaville City Coach LastGenerated
+74263,RT2 Non-School (Monday-Friday),VC,Vacaville City Coach LastGenerated
+74264,School Year (Wednesday only),VC,Vacaville City Coach LastGenerated
+74265,School Year (Saturday only),VC,Vacaville City Coach LastGenerated
+74266,School Year (Monday-Friday),VC,Vacaville City Coach LastGenerated
+74267,"School Year (Monday, Tuesday, Thursday, Friday)",VC,Vacaville City Coach LastGenerated
+74268,School Year (Wednesday only),VC,Vacaville City Coach LastGenerated
+74269,School Year (Saturday only),VC,Vacaville City Coach LastGenerated
+74270,School Year (Monday-Friday),VC,Vacaville City Coach LastGenerated
+74271,"School Year (Monday, Tuesday, Thursday, Friday)",VC,Vacaville City Coach LastGenerated
+74272,Year Round (Saturday only),VC,Vacaville City Coach LastGenerated
+74439,Year Round (Monday-Friday),VC,Vacaville City Coach LastGenerated
+74440,SpecialService,VC,Vacaville City Coach LastGenerated
+73047,Sunday,VN,Napa LastGenerated
+73048,Weekday,VN,Napa LastGenerated
+73049,Saturday,VN,Napa LastGenerated
+72889,Starting 2/11/19 (Monday-Friday),WC,WestCat (Western Contra Costa) LastGenerated
+72890,JX Year Round Service (Monday-Friday),WC,WestCat (Western Contra Costa) LastGenerated
+72891,Routes 11 & 19 Saturday Service (Saturday only),WC,WestCat (Western Contra Costa) LastGenerated
+72892,Express J (Sunday only),WC,WestCat (Western Contra Costa) LastGenerated
+72893,Express J (Saturday only),WC,WestCat (Western Contra Costa) LastGenerated
+72894,Express J (Monday-Friday),WC,WestCat (Western Contra Costa) LastGenerated
+72895,School Calendar (Wednesday only),WC,WestCat (Western Contra Costa) LastGenerated
+72896,School Calendar (Monday-Friday),WC,WestCat (Western Contra Costa) LastGenerated
+72897,"School Calendar (Monday, Tuesday, Thursday, Friday)",WC,WestCat (Western Contra Costa) LastGenerated
+74352,Year Round Calendar (Monday-Friday),WC,WestCat (Western Contra Costa) LastGenerated
+74353,SpecialService,WC,WestCat (Western Contra Costa) LastGenerated
+74354,SpecialService,WC,WestCat (Western Contra Costa) LastGenerated
+74355,SpecialService,WC,WestCat (Western Contra Costa) LastGenerated
+72989,Saturday,WH,Livermore Amador Valley Transit Authority LastGenerated
+72990,Sunday,WH,Livermore Amador Valley Transit Authority LastGenerated
+72991,Wednesday,WH,Livermore Amador Valley Transit Authority LastGenerated
+73738,"Mon, Fri",WH,Livermore Amador Valley Transit Authority LastGenerated
+74396,Tuesday,WH,Livermore Amador Valley Transit Authority LastGenerated
+74397,Thursday,WH,Livermore Amador Valley Transit Authority LastGenerated

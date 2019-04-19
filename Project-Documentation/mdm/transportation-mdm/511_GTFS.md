@@ -1,11 +1,51 @@
-# 511 GTFS API Data Documentation
+-- Draft --
 
+# 511 GTFS API Data
 
-## 511 Transit GTFS API
+## Description
+
+The [511 API](https://511.org/developers/list/apis/) provides access to transit and traffic data, including static GTFS feeds and real-time GTFS vehicle locations and trip updates. A more detailed description of the available data (and how to access it) is in the [Detailed Data Documentation](#detailed-data-documentation) at the end of this document.
+
+## Purpose and Use
+
+XXXXXXXXXXXX
+
+## Data Collection
+
+Real-time GTFS data will be constantly pulled from the 511 API, while static GTFS data will be pulled regularly but infrequently.
+
+## Data Processing
+
+**Figure 1. Data Processing Steps**
+![Data Processing Model]() -- Lucidcharts
+
+## Entity Relationship Diagram and Attribute Definitions
+The documentation and metadata details for this data can be viewed here: 
+
+**Figure 2. Entity Relationship Diagram**
+![511 GTFS Feed Data Model]() --Lucidcharts
+
+**Note**:
+Data Steward: XXXXXXXXXXXX
+
+## Links to Resources
+
+- [511 Developer Resources](https://511.org/developers/list/resources/)
+
+- Create 511.org Developer API Key [here](https://511.org/developers/list/tokens/create)
+- [Documentation pdf](http://assets.511.org/pdf/nextgen/developers/Open_511_Data_Exchange_Specification_v1.26_Transit.pdf) for 511 Transit API (found [here](https://511.org/developers/list/apis/))
+
+- [Real-time GTFS API reference](https://developers.google.com/transit/gtfs-realtime/reference/)
+
+- [Vehicle Position API reference](https://developers.google.com/transit/gtfs-realtime/reference/#VehiclePosition)
+
+## Detailed Data Documentation
+
+### 511 Transit GTFS API
 
 The 511 Transit GTFS API is the **static** API for Operator IDs and GTFS feeds. Its API Base is http://api.511.org/transit.
 
-### GTFS Operator List API:
+#### GTFS Operator List API:
 
 This is the 511 API for pulling a table of Operator IDs and names.  
 
@@ -14,14 +54,12 @@ This is the 511 API for pulling a table of Operator IDs and names.
 **API call format**: http://api.511.org/transit/operators?api_key={YOUR 511 API KEY}&Format=XML
 
 
-The function **`get_operator_ids_from_511()`** in `ingest_511_GTFS.py` pulls a dictionary of Operator IDs and names and adds it to `config.py` as 511_OPERATOR_IDS. It is a combination of **`get_511_orgs_dict()`** and **`get_org_acronyms_from_511(dictionary)`** from Tom's file [`get_511_current_gtfs_metadata_and_gtfs.py` ](https://github.com/BayAreaMetro/RegionalTransitDatabase/blob/master/rtd/etl/get_511_current_gtfs_metadata_and_gtfs.py)
-
-
 **NOTE**:
 
-The Transit Operator table on [Transit Service Data Processing boxnote](https://mtcdrive.app.box.com/notes/437400246543) has fewer operators than the 511 GTFS Operator List (additional operators in **bold** in the 511 GTFS Operator List) and has suffixes (in *italics* in the [boxnote](https://mtcdrive.app.box.com/notes/437400246543) Transit Operator table) appended to some agency names.
+The Transit Operator table on [Transit Service Data Processing boxnote](https://mtcdrive.app.box.com/notes/437400246543) (available to MTC employees only) has fewer operators than the 511 GTFS Operator List (additional operators in **bold** in the 511 GTFS Operator List) and has suffixes (in *italics* in the boxnote Transit Operator table) appended to some agency names.
 
-##### Operator ID Listing from [Transit Service Data Processing boxnote](https://mtcdrive.app.box.com/notes/437400246543)
+
+**Operator ID Listing from [Transit Service Data Processing boxnote](https://mtcdrive.app.box.com/notes/437400246543)**
 
 Agency ID | Agency Name
 :---: | :---:
@@ -58,7 +96,8 @@ WC | WestCat (Western Contra Costa) *LastGenerated*
 WH | Livermore Amador Valley Transit Authority *LastGenerated*
 
 
-##### Operator ID Listing from 511 GTFS Operator List API
+**Operator ID Listing from 511 GTFS Operator List API**
+
 Agency ID | Agency Name
 :---: | :---:
 3D | Tri Delta Transit
@@ -100,7 +139,7 @@ WC | WestCat (Western Contra Costa)
 WH | Livermore Amador Valley Transit Authority
 
 
-### 511 GTFS DataFeed Download API
+#### 511 GTFS DataFeed Download API
 
 This is the API for pulling static GTFS feeds for each operator ID. By default the data downloads as a Zip Archive  of the GTFS Data Feed (`agency.txt`, `calendar.txt`, etc.) for a singular operator.
 
@@ -110,19 +149,13 @@ This is the API for pulling static GTFS feeds for each operator ID. By default t
 
 **Example API call**: http://api.511.org/transit/datafeeds?api_key={YOUR 511 API KEY}&operator_id=3D
 
-The function **`pull_511_gtfs_static()`** in `ingest_511_GTFS.py` iterates through provided Operator IDs, loads their GTFS feed zipfile into memory, and appends their GTFS feed files to master feed DataFrames. Optionally writes these datafames to csv files (e.g. `stops_all_agencies.csv`), otherwise returns a dictionary of GTFS feed filenames and their master feed DataFrame
 
-e.g. {'agency.txt': pandas DataFrame of concatenated agency.txt files from all agencies,  
-      'calendar.txt': pandas DataFrame of concatenated calendar.txt files from all agencies, ...}  
-      
-
-
-## 511 Transit GTFS-Realtime API
+### 511 Transit GTFS-Realtime API
 
 The 511 Transit GTFS-Realtime API is the **dynamic** API real-time GTFS trip updates and vehicle locations. Its API Base is http://api.511.org/Transit.
 
 
-### GTFS-Realtime Trip Updates API
+#### GTFS-Realtime Trip Updates API
 
 **API Base**: http://api.511.org/Transit/TripUpdates?
 
@@ -133,28 +166,14 @@ The 511 Transit GTFS-Realtime API is the **dynamic** API real-time GTFS trip upd
 The agencies for which there are no real-time GTFS Trip Update data available on the 511 API are below. The error messages are listed for each agency.
 
 ```python
- {'5E': <HTTPError 404: 'Not Found'>,
- '5F': <HTTPError 404: 'Not Found'>,
- '5O': <HTTPError 404: 'Not Found'>,
- '5S': <HTTPError 404: 'Not Found'>,
- 'CE': <HTTPError 404: 'Not Found'>,
- 'AM': <HTTPError 404: 'Not Found'>,
- 'CM': <HTTPError 404: 'Not Found'>,
- 'EM': <HTTPError 404: 'Not Found'>,
- 'SS': <HTTPError 404: 'Not Found'>,
- 'GF': <HTTPError 404: 'Not Found'>,
- 'PE': <HTTPError 404: 'Not Found'>,
- 'RV': <HTTPError 404: 'Not Found'>,
- 'SB': <HTTPError 404: 'Not Found'>,
- 'SA': <HTTPError 404: 'Not Found'>,
- 'MS': <HTTPError 404: 'Not Found'>,
- 'TD': <HTTPError 404: 'Not Found'>,
- 'UC': <HTTPError 404: 'Not Found'>,
- 'VC': <HTTPError 404: 'Not Found'>,
- 'NV': <HTTPError 404: 'Not Found'>}
+ {<HTTPError 404: 'Not Found'>: ['5E', '5F', '5O', '5S', 'CE', 'AM',
+							     'CM', 'EM', 'SS', 'GF', 'PE', 'RV',
+							     'SB', 'SA', 'MS', 'TD', 'UC', 'VC',
+							     'NV']
+  }
  ```
 
-### GTFS-Realtime Vehicle Positions API
+#### GTFS-Realtime Vehicle Positions API
 
 **API Base**: http://api.511.org/Transit/VehiclePositions?
 
@@ -165,24 +184,10 @@ The agencies for which there are no real-time GTFS Trip Update data available on
 The agencies for which there are no real-time GTFS Vehicle Position data available on the 511 API are below. The error messages are listed for each agency.
 
 ```python
-{'5E': <HTTPError 404: 'Not Found'>,
- '5F': <HTTPError 404: 'Not Found'>,
- '5O': <HTTPError 404: 'Not Found'>,
- '5S': <HTTPError 404: 'Not Found'>,
- 'CE': <HTTPError 404: 'Not Found'>,
- 'AM': <HTTPError 404: 'Not Found'>,
- 'CM': <HTTPError 404: 'Not Found'>,
- 'EM': <HTTPError 404: 'Not Found'>,
- 'SS': <HTTPError 404: 'Not Found'>,
- 'GF': <HTTPError 404: 'Not Found'>,
- 'WH': <HTTPError 500: 'Internal Server Error'>,
- 'PE': <HTTPError 404: 'Not Found'>,
- 'RV': <HTTPError 404: 'Not Found'>,
- 'SB': <HTTPError 404: 'Not Found'>,
- 'SA': <HTTPError 404: 'Not Found'>,
- 'MS': <HTTPError 404: 'Not Found'>,
- 'TD': <HTTPError 404: 'Not Found'>,
- 'UC': <HTTPError 404: 'Not Found'>,
- 'VC': <HTTPError 404: 'Not Found'>,
- 'NV': <HTTPError 404: 'Not Found'>}
+{<HTTPError 404: 'Not Found'>: ['5E', '5F', '5O', '5S', 'CE', 'AM',
+									  'CM', 'EM', 'SS', 'GF', 'PE', 'RV',
+									  'SB', 'SA', 'MS', 'TD', 'UC', 'VC',
+									  'NV'],
+ <HTTPError 500: 'Internal Server Error'>: ['WH']
+ }
 ```

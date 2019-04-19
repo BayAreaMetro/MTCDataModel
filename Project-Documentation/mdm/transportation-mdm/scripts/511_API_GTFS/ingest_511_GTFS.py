@@ -7,6 +7,7 @@ Run with:
 
 python ingest_511_GTFS.py
 """
+
 import os
 import sys
 import time
@@ -14,23 +15,25 @@ import pandas as pd
 from io import BytesIO
 from zipfile import ZipFile
 from urllib.request import urlopen
-# Pre-requisite
-# ! pip install --upgrade gtfs-realtime-bindings
+# Pre-requisite: ! pip install --upgrade gtfs-realtime-bindings
 from google.transit import gtfs_realtime_pb2
 
 # local imports
-from utils import init_logger, print_runtime
-from config import OUTPUT_DIR, GTFS_FILES, OPERATOR_ID_MAP
+from utils import init_logger, print_runtime, post_df_as_redshift_table
+from config import OUTPUT_DIR, GTFS_FILES, OPERATOR_ID_MAP, gtfs_type_dict
 
-sys.path.insert(0, 'licenses')
+sys.path.insert(0, '/Users/ktollas/licenses')
 from credentials import DEV_511_API_KEY
 
 
-def pull_511_gtfs_static(to_csv=True):
-    """Pulls all files specified by GTFS_FILES in config.py for each 
-    agency into memory and joins them into a a single pandas DataFrame
-    for each GTFS file. If to_csv is True, writes each dataframe to a
-    csv file, otherwise returns a dictionary with the following format:
+def pull_511_gtfs_static(to_redshift=True, to_csv=True):
+    """For each agency in OPERATOR_ID_MAP, pulls all files specified
+    by GTFS_FILES in config.py into memory and joins them into a a
+    single pandas DataFrame for each GTFS file. If to_redshift is True,
+    writes each dataframe to a Redshift table (Redshift DB
+    specifications are in utils and config). If to_csv is True, writes
+    each dataframe to a csv file, otherwise returns a dictionary with
+    the following format:
 
     {GTFS_file: dataframe of concatenated GTFS_file from all acencies, ...}
 
@@ -69,11 +72,21 @@ def pull_511_gtfs_static(to_csv=True):
     # build final dictionary: {filename: dataframe with all agencies, ...}
     for k, v in GTFS_df_dict.items():
         # concatenate list of dataframes to single dataframe
-        GTFS_df_dict[k] = pd.concat(v)
+        GTFS_df_dict[k] = pd.concat(v, ignore_index=True)
+        # e.g. k='calendar.txt' -> table_name = gtfs_calendar
+        tablename = 'gtfs_' + os.path.splitext(k)[0]
+        # if writing to Redshift tables, create a table for each filename in the GTFS feed 
+        if to_redshift:
+            c = time.time()
+            ###### WARNING: Since df.to_sql is slow for big data, have to post larger
+            ### dataframes to S3 first for the following GTFS tables:
+            ### stop_times (2,797,952 rows), stops (21,856 rows)
+            post_df_as_redshift_table(tablename, GTFS_df_dict[k], dtypes=gtfs_type_dict[tablename])
+            d = time.time()
+            logger.info('table created on Redshift: {}. Took {}'.format(tablename, print_runtime(d-c)))
         # if writing to csv files, create a csv for each filename in the GTFS feed 
         if to_csv:
-            # e.g. k='calendar.txt' -> output_fname = calendar_all_agencies.csv
-            output_fname = os.path.splitext(k)[0] + '_all_agencies.csv'
+            output_fname = tablename + '.csv'
             # write to output directory
             output_dir = os.path.join(OUTPUT_DIR, 'gtfs_static_pull')
             if not os.path.exists(output_dir):
@@ -280,16 +293,16 @@ def get_operator_ids_from_511(append_to_config=True):
     operator_ids = {}
     for org in orgs_list:
         operator_ids[org['PrivateCode']] = org['Name']
-    if append_to_config:
-        operator_ids
-    return(operator_ids)
+    # if append_to_config:
+    #     operator_ids
+    return operator_ids
 
 
 if __name__ == '__main__':
-    get_operator_ids_from_511()
-    if not os.path.exists(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
-    pull_511_gtfs_static()
-    pull_511_gtfs_real_time()
+    # operator_ids = get_operator_ids_from_511()
+    # if not os.path.exists(OUTPUT_DIR):
+    #     os.makedirs(OUTPUT_DIR)
+    pull_511_gtfs_static(to_csv=False)
+    # pull_511_gtfs_real_time()
    
 
