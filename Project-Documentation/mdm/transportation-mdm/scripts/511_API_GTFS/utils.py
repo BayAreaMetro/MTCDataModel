@@ -72,3 +72,21 @@ def post_df_as_redshift_table(tablename, df, dtypes=None):
     if dtypes is not None:
         to_Redshift_args['dtype'] = dtypes
     df.to_sql(**to_Redshift_args)
+
+
+def time_period_str_to_timedelta(time_str, start=True):
+    """Given a string of format HH:MM format, returns a pandas Timedelta
+    object"""
+    if start:  # mark start seconds as 00
+        time_str += ':00'
+    else:  # mark end seconds as 59
+        time_str += ':59'
+    return pd.Timedelta(time_str)
+
+
+def timedelta_to_time_period_str(timedelta):
+    """Given a pandas Timedelta object, returns a string of format
+    HH:MM:SS"""
+    return str(timedelta).split('days ')[-1]
+
+

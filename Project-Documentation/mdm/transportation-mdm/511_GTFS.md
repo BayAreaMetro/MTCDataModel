@@ -2,13 +2,31 @@
 
 # 511 GTFS API Data
 
-## Description
+## Overview
 
 The [511 API](https://511.org/developers/list/apis/) provides access to transit and traffic data, including static GTFS feeds and real-time GTFS vehicle locations and trip updates. A more detailed description of the available data (and how to access it) is in the [Detailed Data Documentation](#detailed-data-documentation) at the end of this document.
 
-## Purpose and Use
+**Data Set Name:**: Regional Transit Database
 
-XXXXXXXXXXXX
+**Data Set Description:**: 
+
+**Data Steward:** 
+
+**Sharing Permissions**
+
+**Category**: Transportation
+
+**Subcategory**: Transit
+
+**Format**
+
+**Primary Use**
+
+**Source**: Transit operators (via MTC 511)
+
+**Unit of Analysis**
+
+**Update Frequency**:
 
 ## Data Collection
 
@@ -24,9 +42,6 @@ The documentation and metadata details for this data can be viewed here:
 
 **Figure 2. Entity Relationship Diagram**
 ![511 GTFS Feed Data Model]() --Lucidcharts
-
-**Note**:
-Data Steward: XXXXXXXXXXXX
 
 ## Links to Resources
 
