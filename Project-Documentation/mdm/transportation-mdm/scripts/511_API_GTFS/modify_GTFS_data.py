@@ -91,15 +91,32 @@ def subset_routes_df_buses(routes_df):
     return routes_df[routes_df['route_type'] == 3]
 
 
-def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, start_time_td, end_time_td):
+def get_trip_date(trips_df, calendar_df):
+    """Given the gtfs_trips and gtfs_calendar dataframes, adds
+    ServiceDayType to gtfs_trips"""
+    trip_dates = trips_df.merge(calendar_df)
+    trip_dates.loc[(trip_dates['monday'] == 1)
+                   & (trip_dates['tuesday'] == 1)
+                  & (trip_dates['wednesday'] == 1)
+                  & (trip_dates['thursday'] == 1)
+                  & (trip_dates['friday'] == 1), 'ServiceDayType'] = 'Weekday'
+
+    trip_dates.loc[(trip_dates['saturday'] == 1)
+                    | (trip_dates['sunday'] == 1) , 'ServiceDayType'] = 'Weekend'
+    # return trips_df columns plus ServiceDayType
+    return trip_dates[list(trips_df.columns) + ['ServiceDayType']]
+
+
+def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, max_headway, service_day_type, time_period):
     """
     Given pandas DataFrames gtfs_trips, gtfs_stop_times, gtfs_routes, and gtfs_calendar,
      and pandas Timedeltas start_time_td and end_time_td (which define the headway calculation period)
     calculates the headways for the specified time period
     """
-
     # add column Route_Pattern_ID
     mod_trips_df = modify_trip_df(trips_df)
+    # add column ServiceDayType
+    mod_trips_df = get_trip_date(mod_trips_df, calendar_df)
 
     # subset routes to bus routes only
     bus_routes = subset_routes_df_buses(routes_df)
@@ -107,11 +124,12 @@ def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, start_time_td
     # add column arrival_time_td
     mod_stop_times_df = modify_stop_times_df(stop_times_df)
     # subset stop_times to desired headway calculation time period
-    subset_stop_times_df = mod_stop_times_df[mod_stop_times_df['arrival_time_td'].between(start_time_td, end_time_td)]
+    subset_stop_times_df = mod_stop_times_df[mod_stop_times_df['arrival_time_td'].between(time_period['start_time_td'],
+                                                                                          time_period['end_time_td'])]
     
     routes_cols = ['route_id', 'route_type']
     trips_cols = ['agency_id', 'agency_name', 'route_id', 'direction_id',
-                  'trip_headsign', 'trip_id', 'Route_Pattern_ID']
+                  'trip_headsign', 'trip_id', 'Route_Pattern_ID', 'ServiceDayType']
     stop_times_cols = ['trip_id', 'arrival_time_td', 'stop_id', 'stop_sequence']
     
     headways_table = (routes_df[routes_cols]
@@ -122,16 +140,24 @@ def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, start_time_td
     SB50_agencies = get_eligible_SB50_agencies(calendar_df)
     headways_table = headways_table[headways_table['agency_id'].isin(SB50_agencies)]
     
+    # subset table to desired service day type (Weekday or Weekend)
+    headways_table = headways_table[headways_table['ServiceDayType'] == service_day_type]
+    
     # count number of times a trip stops at each stop in given time period
     headways_table['Total_Trips'] = (headways_table
                                         .groupby(['Route_Pattern_ID', 'trip_headsign', 'stop_id'])['stop_sequence']
                                         .transform('size'))
     # calculate the duration of the specified time frame
-    time_frame_duration_mins = round((subset_df['arrival_time_td'].max()
-                                       - subset_df['arrival_time_td'].min())
+    time_frame_duration_mins = round((headways_table['arrival_time_td'].max()
+                                       - headways_table['arrival_time_td'].min())
                                      .total_seconds() / 60.0)
     # calculate headway as time period duration/number of trips passing each stop
     headways_table['Headway'] = time_frame_duration_mins/headways_table['Total_Trips']
+    
+    ### QUESTION: group for avg headways?
+
+    # subset table to specified headways
+    # headways_table = headways_table[headways_table['Headway'] <= max_headway]
 
     headways_table['time_period'] = (timedelta_to_time_period_str(start_time_td)
                                      + '-'
@@ -144,7 +170,29 @@ def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, start_time_td
 
 
 if __name__ == '__main__':
-    pass
+    SB50_defs = {'1A': {'max_headway': 15,
+                    'service_day_type': 'Weekday',
+                    'time_period': {'start_time_td': pd.Timedelta('06:00:00'),
+                                     'end_time_td': pd.Timedelta('10:00:00')}
+                  },  # max 15 min headways during weekday peaks (M-F, 6-10 AM, 3-7 PM)
+                 '1B': {'max_headway': 15,
+                        'service_day_type': 'Weekday',
+                        'time_period': {'start_time_td': pd.Timedelta('15:00:00'),
+                                        'end_time_td': pd.Timedelta('19:00:00')}
+                      },  # max 15 min headways during weekday peaks (M-F, 6-10 AM, 3-7 PM)
+                 '2': {'max_headway': 20,
+                       'service_day_type': 'Weekday',
+                       'time_period': {'start_time_td': pd.Timedelta('06:00:00'),
+                                        'end_time_td': pd.Timedelta('22:00:00')}
+                      },  # max 20 min headways during weekdays (M-F, 6AM-10PM)
+                 '3': {'max_headway': 30,
+                       'service_day_type': 'Weekend',
+                       'time_period': {'start_time_td': pd.Timedelta('08:00:00'),
+                                        'end_time_td': pd.Timedelta('22:00:00')}
+                      }  # max 30 min headways during weekends (Sat-Sun, 8AM-10PM)
+                    }
+
+
     # pull these tables from S3: trips_df, stop_times_df, routes_df, calendar_df
     # get user input to specify time period
     # output: download calculated headways table as csv

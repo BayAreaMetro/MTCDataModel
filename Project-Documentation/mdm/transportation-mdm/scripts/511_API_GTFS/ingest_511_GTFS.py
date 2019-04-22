@@ -3,8 +3,16 @@ script downloads GTFS data for each operator from the 511 api and for
 each expected GTFS file (from GTFS_FILES), concatenates GTFS data from
 all operators into an output file, e.g. stops_all_agencies.csv
 
+REQUIRED:
+The variables DEV_511_API_KEY, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY,
+REDSHIFT_USERNAME, and REDSHIFT_PSWD need to be set in the environment
+prior to running this script.
+
+Recommended: set these variables in ~/licenses/set_creds.sh
+
 Run with:
 
+source ~/licenses/set_creds.sh
 python ingest_511_GTFS.py
 """
 
@@ -19,11 +27,9 @@ from urllib.request import urlopen
 from google.transit import gtfs_realtime_pb2
 
 # local imports
-from utils import init_logger, print_runtime, post_df_as_redshift_table
+from utils import (init_logger, print_runtime, post_df_to_s3,
+ create_redshift_table_via_s3, post_df_as_redshift_table)
 from config import OUTPUT_DIR, GTFS_FILES, OPERATOR_ID_MAP, gtfs_type_dict
-
-sys.path.insert(0, '/Users/ktollas/licenses')
-from credentials import DEV_511_API_KEY
 
 
 def pull_511_gtfs_static(to_redshift=True, to_csv=True):
@@ -78,10 +84,16 @@ def pull_511_gtfs_static(to_redshift=True, to_csv=True):
         # if writing to Redshift tables, create a table for each filename in the GTFS feed 
         if to_redshift:
             c = time.time()
-            ###### WARNING: Since df.to_sql is slow for big data, have to post larger
-            ### dataframes to S3 first for the following GTFS tables:
-            ### stop_times (2,797,952 rows), stops (21,856 rows)
-            post_df_as_redshift_table(tablename, GTFS_df_dict[k], dtypes=gtfs_type_dict[tablename])
+            # these GTFS tables have lots of rows (>20k)
+            # post them to S3 and create Redshift table from S3
+            if k in ['stop_times.txt', 'stops.txt', 'trips.txt']:
+                s3_key = 'GTFS_files/{}.csv'.format(tablename)
+                post_df_to_s3(GTFS_df_dict[k], bucket='rtd-archives', key=s3_key)
+                s3_path = 's3://rtd-archives/GTFS_files/{}.csv'.format(tablename)
+                create_redshift_table_via_s3(tablename, s3_path, gtfs_type_dict[tablename])
+            else:
+                continue
+                # post_df_as_redshift_table(tablename, GTFS_df_dict[k], dtypes=gtfs_type_dict[tablename])
             d = time.time()
             logger.info('table created on Redshift: {}. Took {}'.format(tablename, print_runtime(d-c)))
         # if writing to csv files, create a csv for each filename in the GTFS feed 
@@ -129,13 +141,6 @@ def pull_agency_VehiclePositions_real_time(operator_id):
         vehicle_position_update['longitude'] = entity.vehicle.position.longitude
         vehicle_position_update['timestamp'] = entity.vehicle.timestamp
         return vehicle_position_update
-
-    # API_511_base = 'http://api.511.org/Transit/VehiclePositions?'
-    # operator_url = API_511_base + 'api_key={}&agency={}'.format(DEV_511_API_KEY, operator_id)
-    # # initialize Protocol Buffer
-    # feed = gtfs_realtime_pb2.FeedMessage()
-    # response = urlopen(operator_url)
-    # feed.ParseFromString(response.read())
 
     feed = pull_511_FeedMessage_realtime(operator_id, source='VehiclePositions')
     
@@ -196,13 +201,6 @@ def pull_agency_TripUpdates_real_time(operator_id):
         stop_update['departure_time'] = stop.departure.time
         stop_update['stop_id'] = stop.stop_id
         return stop_update
-
-    # API_511_base = 'http://api.511.org/Transit/TripUpdates?'
-    # operator_url = API_511_base + 'api_key={}&agency={}'.format(DEV_511_API_KEY, operator_id)
-    # # initialize Protocol Buffer
-    # feed = gtfs_realtime_pb2.FeedMessage()
-    # response = urlopen(operator_url)
-    # feed.ParseFromString(response.read())
 
     feed = pull_511_FeedMessage_realtime(operator_id, source='TripUpdates')
 
@@ -299,6 +297,8 @@ def get_operator_ids_from_511(append_to_config=True):
 
 
 if __name__ == '__main__':
+    # set necessary variables
+    DEV_511_API_KEY = os.environ['DEV_511_API_KEY']
     # operator_ids = get_operator_ids_from_511()
     # if not os.path.exists(OUTPUT_DIR):
     #     os.makedirs(OUTPUT_DIR)
