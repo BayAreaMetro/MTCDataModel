@@ -6,27 +6,42 @@
 
 The [511 API](https://511.org/developers/list/apis/) provides access to transit and traffic data, including static GTFS feeds and real-time GTFS vehicle locations and trip updates. A more detailed description of the available data (and how to access it) is in the [Detailed Data Documentation](#detailed-data-documentation) at the end of this document.
 
-**Data Set Name:**: Regional Transit Database
+There are three components to the 511 GTFS Project:
 
-**Data Set Description:**: 
+1. Static GTFS data
+2. Real-time GTFS data
+3. Headway Explorer tool (interactive tool for visualizing and exploring headway data)
+
+**Data Set Name:** Regional Transit Database
+
+**Data Set Description:**
+
+1. Static GTFS data: updated monthly
+2. Real-time: ?[every minute]
+3. Headway Explorer: based on Static GTFS data
 
 **Data Steward:** 
 
 **Sharing Permissions**
 
-**Category**: Transportation
+**Category:** Transportation
 
-**Subcategory**: Transit
+**Subcategory:** Transit
 
 **Format**
 
 **Primary Use**
 
-**Source**: Transit operators (via MTC 511)
+**Source:** Transit operators (via MTC 511)
 
 **Unit of Analysis**
 
-**Update Frequency**:
+**Update Frequency:**
+
+1. Static GTFS data: monthly
+2. Real-time: ?[every minute]
+3. Headway Explorer: monthly (based on Static GTFS data)
+
 
 ## Data Collection
 

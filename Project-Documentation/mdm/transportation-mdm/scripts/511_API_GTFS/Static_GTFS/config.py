@@ -1,8 +1,5 @@
 from sqlalchemy import types
 
-# specify desired folder for all 511 data pull outputs
-OUTPUT_DIR = 'GTFS_outputs'
-
 # specify desired files from each agency's GTFS feed
 GTFS_FILES = ['agency.txt',
               'calendar.txt',
@@ -15,41 +12,6 @@ GTFS_FILES = ['agency.txt',
               'stops.txt',
               'stop_times.txt',
               'trips.txt']
-
-# specify desired operator IDs and names
-OPERATOR_ID_MAP = {'3D': 'Tri Delta Transit',
-                   'AC': 'AC Transit',
-                   'AM': 'Capitol Corridor Joint Powers Authority',
-                   'BA': 'Bay Area Rapid Transit',
-                   'CC': 'County Connection',
-                   'CE': 'Altamont Corridor Express',
-                   'CM': 'Commute.org Shuttles',
-                   'CT': 'Caltrain',
-                   'DE': 'Dumbarton Express Consortium',
-                   'EM': 'Emery Go-Round',
-                   'FS': 'Fairfield and Suisun Transit',
-                   'GF': 'Golden Gate Ferry',
-                   'GG': 'Golden Gate Transit',
-                   'MA': 'Marin Transit',
-                   'MS': 'Stanford Marguerite Shuttle',
-                   'PE': 'Petaluma Transit',
-                   'RV': 'Rio Vista Delta Breeze',
-                   'SA': 'Sonoma Marin Area Rail Transit',
-                   'SB': 'San Francisco Bay Ferry',
-                   'SC': 'VTA',
-                   'SF': 'San Francisco Municipal Transportation Agency',
-                   'SM': 'SamTrans',
-                   'SO': 'Sonoma County Transit LastGenerated',
-                   'SR': 'Santa Rosa CityBus LastGenerated',
-                   'ST': 'SolTrans LastGenerated',
-                   'TD': 'Tideline Marine Group Inc LastGenerated',
-                   'UC': 'Union City Transit LastGenerated',
-                   'VC': 'Vacaville City Coach LastGenerated',
-                   'VN': 'Napa LastGenerated',
-                   'WC': 'WestCat (Western Contra Costa) LastGenerated',
-                   'WH': 'Livermore Amador Valley Transit Authority LastGenerated'
-                   }
-
 
 # for creating Redshift tables. Created manually after inspecting each GTFS feed file
 gtfs_type_dict = {'gtfs_agency': {'agency_id': types.CHAR(2),
@@ -139,18 +101,17 @@ gtfs_type_dict = {'gtfs_agency': {'agency_id': types.CHAR(2),
                                  'agency_id': types.CHAR(2),
                                  'agency_name': types.VARCHAR(100)
                                 },  # for stops.txt
-                  'gtfs_trips': {'route_id': types.VARCHAR(20),
-                                 'service_id': types.CHAR(5),
+                  'gtfs_trips': {'route_id': types.VARCHAR(100),
+                                 'service_id': types.VARCHAR(10),
                                  'trip_id': types.VARCHAR(100),
                                  'trip_headsign': types.VARCHAR(100),
                                  'direction_id': types.INTEGER,
                                  'block_id': types.VARCHAR(20),
-                                 'shape_id': types.VARCHAR(20),
+                                 'shape_id': types.VARCHAR(50),
                                  'trip_short_name': types.VARCHAR(100),
+                                 'bikes_allowed': types.FLOAT,
                                  'wheelchair_accessible': types.FLOAT,
                                  'agency_id': types.CHAR(2),
                                  'agency_name': types.VARCHAR(100)
                                 }  # for trips.txt
                       }
-
-

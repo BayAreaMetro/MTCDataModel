@@ -23,108 +23,98 @@ end_time_td = time_period_str_to_timedelta(headway_end_time, start=False)
 
 Run with:
 
-python modify_GTFS_data.py
+python headway_fns.py
 """
+import sys
 import pandas as pd
 
 # local import
-from utils import time_period_str_to_timedelta, timedelta_to_time_period_str
+sys.path.insert(0, '../')
+from utils import (time_period_str_to_timedelta,
+ timedelta_to_time_period_str, pull_df_from_redshift_sql,
+  create_redshift_engine)
 
-def get_eligible_SB50_agencies(calendar_df):
-    """
-    Given the gtfs_calendar dataframe, returns a list of
-    agencies which meet the Monday-Sunday service criteria for SB50.
 
-    The original format of calendar.txt is separate lines for weekday,
+def filter_calendar_days(df, subset_days):
+    """Given a dataframe with weekday columns, filters the dataframe to rows
+    that have service on the given subset days"""
+    df['days'] = df[subset_days].sum(axis=1)
+    filtered_df = df[df['days'] == len(subset_days)]
+    return filtered_df
+
+
+def modify_gtfs_calendar(gtfs_calendar):
+    """The original format of calendar.txt is separate lines for weekday,
     Saturday, and Sunday service. This function flattens the rows of the
     dataframe so that for each agency, all its service days are
-    indicated as 1 in a single row. Then all agencies that offer
-    Monday-Sunday (7 day) service are returned in a list.
-    """
+    indicated as 1 in a single row"""
     weekdays = ['monday', 'tuesday', 'wednesday',
                 'thursday', 'friday', 'saturday', 'sunday']
     # flatten service days for each agency
-    service_day_cal = calendar_df.groupby(['agency_id'], as_index=False)[weekdays].max()
-    # subset to agencies with 7 day service
-    service_day_cal['days'] = service_day_cal[weekdays].sum(axis=1)
-    service_day_cal = service_day_cal[service_day_cal['days'] == 7]
-    SB50_agencies = list(service_day_cal['agency_id'])
-    return SB50_agencies
+    mod_gtfs_calendar = gtfs_calendar.groupby(['agency_id'], as_index=False)[weekdays].max()
+    return mod_gtfs_calendar
 
 
-def modify_trip_df(trips_df):
+def modify_gtfs_trips(gtfs_trips):
     """
     Given the gtfs_trips dataframe, returns a modified table
     with renamed direction_id column values and a unique Route_Pattern_ID
     for each agency route (for headway calculations)
     """
-    mod_trips_df = trips_df.copy()
+    mod_gtfs_trips = gtfs_trips.copy()
     route_pattern_id_cols = ['agency_id', 'route_id', 'direction_id']
-    mod_trips_df[route_pattern_id_cols] = mod_trips_df[route_pattern_id_cols].astype(str)
+    mod_gtfs_trips[route_pattern_id_cols] = mod_gtfs_trips[route_pattern_id_cols].astype(str)
     direction_id_map = {'0': 'Outbound', '1': 'Inbound'}
-    mod_trips_df['direction_id'] = mod_trips_df['direction_id'].map(direction_id_map)
-    mod_trips_df['Route_Pattern_ID'] = (mod_trips_df['agency_id']
-                                    + '-' + mod_trips_df['route_id']
-                                    + '-' + mod_trips_df['direction_id'])
-    return mod_trips_df
+    mod_gtfs_trips['direction_id'] = mod_gtfs_trips['direction_id'].map(direction_id_map)
+    mod_gtfs_trips['Route_Pattern_ID'] = (mod_gtfs_trips['agency_id']
+                                    + '-' + mod_gtfs_trips['route_id']
+                                    + '-' + mod_gtfs_trips['direction_id'])
+    return mod_gtfs_trips
 
 
-def modify_stop_times_df(stop_times_df):
+def modify_gtfs_stop_times(gtfs_stop_times):
     """
     Given the gtfs_stop_times dataframe, returns a modified table
     with corrected arrival time columns. In the original GTFS stop_times feed, the arrival
     time can exceed 24 hours since it goes by trips. For example, if a trip left at 11:50pm
     and arrived at 12:50am, the original arrival time would be 24:50, but the corrected arrival time would be 00:50
     """
-    mod_stop_times_df = stop_times_df.copy()
-    mod_stop_times_df['arrival_time_td'] = pd.to_timedelta(mod_stop_times_df['arrival_time'])
-    overflow_times = mod_stop_times_df['arrival_time_td'] > pd.Timedelta('1 day')
-    mod_stop_times_df.loc[overflow_times, 'arrival_time_td'] = (mod_stop_times_df.loc[overflow_times, 'arrival_time_td']
+    mod_gtfs_stop_times = gtfs_stop_times.copy()
+    mod_gtfs_stop_times['arrival_time_td'] = pd.to_timedelta(mod_gtfs_stop_times['arrival_time'])
+    overflow_times = mod_gtfs_stop_times['arrival_time_td'] > pd.Timedelta('1 day')
+    mod_gtfs_stop_times.loc[overflow_times, 'arrival_time_td'] = (mod_gtfs_stop_times.loc[overflow_times, 'arrival_time_td']
                                                                 - pd.Timedelta('1 day'))
-    return mod_stop_times_df
+    return mod_gtfs_stop_times
 
 
-def subset_routes_df_buses(routes_df):
+def subset_gtfs_routes_buses(gtfs_routes):
     """
     Given the gtfs_routes dataframe, returns a subsetted dataframe for only buses (route_type = 3)
     """
-    return routes_df[routes_df['route_type'] == 3]
+    return gtfs_routes[gtfs_routes['route_type'] == 3]
 
 
-def get_trip_date(trips_df, calendar_df):
-    """Given the gtfs_trips and gtfs_calendar dataframes, adds
-    ServiceDayType to gtfs_trips"""
-    trip_dates = trips_df.merge(calendar_df)
-    trip_dates.loc[(trip_dates['monday'] == 1)
-                   & (trip_dates['tuesday'] == 1)
-                  & (trip_dates['wednesday'] == 1)
-                  & (trip_dates['thursday'] == 1)
-                  & (trip_dates['friday'] == 1), 'ServiceDayType'] = 'Weekday'
-
-    trip_dates.loc[(trip_dates['saturday'] == 1)
-                    | (trip_dates['sunday'] == 1) , 'ServiceDayType'] = 'Weekend'
-    # return trips_df columns plus ServiceDayType
-    return trip_dates[list(trips_df.columns) + ['ServiceDayType']]
-
-
-def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, max_headway, service_day_type, time_period):
+def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_headway, service_days, time_period):
     """
     Given pandas DataFrames gtfs_trips, gtfs_stop_times, gtfs_routes, and gtfs_calendar,
      and pandas Timedeltas start_time_td and end_time_td (which define the headway calculation period)
     calculates the headways for the specified time period
     """
     # add column Route_Pattern_ID
-    mod_trips_df = modify_trip_df(trips_df)
-    # add column ServiceDayType
-    mod_trips_df = get_trip_date(mod_trips_df, calendar_df)
+    mod_gtfs_trips = modify_trip_df(gtfs_trips)
+    # flatten service days
+    mod_gtfs_calendar = modify_gtfs_calendar(gtfs_calendar)
+
+    merged_trips = mod_gtfs_trips.merge(mod_gtfs_calendar)
+    filtered_trips = filter_calendar_days(merged_trips, service_days)
 
     # subset routes to bus routes only
-    bus_routes = subset_routes_df_buses(routes_df)
+    bus_routes = subset_gtfs_routes_buses(gtfs_routes)
     
     # add column arrival_time_td
-    mod_stop_times_df = modify_stop_times_df(stop_times_df)
+    mod_gtfs_stop_times = modify_gtfs_stop_times(gtfs_stop_times)
     # subset stop_times to desired headway calculation time period
-    subset_stop_times_df = mod_stop_times_df[mod_stop_times_df['arrival_time_td'].between(time_period['start_time_td'],
+    subset_gtfs_stop_times = mod_gtfs_stop_times[mod_gtfs_stop_times['arrival_time_td'].between(time_period['start_time_td'],
                                                                                           time_period['end_time_td'])]
     
     routes_cols = ['route_id', 'route_type']
@@ -132,16 +122,23 @@ def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, max_headway, 
                   'trip_headsign', 'trip_id', 'Route_Pattern_ID', 'ServiceDayType']
     stop_times_cols = ['trip_id', 'arrival_time_td', 'stop_id', 'stop_sequence']
     
-    headways_table = (routes_df[routes_cols]
-                      .merge(mod_trips_df[trips_cols])
-                      .merge(subset_stop_times_df[stop_times_cols]))
+    headways_table = (bus_routes[routes_cols]
+                      .merge(filtered_trips[trips_cols])
+                      .merge(subset_gtfs_stop_times[stop_times_cols]))
 
-    # subset table to eligible SB50 agencies (service Monday-Sunday)
-    SB50_agencies = get_eligible_SB50_agencies(calendar_df)
+    # subset table to desired service days
+    filtered_calendar_df = filter_calendar_days(mod_gtfs_calendar, subset_days)
+    SB50_agencies = list(filtered_calendar_df['agency_id'])
+
     headways_table = headways_table[headways_table['agency_id'].isin(SB50_agencies)]
     
     # subset table to desired service day type (Weekday or Weekend)
     headways_table = headways_table[headways_table['ServiceDayType'] == service_day_type]
+    
+    # drop duplicate observations for the same stop at the same time period.
+    dedup_cols = ['Route_Pattern_ID', 'trip_headsign', 'stop_id', 'stop_sequence',
+                  'arrival_time_td', 'route_type']
+    headways_table.drop_duplicates(subset=dedup_cols, inplace=True)
     
     # count number of times a trip stops at each stop in given time period
     headways_table['Total_Trips'] = (headways_table
@@ -154,19 +151,37 @@ def calc_headways(trips_df, stop_times_df, routes_df, calendar_df, max_headway, 
     # calculate headway as time period duration/number of trips passing each stop
     headways_table['Headway'] = time_frame_duration_mins/headways_table['Total_Trips']
     
-    ### QUESTION: group for avg headways?
-
+    # get average headway and number of trips by (agency, route id, route direction, trip)
+    headways_table[['Avg_Headway', 'Avg_Num_Trips']] = (headways_table
+                                                         .groupby(['Route_Pattern_ID', 'trip_headsign'])[['Headway', 'Total_Trips']]
+                                                         .transform('mean'))
+    
     # subset table to specified headways
-    # headways_table = headways_table[headways_table['Headway'] <= max_headway]
+    headways_table = headways_table[headways_table['Avg_Headway'] <= max_headway]
+    
 
     headways_table['time_period'] = (timedelta_to_time_period_str(start_time_td)
                                      + '-'
                                      + timedelta_to_time_period_str(end_time_td))
+    # final columns
     final_cols = ['agency_id', 'agency_name', 'route_id', 'direction_id',
-                  'trip_headsign', 'Total_Trips', 'Headway', 'route_type',
-                  'time_period', 'Route_Pattern_ID']
+                  'trip_headsign', 'Total_Trips', 'Headway', 'Avg_Headway', 'Avg_Num_Trips',
+                  'route_type', 'time_period', 'Route_Pattern_ID']
     headways_table = headways_table[final_cols]
     return headways_table
+
+
+def pull_GTFS_tables():
+    """Pulls the necessary GTFS tables (gtfs_trips, GTFS_stop_times,
+    GTFS_routes, GTFS_calendar) from Redshift and returns them as
+    a dictionary of pandas DataFrames"""
+    df_dict = {}
+    GTFS_tables = ['gtfs_trips', 'gtfs_stop_times',
+                   'gtfs_routes', 'gtfs_calendar']
+    for tablename in GTFS_tables:
+        sql_q = 'SELECT * FROM transportation.{};'.format(tablename)
+        df_dict[tablename] = pull_df_from_redshift_sql(sql_q)
+    return df_dict
 
 
 if __name__ == '__main__':
@@ -191,9 +206,8 @@ if __name__ == '__main__':
                                         'end_time_td': pd.Timedelta('22:00:00')}
                       }  # max 30 min headways during weekends (Sat-Sun, 8AM-10PM)
                     }
-
-
-    # pull these tables from S3: trips_df, stop_times_df, routes_df, calendar_df
+              
+    # pull these tables from S3: gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar
     # get user input to specify time period
     # output: download calculated headways table as csv
 

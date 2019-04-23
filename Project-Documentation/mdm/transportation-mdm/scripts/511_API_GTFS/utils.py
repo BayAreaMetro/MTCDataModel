@@ -2,12 +2,6 @@
 This file contains utility functions for Transit Data Processing,
 such as logging, file I/O, moving data to AWS, etc.
 
-This file needs the following environment variables to be set:
-
-REDSHIFT_USERNAME
-REDSHIFT_PSWD
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
 """
 
 import io
@@ -21,11 +15,16 @@ import psycopg2
 # Pre-requisite: ! pip install sqlalchemy-redshift
 from sqlalchemy import create_engine
 
+# local imports
+sys.path.insert(0, './licenses')
+from credentials import (REDSHIFT_USERNAME, REDSHIFT_PSWD,
+ AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 
-REDSHIFT_USERNAME = os.environ['REDSHIFT_USERNAME']
-REDSHIFT_PSWD = os.environ['REDSHIFT_PSWD']
-AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
-AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+
+# REDSHIFT_USERNAME = os.environ['REDSHIFT_USERNAME']
+# REDSHIFT_PSWD = os.environ['REDSHIFT_PSWD']
+# AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+# AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 
 
 def init_logger(logger_name, output_dir):
@@ -80,13 +79,8 @@ def download_df_from_s3(bucket, key):
     return df
 
 
-def post_df_as_redshift_table(tablename, df, dtypes=None):
-    """Given a tablename, pandas DataFrame, and optionally a dictionary
-    of table columns to sqlalchemy dtypes, writes the DataFrame as a
-    Redshift table
-
-    Resource: http://measureallthethin.gs/blog/connect-python-and-pandas-to-redshift/  # noqa
-    """
+def create_redshift_engine():
+    """Creates a default Redshift SQLAlchemy engine for pandas-Redshift connections"""
     redshift_host = 'data-viz-cluster.cepkffrgvgkl.us-west-2.redshift.amazonaws.com'
 
     redshift_connection_params = {'user': REDSHIFT_USERNAME,
@@ -102,6 +96,17 @@ def post_df_as_redshift_table(tablename, df, dtypes=None):
                                                             redshift_connection_params['dbname'])
 
     engine = create_engine(psql_engine_str, echo=True)
+    return engine
+
+
+def post_df_as_redshift_table(tablename, df, dtypes=None):
+    """Given a tablename, pandas DataFrame, and optionally a dictionary
+    of table columns to sqlalchemy dtypes, writes the DataFrame as a
+    Redshift table
+
+    Resource: http://measureallthethin.gs/blog/connect-python-and-pandas-to-redshift/  # noqa
+    """
+    engine = create_redshift_engine()
     to_Redshift_args = {'name': tablename,
                         'schema': 'transportation',
                         'con': engine,
@@ -110,6 +115,13 @@ def post_df_as_redshift_table(tablename, df, dtypes=None):
     if dtypes is not None:
         to_Redshift_args['dtype'] = dtypes
     df.to_sql(**to_Redshift_args)
+
+
+def pull_df_from_redshift_sql(sql_statement):
+    """Connects to the default Redshift engine and returns a
+    dataframe based on the SQL statement"""
+    engine = create_redshift_engine()
+    return pd.read_sql(sql_statement, engine)
 
 
 def create_redshift_table_str(tablename, column_type_dict):
@@ -166,6 +178,16 @@ def timedelta_to_time_period_str(timedelta):
     """Given a pandas Timedelta object, returns a string of format
     HH:MM:SS"""
     return str(timedelta).split('days ')[-1]
+
+
+def time_period_str_to_timedelta(time_str, start=True):
+    """Given a string of format HH:MM format, returns a pandas Timedelta
+    object"""
+    if start:  # mark start seconds as 00
+        time_str += ':00'
+    else:  # mark end seconds as 59
+        time_str += ':59'
+    return pd.Timedelta(time_str)
 
 
 def write_lines(lines, fname):
