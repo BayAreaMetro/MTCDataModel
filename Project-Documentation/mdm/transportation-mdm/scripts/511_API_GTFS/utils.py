@@ -17,7 +17,10 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # local imports
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), 'creds'))
+# sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), 'creds'))
+
+
+sys.path.insert(0, '~/Box/DataViz Projects/Application Secure Files/511_GTFS')
 from credentials import (REDSHIFT_USERNAME, REDSHIFT_PSWD,
  AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 
