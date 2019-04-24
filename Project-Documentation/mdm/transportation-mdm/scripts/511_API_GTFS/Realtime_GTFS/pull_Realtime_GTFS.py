@@ -9,7 +9,7 @@ from google.transit import gtfs_realtime_pb2
 import sys
 sys.path.insert(0, '../')
 from utils import (init_logger, print_runtime)
-from 511_config import OUTPUT_DIR, OPERATOR_ID_MAP
+from GTFS_511_config import OUTPUT_DIR, OPERATOR_ID_MAP
 
 
 def pull_511_FeedMessage_realtime(operator_id, source='TripUpdates'):

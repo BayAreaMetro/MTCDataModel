@@ -1,3 +1,9 @@
+"""This file contains all widget functions for the Headway Explorer tool.
+
+These functions are called in Headway_Explorer.ipynb (Headway Explorer tool)
+"""
+
+
 import pandas as pd
 import ipywidgets as widgets
 from ipywidgets import HBox, VBox, Label

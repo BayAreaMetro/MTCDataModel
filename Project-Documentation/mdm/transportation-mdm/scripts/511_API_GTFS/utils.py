@@ -12,11 +12,12 @@ import boto3
 import logging
 # Pre-requisite: ! conda install -y -c anaconda psycopg2
 import psycopg2
+import pandas as pd
 # Pre-requisite: ! pip install sqlalchemy-redshift
 from sqlalchemy import create_engine
 
 # local imports
-sys.path.insert(0, './licenses')
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), 'creds'))
 from credentials import (REDSHIFT_USERNAME, REDSHIFT_PSWD,
  AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 
@@ -145,7 +146,6 @@ def create_redshift_table_str(tablename, column_type_dict):
 
 def create_redshift_table_via_s3(tablename, s3_path, column_type_dict):
     """
-
     Inspect table creation errors like this:
     
     SELECT * from stl_load_errors
@@ -189,6 +189,12 @@ def time_period_str_to_timedelta(time_str, start=True):
         time_str += ':59'
     return pd.Timedelta(time_str)
 
+
+def read_lines(fname):
+    with open(fname) as f:
+        data = f.read()
+    return data.split('\n')
+    
 
 def write_lines(lines, fname):
     """Given an iterable and filename, writes each item as a line to the file"""

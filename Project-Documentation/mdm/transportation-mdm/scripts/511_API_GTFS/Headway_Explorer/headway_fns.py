@@ -1,29 +1,14 @@
 """
-This file contains GTFS feed transformations used for common GTFS tasks
-(e.g. calculating headways, etc.)
+This file contains headway calulation functions for the Headway Explorer tool.
 
 The functions in this file were derived from
 
 https://github.com/BayAreaMetro/RegionalTransitDatabase/blob/master/R/RouteBuilderStuff_KS.R
 and
-
 https://github.com/BayAreaMetro/RegionalTransitDatabase/blob/master/R/r511.R
 
-TODO: pull tables from Redshift, create interactive tool to allow users to specify time period and download resulting headways table
 
-CURRENT PROMPT FOR TIME PERIOD INPUT:
-
-print('Enter time using 24 hour HH:MM format, e.g. 22:10')
-
-headway_start_time = input('Enter start time for headway calculation period: ')
-headway_end_time = input('Enter end time for headway calculation period: ')
-
-start_time_td = time_period_str_to_timedelta(headway_start_time)
-end_time_td = time_period_str_to_timedelta(headway_end_time, start=False)
-
-Run with:
-
-python headway_fns.py
+These functions are called in Headway_Explorer.ipynb (Headway Explorer tool)
 """
 import sys
 import pandas as pd
@@ -101,7 +86,7 @@ def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_h
     calculates the headways for the specified time period
     """
     # add column Route_Pattern_ID
-    mod_gtfs_trips = modify_trip_df(gtfs_trips)
+    mod_gtfs_trips = modify_gtfs_trips(gtfs_trips)
     # flatten service days
     mod_gtfs_calendar = modify_gtfs_calendar(gtfs_calendar)
 
@@ -119,7 +104,7 @@ def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_h
     
     routes_cols = ['route_id', 'route_type']
     trips_cols = ['agency_id', 'agency_name', 'route_id', 'direction_id',
-                  'trip_headsign', 'trip_id', 'Route_Pattern_ID', 'ServiceDayType']
+                  'trip_headsign', 'trip_id', 'Route_Pattern_ID']
     stop_times_cols = ['trip_id', 'arrival_time_td', 'stop_id', 'stop_sequence']
     
     headways_table = (bus_routes[routes_cols]
@@ -127,13 +112,10 @@ def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_h
                       .merge(subset_gtfs_stop_times[stop_times_cols]))
 
     # subset table to desired service days
-    filtered_calendar_df = filter_calendar_days(mod_gtfs_calendar, subset_days)
+    filtered_calendar_df = filter_calendar_days(mod_gtfs_calendar, service_days)
     SB50_agencies = list(filtered_calendar_df['agency_id'])
 
     headways_table = headways_table[headways_table['agency_id'].isin(SB50_agencies)]
-    
-    # subset table to desired service day type (Weekday or Weekend)
-    headways_table = headways_table[headways_table['ServiceDayType'] == service_day_type]
     
     # drop duplicate observations for the same stop at the same time period.
     dedup_cols = ['Route_Pattern_ID', 'trip_headsign', 'stop_id', 'stop_sequence',
@@ -160,9 +142,9 @@ def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_h
     headways_table = headways_table[headways_table['Avg_Headway'] <= max_headway]
     
 
-    headways_table['time_period'] = (timedelta_to_time_period_str(start_time_td)
+    headways_table['time_period'] = (timedelta_to_time_period_str(time_period['start_time_td'])
                                      + '-'
-                                     + timedelta_to_time_period_str(end_time_td))
+                                     + timedelta_to_time_period_str(time_period['end_time_td']))
     # final columns
     final_cols = ['agency_id', 'agency_name', 'route_id', 'direction_id',
                   'trip_headsign', 'Total_Trips', 'Headway', 'Avg_Headway', 'Avg_Num_Trips',
@@ -206,10 +188,3 @@ if __name__ == '__main__':
                                         'end_time_td': pd.Timedelta('22:00:00')}
                       }  # max 30 min headways during weekends (Sat-Sun, 8AM-10PM)
                     }
-              
-    # pull these tables from S3: gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar
-    # get user input to specify time period
-    # output: download calculated headways table as csv
-
-
-    
