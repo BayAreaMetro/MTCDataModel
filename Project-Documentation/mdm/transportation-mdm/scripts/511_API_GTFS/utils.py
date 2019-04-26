@@ -1,3 +1,5 @@
+
+
 """
 This file contains utility functions for Transit Data Processing,
 such as logging, file I/O, moving data to AWS, etc.
@@ -17,18 +19,17 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # local imports
+
 # sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), 'creds'))
+# sys.path.insert(0, r'~/Box/DataViz\ Projects/Application\ Secure\ Files/511_GTFS/')
 
-
-sys.path.insert(0, '~/Box/DataViz Projects/Application Secure Files/511_GTFS')
+user = os.environ['USER']
+sys.path.insert(0, '/Users/{}/Box/DataViz Projects/Application Secure Files/511_GTFS'.format(user))
 from credentials import (REDSHIFT_USERNAME, REDSHIFT_PSWD,
  AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
 
-
-# REDSHIFT_USERNAME = os.environ['REDSHIFT_USERNAME']
-# REDSHIFT_PSWD = os.environ['REDSHIFT_PSWD']
-# AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
-# AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
+sys.path.insert(0, '/Users/{}/Box/DataViz Projects/Utility Code'.format(user))
+from utils_io import *
 
 
 def init_logger(logger_name, output_dir):
@@ -181,6 +182,12 @@ def timedelta_to_time_period_str(timedelta):
     """Given a pandas Timedelta object, returns a string of format
     HH:MM:SS"""
     return str(timedelta).split('days ')[-1]
+
+
+def timedelta_to_hour_str(td):
+    """Returns the hour and minutes from a pandas Timedelta"""
+    td_comps = td.components
+    return str(td_comps[1]).zfill(2) + ':' + str(td_comps[2]).zfill(2)
 
 
 def time_period_str_to_timedelta(time_str, start=True):

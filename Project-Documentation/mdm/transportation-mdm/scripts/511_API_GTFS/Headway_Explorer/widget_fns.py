@@ -3,7 +3,7 @@
 These functions are called in Headway_Explorer.ipynb (Headway Explorer tool)
 """
 
-
+import os
 import pandas as pd
 import ipywidgets as widgets
 from ipywidgets import HBox, VBox, Label
@@ -32,6 +32,9 @@ def init_day_type_button():
             if change['new'] == 'Select Day(s)':
                 for checkbox in weekday_checkboxes.values():
                     display(checkbox)
+            else:
+                for checkbox in weekday_checkboxes.values():
+                    checkbox.disabled = True
 
     # Trigger show_days_of_week if 'Select Day(s)' is selected
     day_type_button.observe(show_days_of_week)
@@ -39,7 +42,9 @@ def init_day_type_button():
 
 
 def get_days(day_type_button, weekday_checkboxes):
-    """"""
+    """
+    Returns a list of transit service days given a user's selection
+    """
     weekdays = list(weekday_checkboxes.keys())
     if day_type_button.value == 'Weekday':
         days =  weekdays[:-2]
@@ -51,12 +56,13 @@ def get_days(day_type_button, weekday_checkboxes):
             if weekday_checkboxes[d].value:
                 days.append(d)
     days = [d.lower() for d in days]
+    print('you selected {}'.format(repr(days)))
     return days
 
 
 def init_time_period_menu():
     """"""
-    time_period_menu = widgets.RadioButtons(
+    time_period_menu = widgets.Dropdown(
         options=['AM Peak (6-10AM)', 'PM Peak (3-7PM)',
                  'Standard weekday (6AM-10PM)',
                  'Standard weekend (8AM-10PM)',
@@ -115,8 +121,7 @@ def get_time_period(time_period_menu, custom_time_dict):
         start_time = '{}:{}'.format(start_times[0].value, start_times[1].value)
         end_times = custom_time_dict['end']
         end_time = '{}:{}'.format(end_times[0].value, end_times[1].value)
-        print('You selected start time of {} and end time of {}'.format(start_time, end_time))
-
+        
         start_time = time_period_str_to_timedelta(start_time)
         end_time = time_period_str_to_timedelta(end_time)
         
@@ -129,6 +134,9 @@ def get_time_period(time_period_menu, custom_time_dict):
 #             time_period_menu, custom_time_dict = init_time_period_menu()
 #             display(time_period_menu)
 #             return get_time_period(time_period_menu, custom_time_dict)
+    start_time_str = repr(start_time).split('days ')[1].strip("')")
+    end_time_str = repr(end_time).split('days ')[1].strip("')")
+    print('You selected start time of {} and end time of {}'.format(start_time_str, end_time_str))
     return start_time, end_time
 
 
@@ -168,4 +176,20 @@ def get_headway(headway_selector, custom_headway):
         headway = 30
     else:
         headway = custom_headway.value
+    print('you selected a headway of {} mins'.format(headway))
     return headway
+
+
+def show_download_button(df, calc_id):
+    button = widgets.Button(description="Download Data")
+    display(button)
+
+    def on_button_clicked(b):
+        print('Downloading as {}.csv'.format(calc_id))
+        output_fname = '~/Downloads/{}.csv'.format(calc_id)
+        # overwrite previously-downloaded file
+        if os.path.isfile(output_fname):
+            os.remove(output_fname)
+        df.to_csv(output_fname, index=False)
+
+    button.on_click(on_button_clicked)

@@ -11,12 +11,13 @@ https://github.com/BayAreaMetro/RegionalTransitDatabase/blob/master/R/r511.R
 These functions are called in Headway_Explorer.ipynb (Headway Explorer tool)
 """
 import sys
+import numpy as np
 import pandas as pd
 
 # local import
 sys.path.insert(0, '../')
 from utils import (time_period_str_to_timedelta,
- timedelta_to_time_period_str, pull_df_from_redshift_sql,
+ timedelta_to_hour_str, pull_df_from_redshift_sql,
   create_redshift_engine)
 
 
@@ -79,6 +80,52 @@ def subset_gtfs_routes_buses(gtfs_routes):
     return gtfs_routes[gtfs_routes['route_type'] == 3]
 
 
+def pull_GTFS_tables():
+    """Pulls the necessary GTFS tables (gtfs_trips, GTFS_stop_times,
+    GTFS_routes, GTFS_calendar) from Redshift and returns them as
+    a dictionary of pandas DataFrames"""
+    df_dict = {}
+    GTFS_tables = ['gtfs_trips', 'gtfs_stop_times',
+                   'gtfs_routes', 'gtfs_calendar']
+    for tablename in GTFS_tables:
+        sql_q = 'SELECT * FROM transportation.{};'.format(tablename)
+        df_dict[tablename] = pull_df_from_redshift_sql(sql_q)
+    return df_dict
+
+
+def get_headway_calc_period_str(service_days, start_time_td, end_time_td):
+    """Creates a string that defines the headway calculation period.
+
+    This string is used to store headway calculations for that given time period
+    """
+    day_abbrev_d = {'monday': 'M',
+                    'tuesday': 'T',
+                    'wednesday': 'W',
+                    'thursday': 'R',
+                    'friday': 'F',
+                    'saturday': 'Sat',
+                    'sunday': 'Sun'}
+    weekdays = list(day_abbrev_d.keys())[:-2]
+    weekends = list(day_abbrev_d.keys())[-2:]
+    if service_days == weekdays:
+        headway_calc_days = 'Weekday'
+    elif service_days == weekends:
+        headway_calc_days = 'Weekend'
+    else:
+        headway_calc_days = ''.join([day_abbrev_d[d] for d in service_days])
+
+    if start_time_td == pd.Timedelta('0 days 06:00:00') and end_time_td == pd.Timedelta('0 days 10:00:00'):
+        time_period = 'AM_Peak'
+    elif start_time_td == pd.Timedelta('0 days 15:00:00') and end_time_td == pd.Timedelta('0 days 19:00:00'):
+        time_period = 'PM_Peak'
+    else:
+        # format '06:00-10:00'
+        time_period = timedelta_to_hour_str(start_time_td)+ '-' + timedelta_to_hour_str(end_time_td)
+
+    headway_calc_period_str = headway_calc_days + '_' + time_period
+    return headway_calc_period_str
+
+
 def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_headway, service_days, time_period):
     """
     Given pandas DataFrames gtfs_trips, gtfs_stop_times, gtfs_routes, and gtfs_calendar,
@@ -133,37 +180,38 @@ def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_h
     # calculate headway as time period duration/number of trips passing each stop
     headways_table['Headway'] = time_frame_duration_mins/headways_table['Total_Trips']
     
-    # get average headway and number of trips by (agency, route id, route direction, trip)
-    headways_table[['Avg_Headway', 'Avg_Num_Trips']] = (headways_table
-                                                         .groupby(['Route_Pattern_ID', 'trip_headsign'])[['Headway', 'Total_Trips']]
-                                                         .transform('mean'))
-    
-    # subset table to specified headways
-    headways_table = headways_table[headways_table['Avg_Headway'] <= max_headway]
-    
+    headway_calc_period_str = get_headway_calc_period_str(service_days,
+                                                          time_period['start_time_td'],
+                                                          time_period['end_time_td'])
+    # compute average headway and trip counts for the calculation time period
+    # (by agency, route id, route direction, trip)
+    headways_col = headway_calc_period_str + '_Headway'
+    num_trips_col = headway_calc_period_str + '_Num_Trips'
+    compute_cols = [headways_col, num_trips_col]
 
-    headways_table['time_period'] = (timedelta_to_time_period_str(time_period['start_time_td'])
+    headways_table[compute_cols] = (headways_table
+        .groupby(['Route_Pattern_ID', 'trip_headsign'])[['Headway', 'Total_Trips']]
+        .transform('mean'))
+
+    # flag whether route meets specified headway criteria
+    rows_meet_criteria = headways_table[headways_col] <= max_headway
+    headways_table['Meets_criteria'] = np.where(rows_meet_criteria, 1, 0)
+    
+    headways_table['time_period'] = (timedelta_to_hour_str(time_period['start_time_td'])
                                      + '-'
-                                     + timedelta_to_time_period_str(time_period['end_time_td']))
+                                     + timedelta_to_hour_str(time_period['end_time_td']))
+    
     # final columns
-    final_cols = ['agency_id', 'agency_name', 'route_id', 'direction_id',
-                  'trip_headsign', 'Total_Trips', 'Headway', 'Avg_Headway', 'Avg_Num_Trips',
-                  'route_type', 'time_period', 'Route_Pattern_ID']
+    final_cols = (['agency_id', 'agency_name', 'route_id', 'direction_id',
+                   'trip_headsign', 'route_type',  'Route_Pattern_ID']
+                    + compute_cols
+                    + ['time_period', 'Meets_criteria'])
     headways_table = headways_table[final_cols]
+
+    # round final output to nearest int
+    headways_table = headways_table.round(0)
+    headways_table[compute_cols] = headways_table[compute_cols].astype(int)
     return headways_table
-
-
-def pull_GTFS_tables():
-    """Pulls the necessary GTFS tables (gtfs_trips, GTFS_stop_times,
-    GTFS_routes, GTFS_calendar) from Redshift and returns them as
-    a dictionary of pandas DataFrames"""
-    df_dict = {}
-    GTFS_tables = ['gtfs_trips', 'gtfs_stop_times',
-                   'gtfs_routes', 'gtfs_calendar']
-    for tablename in GTFS_tables:
-        sql_q = 'SELECT * FROM transportation.{};'.format(tablename)
-        df_dict[tablename] = pull_df_from_redshift_sql(sql_q)
-    return df_dict
 
 
 if __name__ == '__main__':
