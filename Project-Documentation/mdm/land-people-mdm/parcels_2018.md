@@ -24,7 +24,7 @@ Field Match by County:
 The documentation and metadata details for this data can be viewed here: [Parcels 2018]() -- Socrata
 
 **Figure 2. Table Schema**   
-![Parcels 2018](https://www.lucidchart.com/publicSegments/view/873c755a-f56c-4a5a-83c5-fbd21fdcaa5f/image.png)
+![Parcels 2018](https://www.lucidchart.com/publicSegments/view/4da7d90f-d733-47ae-97a2-c3c46e4127a9/image.png)
 
 
 **Note**:
