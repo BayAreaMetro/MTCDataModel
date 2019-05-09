@@ -13,12 +13,12 @@ This data was compiled using local information collected from each of the 109 ju
 This data is generated using a combination of sources and methods mainly attributed to data collected from local assessor's office parcel characteristics. Each county assessor's dataset is processed individually. The figure below provides a high level overview of the data processing steps.  
 
 **Figure 1. Data Processing Steps** 
-![]() --LucidCharts
+![]() --LucidCharts (Kaya)
 
 Field Matching Definitions and Sources:
 ![Field Matching Example for Santa Clara County](https://www.lucidchart.com/publicSegments/view/3c9e54bb-0137-4f6b-a41f-64b670a0bc2f/image.png)
 
-Field Match by County:
+Field Match by County: (Joshua)
 
 ## Entity Relationship Diagram and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [Parcels 2018]() -- Socrata
