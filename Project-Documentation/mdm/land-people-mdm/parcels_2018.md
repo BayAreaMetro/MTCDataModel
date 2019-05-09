@@ -23,8 +23,8 @@ Field Match by County:
 ## Entity Relationship Diagram and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [Parcels 2018]() -- Socrata
 
-**Figure 2. Table Schema**
-![Parcels 2018](https://www.lucidchart.com/publicSegments/view/90f7f307-b853-465b-875f-738ab13149bb/image.png)
+**Figure 2. Table Schema**   
+![Parcels 2018](https://www.lucidchart.com/publicSegments/view/873c755a-f56c-4a5a-83c5-fbd21fdcaa5f/image.png)
 
 
 **Note**:
