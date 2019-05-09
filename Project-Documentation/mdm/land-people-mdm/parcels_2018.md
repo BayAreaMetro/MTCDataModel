@@ -13,22 +13,25 @@ This data was compiled using local information collected from each of the 109 ju
 This data is generated using a combination of sources and methods mainly attributed to data collected from local assessor's office parcel characteristics. Each county assessor's dataset is processed individually. The figure below provides a high level overview of the data processing steps.  
 
 **Figure 1. Data Processing Steps** 
-![Data Processing Model](https://www.lucidchart.com/publicSegments/view/3c9e54bb-0137-4f6b-a41f-64b670a0bc2f/image.png) -- Lucidcharts
+![]() --LucidCharts
 
 Field Matching Definitions and Sources:
+![Field Matching Example for Santa Clara County](https://www.lucidchart.com/publicSegments/view/3c9e54bb-0137-4f6b-a41f-64b670a0bc2f/image.png)
 
-
+Field Match by County:
 
 ## Entity Relationship Diagram and Attribute Definitions
-The documentation and metadata details for this data can be viewed here: [Buildings 2018]() -- Socrata
+The documentation and metadata details for this data can be viewed here: [Parcels 2018]() -- Socrata
 
-**Figure 2. Entity Relationship Diagram**
-![Land Use Data Model]() -- Lucidcharts
-Click [Here]() for interactive versions of Figures 1 and 2. -- Lucidcharts
+**Figure 2. Table Schema**
+![Parcels 2018](https://www.lucidchart.com/publicSegments/view/e8822d28-62a1-494e-9944-54cfae5e6cc7/image.png)
+
 
 **Note**:
 Attribute Definitions can be viewed [Here]() -- Socrata
 
-This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.
+### Related Datasets
+
+[Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | Join Field: 
 
 Data Steward: UrbanSim Team
