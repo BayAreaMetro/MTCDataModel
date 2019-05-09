@@ -18,7 +18,7 @@ This data is generated using a combination of sources and methods (mainly Spatia
 ## Entity Relationship Diagram and Attribute Definitions. 
 The documentation and metadata details for this data can be viewed here: [Buildings 2018]() -- Socrata  
 
-**Figure 2. Table Schema**  
+**Figure 2. Buildings Table Schema**  
 ![Buildings Table Schema](https://www.lucidchart.com/publicSegments/view/3c269e86-a479-4589-a807-18070db5e9be/image.png)  
 
 
