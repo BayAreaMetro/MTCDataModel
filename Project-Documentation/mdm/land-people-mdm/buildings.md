@@ -4,7 +4,7 @@
 The parcel/building data includes the unique parcel identifier (APN) as well as attributes about the parcel (county, land value, if the parcel can’t be developed) and buildings (year assessed, square feet, number of stories, if the building is historic). Includes Historic and Commercial Bldgs. (basis)
 
 ## Purpose and Use  
-Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
+Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research. More information about how this dataset is used can be found in the [Basemap section of the UrbanSim documentation](https://github.com/BayAreaMetro/petrale/blob/master/basemap/basemap_process.md).
 
 ## Data Collection
 This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  {Discuss Data Collection Effort Here}
@@ -25,6 +25,9 @@ The documentation and metadata details for this data can be viewed here: [Buildi
 **Note**:
 Attribute Definitions can be viewed [Here]() -- Socrata
 
-This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.
+### Related Datasets
+
+[Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | Join Field: 
+
 
 Data Steward: UrbanSim Team
