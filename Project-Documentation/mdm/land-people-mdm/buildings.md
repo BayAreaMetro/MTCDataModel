@@ -27,7 +27,7 @@ Attribute Definitions can be viewed [Here]() -- Socrata
 
 ### Related Datasets
 
-[Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | Join Field: 
+[Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | Join Field: joinid
 
 
 Data Steward: UrbanSim Team
