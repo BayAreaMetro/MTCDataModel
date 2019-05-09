@@ -12,8 +12,8 @@ This data was compiled using local information collected from each of the 109 ju
 ## Data Processing. 
 This data is generated using a combination of sources and methods (mainly Spatial Processing using MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
 
-**Figure 1. Data Processing Steps**  
-![Data Processing Model]() (Kaya)
+**Figure 1. Data Processing Steps**  (Kaya)
+![Data Processing Model]() 
 
 ## Entity Relationship Diagram and Attribute Definitions. 
 The documentation and metadata details for this data can be viewed here: [Buildings 2018]() -- Socrata  
