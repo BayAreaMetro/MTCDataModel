@@ -15,6 +15,12 @@ This data is generated using a combination of sources and methods (mainly Spatia
 **Figure 1. Data Processing Steps**  (Kaya)
 ![Data Processing Model]() 
 
+
+Field Matching Definitions and Sources:
+![Field Matching Example for Santa Clara County]()
+
+Field Match by County: (Joshua)
+
 ## Entity Relationship Diagram and Attribute Definitions. 
 The documentation and metadata details for this data can be viewed here: [Buildings 2018]() -- Socrata  
 
