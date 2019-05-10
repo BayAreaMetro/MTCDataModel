@@ -162,7 +162,7 @@ def init_headway_selector():
                 print('Enter your own max headways (float)')
                 display(custom_headway)
 
-    # Trigger show_days_of_week if 'Select Day(s)' is selected
+    # Trigger show_custom_headway if 'Enter your own' is selected
     headway_selector.observe(show_custom_headway)
     return headway_selector, custom_headway
 
@@ -186,7 +186,8 @@ def show_download_button(df, calc_id):
 
     def on_button_clicked(b):
         print('Downloading as {}.csv'.format(calc_id))
-        output_fname = '~/Downloads/{}.csv'.format(calc_id)
+        # : is changed to /, which ruins path
+        output_fname = '~/Downloads/{}.csv'.format(calc_id).replace(':', '')
         # overwrite previously-downloaded file
         if os.path.isfile(output_fname):
             os.remove(output_fname)

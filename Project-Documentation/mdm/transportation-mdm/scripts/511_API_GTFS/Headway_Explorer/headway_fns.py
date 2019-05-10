@@ -29,16 +29,27 @@ def filter_calendar_days(df, subset_days):
     return filtered_df
 
 
-def modify_gtfs_calendar(gtfs_calendar):
+def modify_gtfs_stops(gtfs_stops):
+    """
+    """
+    mod_gtfs_stops = gtfs_stops.copy()
+    gtfs_stops_cols = ['stop_id', 'stop_lat', 'stop_lon', 'agency_id', 'agency_name']
+    return mod_gtfs_stops[gtfs_stops_cols]
+
+
+def modify_gtfs_calendar(gtfs_calendar, flatten=False):
     """The original format of calendar.txt is separate lines for weekday,
     Saturday, and Sunday service. This function flattens the rows of the
     dataframe so that for each agency, all its service days are
     indicated as 1 in a single row"""
+    mod_gtfs_calendar = gtfs_calendar.copy()
     weekdays = ['monday', 'tuesday', 'wednesday',
                 'thursday', 'friday', 'saturday', 'sunday']
     # flatten service days for each agency
-    mod_gtfs_calendar = gtfs_calendar.groupby(['agency_id'], as_index=False)[weekdays].max()
-    return mod_gtfs_calendar
+    if flatten:
+        mod_gtfs_calendar = mod_gtfs_calendar.groupby(['agency_id'], as_index=False)[weekdays].max()
+    gtfs_calendar_cols = weekdays + ['service_id', 'agency_id', 'agency_name']
+    return mod_gtfs_calendar[gtfs_calendar_cols]
 
 
 def modify_gtfs_trips(gtfs_trips):
@@ -55,7 +66,10 @@ def modify_gtfs_trips(gtfs_trips):
     mod_gtfs_trips['Route_Pattern_ID'] = (mod_gtfs_trips['agency_id']
                                     + '-' + mod_gtfs_trips['route_id']
                                     + '-' + mod_gtfs_trips['direction_id'])
-    return mod_gtfs_trips
+    gtfs_trips_cols = ['route_id', 'service_id', 'trip_id',
+                       'trip_headsign', 'direction_id', 'agency_id',
+                       'agency_name', 'Route_Pattern_ID']
+    return mod_gtfs_trips[gtfs_trips_cols]
 
 
 def modify_gtfs_stop_times(gtfs_stop_times):
@@ -70,27 +84,86 @@ def modify_gtfs_stop_times(gtfs_stop_times):
     overflow_times = mod_gtfs_stop_times['arrival_time_td'] > pd.Timedelta('1 day')
     mod_gtfs_stop_times.loc[overflow_times, 'arrival_time_td'] = (mod_gtfs_stop_times.loc[overflow_times, 'arrival_time_td']
                                                                 - pd.Timedelta('1 day'))
-    return mod_gtfs_stop_times
+    gtfs_stop_times_cols = ['trip_id', 'arrival_time', 'arrival_time_td',
+                            'stop_id', 'stop_sequence', 'agency_id', 'agency_name']
+    return mod_gtfs_stop_times[gtfs_stop_times_cols]
 
 
-def subset_gtfs_routes_buses(gtfs_routes):
+def modify_gtfs_routes(gtfs_routes, route_type=None):
     """
     Given the gtfs_routes dataframe, returns a subsetted dataframe for only buses (route_type = 3)
     """
-    return gtfs_routes[gtfs_routes['route_type'] == 3]
+    mod_gtfs_routes = gtfs_routes.copy()
+    if route_type is not None:
+        mod_gtfs_routes = mod_gtfs_routes[mod_gtfs_routes['route_type'] == route_type]
+
+    gtfs_routes_cols = ['route_id', 'route_type', 'agency_id', 'agency_name']
+    return mod_gtfs_routes[gtfs_routes_cols]
+
+
+def modify_trips_stop_times(mod_trips, mod_stop_times):
+    df = mod_trips.merge(mod_stop_times)
+
+    df['Route_Start_Time'] = df.groupby('route_id')['arrival_time_td'].transform(min)
+    df['Route_Stop_Time'] = df.groupby('route_id')['arrival_time_td'].transform(max)
+
+    def get_hour(x):
+        return x.components.hours
+    
+    df['Route_Start_Hour'] = df['Route_Start_Time'].map(get_hour)
+    df['Route_Stop_Hour'] = df['Route_Stop_Time'].map(get_hour)
+    
+    agency_route_stop_id_cols = ['agency_id', 'route_id', 'stop_id']
+    df[agency_route_stop_id_cols] = df[agency_route_stop_id_cols].astype(str)
+    df['Agency_Route_Stop_ID'] = (df['agency_id']
+                                        + '-' + df['route_id']
+                                        + '-' + df['stop_id'])
+    return df
 
 
 def pull_GTFS_tables():
-    """Pulls the necessary GTFS tables (gtfs_trips, GTFS_stop_times,
-    GTFS_routes, GTFS_calendar) from Redshift and returns them as
+    """Pulls the necessary GTFS tables (gtfs_trips, gtfs_stop_times,
+    gtfs_routes, gtfs_calendar) from Redshift and returns them as
     a dictionary of pandas DataFrames"""
     df_dict = {}
     GTFS_tables = ['gtfs_trips', 'gtfs_stop_times',
-                   'gtfs_routes', 'gtfs_calendar']
+                   'gtfs_routes', 'gtfs_calendar',
+                   'gtfs_stops']
     for tablename in GTFS_tables:
         sql_q = 'SELECT * FROM transportation.{};'.format(tablename)
         df_dict[tablename] = pull_df_from_redshift_sql(sql_q)
     return df_dict
+
+
+def compute_route_pattern_schedule(df_d):
+    # get RoutePatternID
+    mod_trips = modify_gtfs_trips(df_d['gtfs_trips'])
+
+    # create arrival_time_td column
+    mod_stop_times = modify_gtfs_stop_times(df_d['gtfs_stop_times'])
+
+    mod_calendar = modify_gtfs_calendar(df_d['gtfs_calendar'])
+    mod_routes = modify_gtfs_routes(df_d['gtfs_routes'])
+    mod_stops = modify_gtfs_stops(df_d['gtfs_stops'])
+    # merge data
+    t_st = modify_trips_stop_times(mod_trips, mod_stop_times)
+    t_st_c = t_st.merge(mod_calendar)
+    t_st_c_s = t_st_c.merge(mod_stops)
+    final_df = t_st_c_s.merge(mod_routes)
+    return final_df
+
+
+def create_route_pattern_schedule():
+    df_d = pull_GTFS_tables()
+    df = compute_route_pattern_schedule(df_d)
+    s3_bucket = 'mtc-basis'
+    s3_key = 'transportation/511_GTFS/Route_Pattern_Schedule.csv'
+    post_df_to_s3(final_df, s3_bucket, s3_key)
+
+    ctype_d = create_redshift_column_type_dict(df)
+    s3_path = 's3://{}/{}'.format(s3_bucket, s3_key)
+    tablename = 'transportation.route_pattern_schedule'
+    create_redshift_table_via_s3(tablename, s3_path, column_type_dict=ctype_d)
 
 
 def get_headway_calc_period_str(service_days, start_time_td, end_time_td):
@@ -211,6 +284,8 @@ def calc_headways(gtfs_trips, gtfs_stop_times, gtfs_routes, gtfs_calendar, max_h
     # round final output to nearest int
     headways_table = headways_table.round(0)
     headways_table[compute_cols] = headways_table[compute_cols].astype(int)
+
+    headways_table.drop_duplicates(inplace=True)
     return headways_table
 
 
