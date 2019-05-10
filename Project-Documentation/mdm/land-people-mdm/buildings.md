@@ -13,7 +13,7 @@ This data was compiled using local information collected from each of the 109 ju
 This data is generated using a combination of sources and methods (mainly Spatial Processing using MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
 
 **Figure 1. Data Processing Steps**  (Kaya)
-![Data Processing Model](https://www.lucidchart.com/publicSegments/view/a89dedd2-e92a-4ada-9290-9efe4fa286d5/image.png) 
+![Data Processing Model](https://www.lucidchart.com/publicSegments/view/4325221a-7816-4525-a25e-d237b9b796f0/image.png) 
 
 
 Field Matching Definitions and Sources:
