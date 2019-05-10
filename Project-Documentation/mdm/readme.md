@@ -40,12 +40,16 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 **Land Uses**
 
-#### Potential Land Use (UrbanSim Team to Finalize Name and Document Processing Steps)
-- [Zoning Lookup]() | [Data Processing Notes](policy-mdm/plu.md) -- Not Yet Added to Inventory
+#### Zoning (From Local Jurisdictions)
+- [Zoning 2018]() | [Data Processing Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
 #### Existing (From Assessor Parcels/ DataViz to Document)
+- [Existing Land Use 2018]() | [Data Processing Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
-#### General Plan/ Zoning (From Local Jurisdictions) 
+#### General Plan (From Local Jurisdictions) 
+- [General Plan 2018]() | [Data Processing Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
+
+
 - [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Data Processing Notes](policy-mdm/regional-general-plan.md)
  
