@@ -2,6 +2,12 @@
 Project-Documentation/mdm/transportation-mdm/scripts/511_API_GTFS/creds
 Project-Documentation/mdm/transportation-mdm/scripts/511_API_GTFS/**/*.csv
 
+Project-Documentation/mdm/land-people-mdm/scripts/county_assessor_table_processing/**/*.csv
+Project-Documentation/mdm/land-people-mdm/scripts/county_assessor_table_processing/**/*.json
+Project-Documentation/mdm/land-people-mdm/scripts/county_assessor_table_processing/**/*.txt
+
+.ipynb_checkpoints
+
 TomTom\ Base\ Map/large_files"
 
 github suggested boilerplate:
