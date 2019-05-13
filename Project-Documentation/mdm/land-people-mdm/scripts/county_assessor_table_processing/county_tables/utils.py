@@ -27,14 +27,10 @@ sys.path.insert(0, '/Users/{}/Box/DataViz Projects/Utility Code'.format(user))
 from utils_io import *
 
 
-def init_step_1(county_name, step_1_d, input_dir, init_output_dirs=True):
+def init_step_1(county_name, step_1_d, input_dir):
     """Given a county_name, step_1_d of data_ids and their filenames, and
     the county's Assessor data folder, initializes the inputs and output
     directories for Step I"""
-    # if init_output_dirs:
-    #     makedirs_if_not_exists(csv_dir)
-    #     makedirs_if_not_exists(columns_dir)
-    
     for k, v in step_1_d.items():
         input_fname = v['input']
         v['input'] = os.path.join(input_dir, input_fname)
@@ -43,7 +39,7 @@ def init_step_1(county_name, step_1_d, input_dir, init_output_dirs=True):
 
 
 def write_step_1_data(df, county_name, data_id, step_1_d):
-    """Given a pandas DataFrame of Step I data, """
+    """Given a pandas DataFrame of Step I data, writes it to S3"""
 
     output_id = step_1_d[data_id]['output']
     # write column names

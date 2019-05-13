@@ -2,8 +2,6 @@
 
 **Data source**: [Box folder](https://mtcdrive.app.box.com/folder/74539405520)
 
-(Box: DataViz Projects/Data Services/BASIS MDM/raw_data/Property and Building Characteristics/Solano County Assessor Data)
-
 
 ## Solano data breakdown
 
