@@ -205,5 +205,6 @@ BUILDINGS_DEFAULTS = {'Santa_Clara': {'apn': 'apn',
 PARCELS_DEFAULTS = {'Santa_Clara': {'apn': 'apn',
                                      'jurisdiction_cty': 'city_code',
                                      'assessed_land_value': 'landvalue',
-                                     'acres': 'land_acres'}
+                                     'acres': 'land_acres',
+                                     'assessed_date': 'date_updated'}
                                      }
