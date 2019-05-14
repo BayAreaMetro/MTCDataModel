@@ -16,7 +16,7 @@ This data is generated using a combination of sources and methods. The figure be
 ![Data Processing Model](https://www.lucidchart.com/publicSegments/view/4325221a-7816-4525-a25e-d237b9b796f0/image.png) 
 
 
-Field Mapping, Definitions, and Sources:
+### Field Mapping, Definitions, and Sources
 
 * **Alameda County**
    * [Alameda County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Alameda_Buildings_Field_Mapping.csv)
