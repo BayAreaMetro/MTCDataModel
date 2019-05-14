@@ -45,8 +45,6 @@ This data is generated using a combination of sources and methods mainly attribu
    * [Sonoma County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Sonoma_Parcels_Field_Mapping.csv)
    * [Sonoma County Assessor Field Documentation](https://mtcdrive.box.com/s/oi7065zrci2gu376f45yxa65n0fnwy9o)
 
-Field Match by County: (Joshua)
-
 ## Entity Relationship Diagram and Attribute Definitions
 The documentation and metadata details for this data can be viewed here: [Parcels 2018]() -- Socrata
 
