@@ -22,8 +22,8 @@ Field Mapping, Definitions, and Sources:
    * [Alameda County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Alameda_Buildings_Field_Mapping.csv)
    * [Alameda County Assessor Field Documentation](https://mtcdrive.box.com/s/9nje22hvxgeri0pwb05dd4j0xrhr84mv)
 * **Contra Costa County**
-   * Contra Costa County Field Mapping **Not Currently Available**
-   * Contra Costa County Assessor Field Documentation **Not Currently Available**
+   * Contra Costa County Field Mapping (**Not Currently Available**)
+   * Contra Costa County Assessor Field Documentation (**Not Currently Available**)
 * **Marin County**
    * [Marin County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Marin_Buildings_Field_Mapping.csv)
    * [Marin County Assessor Field Documentation](https://mtcdrive.box.com/s/nahof8uz18qzqrl1i7zmzv7by0zqjslm)
