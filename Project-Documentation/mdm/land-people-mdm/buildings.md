@@ -19,7 +19,7 @@ This data is generated using a combination of sources and methods. The figure be
 Field Mapping, Definitions, and Sources:
 
 * **Alameda County**
-   * [Alameda County Field Mapping](/files/SC_Buildings_Field_Mapping.csv)
+   * [Alameda County Field Mapping](files/SC_Buildings_Field_Mapping.csv)
    * [Alameda County Assessor Field Documentation](https://mtcdrive.box.com/s/jd12binabjjnz7bigg50ajubgvgmj6do)
 * **Contra Costa County**
    * [Contra Costa County Field Mapping]()
