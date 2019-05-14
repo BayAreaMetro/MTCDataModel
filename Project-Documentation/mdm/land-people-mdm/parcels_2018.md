@@ -15,8 +15,35 @@ This data is generated using a combination of sources and methods mainly attribu
 **Figure 1. Data Processing Steps** 
 ![]() --LucidCharts (Kaya)
 
-Field Matching Definitions and Sources:
-![Field Matching Example for Santa Clara County](https://www.lucidchart.com/publicSegments/view/3c9e54bb-0137-4f6b-a41f-64b670a0bc2f/image.png)
+### Field Mapping, Definitions, and Sources
+
+* **Alameda County**
+   * [Alameda County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Alameda_Parcels_Field_Mapping.csv)
+   * [Alameda County Assessor Field Documentation](https://mtcdrive.box.com/s/9nje22hvxgeri0pwb05dd4j0xrhr84mv)
+* **Contra Costa County**
+   * Contra Costa County Field Mapping (**Not Currently Available**)
+   * Contra Costa County Assessor Field Documentation (**Not Currently Available**)
+* **Marin County**
+   * [Marin County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Marin_Parcels_Field_Mapping.csv)
+   * [Marin County Assessor Field Documentation](https://mtcdrive.box.com/s/nahof8uz18qzqrl1i7zmzv7by0zqjslm)
+* **Napa County**
+   * [Napa County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Napa_Parcels_Field_Mapping.csv)
+   * Napa County Assessor Field Documentaiton (**Not Currently Available**)
+* **San Francisco County**
+   * [San Francisco County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/SF_Parcels_Field_Mapping.csv)
+   * [San Francisco County Assessor Field Documentation](https://mtcdrive.box.com/s/8xyhr6uicc68be0boyqtv7fvcmun3mue)
+* **San Mateo County**
+   * [San Mateo County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/SM_Parcels_Field_Mapping.csv)
+   * [San Mateo County Assessor Field Documentation](https://mtcdrive.box.com/s/bai2l1erwum07rwk28dcsy05j4bcnpbo)
+* **Santa Clara County**
+   * [Santa Clara County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/SC_Parcels_Field_Mapping.csv)
+   * [Santa Clara County Assessor Field Documentation](https://mtcdrive.box.com/s/jd12binabjjnz7bigg50ajubgvgmj6do)
+* **Solano County**
+   * [Solano County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Solano_Parcels_Field_Mapping.csv)
+   * [Solano County Assessor Field Documentation (**Not Currently Available**)
+* **Sonoma County**
+   * [Sonoma County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Sonoma_Parcels_Field_Mapping.csv)
+   * [Sonoma County Assessor Field Documentation](https://mtcdrive.box.com/s/oi7065zrci2gu376f45yxa65n0fnwy9o)
 
 Field Match by County: (Joshua)
 
