@@ -19,8 +19,8 @@ This data is generated using a combination of sources and methods. The figure be
 Field Mapping, Definitions, and Sources:
 
 * **Alameda County**
-   * [Alameda County Field Mapping](/files/SC_Buildings_Field_Mapping.csv)
-   * [Alameda County Assessor Field Documentation](https://mtcdrive.box.com/s/jd12binabjjnz7bigg50ajubgvgmj6do)
+   * [Alameda County Field Mapping]()
+   * [Alameda County Assessor Field Documentation]()
 * **Contra Costa County**
    * [Contra Costa County Field Mapping]()
    * [Contra Costa County Assessor Field Documentation]()
@@ -37,8 +37,8 @@ Field Mapping, Definitions, and Sources:
    * [San Mateo County Field Mapping]()
    * [San Mateo County Assessor Field Documentation]()
 * **Santa Clara County**
-   * [Santa Clara County Field Mapping]()
-   * [Santa Clara County Assessor Field Documentation]()
+   * [Santa Clara County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/SC_Buildings_Field_Mapping.csv)
+   * [Santa Clara County Assessor Field Documentation](https://mtcdrive.box.com/s/jd12binabjjnz7bigg50ajubgvgmj6do)
 * **Solano County**
    * [Solano County Field Mapping]()
    * [Solano County Assessor Field Documentation]()
