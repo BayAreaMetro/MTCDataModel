@@ -40,8 +40,8 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 **Land Uses**
 
-#### Existing (From Assessor Parcels/ DataViz to Document)
-- [Existing Land Use 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
+#### Generalized Land Use (From Assessor Parcels/ DataViz to Document)
+- [Generalized Land Use 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
 #### General Plan (From Local Jurisdictions) 
 - [General Plan 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
@@ -49,11 +49,13 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 #### Zoning (From Local Jurisdictions)
 - [Zoning 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
+##### Master Land Use Lookup (For Use By Data Development Team Only)
 - [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
  | [Documentation and Process Notes](policy-mdm/regional-general-plan.md)
  
  ##### UrbanSim Land Use
- - [Potential Land Use]() | [Documentation and Process Notes]()
+ - [Potential Land Use]() | [Documentation and Process Notes]()  
+ 
 #### Regional Policy Layers
 - [Priority Development Areas (Parcel Based)]() -- Not Yet Added To Inventory
 - [Transit Priority Areas (Parcel Based)]() -- Not Yet Added To Inventory  
@@ -62,7 +64,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 ### Land & People
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
 
-#### UrbanSim Datasets . 
+#### UrbanSim Datasets   
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
 - [Buildings](https://data.bayareametro.gov/Structures/Buildings/rrrx-2reu) | [Documentation and Process Notes](land-people-mdm/buildings.md)
 - [Deed Restricted Units]() | [Documentation and Process Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
@@ -77,7 +79,7 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 - [Parcels 2015]() -- Not Yet Added To Inventory
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
-##### UrbanSim Datasets
+#### UrbanSim Datasets
 - [UrbamSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes]()
 
 
