@@ -14,3 +14,4 @@
 	- `County Urbansim Buildings Column Mapping Tool.ipynb`
 5. Create Urbansim datasets on Socrata
 	- `Create_Socrata_tables.ipynb`
+6. EDA

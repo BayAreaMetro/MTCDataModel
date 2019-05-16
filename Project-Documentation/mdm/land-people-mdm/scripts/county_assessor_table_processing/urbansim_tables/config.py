@@ -3,7 +3,7 @@ redshift_coltype_dir = 'redshift_column_types'
 colmap_csv_output_dir = 'column_map_csvs'
 colmap_json_output_dir = 'column_map_dicts'
 
-parcels_2018_copy_cols = ['joinid', 'apn', 'jurisdict', 'fipco']
+parcels_2018_copy_cols = ['apn', 'joinid', 'jurisdict', 'fipco']
 
 # Make into Redshift table?
 fipco_mapping = {'Alameda': 'CA001',
@@ -206,5 +206,6 @@ PARCELS_DEFAULTS = {'Santa_Clara': {'apn': 'apn',
                                      'jurisdiction_cty': 'city_code',
                                      'assessed_land_value': 'landvalue',
                                      'acres': 'land_acres',
-                                     'assessed_date': 'date_updated'}
+                                     'assessed_date': 'date_updated',
+                                     'juris_id': 'city_code',}
                                      }

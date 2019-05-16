@@ -27,9 +27,12 @@ def create_urbansim_table(tablename, column_type_dict):
     # add apn as the DISTKEY and SORTKEY
     table_s = table_s.strip(';') + ' DISTKEY(apn) SORTKEY(apn);'
 
-    insert_into_s = """INSERT INTO {}
-    (SELECT apn, joinid, jurisdict as jurisdiction, fipco
-     FROM basis.parcels_2018);""".format(tablename)
+    copy_cols = ', '.join(parcels_2018_copy_cols)
+
+    insert_into_s = """INSERT INTO {} ({})
+    (SELECT {}
+     FROM basis.parcels_2018);""".format(tablename, copy_cols, copy_cols)
+    
 
     cmds = [drop_table_s, table_s, insert_into_s]
 
@@ -42,13 +45,16 @@ def create_urbansim_table(tablename, column_type_dict):
     write_sql_cmds(cmds, sql_output_fname)
 
 
-def create_select_with_rename_str(tablename, rename_d):
+def create_select_with_rename_str(tablename, rename_d, distinct=True):
     colmapping_str = ''
     for k, v in rename_d.items():
         mapping = '{} as {},\n'.format(v, k)
         colmapping_str += mapping
     colmapping_str = colmapping_str.strip(',\n')
-    select_s = 'SELECT {} FROM {}'.format(colmapping_str, tablename)
+    if distinct:
+        select_s = 'SELECT DISTINCT {} FROM {}'.format(colmapping_str, tablename)
+    else:
+        select_s = 'SELECT {} FROM {}'.format(colmapping_str, tablename)
     return select_s
 
 
@@ -73,7 +79,7 @@ def update_urbansim_table_county(tablename, county_table, staging_table, colmapp
 
     drop_table_s = 'DROP TABLE IF EXISTS {};'.format(staging_table)
 
-    select_str = create_select_with_rename_str(county_table, colmapping)
+    select_str = create_select_with_rename_str(county_table, colmapping, distinct=True)
 
 
     create_staging_s = """CREATE TABLE {} AS 
