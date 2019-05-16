@@ -10,6 +10,6 @@ This folder contains the scripts that run two phases of County Assessor Data Pro
 
 ## 2. Urbansim Tables
 
-**Start:** original county assessor data files, Parcels 2018 data on Socrata
+**Start:** Redshift table for each county, Parcels 2018 data on Socrata
 
 **End:** Urbansim tables (buildings, parcels) on Redshift and Socrata, all output data on S3
