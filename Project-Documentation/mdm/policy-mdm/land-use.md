@@ -18,6 +18,18 @@ This dataset is used to manage the collection of key documents used in the prepa
 ### Regional Parcel Characteristics Inventory
 This... (Joshua to update documentation for this work here...)
 
+### Generalized Land Uses (Assessor's Parcel Use Codes)
+[Generalized Land Use]()   -- Not Yet Added  
+
+### General Plan
+[General Plan Codes](https://data.bayareametro.gov/Land-Use/Regional-Zoning-Codes-2018/qdrp-c5ra)
+[General Plan]()   -- Not Yet Added  
+
+### Zoning  
+[Regional Zoning Codes](https://data.bayareametro.gov/Land-Use/Regional-Zoning-Codes-2018/qdrp-c5ra)  
+[Regional Zoning]()   -- Not Yet Added
+
+
 
 Currently this view is private and for internal agency viewers exclusively and Requires Socrata Login Credentials to view.  Contact a DataViz Team Member Should you require access to this inventory list.  This list is also available to authenticated users of the BASIS System (Will be enabled soon). 
 
