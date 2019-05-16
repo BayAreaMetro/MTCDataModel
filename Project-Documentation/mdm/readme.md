@@ -80,7 +80,7 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
 #### UrbanSim Datasets
-- [UrbamSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes]()
+- [UrbanSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes]()
 
 
 #### Housing
