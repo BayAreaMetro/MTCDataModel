@@ -5,17 +5,6 @@ colmap_json_output_dir = 'column_map_dicts'
 
 parcels_2018_copy_cols = ['apn', 'joinid', 'jurisdict', 'fipco']
 
-# Make into Redshift table?
-fipco_mapping = {'Alameda': 'CA001',
-                 'Contra Costa': 'CA013',
-                 'Marin': 'CA041',
-                 'Napa': 'CA055',
-                 'San Francisco': 'CA075',
-                 'San Mateo': 'CA081',
-                 'Santa Clara': 'CA085',
-                 'Solano': 'CA095',
-                 'Sonoma': 'CA097'}
-
 
 URBANSIM_COLS = {'buildings': ['apn',
                                'jurisdiction_cty',

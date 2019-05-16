@@ -13,8 +13,7 @@ from sqlalchemy import types
 from collections import Counter
 
 # local imports
-from config import (step_1_output_dir, csv_dir, columns_dir,
-    step_2_output_dir, step_3_output_dir)
+from config import *
 
 user = os.environ['USER']
 base_path = '/Users/{}/Box/DataViz Projects/Data Services/BASIS MDM/raw_data/Property and Building Characteristics'.format(user)
@@ -348,3 +347,9 @@ def create_county_redshift_table(county_name, ctype_override=None):
     # this function calls create_redshift_table_str on the column_type_dict
     create_redshift_table_via_s3(tablename, s3_path, dbname='dev',
                                  column_type_dict=column_type_dict, overwrite=True)
+
+    # add fipco to county table
+    cty_fipco = fipco_mapping[county_name]
+    add_fipco_cmd = "alter table {} add column fipco varchar(5) default '{}';".format(tablename,
+                                                                                      cty_fipco)
+    execute_redshift_cmds([add_fipco_cmd])
