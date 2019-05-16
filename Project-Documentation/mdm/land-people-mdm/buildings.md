@@ -51,23 +51,16 @@ This data is generated using a combination of sources and methods (Python, SQL, 
 
 
 ## Entity Relationship Diagram and Attribute Definitions. 
-<<<<<<< HEAD
-The documentation and metadata details for this data can be viewed here: [UrbanSim Buildings](https://data.bayareametro.gov/Structures/UrbanSim-Buildings/ahwz-jtst) -- Socrata  
-=======
-The attribute documentation and metadata for this dataset can be viewed here: [UrbanSim Buildings](https://data.bayareametro.gov/Structures/UrbanSim-Buildings/ahwz-jtst) -- Socrata  
->>>>>>> fae9bc2844048cc14083ccf0635b94f547e3e114
+
+The attribute documentation and metadata for this dataset can be viewed here: [UrbanSim Buildings](https://data.bayareametro.gov/Structures/UrbanSim-Buildings/ahwz-jtst) -- Socrata
 
 **Figure 2. Buildings Table Schema**  
 ![UrbanSim Buildings Table Schema](https://www.lucidchart.com/publicSegments/view/3c269e86-a479-4589-a807-18070db5e9be/image.png)  
 
 ### Related Datasets
 
-<<<<<<< HEAD
 [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018/fqea-xb6g) | Join Field: joinid
 
-=======
-[Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | Join Field: joinid  
->>>>>>> fae9bc2844048cc14083ccf0635b94f547e3e114
 [UrbanSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | Join Field: joinid
 
 
