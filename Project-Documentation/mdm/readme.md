@@ -75,12 +75,12 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 
 #### Cadastral
 
-- [Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Documentation and Process Notes](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/parcels_2018.md)
+- [Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Documentation and Process Notes](land-people-mdm/parcels_2018.md)
 - [Parcels 2015]() -- Not Yet Added To Inventory
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
 #### UrbanSim Datasets
-- [UrbanSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/urbansim_parcels.md)
+- [UrbanSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes](land-people-mdm/urbansim_parcels.md)
 
 
 #### Housing
