@@ -1,0 +1,17 @@
+﻿MTC Field Name,MTC Field Alias,MTC Field Type,MTC Field Description,County Field Name,County Field Description,Field Source,Required,MTC Domain,Notes
+join_id,,,Unique join id which joins buildings to parcels,,,internal,,,
+jurisdiction,,,City or county name (County for data in unincorporated areas),situscity,,external,,,
+county_fips,,,County FIPS code,,,internal,,"75,81,41,55,95,01,85,13,97",
+parcel_id,Parcel Identifier,numeric,The parcel that the building is on or the parcel most closely associated with the building it it is on multiple parcels or no parcels,"apn, parcelnumber",,external,Y,,
+building_id,Unique Building Identifier,numeric,unique bilding id,,,internal,Y,,Is this the id that joins buildings to another table? To parcels? 
+building_type,Building Type,text,The building type or the primary building type if there are multiple,usecode,,external w internal processing,Y,"HS, HT, HM, MR, RS, RB, IL, IH, IW, HO, SC, ME, MT",
+building_sqft,Building Total Square Feet,numeric,The building's total square feet or the the total for all buildings if there are multiple,"buildingprimarysize, buildingsecondarysize",,external w internal processing,Y,>=0,
+non_residential_sqft,Square Feet of Non-Residential Space,numeric,Square feet of non-residential space within the building(s),"buildingprimarysize, buildingsecondarysize",,external w internal processing,Y,>=0,
+residential_units,Count of Residential Units,numeric,Number of residential units within the building(s),"buildingprimaryunitcount, buildinsecondaryunitcounty",,external w internal processing,Y,>=0,
+year_built,Year Building Built,numeric,The year the building was built or the average year if there are multiple buildings or remodels,buildingprimaryyearbuilt,,external w internal processing,N,>=0,
+assessed_building_value,Assessed Value of Improvements,numeric,assesessors value of the building ,value601structure,,external w internal processing,N,>=0,
+assessed_date,Date of Last Assessment,,date on which assesment occurred,?,,external w internal processing,N,,
+last_sale_price,Most Recent Sale Price,numeric,Price in dollars for the last building transaction,salesalesprice,,external w internal processing,N,>=0,
+last_sale_date,Most Recent Sale Date,,Date of the last building transaction,salerecordingdate,,external w internal processing,N,,
+tenure,Majority Tenure,text,Are most of the units in the building owned or rented,?,,external w internal processing,N,"own, rent",
+rent_type,Type of Rent Paid,text,type of rent,?,,external w internal processing,N,"Market, Affordable, Market/Affordable, Senior",

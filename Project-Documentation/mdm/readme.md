@@ -27,7 +27,7 @@ The following list contains key datasets listed on the [BASIS Website](http://ba
 ### Environment  
 
 #### Tabulation Layers
-- [Greenprint](redshift/greenprintFishnet.md) | [Data Processing Notes](https://www.bayareagreenprint.org/glossary/)
+- [Greenprint](redshift/greenprintFishnet.md) | [Documentation and Process Notes](https://www.bayareagreenprint.org/glossary/)
 Table structure for data acquired from Bay Area Greenprint
 
 ### Policy
@@ -35,25 +35,27 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 
 **Growth Management Boundaries and Policies**
 
-- [Urban Growth Boundaries]() | [Data Processing Notes](policy-mdm/urban-growth-boundaries.md) -- Not Yet Added to Inventory
+- [Urban Growth Boundaries]() | [Documentation and Process Notes](policy-mdm/urban-growth-boundaries.md) -- Not Yet Added to Inventory
     - Includes both Urban Limit Lines and Growth Management Areas (Parcel Based)
 
 **Land Uses**
 
-#### Zoning (From Local Jurisdictions)
-- [Zoning 2018]() | [Data Processing Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
-
-#### Existing (From Assessor Parcels/ DataViz to Document)
-- [Existing Land Use 2018]() | [Data Processing Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
+#### Generalized Land Use (From Assessor Parcels/ DataViz to Document)
+- [Generalized Land Use 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
 #### General Plan (From Local Jurisdictions) 
-- [General Plan 2018]() | [Data Processing Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
+- [General Plan 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
+#### Zoning (From Local Jurisdictions)
+- [Zoning 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
+##### Master Land Use Lookup (For Use By Data Development Team Only)
 - [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
- | [Data Processing Notes](policy-mdm/regional-general-plan.md)
+ | [Documentation and Process Notes](policy-mdm/regional-general-plan.md)
  
-
+ ##### UrbanSim Land Use
+ - [Potential Land Use]() | [Documentation and Process Notes]()  
+ 
 #### Regional Policy Layers
 - [Priority Development Areas (Parcel Based)]() -- Not Yet Added To Inventory
 - [Transit Priority Areas (Parcel Based)]() -- Not Yet Added To Inventory  
@@ -62,19 +64,24 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 ### Land & People
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
 
+#### UrbanSim Datasets   
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
-- [Buildings]() | [Data Processing Notes](land-people-mdm/buildings.md) -- Not Yet Added to Inventory
-- [Deed Restricted Units]() | [Data Processing Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
-- [Development Pipeline]() | [Data Processing Notes](land-people-mdm/development-pipeline.md) -- Not Yet Added to Inventory
-- [Institutions]() | [Data Processing Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
-- [Landmarks]() | [Data Processing Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
-- [Nondevelopment Sites]() | [Data Processing Notes](land-people-mdm/nondevelopmentsites.md) -- Not Yet Added to Inventory
+- [Buildings](https://data.bayareametro.gov/Structures/Buildings/rrrx-2reu) | [Documentation and Process Notes](land-people-mdm/buildings.md)
+- [Deed Restricted Units]() | [Documentation and Process Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
+- [Development Pipeline]() | [Documentation and Process Notes](land-people-mdm/development-pipeline.md) -- Not Yet Added to Inventory
+- [Institutions]() | [Documentation and Process Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
+- [Landmarks]() | [Documentation and Process Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
+- [Nondevelopment Sites]() | [Documentation and Process Notes](land-people-mdm/nondevelopmentsites.md) -- Not Yet Added to Inventory
 
 #### Cadastral
 
-- [Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Data Processing Notes]()
+- [Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Documentation and Process Notes](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/parcels_2018.md)
 - [Parcels 2015]() -- Not Yet Added To Inventory
 - [Parcels 2010]() -- Not Yet Added To Inventory
+
+#### UrbanSim Datasets
+- [UrbamSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes]()
+
 
 #### Housing
 - [Residential Permits]() | [Data Processing Notes](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
