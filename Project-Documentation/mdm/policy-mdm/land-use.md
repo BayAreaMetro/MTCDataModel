@@ -22,7 +22,7 @@ This... (Joshua to update documentation for this work here...)
 [Generalized Land Use]()   -- Not Yet Added  
 
 ### General Plan
-[General Plan Codes](https://data.bayareametro.gov/Land-Use/Regional-General-Plan-Codes-2018/vzcc-dhby)
+[General Plan Codes](https://data.bayareametro.gov/Land-Use/Regional-General-Plan-Codes-2018/vzcc-dhby)  
 [General Plan](https://data.bayareametro.gov/Land-Use/View-based-on-Regional-General-Plan-Codes-2018/cc3g-fj4w)   
 
 ### Zoning  
