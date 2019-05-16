@@ -22,14 +22,12 @@ This... (Joshua to update documentation for this work here...)
 [Generalized Land Use]()   -- Not Yet Added  
 
 ### General Plan
-[General Plan Codes](https://data.bayareametro.gov/Land-Use/Regional-Zoning-Codes-2018/qdrp-c5ra)
-[General Plan]()   -- Not Yet Added  
+[General Plan Codes](https://data.bayareametro.gov/Land-Use/Regional-General-Plan-Codes-2018/vzcc-dhby)
+[General Plan](https://data.bayareametro.gov/Land-Use/View-based-on-Regional-General-Plan-Codes-2018/cc3g-fj4w)   
 
 ### Zoning  
 [Regional Zoning Codes](https://data.bayareametro.gov/Land-Use/Regional-Zoning-Codes-2018/qdrp-c5ra)  
-[Regional Zoning]()   -- Not Yet Added
-
-
+[Regional Zoning](https://data.bayareametro.gov/Land-Use/View-of-Parcels-and-Regional-Zoning-2018/q2p6-hbrp)   
 
 Currently this view is private and for internal agency viewers exclusively and Requires Socrata Login Credentials to view.  Contact a DataViz Team Member Should you require access to this inventory list.  This list is also available to authenticated users of the BASIS System (Will be enabled soon). 
 
