@@ -67,6 +67,7 @@ Includes data that depicts local development, cadastral, buildings and structure
 #### UrbanSim Datasets   
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
 - [UrbanSim Buildings](https://data.bayareametro.gov/Structures/UrbanSim-Buildings/ahwz-jtst) | [Documentation and Process Notes](land-people-mdm/buildings.md)
+- [UrbanSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes](land-people-mdm/urbansim_parcels.md)
 - [Deed Restricted Units]() | [Documentation and Process Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
 - [Development Pipeline]() | [Documentation and Process Notes](land-people-mdm/development-pipeline.md) -- Not Yet Added to Inventory
 - [Institutions]() | [Documentation and Process Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
@@ -75,12 +76,9 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 
 #### Cadastral
 
-- [Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | [Documentation and Process Notes](land-people-mdm/parcels_2018.md)
+- [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018/fqea-xb6g) | [Documentation and Process Notes](land-people-mdm/parcels_2018.md)
 - [Parcels 2015]() -- Not Yet Added To Inventory
 - [Parcels 2010]() -- Not Yet Added To Inventory
-
-#### UrbanSim Datasets
-- [UrbanSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | [Documentation and Process Notes](land-people-mdm/urbansim_parcels.md)
 
 
 #### Housing
