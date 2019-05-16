@@ -44,10 +44,10 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 - [Generalized Land Use 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
 
 #### General Plan (From Local Jurisdictions) 
-- [General Plan 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
+- [General Plan 2018](https://data.bayareametro.gov/Land-Use/View-of-Parcels-and-Regional-General-Plan-Codes-20/98c3-ikar) | [Documentation and Process Notes](policy-mdm/land-use.md)  
 
 #### Zoning (From Local Jurisdictions)
-- [Zoning 2018]() | [Documentation and Process Notes](policy-mdm/land-use.md) -- Not Yet Added to Inventory
+- [Zoning 2018](https://data.bayareametro.gov/Land-Use/View-of-Parcels-and-Regional-Zoning-2018/q2p6-hbrp) | [Documentation and Process Notes](policy-mdm/land-use.md) . 
 
 ##### Master Land Use Lookup (For Use By Data Development Team Only)
 - [General Plan and Zoning 2018](https://mtc.data.socrata.com/Land-Use/General-Plan-and-Zoning-2018/udk3-z2d5) 
