@@ -18,17 +18,6 @@ This dataset is used to manage the collection of key documents used in the prepa
 ### Regional Parcel Characteristics Inventory
 This... (Joshua to update documentation for this work here...)
 
-### Generalized Land Uses (Assessor's Parcel Use Codes)
-[Generalized Land Use]()   -- Not Yet Added  
-
-### General Plan
-[General Plan Codes](https://data.bayareametro.gov/Land-Use/Regional-General-Plan-Codes-2018/vzcc-dhby)  
-[General Plan](https://data.bayareametro.gov/Land-Use/View-based-on-Regional-General-Plan-Codes-2018/cc3g-fj4w)   
-
-### Zoning  
-[Regional Zoning Codes](https://data.bayareametro.gov/Land-Use/Regional-Zoning-Codes-2018/qdrp-c5ra)  
-[Regional Zoning](https://data.bayareametro.gov/Land-Use/View-of-Parcels-and-Regional-Zoning-2018/q2p6-hbrp)   
-
 Currently this view is private and for internal agency viewers exclusively and Requires Socrata Login Credentials to view.  Contact a DataViz Team Member Should you require access to this inventory list.  This list is also available to authenticated users of the BASIS System (Will be enabled soon). 
 
 [Data Lens - Read Only](https://mtc.data.socrata.com/view/dwzg-k3ei)
@@ -40,9 +29,22 @@ Further processing included direct parcel assignment of land use for both zoning
 
 ## Datasets
 Three datasets have been prepared using this process.  They are as follows:  
-- Existing Land Uses (Source: County Assessor's Parcel Characteristics that identify use code)
-- Regional Zoning (Source: Local Jurisdiction Planning Documents, Assessor's Parcel Characteristics for zoning)
-- Regional General Plan (Source: Local Jurisdiction Planning Documents)
+
+### Generalized Land Uses (Assessor's Parcel Use Codes)
+[Generalized Land Use]()   -- Not Yet Added  
+Source: County Assessor's Parcel Characteristics that identify use code
+
+### General Plan
+[General Plan Codes](https://data.bayareametro.gov/Land-Use/Regional-General-Plan-Codes-2018/vzcc-dhby)  
+[General Plan](https://data.bayareametro.gov/Land-Use/View-based-on-Regional-General-Plan-Codes-2018/cc3g-fj4w)   
+[General Plan Map](https://data.bayareametro.gov/Land-Use/DRAFT-General-Plan-Map/v22a-gxbu)  
+Source: Local Jurisdiction Planning Documents
+
+### Zoning  
+[Regional Zoning Codes](https://data.bayareametro.gov/Land-Use/Regional-Zoning-Codes-2018/qdrp-c5ra)  
+[Regional Zoning](https://data.bayareametro.gov/Land-Use/View-of-Parcels-and-Regional-Zoning-2018/q2p6-hbrp)  
+[Regional Zoning Map](https://data.bayareametro.gov/Land-Use/-DRAFT-Santa-Clara-County-Map-of-Regional-Zoning-2/rw5f-hgez)
+Source: Local Jurisdiction Planning Documents, Assessor's Parcel Characteristics for zoning
 
 **Figure 1. Data Processing Steps**
 ![Data Processing Model](images/gp-zn-data-modeling.png)
