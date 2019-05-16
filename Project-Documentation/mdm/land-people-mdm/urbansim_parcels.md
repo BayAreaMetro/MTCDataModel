@@ -25,7 +25,7 @@ Field Match by County: (Joshua)
 The documentation and metadata details for this data can be viewed here: [UrbanSim Parcels]() -- Socrata  
 
 **Figure 2. Parcels Table Schema**  
-![Parcels Table Schema](https://www.lucidchart.com/publicSegments/view/3c269e86-a479-4589-a807-18070db5e9be/image.png)  
+![Parcels Table Schema]()  
 
 
 **Note**:
