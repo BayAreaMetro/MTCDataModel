@@ -1,4 +1,4 @@
-# Buildings  
+# UrbanSim Buildings  
 
 ## Description  
 The parcel/building data includes the unique parcel identifier (APN) as well as attributes about the parcel (county, land value, if the parcel can’t be developed) and buildings (year assessed, square feet, number of stories, if the building is historic). Includes Historic and Commercial Bldgs. (basis)
@@ -49,18 +49,15 @@ This data is generated using a combination of sources and methods. The figure be
 
 
 ## Entity Relationship Diagram and Attribute Definitions. 
-The documentation and metadata details for this data can be viewed here: [Buildings 2018]() -- Socrata  
+The attribute documentation and metadata for this dataset can be viewed here: [UrbanSim Buildings](https://data.bayareametro.gov/Structures/UrbanSim-Buildings/ahwz-jtst) -- Socrata  
 
 **Figure 2. Buildings Table Schema**  
 ![Buildings Table Schema](https://www.lucidchart.com/publicSegments/view/3c269e86-a479-4589-a807-18070db5e9be/image.png)  
 
-
-**Note**:
-Attribute Definitions can be viewed [Here]() -- Socrata
-
 ### Related Datasets
 
-[Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | Join Field: joinid
+[Parcels 2018](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) | Join Field: joinid  
+[UrbanSim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels/6q7r-gybw) | Join Field: joinid
 
 
 Data Steward: UrbanSim Team
