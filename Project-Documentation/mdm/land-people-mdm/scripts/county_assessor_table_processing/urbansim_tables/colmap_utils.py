@@ -14,13 +14,15 @@ from utils_io import dump_json, makedirs_if_not_exists
 
 def init_colmap_selector(column, options, default):
     colmap_dropdown = widgets.Dropdown(options=options,
-                                     description='{}: '.format(column),
                                      value=default)
+
+    dropdown_label = widgets.Label('{}: '.format(column))
 
     SQL_input = widgets.Text(
                     placeholder='Type a SQL statement',
                     disabled=True,
                     description='SQL:')
+
     # Shows custom SQL text box
     def show_custom_SQL_input(change):
         """
@@ -28,10 +30,16 @@ def init_colmap_selector(column, options, default):
         if change['type'] == 'change' and change['name'] == 'value':
             if change['new'] == 'Enter your own SQL statement':
                 SQL_input.disabled = False
+            else:
+                SQL_input.disabled = True
 
     # Trigger show_custom_SQL_input if 'Type a SQL statement' is selected
     colmap_dropdown.observe(show_custom_SQL_input)
-    return widgets.HBox([colmap_dropdown, SQL_input])
+
+    box_layout = widgets.Layout(justify_content='space-between',
+                                flex_flow='row')
+    box_contents = [dropdown_label, colmap_dropdown, SQL_input]
+    return widgets.Box(children=box_contents, layout=box_layout)
 
 
 def display_colmap_menu(urbansim_table, county):
@@ -87,9 +95,11 @@ def download_colmap(urbansim_col_menus, county, urbansim_table, output_fname):
     colmap_dict = {c: get_colmap_value(urbansim_col_menus, c) for c in urbansim_cols}
     colmap_df = pd.DataFrame.from_dict(colmap_dict, orient='index').reset_index()
     colmap_df.columns = ['MTC_urbansim_colname', 'County_colname']
-    makedirs_if_not_exists(colmap_csv_output_dir)
-    csv_output_fname = os.path.join(colmap_csv_output_dir, output_fname + '.csv')
+    csv_output_dir = 'columns_map_csvs'
+    makedirs_if_not_exists(csv_output_dir)
+    csv_output_fname = os.path.join(csv_output_dir, output_fname + '.csv')
     colmap_df.to_csv(csv_output_fname, index=False)
-    makedirs_if_not_exists(colmap_json_output_dir)
-    json_output_fname = os.path.join(colmap_json_output_dir, output_fname + '.json')
+    json_output_dir = 'columns_map_dicts'
+    makedirs_if_not_exists(json_output_dir)
+    json_output_fname = os.path.join(json_output_dir, output_fname + '.json')
     dump_json(colmap_dict, json_output_fname)

@@ -15,8 +15,8 @@ This folder contains the scripts that run two phases of County Assessor Data Pro
 **End:** Urbansim tables (buildings, parcels) on Redshift and Socrata, all output data on S3
 
 
-**NOTE**: More detailed documentation for each phase is in the respective folders' README:
+**NOTE**: More detailed documentation for each phase is in the respective folder's README:
 
-[County Tables](county_tables/README.md)
+[County Tables Process Documentation](county_tables/README.md)
 
-[UrbanSim Tables](urbansim_tables/README.md)
+[UrbanSim Tables Process Documentation](urbansim_tables/README.md)
