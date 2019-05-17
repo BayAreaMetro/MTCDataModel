@@ -49,9 +49,9 @@ All notebooks with the prefix `DS INPUT` are meant to be used by data stewards.
 0. Get the `county_assessor_table_processing` folder on your local machine
     - Option A: Make a local copy of this [Box folder](https://mtcdrive.app.box.com/folder/76598831864)
     - Option B:  Clone or download this [Github repository](https://github.com/BayAreaMetro/DataServices). All `DS INPUT` notebooks are in the folder `Project-Documentation/mdm/land-people-mdm/scripts/county_assessor_table_processing/urbansim_tables`
-1. Run this notebook and perform your own EDA
+1. Follow notebook-specific instructions
 2. Save your modified notebook and any outputs in a folder and copy that folder to this [Box folder](https://mtcdrive.app.box.com/folder/76889542701)
 3. Communicate your updates to the DataViz team
     - write data-specific notes via BASIS
     - write general communications in the Slack channel #urbansim-data-collab [?] informing the DataViz and UrbanSim teams that you made an update to the Box folder
-    - Github issues in this repo: 
+    - Open an issue on the [DataServices repository issues page](https://github.com/BayAreaMetro/DataServices/issues) 
