@@ -17,7 +17,9 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 - [Transit Lines]() -- Not Yet Added To Inventory  
 
 ##### Data Processing
-- [511 data processing scripts folder](https://github.com/BayAreaMetro/DataServices/tree/master/Project-Documentation/mdm/transportation-mdm/scripts/511_API_GTFS)
+- [511 data processing scripts Box folder](https://mtcdrive.app.box.com/folder/77348471902)
+
+**NOTE**: only MTC employees have access to this folder
 
 ##### Data Documentation
 
