@@ -30,7 +30,7 @@ This data is generated using both AWS Redshift and MS-Excel. Data was sourced fr
 The attribute documentation and metadata for this dataset can be viewed here: 
 
 **Figure 2. Existing Land-Use Table Schema**  
-![Existing Land-Use Table Schema]  
+[Existing Land-Use Table Schema]  
 
 ### Related Datasets
 [Santa Clara County Assessor Documentation -> UseCodes for CHARACTERISTIC files.xls](https://mtcdrive.box.com/s/jd12binabjjnz7bigg50ajubgvgmj6do) | Join Field: Use_code
