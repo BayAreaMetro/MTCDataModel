@@ -45,7 +45,7 @@ This data is generated using a combination of sources and methods (Python, SQL, 
    * [Santa Clara County Assessor Field Documentation](https://mtcdrive.box.com/s/jd12binabjjnz7bigg50ajubgvgmj6do)
 * **Solano County**
    * [Solano County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Solano_Buildings_Field_Mapping.csv)
-   * [Solano County Assessor Field Documentation (**Not Currently Available**)
+   * [Solano County Assessor Field Documentation](https://mtcdrive.box.com/s/idafksdkt4yv3ekojfnez8j463hlrpmo)
 * **Sonoma County**
    * [Sonoma County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Sonoma_Buildings_Field_Mapping.csv)
    * [Sonoma County Assessor Field Documentation](https://mtcdrive.box.com/s/oi7065zrci2gu376f45yxa65n0fnwy9o)
