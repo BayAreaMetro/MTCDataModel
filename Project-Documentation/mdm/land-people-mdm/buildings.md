@@ -27,7 +27,7 @@ This data is generated using a combination of sources and methods (Python, SQL, 
    * [Alameda County Assessor Field Documentation](https://mtcdrive.box.com/s/9nje22hvxgeri0pwb05dd4j0xrhr84mv)
 * **Contra Costa County**
    * Contra Costa County Field Mapping (**Not Currently Available**)
-   * Contra Costa County Assessor Field Documentation (**Not Currently Available**)
+   * [Contra Costa County Assessor Field Documentation](https://mtcdrive.box.com/s/65px7q9wzl8ge0pwgjatt0bqyjdtbqjx)
 * **Marin County**
    * [Marin County Field Mapping](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/land-people-mdm/files/Marin_Buildings_Field_Mapping.csv)
    * [Marin County Assessor Field Documentation](https://mtcdrive.box.com/s/nahof8uz18qzqrl1i7zmzv7by0zqjslm)
