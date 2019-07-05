@@ -8,7 +8,7 @@ This documentation provides a high-level overview of the Regional Parcel Databas
 ### Project Management
 
 - [Asana Project]
-- [Box]  
+- [Box](https://mtcdrive.app.box.com/folder/79744886422)  
 
 ### Contents 
 
@@ -59,7 +59,7 @@ This documentation provides a high-level overview of the Regional Parcel Databas
    * [Sonoma County Assessor Field Documentation](https://mtcdrive.box.com/s/oi7065zrci2gu376f45yxa65n0fnwy9o)
 
 ## Data Collection  
-This dataset was compiled using parcel characteristics data from each of the nine counties' assessor's offices. Data are normalized in third normal form. The figure below is an entity relationship diagram (ERD) explaining the interactions within the database.
+This dataset was compiled using parcel characteristics data from each of the nine counties' assessor's offices. The figure below is an entity relationship diagram (ERD) in third normal form explaining the interactions within the database.
 
 ## Fields
 
