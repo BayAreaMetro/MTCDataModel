@@ -59,7 +59,7 @@ This documentation provides a high-level overview of the Regional Parcel Databas
    * [Sonoma County Assessor Field Documentation](https://mtcdrive.box.com/s/oi7065zrci2gu376f45yxa65n0fnwy9o)
 
 ## Data Collection  
-This dataset was compiled using parcel characteristics data from each of the nine counties' assessor's offices. The figure below is an entity relationship diagram (ERD) in third normal form explaining the interactions within the database.
+This dataset was compiled using parcel characteristics data from each of the nine counties' assessor's offices. 
 
 ## Fields
 **Parcel Regional Characteristics**|**Description**|**Alameda**|**Contra Costa**|**Marin**|**Napa**|**San Francisco**|**San Mateo**|**Santa Clara**|**Solano**|**Sonoma**|**Source**
@@ -87,6 +87,9 @@ building\_height|Number of stories in building(s)|number\_of\_stories|(Calculate
 units|Number of residential units| number\_of\_units| total\_rooms| living\_units| | units| no\_of\_units| number\_units|  number\_of\_units|  buildingprimaryunitcount, buildingsecondaryunitcount|County assessor derived
 bedrooms|Number of bedrooms in residence| number\_of\_bedrooms| bedrooms| nbr\_bedrooms| | beds| \_\_of\_bedrooms, \_\_of\_bedroom| bedroom| number\_of\_bedrooms, number\_of\_studio\_apts, number\_of\_one\_bedroom\_apts, number\_of\_two\_bedroom\_apts, number\_of\_other\_type\_apts| buildingprimarybedrooms|County assessor derived
 bathroom|Number of bathrooms| number\_of\_bathrooms| bathrooms| nbr\_bathrooms| | baths| \_\_of\_bathroom, bathroom, baths| bath\_rooms| number\_of\_baths| buildingprimarybaths|County assessor derived
+
+The figure below is an entity relationship diagram (ERD) in third normal form explaining the interactions within the database:
+
 
 ### Alameda County
 
