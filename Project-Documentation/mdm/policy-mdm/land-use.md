@@ -13,10 +13,27 @@ This data was compiled using local information collected from each of the 109 ju
 ### Regional General Plan and Zoning Document Inventory
 This dataset is used to manage the collection of key documents used in the preparation of the Planning and Zoning 2018 dataset. It contains key information used to develop the Regional General Plan and Zoning Datasets such as source documents, maps and links to jurisdiction general plan and zoning documents. 
 
-[Click Here to View the Inventory](https://mtc.data.socrata.com/dataset/Regional_General_Plan_Zoning_Document_Inventory/akeh-uvij)   
+[Click Here to View the Inventory](https://data.bayareametro.gov/Land-Use/Regional-General-Plan-and-Zoning-Dataset-Inventory/akeh-uvij)   
 
 ### Regional Parcel Characteristics Inventory
-This... (Joshua to update documentation for this work here...)
+Parcel Characteristics data was collected from Assessor's in each of the 9 Bay Area Counties. Many of the counties had fee schedules that would be prohibitively expensive if paid across each county. Fee waiver requests were made to 4 of the counties with the highest fees. Our team worked in close connection with the MTC/ABAG Deputy Executive Director to request fee waivers which required collaboration with the MTC Commission and ABAG Board members representing the counties where fee waivers were necessary. The table below provides a summary of the fees waived or paid to each county Assessor's Office. 
+
+| Jurisdiction         | Fee        | Fee Waiver | Fee Schedule                                                |
+|----------------------|------------|------------|-------------------------------------------------------------|
+| Santa Clara County   | $49,680.00 | Yes        | https://mtcdrive.box.com/s/4i5x71nlvckw271es0ieq06p2u9buj1n |
+| Solano County        | $48,156.04 | Yes        | https://mtcdrive.box.com/s/zci19umnvraj2mpt4zp9l6zhy4p43bvh |
+| Alameda County       | $20,000.00 | Yes        | https://mtcdrive.box.com/s/vsyhyrkmoorg8qmoy193iod7khp3f3ul |
+| Contra Costa County  | $19,700.00 | Yes        | https://mtcdrive.box.com/s/9jkz4e0id9lt57cu7sxo8r3ry054y8bq |
+| San Mateo County     | $2,745.00  | No         | https://mtcdrive.box.com/s/chdtu5r3fciz9c71ssnder96g2t4b7ui |
+| Marin County         | $270.00    | No         | https://mtcdrive.box.com/s/fo3ek687mj6oulhdfkodrvqf5a1lhsd5 |
+| Sonoma County        | $80.00     | No         |                                                             |
+| Napa County          | $63.00     | No         | https://mtcdrive.box.com/s/1zrzwb0njj5vxj9051qf885s4beb1uzi |
+| San Francisco County | $-         | No         | https://mtcdrive.box.com/s/u94ono6bz0k1oqetdxa2gfqi5pvlsjkq |
+
+
+More detailed information including contact information, fees, fee waiver status, and parcel characteristics information provided by each Assessor's Office can be found by following the link below. You must be a member of the Data & Visualization team to view this informaiton. 
+
+[Click Here to View Parcel Characteristics Tracker](https://data.bayareametro.gov/Cadastral/Assessor-Parcel-Characteristics-Acquisition-Tracke/fdby-7aan) 
 
 ## Data Processing
 This data is generated using a combination of sources and methods (mainly ArcGIS Spatial Processing and MSSQL Spatial Queries). The inital data processing was performed on the Top 20 jurisdictions in the region with the largest population.  Digital data was collected from these jurisdictions and processed using ArcGIS and MSSQL Server using a simple point in poly method which assigns land use codes to parcel geometry based upon the location of the polygon centroid of each parcel in relation to the land use polygons contained in the source spatial datasets for these jurisdictions. See the figure below for a high level view of the data processing that was performed. 
