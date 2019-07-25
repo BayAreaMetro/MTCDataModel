@@ -25,11 +25,11 @@ Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
 * **San Mateo County**
    * San Mateo County Development Pipeline Field Documentation (**Not Currently Available**)
 * **Santa Clara County**
-   * [Santa Clara County Development Pipeline Field Documentation]()
+   * [Santa Clara County Development Pipeline Field Documentation](https://mtcdrive.box.com/s/r4jh6f95zukfquoujwr247znt0lj1xl2)
 * **Solano County**
    * Solano County Development Pipeline Field Documentation (**Not Currently Available**)
 * **Sonoma County**
-   * [Sonoma County Development Pipeline Field Documentation]()
+   * [Sonoma County Development Pipeline Field Documentation](https://mtcdrive.box.com/s/5u7i2ga05sk6tf2aa6a96kfbd64e8c48)
 
 ## Data Collection
 This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  {Discuss Data Collection Effort Here}
