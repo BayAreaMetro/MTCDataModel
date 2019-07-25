@@ -3,7 +3,7 @@
 ## Description
 Includes major permitted commercial, residential, and industrial development projects. Is comprised of a list of building projects recently completed, under construction, or approved.
 
-### Project Management
+## Project Management
 
 - [Box](https://mtcdrive.box.com/s/zhrj6w8rle80mjyrez6v6s0fsu1yen35)
 
