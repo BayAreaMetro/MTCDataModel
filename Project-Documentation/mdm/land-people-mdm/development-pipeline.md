@@ -1,9 +1,35 @@
 # Development Pipeline
 
 ## Description
-LIncludes major projects, and residential development. Is comprised of a list of building projects recently completed, under construction, or approved.
+Includes major permitted commercial, residential, and industrial development projects. Is comprised of a list of building projects recently completed, under construction, or approved.
+
+### Project Management
+
+- [Box](https://mtcdrive.box.com/s/zhrj6w8rle80mjyrez6v6s0fsu1yen35)
+
 ## Purpose and Use  
 Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
+
+## Local Jurisdiction Documentation and Data Sources
+
+* **Alameda County**
+   * Alameda County Development Pipeline Field Documentation (**Not Currently Available**)
+* **Contra Costa County**
+   * Contra Costa County Development Pipeline Field Documentation (**Not Currently Available**)
+* **Marin County**
+   * Marin County Development Pipeline Field Documentation (**Not Currently Available**)
+* **Napa County**
+   * Napa County Development Pipeline Field Documentaiton (**Not Currently Available**)
+* **San Francisco County**
+   * [San Francisco County Development Pipeline Field Documentation](https://mtcdrive.box.com/s/b1k5nturqhafihh9tlc8vi4pyvvmexld)
+* **San Mateo County**
+   * San Mateo County Development Pipeline Field Documentation (**Not Currently Available**)
+* **Santa Clara County**
+   * [Santa Clara County Development Pipeline Field Documentation]()
+* **Solano County**
+   * Solano County Development Pipeline Field Documentation (**Not Currently Available**)
+* **Sonoma County**
+   * [Sonoma County Development Pipeline Field Documentation]()
 
 ## Data Collection
 This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  {Discuss Data Collection Effort Here}
