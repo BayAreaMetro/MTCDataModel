@@ -89,32 +89,32 @@ bedrooms|Number of bedrooms in residence| number\_of\_bedrooms| bedrooms| nbr\_b
 bathroom|Number of bathrooms| number\_of\_bathrooms| bathrooms| nbr\_bathrooms| | baths| \_\_of\_bathroom, bathroom, baths| bath\_rooms| number\_of\_baths| buildingprimarybaths|County assessor derived
 
 The figure below is an entity relationship diagram (ERD) in third normal form explaining the interactions within the database:
-![Regional ERD](files\RegionalParcelERD.png)
+![Regional ERD](files/RegionalParcelERD.png)
 
 The diagrams below show the relationships between the fields that were received from county assessors' offices:
 ### Alameda County
-![Alameda County ERD](files\AlaERD.png)
+![Alameda County ERD](files/AlaERD.png)
 
 ### Contra Costa County
 
 ### Marin County
-![Marin County ERD](files\MarERD.png)
+![Marin County ERD](files/MarERD.png)
 
 ### Napa County
 
 ### San Francisco (City and County)
-![San Francisco ERD](files\SFERD.png)
+![San Francisco ERD](files/SFERD.png)
 
 ### San Mateo County
-![San Mateo County ERD](files\SMERD.png)
+![San Mateo County ERD](files/SMERD.png)
 
 ### Santa Clara County
-![Santa Clara County ERD](files\SCERD.png)
+![Santa Clara County ERD](files/SCERD.png)
 
 ### Solano County
-![Solano County ERD](files\SolERD.png)
+![Solano County ERD](files/SolERD.png)
 
 ### Sonoma County
-![Sonoma County ERD](files\SonERD.png)
+![Sonoma County ERD](files/SonERD.png)
 
 ## Related Works
