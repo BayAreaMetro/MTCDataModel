@@ -96,11 +96,13 @@ The diagrams below show the relationships between the fields that were received 
 ![Alameda County ERD](files/AlaERD.png)
 
 ### Contra Costa County
+![Contra Costa County ERD](files/CCERD.png)
 
 ### Marin County
 ![Marin County ERD](files/MarERD.png)
 
 ### Napa County
+![Napa County ERD](files/NapaERD.png)
 
 ### San Francisco (City and County)
 ![San Francisco ERD](files/SFERD.png)
