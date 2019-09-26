@@ -55,8 +55,8 @@ Source: Local Jurisdiction Planning Documents
 
 ### Zoning  
 [Regional Zoning Codes](https://data.bayareametro.gov/Land-Use/Regional-Zoning-Codes-2018/qdrp-c5ra)  
-[Regional Zoning](https://data.bayareametro.gov/Land-Use/View-of-Parcels-and-Regional-Zoning-2018/q2p6-hbrp)  
-[Regional Zoning Map](https://data.bayareametro.gov/Land-Use/-DRAFT-Santa-Clara-County-Map-of-Regional-Zoning-2/rw5f-hgez)  
+[Regional Zoning](https://data.bayareametro.gov/Land-Use/Zoning-2018/q2p6-hbrp)  
+[Regional Zoning Map](https://data.bayareametro.gov/Land-Use/Map-of-Zoning-2018-/rw5f-hgez)  
 Source: Local Jurisdiction Planning Documents, Assessor's Parcel Characteristics for zoning  
 
 **Figure 1. Data Processing Steps**
