@@ -25,7 +25,7 @@ These datasets are subsets of the Parcel Regional Characteristics dataset ([docu
 
 **NOTE**: Field documentation available internally at MTC only.
 
-![Urbansim table fields from Parcel Regional Characteristics](https://www.lucidchart.com/publicSegments/view/2e690d65-ee2c-4c3c-91b5-6286fa8d323e/image.png)
+![Urbansim table fields from Parcel Regional Characteristics](https://www.lucidchart.com/publicSegments/view/e3b1433b-8f55-491d-93e3-892e276e8269/image.png)
 
 
 ## Outputs
