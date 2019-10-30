@@ -19,6 +19,18 @@ Most of the data that is collected for BASIS and included in the MDM has been id
 
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
+### UrbanSim Datasets   
+Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
+- [Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn) | [Documentation and Process Notes](land-people-mdm/urbansim-buildings-parcels.md)
+- [Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw) | [Documentation and Process Notes](land-people-mdm/urbansim-buildings-parcels.md)
+- [Build Out Capacity | Previously Called PLU]() | [Documentation and Process Notes]()
+- [Deed Restricted Units]() | [Documentation and Process Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
+- [Development Pipeline]() | [Documentation and Process Notes](land-people-mdm/development-pipeline.md)
+- [Institutions]() | [Documentation and Process Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
+- [Landmarks]() | [Documentation and Process Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
+- [Nondevelopment Sites]() | [Documentation and Process Notes](land-people-mdm/non-development-sites.md) -- Not Yet Added to Inventory
+
+
 ### Administrative Boundaries
 - [LAFCO SOI Boundaries]() -- Not Yet Added to Inventory
 - [Jurisdiction Boundaries]() -- Not Yet Added to Inventory
@@ -88,15 +100,3 @@ Dependencies: ~SQL Server~, Python, R, GDAL
 
 - [Transit Stops]() -- Not Yet Added To Inventory  
 - [Transit Lines]() -- Not Yet Added To Inventory  
-
-### UrbanSim Datasets   
-Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
-- [Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn) | [Documentation and Process Notes](land-people-mdm/urbansim-parcels.md)
-- [Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw) | [Documentation and Process Notes](land-people-mdm/urbansim-buildings-parcels.md)
-- [Build Out Capacity | Previously Called PLU]() | [Documentation and Process Notes]()
-- [Deed Restricted Units]() | [Documentation and Process Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
-- [Development Pipeline]() | [Documentation and Process Notes](land-people-mdm/development-pipeline.md)
-- [Institutions]() | [Documentation and Process Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
-- [Landmarks]() | [Documentation and Process Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
-- [Nondevelopment Sites]() | [Documentation and Process Notes](land-people-mdm/non-development-sites.md) -- Not Yet Added to Inventory
-
