@@ -21,14 +21,14 @@ The following list contains key datasets listed on the [BASIS Website](http://ba
 
 ### UrbanSim Datasets   
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
-- [Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn) | [Documentation and Process Notes](land-people-mdm/urbansim-buildings-parcels.md)
-- [Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw) | [Documentation and Process Notes](land-people-mdm/urbansim-buildings-parcels.md)
+- [Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn) | [Documentation and Process Notes](urbansim-datasets/urbansim-buildings-parcels.md)
+- [Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw) | [Documentation and Process Notes](urbansim-datasets/urbansim-buildings-parcels.md)
 - [Build Out Capacity -- Previously Called PLU]() | [Documentation and Process Notes]() -- Not Yet Added to Inventory
-- [Deed Restricted Units]() | [Documentation and Process Notes](land-people-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
-- [Development Pipeline]() | [Documentation and Process Notes](land-people-mdm/development-pipeline.md)
-- [Institutions]() | [Documentation and Process Notes](land-people-mdm/institutions.md) -- Not Yet Added to Inventory
-- [Landmarks]() | [Documentation and Process Notes](land-people-mdm/landmarks.md) -- Not Yet Added to Inventory
-- [Nondevelopment Sites]() | [Documentation and Process Notes](land-people-mdm/non-development-sites.md) -- Not Yet Added to Inventory
+- [Deed Restricted Units]() | [Documentation and Process Notes](urbansim-datasets/deed-restricted-units.md) -- Not Yet Added to Inventory
+- [Development Pipeline]() | [Documentation and Process Notes](urbansim-datasets/development-pipeline.md)
+- [Institutions]() | [Documentation and Process Notes](urbansim-datasets/institutions.md) -- Not Yet Added to Inventory
+- [Landmarks]() | [Documentation and Process Notes](lurbansim-datasets/landmarks.md) -- Not Yet Added to Inventory
+- [Nondevelopment Sites]() | [Documentation and Process Notes](urbansim-datasets/non-development-sites.md) -- Not Yet Added to Inventory
 
 
 ### Administrative Boundaries
