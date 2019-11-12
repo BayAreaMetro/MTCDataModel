@@ -119,5 +119,6 @@ This dataset was compiled using parcel characteristics data from each of the nin
 
 ### Related Datasets
 
-- [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018-V2/pu8t-xzre) | Join Field: joinid
+- [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018-V2/pu8t-xzre) | Join Field: `joinid`
+- [UrbanSim Building Types](https://data.bayareametro.gov/Equivalencies/UrbanSim-Building-Types/a6fp-zvby)  | Join Field: `building_type`
 
