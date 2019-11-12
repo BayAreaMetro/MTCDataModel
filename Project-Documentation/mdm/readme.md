@@ -19,7 +19,7 @@ Most of the data that is collected for BASIS and included in the MDM has been id
 
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
-### UrbanSim Datasets   
+### [UrbanSim Datasets](urbansim-datasets/README.md)
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
 - [Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn) | [Documentation and Process Notes](urbansim-datasets/urbansim-buildings-parcels.md)
 - [Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw) | [Documentation and Process Notes](urbansim-datasets/urbansim-buildings-parcels.md)
@@ -42,7 +42,7 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 - [Greenprint](redshift/greenprintFishnet.md) | [Documentation and Process Notes](https://www.bayareagreenprint.org/glossary/)
 Table structure for data acquired from Bay Area Greenprint
 
-### Policy
+### [Policy](policy-mdm/README.md)
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses.  
 
 **Growth Management Boundaries and Policies**
@@ -73,7 +73,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 - [Transit Priority Areas (Parcel Based)]() -- Not Yet Added To Inventory  
 
 
-### Land & People
+### [Land & People](land-people-mdm/README.md)
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
 
 #### Cadastral
@@ -87,7 +87,7 @@ Includes data that depicts local development, cadastral, buildings and structure
 #### Housing
 - [Residential Permits]() | [Data Processing Notes](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
 
-### Transportation
+### [Transportation](transportation-mdm/README.md)
 Includes data that depicts and describes the region's Transportation Systems
 
 #### Transit
