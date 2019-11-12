@@ -42,7 +42,7 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 - [Greenprint](redshift/greenprintFishnet.md) | [Documentation and Process Notes](https://www.bayareagreenprint.org/glossary/)
 Table structure for data acquired from Bay Area Greenprint
 
-### [Policy](policy-mdm/README.md)
+### [Policy](policy-mdm)
 Includes data on Growth Management, State & Federal Law, Regional Policies, Environmental Justice, Planning and Zoning Land Uses.  
 
 **Growth Management Boundaries and Policies**
@@ -73,7 +73,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 - [Transit Priority Areas (Parcel Based)]() -- Not Yet Added To Inventory  
 
 
-### [Land & People](land-people-mdm/README.md)
+### [Land & People](land-people-mdm)
 Includes data that depicts local development, cadastral, buildings and structures and demography characteristics of local areas.
 
 #### Cadastral
@@ -87,7 +87,7 @@ Includes data that depicts local development, cadastral, buildings and structure
 #### Housing
 - [Residential Permits]() | [Data Processing Notes](land-people-mdm/residential-permits.md) -- Not Yet Added to Inventory
 
-### [Transportation](transportation-mdm/README.md)
+### [Transportation](transportation-mdm)
 Includes data that depicts and describes the region's Transportation Systems
 
 #### Transit
