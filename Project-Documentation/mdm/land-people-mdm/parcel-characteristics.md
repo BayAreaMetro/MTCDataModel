@@ -10,7 +10,7 @@ This documentation provides a high-level overview of the Parcel Regional Charact
 - the parcel characteristics were collected from county assessors' offices in 2019, whereas the parcel geometries (denoted by the `joinid` field) were collected in 2018. Thus, there are parcels in this dataset without geometries (in cases where the APNs were new or different from the 2018 APNs)
 - this dataset includes parcel characteristics as well as characteristics of the buildings on the parcels
 - this data is minimally transformed from its source (from county assessors' offices), and is not suitable in this form for aggregation analyses
-	- If you are interested in doing a parcel-based analysis using these parcel attributes, please send a request to the Data and Visualization team specifying your goals
+	- If you are interested in doing a parcel-based analysis using these parcel attributes, please send a request to the Data and Visualization team with your specifications
 
 
 ### Project Management
@@ -55,8 +55,8 @@ joinid|Join id which joins parcel characteristics to geometry| | | | | | | | | |
 jurisdiction|City or county (unincorporated area) name|city\_fixed|situs\_city\_abbr|situs\_city|(Calculated Value) case when case when situs2 in ('', 'nan', 'NULL', null) then null else situs2 end is not null then case when situs2 in ('', 'nan', 'NULL', null) then null else situs2 end when case when community in ('', 'nan', 'NULL', null) then null else community end is not null then case when community in ('', 'nan', 'NULL', null) then null else community end else null end| |situs\_city|city\_code|site\_city|situscity|County Assessor derived (with MTC mapping)
 fipco|County FIPS code|fipco|fipco|fipco|fipco|fipco|fipco|fipco|fipco|fipco|MTC derived
 apn|County APN|Assessor's Parcel Number (APN) sort format, Sort Parcel|PARCEL NUMBER|property\_id|Asmt|KEY, OWNR-KEY, RP1PRCLID|APN|APN|PARCEL NUMBER, ASSESSOR PARCEL NUMBER|ParcelNumber|County Assessor derived (with MTC mapping)
-num\_buildings|Number of buildings on parcel|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|(Calculated Value) num\_buildings|MTC/County Assessor derived
-building\_id|Unique building ID|(Calculated Value) building\_id|(Calculated Value) building\_id|(Calculated Value) building\_id|(Calculated Value) building\_id|(Calculated Value) building\_id|(Calculated Value) building\_id|(Calculated Value) building\_id|(Calculated Value) building\_id|(Calculated Value) building\_id|MTC/County Assessor derived
+num\_apn\_records|Number of buildings on parcel|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|(Calculated Value) num\_apn\_records|MTC/County Assessor derived
+apn\_record\_id|Unique building ID|(Calculated Value) record\_id|(Calculated Value) record\_id|(Calculated Value) record\_id|(Calculated Value) record\_id|(Calculated Value) record\_id|(Calculated Value) record\_id|(Calculated Value) record\_id|(Calculated Value) record\_id|(Calculated Value) record\_id|MTC/County Assessor derived
 building\_type|The UrbanSim building type or the primary building type if there are multiple| | | | | | | | | |MTC derived
 building\_sqft|Square footage of building(s)|building\_area|(Calculated Value) nvl(building\_1\_sq\_feet, 0) + nvl(residence\_2nd\_floor\_sq\_ft, 0) + nvl(residence\_lower\_level\_sq\_ft, 0)|liv\_area\_sqft|buildingsize|sqft|(Calculated Value) case when source\_file = 'resident' then nvl(third\_floor\_area, 0) + nvl(second\_floor\_area, 0) + nvl(garage\_area, 0) + nvl(first\_floor\_area, 0) + nvl(finished\_basement\_area, 0) + nvl(basement\_area, 0) + nvl(base\_area, 0) + nvl(attic\_area, 0) + nvl(area\_of\_addition, 0) when source\_file = 'mobilehome' then total\_sq\_ft when source\_file = 'condo' then nvl(base\_area, 0) + nvl(garage\_area, 0) when source\_file in ('multifam', 'industrial', 'hotel') then gross\_building\_area\_fixed else null end|total\_area|total\_area\_of\_building|(Calculated Value) coalesce(buildingprimarysize, 0) + coalesce(buildingsecondarysize, 0)|MTC/County Assessor derived
 non\_residential\_sqft|Square footage of non-residential space in building(s)|building\_area|building\_1\_sq\_feet| |buildingsize|sqft|gross\_building\_area\_fixed|total\_area|total\_area\_of\_building|(Calculated Value) coalesce(buildingprimarysize, 0) + coalesce(buildingsecondarysize, 0)|MTC/County Assessor derived
@@ -76,6 +76,7 @@ bedrooms|Number of bedrooms in residence|number\_of\_bedrooms|bedrooms|nbr\_bedr
 bathrooms|Number of bathrooms|number\_of\_bathrooms|bathrooms|nbr\_bathrooms|bathrooms|baths|number\_of\_bathrooms\_fixed|(Calculated Value) case when bath\_rooms ~ '^([0-9]+[.]?[0-9]*|[.][0-9]+)$' then cast(bath\_rooms as float) else null end|number\_of\_baths|buildingprimarybaths|County assessor derived
 rentable\_sqft|Rentable square-footage|rentable\_space| | | | |net\_rent\_area|rentable\_area| | | 
 lot\_sqft|Lot square-footage|lot\_size|area|land\_sqft|landsqft|larea|land\_sq\_\_feet|(Calculated Value) land\_acres*43560|lot\_size\_\_sq\_\_ft\_\_|landsizesqft|County assessor derived
+
 
 
 ## Methodology
