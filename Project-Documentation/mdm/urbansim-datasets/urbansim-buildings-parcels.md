@@ -25,13 +25,13 @@ These datasets are derived from the Parcel Regional Characteristics dataset ([do
 
 **NOTE**: Field documentation available internally at MTC only.
 
-![Urbansim table fields from Parcel Regional Characteristics](https://i.imgur.com/2XmlrAb.png)
+![Urbansim table fields from Parcel Regional Characteristics](https://i.imgur.com/KfyM99n.png)
 
 
 ## Outputs
 
-- [Urbansim Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw)
-- [Urbansim Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn)
+- [Urbansim Buildings]()
+- [Urbansim Parcels]()
 
 
 ### Related Datasets
