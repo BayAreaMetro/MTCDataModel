@@ -79,7 +79,7 @@ Includes data that depicts local development, cadastral, buildings and structure
 #### Cadastral
 
 - [Parcel Regional Characteristics](https://data.bayareametro.gov/Cadastral/Parcel-Regional-Characteristics/8wj7-fdzw) | [Documentation and Process Notes](land-people-mdm/parcel-characteristics.md)
-- [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018/fqea-xb6g) | [Documentation and Process Notes](land-people-mdm/parcels_2018.md)
+- [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018/fqea-xb6g) | [Documentation and Process Notes](land-people-mdm/parcel-geometry.md)
 - [Parcels 2015]() -- Not Yet Added To Inventory
 - [Parcels 2010]() -- Not Yet Added To Inventory
 
