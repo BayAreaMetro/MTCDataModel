@@ -31,7 +31,7 @@ These datasets are derived from the Parcel Regional Characteristics dataset ([do
 
 **Figure 2. Entity Relationship Diagram**
 
-![UrbanSim ERD](https://www.lucidchart.com/publicSegments/view/dc0b6d08-2215-4a55-8d12-7983d7d56e95/image.png)
+![ERD](https://www.lucidchart.com/publicSegments/view/6e026cca-05a6-44e1-bb26-3abfd1604dfd/image.png)
 
 ## Outputs
 
