@@ -27,18 +27,22 @@ These datasets are derived from the Parcel Regional Characteristics dataset ([do
 
 ![Urbansim table fields from Parcel Regional Characteristics](https://i.imgur.com/KfyM99n.png)
 
+#### Entity Relationship Diagram
+
+**Figure 2. Entity Relationship Diagram**
+
+![UrbanSim ERD](https://www.lucidchart.com/publicSegments/view/dc0b6d08-2215-4a55-8d12-7983d7d56e95/image.png)
 
 ## Outputs
 
-- [Urbansim Buildings](https://data.bayareametro.gov/UrbanSim/UrbanSim-Buildings-V1/yjkh-4fjk)
-- [Urbansim Parcels]()
+- [Urbansim Buildings](https://data.bayareametro.gov/UrbanSim/UrbanSim-Buildings-V1/wwij-t5vt)
+- [Urbansim Parcels](https://data.bayareametro.gov/UrbanSim/UrbanSim-Parcels-V1/k3p6-mfvp)
 
 
 ### Related Datasets
 
 - [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018-geom_id/gnat-8ebd) | Join Field: geom_id
-
-- [Parcel Regional Characteristics](https://data.bayareametro.gov/Cadastral/Parcel-Regional-Characteristics-V1-5/awv8-vz6p) | Join Field: parcel_id
+- [UrbanSim Building Types](https://data.bayareametro.gov/Equivalencies/UrbanSim-Building-Types/a6fp-zvby) | Join Field: building_type
 
 
 **Data Steward:** UrbanSim Team
