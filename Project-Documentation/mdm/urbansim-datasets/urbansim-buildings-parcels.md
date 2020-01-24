@@ -27,11 +27,6 @@ These datasets are derived from the Parcel Regional Characteristics dataset ([do
 
 ![Urbansim table fields from Parcel Regional Characteristics](https://i.imgur.com/KfyM99n.png)
 
-#### Entity Relationship Diagram
-
-**Figure 2. Entity Relationship Diagram**
-
-![ERD](https://www.lucidchart.com/publicSegments/view/6e026cca-05a6-44e1-bb26-3abfd1604dfd/image.png)
 
 ## Outputs
 
@@ -43,6 +38,11 @@ These datasets are derived from the Parcel Regional Characteristics dataset ([do
 
 - [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018-geom_id/gnat-8ebd) | Join Field: geom_id
 - [UrbanSim Building Types](https://data.bayareametro.gov/Equivalencies/UrbanSim-Building-Types/a6fp-zvby) | Join Field: building_type
+
+
+**Figure 2. Entity Relationship Diagram**
+
+![ERD](https://www.lucidchart.com/publicSegments/view/6e026cca-05a6-44e1-bb26-3abfd1604dfd/image.png)
 
 
 **Data Steward:** UrbanSim Team
