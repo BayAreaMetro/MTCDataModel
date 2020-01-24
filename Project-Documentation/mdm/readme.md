@@ -19,16 +19,16 @@ Most of the data that is collected for BASIS and included in the MDM has been id
 
 The following list contains key datasets listed on the [BASIS Website](http://basis.bayareametro.gov/results) that have been marked for inclusion in the MDM Data Store.
 
-### [UrbanSim Datasets](urbansim-datasets)
+### [UrbanSim Datasets](urbansim-mdm)
 Each of the following Datasets are related to the Assessor Parcel Records (Parcels 2018):  
-- [Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn) | [Documentation and Process Notes](urbansim-datasets/urbansim-buildings-parcels.md)
-- [Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw) | [Documentation and Process Notes](urbansim-datasets/urbansim-buildings-parcels.md)
-- [Build Out Capacity -- Previously Called PLU]() | [Documentation and Process Notes](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/urbansim-datasets/build-out-capacity.md) -- Not Yet Added to Inventory
-- [Deed Restricted Units]() | [Documentation and Process Notes](urbansim-datasets/deed-restricted-units.md) -- Not Yet Added to Inventory
-- [Development Pipeline]() | [Documentation and Process Notes](urbansim-datasets/development-pipeline.md)
-- [Institutions]() | [Documentation and Process Notes](urbansim-datasets/institutions.md) -- Not Yet Added to Inventory
-- [Landmarks]() | [Documentation and Process Notes](lurbansim-datasets/landmarks.md) -- Not Yet Added to Inventory
-- [Nondevelopment Sites]() | [Documentation and Process Notes](urbansim-datasets/non-development-sites.md) -- Not Yet Added to Inventory
+- [Parcels](https://data.bayareametro.gov/Land-Use/UrbanSim-Parcels/6axv-s6xn) | [Documentation and Process Notes](urbansim-mdm/urbansim-buildings-parcels.md)
+- [Buildings](https://data.bayareametro.gov/Land-Use/UrbanSim-Buildings/huqe-evqw) | [Documentation and Process Notes](urbansim-mdm/urbansim-buildings-parcels.md)
+- [Build Out Capacity -- Previously Called PLU]() | [Documentation and Process Notes](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/urbansim-mdm/build-out-capacity.md) -- Not Yet Added to Inventory
+- [Deed Restricted Units]() | [Documentation and Process Notes](urbansim-mdm/deed-restricted-units.md) -- Not Yet Added to Inventory
+- [Development Pipeline]() | [Documentation and Process Notes](urbansim-mdm/development-pipeline.md)
+- [Institutions]() | [Documentation and Process Notes](urbansim-mdm/institutions.md) -- Not Yet Added to Inventory
+- [Landmarks]() | [Documentation and Process Notes](lurbansim-mdm/landmarks.md) -- Not Yet Added to Inventory
+- [Nondevelopment Sites]() | [Documentation and Process Notes](urbansim-mdm/non-development-sites.md) -- Not Yet Added to Inventory
 
 
 ### Administrative Boundaries
