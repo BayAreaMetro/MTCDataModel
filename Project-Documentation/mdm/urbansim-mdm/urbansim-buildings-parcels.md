@@ -15,7 +15,12 @@ Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research. 
 
 
 ## Data Processing   
-These datasets are derived from the Parcel Regional Characteristics (PRC) and Parcels datasets. Documentation on building these datasets is [here](../mdm/land-people-mdm/parcel-characteristics.md) for PRC and [here](../mdm/land-people-mdm/parcel-geometry.md) for Parcels. The figure below provides a high level overview of the subsequent data processing steps. 
+These datasets are derived from the Parcel Regional Characteristics (PRC) and Parcels datasets.
+
+- [PRC documentation](../land-people-mdm/parcel-characteristics.md)
+- [Parcels documentation](../land-people-mdm/parcel-geometry.md)
+
+The figures below provides a high level overview of the subsequent data processing steps. 
 
 **Figure 1. Data Processing Pre-Steps**
 ![Pre steps](https://www.lucidchart.com/publicSegments/view/986f91cf-cb8b-41d7-ae09-461ba80e3dfc/image.png)
