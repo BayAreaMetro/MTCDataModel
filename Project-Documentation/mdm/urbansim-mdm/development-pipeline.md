@@ -32,24 +32,28 @@ Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
    * [Sonoma County Development Pipeline Field Documentation](https://mtcdrive.box.com/s/5u7i2ga05sk6tf2aa6a96kfbd64e8c48)
 
 ## Data Collection
-This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  {Discuss Data Collection Effort Here}
+This data was compiled using local information collected from jurisdictions that participated in the BASIS Local Jurisdiction Review process as well as from congestion management agencies. 
+
+The DataViz team coordinated closely Bay Area CMAs to collect major residential and commercial development projects for all cities within the jurisdiction of the following agencies:
+
+* Santa Clara Valley Transportation Authority
+* Sonoma County Transportation Authority
 
 ## Data Processing
-This data is generated using a combination of sources and methods (mainly Spatial Processing using MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
+This data is generated using a combination of sources and methods, mainly leveraging python jupyter notebooks as well as some manual review and type coding work using CSVs. The figure below provides a high level overview of the data processing steps.  
 
 **Figure 1. Data Processing Steps**
 ![Data Processing Model]() -- Lucidcharts 
 
-## Entity Relationship Diagram and Attribute Definitions
-The documentation and metadata details for this data can be viewed here: [Development Pipeline 2018]() -- Socrata
+## Field Definition and Sources
+
+[Field Documentation](https://mtcdrive.box.com/s/slp5kwmta11sp5apkdxwbe2gyqgarz97)(**NOTE:** Field documentation available internally at MTC only)
 
 **Figure 2. Entity Relationship Diagram**
 ![Data Model]()
-Click [Here]() for interactive versions of Figures 1 and 2. -- Lucidcharts
+
 
 **Note**:
 Attribute Definitions can be viewed [Here](). -- Socrata
-
-This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.
 
 Data Steward: UrbanSim Team
