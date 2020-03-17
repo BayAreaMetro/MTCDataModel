@@ -1,4 +1,4 @@
--- DRAFT --
+-- Draft --
 
 # Build Out Capacity 
 
@@ -12,22 +12,17 @@ Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
 This data was compiled using local information collected from each of the 109 jurisdictions in the San Francisco Bay Area Region.  {Discuss Data Collection Effort Here}
 
 ## Data Processing
-This data is generated using a combination of sources and methods (mainly Spatial Processing using MSSQL Spatial Queries). The figure below provides a high level overview of the data processing steps.  
+This data is generated using a combination of sources and methods. The figure below provides a high level overview of the data processing steps.  
 
-**Figure 1. Data Processing Steps**
-![Data Processing Model]() -- Lucidcharts   
+[**Data Processing Folder**](https://mtcdrive.app.box.com/folder/107214858288) (available internally at MTC only)
 
-## Entity Relationship Diagram and Attribute Definitions   
-The documentation and metadata details for this data can be viewed here:   
-[Build Out Capacity]() -- Socrata (Not Yet Added)  
+## Entity Relationship Diagram and Attribute Definitions  
 
-**Figure 2. Entity Relationship Diagram**
-![Land Use Data Model]()  
-Click [Here]() for interactive versions of Figures 1 and 2. -- Lucidcharts  
+**Figure 1. Entity Relationship Diagram**
+![Build Out Capacity ERD](https://www.lucidchart.com/publicSegments/view/9f39ad38-ff4c-4508-ac20-2bade9680c40/image.png)
 
-**Note**:  
-Attribute Definitions can be viewed [Here](). -- Socrata (Not Yet Added)  
-
-This data is related to the [Parcels 2018 Dataset](https://mtc.data.socrata.com/Cadastral/Region-Parcels-2018-/fqea-xb6g) table using the joinid field.  
+**Figure 2. Field Definitions and Sources**
+![Build Out Capacity Field Definitions](https://imgur.com/29GeZv6)
+ 
 
 Data Steward: UrbanSim Team  
