@@ -50,7 +50,7 @@ This data is generated using a combination of sources and methods, mainly levera
 [Field Documentation](https://mtcdrive.box.com/s/slp5kwmta11sp5apkdxwbe2gyqgarz97) (**NOTE:** Field documentation available internally at MTC only)
 
 **Figure 2. Entity Relationship Diagram**
-![Data Model]()
+![Data Model](/files/Development_Pipeline_ERD.png)
 
 
 **Note**:
