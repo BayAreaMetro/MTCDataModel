@@ -5,7 +5,8 @@ Includes major permitted commercial, residential, and industrial development pro
 
 ## Project Management
 
-- [Box](https://mtcdrive.box.com/s/zhrj6w8rle80mjyrez6v6s0fsu1yen35)
+- [Data Collection Box](https://mtcdrive.box.com/s/zhrj6w8rle80mjyrez6v6s0fsu1yen35) (**NOTE:** development pipeline datasets collected are only available internally at MTC only)
+- [Data Processing Box](https://mtcdrive.box.com/s/b1sqvy0c550cwwn240r2zkopz3cqhhge) (**NOTE:** development pipeline scripts and processing datasets are only available internally at MTC only)
 
 ## Purpose and Use  
 Used in MTC Land Use Modeling, Housing Policy and Long Range Planning Research.
@@ -43,7 +44,8 @@ The DataViz team coordinated closely Bay Area CMAs to collect major residential 
 This data is generated using a combination of sources and methods, mainly leveraging python jupyter notebooks as well as some manual review and type coding work using CSVs. The figure below provides a high level overview of the data processing steps.  
 
 **Figure 1. Data Processing Steps**
-![Data Processing Model]() -- Lucidcharts 
+
+![Data Processing Model](files/Development_Pipeline_Process.png)
 
 ## Field Definition and Sources
 
@@ -53,8 +55,7 @@ This data is generated using a combination of sources and methods, mainly levera
 
 ![Data_Model](files/Development_Pipeline_ERD.png)
 
-
 **Note**:
-Attribute Definitions can be viewed [Here](). -- Socrata
+Attribute Definitions can be viewed [Here](https://data.bayareametro.gov/Land-People/Development-Pipeline/mh8s-sq4j).
 
 Data Steward: UrbanSim Team
