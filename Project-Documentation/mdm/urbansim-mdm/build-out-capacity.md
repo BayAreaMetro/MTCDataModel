@@ -19,10 +19,10 @@ This data is generated using a combination of sources and methods. The figure be
 ## Entity Relationship Diagram and Attribute Definitions  
 
 **Figure 1. Entity Relationship Diagram**
-![Build Out Capacity ERD](https://www.lucidchart.com/publicSegments/view/9f39ad38-ff4c-4508-ac20-2bade9680c40/image.png)
+![Build Out Capacity ERD](https://www.lucidchart.com/publicSegments/view/86249de6-770b-46d8-904b-19e35fb6ac13/image.png)
 
 **Figure 2. Field Definitions and Sources**
-![Build Out Capacity Field Definitions](https://imgur.com/29GeZv6)
+![Build Out Capacity Field Definitions](files/BOC_subset_fields.png)
  
 
 Data Steward: UrbanSim Team  
