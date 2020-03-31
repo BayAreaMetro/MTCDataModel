@@ -19,7 +19,7 @@ This data is generated using a combination of sources and methods. The figure be
 ## Entity Relationship Diagram and Attribute Definitions  
 
 **Figure 1. Entity Relationship Diagram**
-![Build Out Capacity ERD](https://www.lucidchart.com/publicSegments/view/86249de6-770b-46d8-904b-19e35fb6ac13/image.png)
+![Build Out Capacity ERD](https://www.lucidchart.com/publicSegments/view/1c486cc2-59d6-471d-9555-edec1bed406b/image.png)
 
 **Figure 2. Field Definitions and Sources**
 ![Build Out Capacity Field Definitions](files/BOC_subset_fields.png)
