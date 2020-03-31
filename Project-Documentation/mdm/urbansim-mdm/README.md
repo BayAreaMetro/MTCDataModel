@@ -11,7 +11,7 @@
 [Build Out Capacity](build-out-capacity.md)|{Add}
 [Development Pipeline](development-pipeline.md)|{Add}
 
-### UrbanSim Team Managed Data:
+### UrbanSim Team Managed Data (Not Yet Completed):
 **Dataset**|**Description**
 -----|-----
 [Deed Restricted Units](deed-restricted-units.md)|{Add}
