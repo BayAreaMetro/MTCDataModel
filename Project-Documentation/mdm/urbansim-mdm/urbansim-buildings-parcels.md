@@ -52,7 +52,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 **Figure 2. Entity Relationship Diagram**
 
-![ERD](https://www.lucidchart.com/publicSegments/view/986f91cf-cb8b-41d7-ae09-461ba80e3dfc/image.png)
+![ERD](https://www.lucidchart.com/publicSegments/view/f827f116-bfb6-4f8d-b727-42dfeca5943d/image.png)
 
 
 **Data Steward:** UrbanSim Team
