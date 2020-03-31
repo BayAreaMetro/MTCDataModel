@@ -4,15 +4,16 @@
 
 ## Dataset Table of Contents
 
+### DataViz Team Managed Data:
 **Dataset**|**Description**
 -----|-----
-
-### DataViz Team Managed Data:
 [UrbanSim Buildings and Parcels](urbansim-buildings-parcels.md)|{Add}
 [Build Out Capacity](build-out-capacity.md)|{Add}
 [Development Pipeline](development-pipeline.md)|{Add}
 
 ### UrbanSim Team Managed Data:
+**Dataset**|**Description**
+-----|-----
 [Deed Restricted Units](deed-restricted-units.md)|{Add}
 [Institutions](institutions.md)|{Add}
 [Landmarks](landmarks.md)|{Add}
