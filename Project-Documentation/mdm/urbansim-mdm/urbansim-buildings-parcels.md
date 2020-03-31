@@ -27,7 +27,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 
 **Figure 2. UrbanSim Tables Data Processing Steps**
-![Data Processing Model](https://www.lucidchart.com/publicSegments/view/c2593371-ede7-44cb-8dc1-dfa8a9756597/image.png) 
+![Data Processing Model](https://www.lucidchart.com/publicSegments/view/343a3c5c-af33-4f67-86b0-816a9cecb77c/image.png) 
 
 
 [Process Notes -- detailed](https://mtcdrive.app.box.com/notes/599518000054) (**NOTE**: Process notes available internally at MTC only)
@@ -57,7 +57,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 **Figure 3. Entity Relationship Diagram**
 
-![ERD](https://www.lucidchart.com/publicSegments/view/343a3c5c-af33-4f67-86b0-816a9cecb77c/image.png)
+![ERD](https://www.lucidchart.com/publicSegments/view/c2593371-ede7-44cb-8dc1-dfa8a9756597/image.png)
 
 
 **Data Steward:** UrbanSim Team
