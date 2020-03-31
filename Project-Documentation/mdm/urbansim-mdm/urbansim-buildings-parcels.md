@@ -46,7 +46,7 @@ The figures below provides a high level overview of the subsequent data processi
 ## Outputs
 
 - [Urbansim Buildings]()
-- [Urbansim Parcels]()
+- [Urbansim Parcels (Geo)](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels-2018-v4a/nk3m-k4s8)
 
 
 ### Related Datasets
