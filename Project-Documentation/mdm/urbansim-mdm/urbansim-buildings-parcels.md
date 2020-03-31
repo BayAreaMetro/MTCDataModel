@@ -27,7 +27,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 
 **Figure 2. UrbanSim Tables Data Processing Steps**
-![Data Processing Model](https://www.lucidchart.com/publicSegments/view/5e742ffd-6888-42f2-aa3b-4a2488f3578e/image.png) 
+![Data Processing Model](https://www.lucidchart.com/publicSegments/view/25dc40d7-f8f2-4a6f-8604-6806583a7278/image.png) 
 
 
 [Process Notes](https://mtcdrive.app.box.com/notes/599518000054) (**NOTE**: Process notes available internally at MTC only)
