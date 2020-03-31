@@ -53,7 +53,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 - [Parcels 2018]() | Join Field: geom_id
 - [Parcel Grid 8 Mile](https://data.bayareametro.gov/dataset/Regional-Parcel-Grid-8-Mile/62ya-rtvu) | Join Field: geom_id
-- [Parcel Grid Bridge Table]() | Join Field: geom_id (PK) -- Kerey to Add Later this week
+- [Parcel Grid Bridge Table]() | Join Field: geom_id (PK) -- Kearey to Add Later this week
 - [UrbanSim Building Types](https://data.bayareametro.gov/Equivalencies/UrbanSim-Building-Types/a6fp-zvby) | Join Field: building_type
 
 
