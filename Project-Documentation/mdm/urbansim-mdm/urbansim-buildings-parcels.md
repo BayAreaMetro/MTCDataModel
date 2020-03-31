@@ -30,11 +30,11 @@ The figures below provides a high level overview of the subsequent data processi
 ![Data Processing Model](https://www.lucidchart.com/publicSegments/view/84adc619-b47d-462a-89d4-74f248fff3a9/image.png) 
 
 
-[Process Notes](https://mtcdrive.app.box.com/notes/599518000054) (**NOTE**: Process notes available internally at MTC only)
+[Process Notes -- detailed](https://mtcdrive.app.box.com/notes/599518000054) (**NOTE**: Process notes available internally at MTC only)
 
 
-[UrbanSim Parcels Data Processing folder](https://mtcdrive.app.box.com/folder/107213419566)
-[UrbanSim Buildings Data Processing folder](https://mtcdrive.app.box.com/folder/107215024793)
+- [UrbanSim Parcels Data Processing folder](https://mtcdrive.app.box.com/folder/107213419566)
+- [UrbanSim Buildings Data Processing folder](https://mtcdrive.app.box.com/folder/107215024793)
 
 
 
