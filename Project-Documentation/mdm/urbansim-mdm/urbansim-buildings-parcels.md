@@ -37,8 +37,6 @@ The figures below provides a high level overview of the subsequent data processi
 
 [Field Documentation](https://mtcdrive.app.box.com/file/608892321712) (**NOTE**: Field documentation available internally at MTC only)
 
-![Urbansim table fields from Parcel Regional Characteristics](https://i.imgur.com/KfyM99n.png)
-
 
 ## Outputs
 
