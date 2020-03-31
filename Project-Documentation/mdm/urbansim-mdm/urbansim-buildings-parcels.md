@@ -27,7 +27,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 
 **Figure 2. UrbanSim Tables Data Processing Steps**
-![Data Processing Model](https://www.lucidchart.com/publicSegments/view/84adc619-b47d-462a-89d4-74f248fff3a9/image.png) 
+![Data Processing Model](https://www.lucidchart.com/publicSegments/view/c2593371-ede7-44cb-8dc1-dfa8a9756597/image.png) 
 
 
 [Process Notes -- detailed](https://mtcdrive.app.box.com/notes/599518000054) (**NOTE**: Process notes available internally at MTC only)
@@ -55,9 +55,9 @@ The figures below provides a high level overview of the subsequent data processi
 - [UrbanSim Building Types](https://data.bayareametro.gov/Equivalencies/UrbanSim-Building-Types/a6fp-zvby) | Join Field: building_type
 
 
-**Figure 2. Entity Relationship Diagram**
+**Figure 3. Entity Relationship Diagram**
 
-![ERD](https://www.lucidchart.com/publicSegments/view/f0663edf-0466-41e4-98ba-abe6914754a0/image.png)
+![ERD](https://www.lucidchart.com/publicSegments/view/343a3c5c-af33-4f67-86b0-816a9cecb77c/image.png)
 
 
 **Data Steward:** UrbanSim Team
