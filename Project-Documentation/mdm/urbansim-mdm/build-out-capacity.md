@@ -16,13 +16,20 @@ This data is generated using a combination of sources and methods. The figure be
 
 [**Data Processing Folder**](https://mtcdrive.app.box.com/folder/107214858288) (available internally at MTC only)
 
-## Entity Relationship Diagram and Attribute Definitions  
+## Field Definitions and Sources
 
-**Figure 1. Entity Relationship Diagram**
+**Figure 1. Field Definitions and Sources**
+![Build Out Capacity Field Definitions](files/BOC_subset_fields.png)
+
+
+## Related Datasets
+
+-[Zoning Lookup 2020](https://data.bayareametro.gov/Land-Use/Zoning-Lookup-2020/r3pf-wkks)
+-[Zoning Parcels 2018](https://data.bayareametro.gov/Land-Use/Zoning-Parcels-2018/c2b7-6c8p)
+-[Zoning UrbanSim BOC Map](https://data.bayareametro.gov/UrbanSim/Zoning-UrbanSim-BOC-Map/m93e-tddx)
+
+**Figure 2. Entity Relationship Diagram**
 ![Build Out Capacity ERD](https://www.lucidchart.com/publicSegments/view/1c486cc2-59d6-471d-9555-edec1bed406b/image.png)
 
-**Figure 2. Field Definitions and Sources**
-![Build Out Capacity Field Definitions](files/BOC_subset_fields.png)
- 
 
-Data Steward: UrbanSim Team  
+**Data Steward:** UrbanSim Team  

@@ -37,21 +37,20 @@ The figures below provides a high level overview of the subsequent data processi
 - [UrbanSim Buildings Data Processing folder](https://mtcdrive.app.box.com/folder/107215024793)
 
 
-
-### Field Definitions and Sources
+## Field Definitions and Sources
 
 [Field Documentation](https://mtcdrive.app.box.com/file/608892321712) (**NOTE**: Field documentation available internally at MTC only)
 
 
 ## Outputs
 
-- [Urbansim Buildings]()
+- [Urbansim Buildings](https://data.bayareametro.gov/Cadastral/UrbanSim-Buildings-2018-v4a/a6kz-45xd)
 - [Urbansim Parcels (Geo)](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels-2018-v4a/nk3m-k4s8)
 
 
-### Related Datasets
+## Related Datasets
 
-- [Parcels 2018]() | Join Field: geom_id
+- [Parcels 2018](https://data.bayareametro.gov/Cadastral/Parcels-2018/qqfm-y9ey) | Join Field: geom_id
 - [Parcel Grid 8 Mile](https://data.bayareametro.gov/dataset/Regional-Parcel-Grid-8-Mile/62ya-rtvu) | Join Field: geom_id
 - [Parcel Grid Bridge Table]() | Join Field: geom_id (PK) -- Kearey to Add Later this week
 - [UrbanSim Building Types](https://data.bayareametro.gov/Equivalencies/UrbanSim-Building-Types/a6fp-zvby) | Join Field: building_type
@@ -59,7 +58,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 **Figure 3. Entity Relationship Diagram**
 
-![ERD](https://www.lucidchart.com/publicSegments/view/c2593371-ede7-44cb-8dc1-dfa8a9756597/image.png)
+![UrbanSim Buildings and Parcels ERD](https://www.lucidchart.com/publicSegments/view/c2593371-ede7-44cb-8dc1-dfa8a9756597/image.png)
 
 
 **Data Steward:** UrbanSim Team
