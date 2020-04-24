@@ -39,7 +39,7 @@ Each of the following Datasets are related to the Assessor Parcel Records (Parce
 ### Environment  
 
 #### Tabulation Layers
-- [Greenprint](redshift/greenprintFishnet.md) | [Documentation and Process Notes](https://www.bayareagreenprint.org/glossary/)
+- [Greenprint](environment-mdm/greenprint-fishnet.md) | [Documentation and Process Notes](https://www.bayareagreenprint.org/glossary/)
 Table structure for data acquired from Bay Area Greenprint
 
 ### [Policy](policy-mdm)
