@@ -42,7 +42,7 @@ This dataset was compiled using parcel characteristics data from each of the nin
 - [Solano](https://mtcdrive.app.box.com/file/478771812191)
 - [Sonoma](https://mtcdrive.app.box.com/file/478765422296)
 
-[**Field Mapping**](https://mtcdrive.app.box.com/file/562870529917)
+[Assessor to PRC Field Mapping doc](https://mtcdrive.app.box.com/file/562870529917)
 
 
 ## Methodology

@@ -20,6 +20,8 @@ These datasets are derived from the Parcel Regional Characteristics (PRC) and Pa
 - [PRC documentation](../land-people-mdm/parcel-characteristics.md)
 - [Parcels documentation](../land-people-mdm/parcel-geometry.md)
 
+**NOTE**: The links below are available internally at MTC only.
+
 The figures below provides a high level overview of the subsequent data processing steps. 
 
 **Figure 1. Data Processing Pre-Steps**
@@ -30,22 +32,22 @@ The figures below provides a high level overview of the subsequent data processi
 ![Data Processing Model](https://www.lucidchart.com/publicSegments/view/343a3c5c-af33-4f67-86b0-816a9cecb77c/image.png) 
 
 
-[Process Notes -- detailed](https://mtcdrive.app.box.com/notes/599518000054) (**NOTE**: Process notes available internally at MTC only)
-
-
-- [UrbanSim Parcels Data Processing folder](https://mtcdrive.app.box.com/folder/107213419566)
-- [UrbanSim Buildings Data Processing folder](https://mtcdrive.app.box.com/folder/107215024793)
+- [Data Processing folder](https://github.com/BayAreaMetro/BASIS-Data-Processing/tree/master/urbansim/parcels_buildings)
 
 
 ## Field Definitions and Sources
 
-[Field Documentation](https://mtcdrive.app.box.com/file/608892321712) (**NOTE**: Field documentation available internally at MTC only)
+[Field Documentation](https://mtcdrive.app.box.com/file/608892321712)
 
 
 ## Outputs
 
+These datasets are available (internally at MTC) on Socrata:
+
 - [Urbansim Buildings](https://data.bayareametro.gov/Cadastral/UrbanSim-Buildings-2018-v4a/a6kz-45xd)
-- [Urbansim Parcels (Geo)](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels-2018-v4a/nk3m-k4s8)
+- [Urbansim Parcels](https://data.bayareametro.gov/Cadastral/UrbanSim-Parcels-2018-v4a/nk3m-k4s8)
+
+Join Field: **geom_id**
 
 
 ## Related Datasets
@@ -58,7 +60,7 @@ The figures below provides a high level overview of the subsequent data processi
 
 **Figure 3. Entity Relationship Diagram**
 
-![UrbanSim Buildings and Parcels ERD](https://www.lucidchart.com/publicSegments/view/c2593371-ede7-44cb-8dc1-dfa8a9756597/image.png)
+![UrbanSim Buildings and Parcels ERD](https://www.lucidchart.com/publicSegments/view/e4f8e610-8533-4acc-a926-17f34deb5560/image.png)
 
 
 **Data Steward:** UrbanSim Team
