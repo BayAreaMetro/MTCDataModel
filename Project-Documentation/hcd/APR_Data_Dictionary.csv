@@ -1,0 +1,95 @@
+﻿Field Name,Field Description,Domain,Field Source,Type,Calculation
+JURS_NAME,Name of jurisdiction submitting the report pursuant to Government Code 65400,,HCD,,
+CNTY_NAME,Name of the county that the jurisdiction is located in,,HCD,,
+YEAR,Reporting year of the APR,,HCD,,
+PRIOR_APN,"Assessor's parcel number previously associated with the parcel, if applicable",,HCD,,
+APN,Current available Assessors parcel number the projected is located on,,HCD,,
+STREET_ADDRESS,Number and name of the street the project is located on,,HCD,,
+PROJECT_NAME,Name of the project,,HCD,,
+JURS_TRACKING_ID,This may be the permit number or other identifier assigned by the reporting jurisdiction,,HCD,,
+UNIT_CAT_DESC,Unit Category Description,,HCD,,
+TENURE,Tenure of project,,HCD,,
+VLOW_INCOME_DR,"Number of units entitled - very low-income, deed restricted",,HCD,,
+VLOW_INCOME_NDR,"Number of units entitled - very low-income, non deed restricted",,HCD,,
+LOW_INCOME_DR,"Number of units entitled - low-income, deed restricted",,HCD,,
+LOW_INCOME_NDR,"Number of units entitled - low-income, non deed restricted",,HCD,,
+MOD_INCOME_DR,"Number of units entitled - moderate income, deed restricted",,HCD,,
+MOD_INCOME_NDR,"Number of units entitled - moderate income, non deed restricted",,HCD,,
+ABOVE_MOD_INCOME,Number of units entitled - above moderate income,,HCD,,
+ENT_APPROVE_DT,Date the entitlement was approved,,HCD,,
+NO_ENTITLEMENTS,Total number of units issued entitlements in the project,,HCD,,
+BP_VLOW_INCOME_DR,"Number of units issued building permits - very low-income, deed restricted",,HCD,,
+BP_VLOW_INCOME_NDR,"Number of units issued building permits - very low-income, non deed restricted",,HCD,,
+BP_LOW_INCOME_DR,"Number of units issued building permits - low-income, deed restricted",,HCD,,
+BP_LOW_INCOME_NDR,"Number of units issued building permits - low-income, non deed restricted",,HCD,,
+BP_MOD_INCOME_DR,"Number of units issued building permits - moderate income, deed restricted",,HCD,,
+BP_MOD_INCOME_NDR,"Number of units issued building permits - moderate income, non deed restricted",,HCD,,
+BP_ABOVE_MOD_INCOME,Number of units issued building permits - above moderate income,,HCD,,
+BP_ISSUE_DT,Date the building permits were issued,,HCD,,
+NO_BILDING_PERMITS,Total number of units issued building permits in the project,,HCD,,
+CO_VLOW_INCOME_DR,"Number of units issued certificates of occupancy - very low-income, deed restricted",,HCD,,
+CO_VLOW_INCOME_NDR,"Number of units issued certificates of occupancy - very low-income, non deed restricted",,HCD,,
+CO_LOW_INCOME_DR,"Number of units issued certificates of occupancy - low-income, deed restricted",,HCD,,
+CO_LOW_INCOME_NDR,"Number of units issued certificates of occupancy - low-income, non deed restricted",,HCD,,
+CO_MOD_INCOME_DR,"Number of units issued certificates of occupancy - moderate income, deed restricted",,HCD,,
+CO_MOD_INCOME_NDR,"Number of units issued certificates of occupancy - moderate income, non deed restricted",,HCD,,
+CO_ABOVE_MOD_INCOME,Number of units issued certificates of occupancy - above moderate income,,HCD,,
+CO_ISSUE_DT,"Date the certificates of occupancy or other form of readiness, such as final inspection, was issued",,HCD,,
+NO_OTHER_FORMS_OF_READINESS,Total number of units that were issued certificates of occupancy or other forms of readiness,,HCD,,
+EXTR_LOW_INCOME_UNITS,Total number of units affordable to extremly low income residents,,HCD,,
+APPROVE_SB35,"Indicates if the project was approved using Government Code section 65913.4, subdivision (b) (Streamlined Ministerial Approval Process (SB 35 Streamlining)",,HCD,,
+INFILL_UNITS,"Indicates if the project is considered ""infill"", per the definition described in the APR instructions",,HCD,,
+FIN_ASSIST_NAME,"Assistance programs used for each development (required only for those projects with lower or moderate income, deed restricted units",,HCD,,
+DR_TYPE,"Indicates if the units are made affordable through a local policy or program, such as inclusionary or denisty bonus ordinance",,HCD,,
+NO_FA_DR,Description of how the units were determined to be affordable without deed restrictions,,HCD,,
+TERM_AFF_DR,How long the affordability term is,,HCD,,
+DEM_DES_UNITS,Number of demolished or destroyed units associated with the new project,,HCD,,
+DEM_OR_DES_UNITS,Indicates if the units were demolished or destroyed,,HCD,,
+DEM_DES_UNITS_OWN_RENT,Indicates of the demolished or destroyed units were owner or renter occupied,,HCD,,
+NOTES,Any notes included,,HCD,,
+MTC_ID,Unique record identifier,,MTC,Text,
+MTC_YEAR,Year issued,,MTC,Number,
+MTC_ADDRESS_FULL,Formatted Address,,MTC,Text,
+MTC_GEOCODE_ADDRESS,Geocoded address,,MTC,Text,
+MTC_GEOCODE_TYPE,Quality of geocoding,"ROOFTOP;
+RANGE_INTERPOLATED;
+GEOMETRIC_CENTER;
+APPROXIMATE;
+NOT_GEOCODED
+",MTC,Text,
+MTC_WKT,Well known text representation of geocoded location,,MTC,Point,
+MTC_LONG,Longitude in decimal degress,,MTC,Number,
+MTC_LAT,Latitude in decimal degress,,MTC,Number,
+MTC_VLOW_TOT,Sum of very low income units,,MTC,Number,Sum of VLOW_DR and VLOW_NDR
+MTC_LOW_TOT,Low income total units,,MTC,Number,Sum of LOW_DR and LOW_NDR
+MTC_MOD_TOT,Number of units for moderate income,,MTC,Number,Sum of MOD_DR and MOD_NDR
+MTC_TOTAL_UNITS,Total number of units for all income levels,,MTC,Number,Sum of All Income Categories (DR and NDR)
+MTC_VLOW_INCOME_NDR,Very low income units non-deed restricted,,MTC,Number,"IF CO_VLOW_INCOME_NDR > 0, 
+THEN CO_VLOW_INCOME_NDR
+ELSE IF BP_VLOW_INCOME_NDR
+THEN BP_VLOW_INCOME_NDR
+ELSE IF VLOW_INCOME_NDR > 0 
+THEN VLOW_INCOME_NDR"
+MTC_VLOW_INCOME_DR,Very low income units deed restricted,,MTC,Number,"IF CO_VLOW_INCOME_DR > 0, 
+THEN CO_VLOW_INCOME 
+ELSE IF BP_VLOW_INCOME_DR 
+THEN BP_VLOW_INCOME_DR
+ELSE IF VLOW_INCOME_DR > 0 
+THEN VLOW_INCOME_DR"
+MTC_LOW_INCOME_NDR,Low income units non-deed restricted,,MTC,Number,"IF CO_LOW_INCOME_NDR_CON_ENT_PERM > 0, THEN CO_LOW_INCOME_NDR_CON_ENT_PERM ELSE IF BP_LOW_INCOME_NDR_CON_ENT_PERM THEN BP_LOW_INCOME_NDR_CON_ENT_PERMELSE IF LOW_INCOME_NDR_CON_ENT_PERMITS > 0 THEN LOW_INCOME_NDR_CON_ENT_PERMITS"
+MTC_LOW_INCOME_DR,Low income units deed restricted,,MTC,Number,"IF CO_LOW_INCOME_DR_CON_ENT_PERM > 0, THEN CO_LOW_INCOME_DR_CON_ENT_PERM ELSE IF BP_LOW_INCOME_DR_CON_ENT_PERM THEN BP_LOW_INCOME_DR_CON_ENT_PERMELSE IF LOW_INCOME_DR_CON_ENT_PERMITS > 0 THEN LOW_INCOME_DR_CON_ENT_PERMITS"
+MTC_MOD_INCOME_NDR,Number of units for moderate income non-deed restricted,,MTC,Number,"IF CO_MOD_INCOME_NDR_CON_ENT_PERM > 0, THEN CO_MOD_INCOME_NDR_CON_ENT_PERM ELSE IF BP_MOD_INCOME_NDR_CON_ENT_PERM THEN BP_MOD_INCOME_NDR_CON_ENT_PERMELSE IF MOD_INCOME_NDR_CON_ENT_PERMITS > 0 THEN MOD_INCOME_NDR_CON_ENT_PERMITS"
+MTC_MOD_INCOME_DR,Number of units for moderate income deed restricted,,MTC,Number,"IF CO_MOD_INCOME_DR_CON_ENT_PERM > 0, THEN CO_MOD_INCOME_DR_CON_ENT_PERM ELSE IF BP_MOD_INCOME_DR_CON_ENT_PERM THEN BP_MOD_INCOME_DR_CON_ENT_PERMELSE IF MOD_INCOME_DR_CON_ENT_PERMITS > 0 THEN MOD_INCOME_DR_CON_ENT_PERMITS"
+MTC_ABOVE_MOD_INCOME,Above moderate income units,,MTC,Number,"IF CO_ABOVE_MOD_INCOME_CON_ENT_PERM > 0, THEN CO_ABOVE_MOD_INCOME_CON_ENT_PERM ELSE IF BP_ABOVE_MOD_INCOME_CON_ENT_PERM THEN BP_ABOVE_MOD_INCOME_CON_ENT_PERMELSE IF ABOVE_MOD_INCOME_CON_ENT_PERMITS > 0 THEN ABOVE_MOD_INCOME_CON_ENT_PERMITS"
+MTC_ISSUE_DT,Issue date,,MTC,Text,
+MTC_TYPE,Type of issue.,"ENTITLEMENT;
+PERMIT;
+CERTIFICATE",MTC,Text,
+MTC_NOTES,Additional MTC notes,,MTC,Text,
+MTC_MAPPED,Whether address has been geocoded correctly or not,,MTC,Checkbox,
+MTC_PDA,Is point in a Priority Development Area?,"TRUE;
+FALSE",MTC,Checkbox,
+MTC_TPA,Is point in a Transit Priority Area?,"TRUE;
+FALSE",MTC,Checkbox,
+MTC_HOUSING_ELEMENT_SITE,Is address on a housing element site?,"TRUE;
+FALSE",MTC,Checkbox,
