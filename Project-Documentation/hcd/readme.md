@@ -109,10 +109,10 @@ The following is a list of fields that MTC adds to the HCD data, including what 
 Geocoding is conducted using Google's geocoding engine. Records that return a geocoding type of ROOFTOP or RANGE_INTERPOLATED are considered accurate for the needs of the internal spatial analysis. Records returning geocoding types of GEOMETRIC_CENTER or APPROXIMATE are reviewed and manually geocoded where possible. 
 
 All records are also checked to make sure that they fall within the bounds of the 9 county Bay Area region. 
-| Latitude Bounds            | Longitude Bounds            |
+| Northeastern Lat/Long      | Southwestern Lat/Long       |
 |----------------------------|-----------------------------|
-| Northern Extent 38.864245  | Western Extent -123.632497  |
-| Southern Extent 36.893329  | Eastern Extent -121.208156  |
+| (38.864245,-121.208156)    | (36.893329,-123.632497)     |
+
 
 
 ## Spatial Analysis
