@@ -51,6 +51,7 @@ MTC_ID,Unique record identifier,,MTC,Text,
 MTC_YEAR,Year issued,,MTC,Number,
 MTC_ADDRESS_FULL,Formatted Address,,MTC,Text,
 MTC_GEOCODE_ADDRESS,Geocoded address,,MTC,Text,
+MTC_APN_FMT,Formatted APN,,MTC,Text,
 MTC_GEOCODE_TYPE,Quality of geocoding,"ROOFTOP;
 RANGE_INTERPOLATED;
 GEOMETRIC_CENTER;
