@@ -55,7 +55,8 @@ MTC_GEOCODE_TYPE,Quality of geocoding,"ROOFTOP;
 RANGE_INTERPOLATED;
 GEOMETRIC_CENTER;
 APPROXIMATE;
-NOT_GEOCODED
+NOT_GEOCODED;
+APN_MATCH
 ",MTC,Text,
 MTC_WKT,Well known text representation of geocoded location,,MTC,Point,
 MTC_LONG,Longitude in decimal degress,,MTC,Number,
