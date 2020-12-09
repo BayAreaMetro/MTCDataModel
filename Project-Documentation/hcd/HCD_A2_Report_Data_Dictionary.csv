@@ -1,0 +1,48 @@
+﻿JURS_NAME,Name of jurisdiction submitting the report pursuant to Government Code 65400
+CNTY_NAME,Name of the county that the jurisdiction is located in
+YEAR,Reporting year of the APR
+PRIOR_APN,"Assessor's parcel number previously associated with the parcel, if applicable"
+APN,Current available Assessors parcel number the projected is located on
+STREET_ADDRESS,Number and name of the street the project is located on
+PROJECT_NAME,Name of the project
+JURS_TRACKING_ID,This may be the permit number or other identifier assigned by the reporting jurisdiction
+UNIT_CAT_DESC,Unit Category Description
+TENURE,Tenure of project
+VLOW_INCOME_DR,"Number of units entitled - very low-income, deed restricted"
+VLOW_INCOME_NDR,"Number of units entitled - very low-income, non deed restricted"
+LOW_INCOME_DR,"Number of units entitled - low-income, deed restricted"
+LOW_INCOME_NDR,"Number of units entitled - low-income, non deed restricted"
+MOD_INCOME_DR,"Number of units entitled - moderate income, deed restricted"
+MOD_INCOME_NDR,"Number of units entitled - moderate income, non deed restricted"
+ABOVE_MOD_INCOME,Number of units entitled - above moderate income
+ENT_APPROVE_DT,Date the entitlement was approved
+NO_ENTITLEMENTS,Total number of units issued entitlements in the project
+BP_VLOW_INCOME_DR,"Number of units issued building permits - very low-income, deed restricted"
+BP_VLOW_INCOME_NDR,"Number of units issued building permits - very low-income, non deed restricted"
+BP_LOW_INCOME_DR,"Number of units issued building permits - low-income, deed restricted"
+BP_LOW_INCOME_NDR,"Number of units issued building permits - low-income, non deed restricted"
+BP_MOD_INCOME_DR,"Number of units issued building permits - moderate income, deed restricted"
+BP_MOD_INCOME_NDR,"Number of units issued building permits - moderate income, non deed restricted"
+BP_ABOVE_MOD_INCOME,Number of units issued building permits - above moderate income
+BP_ISSUE_DT,Date the building permits were issued
+NO_BILDING_PERMITS,Total number of units issued building permits in the project
+CO_VLOW_INCOME_DR,"Number of units issued certificates of occupancy - very low-income, deed restricted"
+CO_VLOW_INCOME_NDR,"Number of units issued certificates of occupancy - very low-income, non deed restricted"
+CO_LOW_INCOME_DR,"Number of units issued certificates of occupancy - low-income, deed restricted"
+CO_LOW_INCOME_NDR,"Number of units issued certificates of occupancy - low-income, non deed restricted"
+CO_MOD_INCOME_DR,"Number of units issued certificates of occupancy - moderate income, deed restricted"
+CO_MOD_INCOME_NDR,"Number of units issued certificates of occupancy - moderate income, non deed restricted"
+CO_ABOVE_MOD_INCOME,Number of units issued certificates of occupancy - above moderate income
+CO_ISSUE_DT,"Date the certificates of occupancy or other form of readiness, such as final inspection, was issued"
+NO_OTHER_FORMS_OF_READINESS,Total number of units that were issued certificates of occupancy or other forms of readiness
+EXTR_LOW_INCOME_UNITS,Total number of units affordable to extremly low income residents
+APPROVE_SB35,"Indicates if the project was approved using Government Code section 65913.4, subdivision (b) (Streamlined Ministerial Approval Process (SB 35 Streamlining)"
+INFILL_UNITS,"Indicates if the project is considered ""infill"", per the definition described in the APR instructions"
+FIN_ASSIST_NAME,"Assistance programs used for each development (required only for those projects with lower or moderate income, deed restricted units)"
+DR_TYPE,"Indicates if the units are made affordable through a local policy or program, such as inclusionary or denisty bonus ordinance"
+NO_FA_DR,Description of how the units were determined to be affordable without deed restrictions
+TERM_AFF_DR,How long the affordability term is
+DEM_DES_UNITS,Number of demolished or destroyed units associated with the new project
+DEM_OR_DES_UNITS,Indicates if the units were demolished or destroyed
+DEM_DES_UNITS_OWN_RENT,Indicates of the demolished or destroyed units were owner or renter occupied
+NOTES,Any notes included
