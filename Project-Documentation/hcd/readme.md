@@ -16,6 +16,7 @@
 - [Methodology](#methodology)
 	- [Process Overview](#process-overview)
 	- [Geocoding](#geocoding)
+	- [Parcel APN Matching](#parcel-apn-matching)
 	- [APN Matching](#apn-matching)
 	- [Spatial Analysis](#spatial-analysis)
 - [Results](#results)
@@ -109,17 +110,30 @@ The following is a list of fields that MTC adds to the HCD data, including what 
 
 ### Geocoding
 
-Geocoding is conducted using Google's geocoding engine. Records that return a geocoding type of ROOFTOP or RANGE_INTERPOLATED are considered accurate for the needs of the internal spatial analysis. Records returning geocoding types of GEOMETRIC_CENTER or APPROXIMATE are reviewed and manually geocoded where possible. 
+Geocoding was performed in python and leverages Google's geocoding API via the geopy package which is documented [here](https://geopy.readthedocs.io/en/latest/#googlev3). 
+
+Records that return a geocoding type of ROOFTOP or RANGE_INTERPOLATED are considered accurate for the needs of the internal spatial analysis. Records returning geocoding types of GEOMETRIC_CENTER or APPROXIMATE are reviewed and [matched to parcels by apn](#parcel-apn-matching) and manually geocoded where possible. 
 
 All records are also checked to make sure that they fall within the bounds of the 9 county Bay Area region. 
 | Northeastern Lat/Long      | Southwestern Lat/Long       |
 |----------------------------|-----------------------------|
 | (38.864245,-121.208156)    | (36.893329,-123.632497)     |
 
+For a more detailed look at the code, review the [Geocoding and Spatial Analysis Notebook](notebooks/HCD_APR_Geocoding_Spatial_Analysis_2018_2019.ipynb)
 
+### Parcel APN Matching
+
+HCD Projects reported in the APR that could not be spatially located by address in the geocoding process or returned a geocoding type of GEOMETRIC_CENTER OR APPROXIMATE were secondarily ran through a process to join them to parcels via the assessors parcel number (APN). APNs provided in the APR report were cleaned and normalized to match the APN patterns for the county the project was located in. Each county has it's own unique pattern so seperate notebooks were created to match projects to parcels. 
+
+For a more detailed look at the code, review the notebooks linked below: 
+- [APN Match Contra Costa County](notebooks/HCD_APR_Match_Contra_Costa_County.ipynb)
+- [APN Match Santa Clara County](notebooks/HCD_APR_Match_Santa_Clara_County.ipynb)
+- [APN Match Sonoma County](notebooks/HCD_APR_Match_Sonoma_County.ipynb)
 
 ### Spatial Analysis
-Once geocoding is complete, all records are checked to see whether they fall inside Priority Development Areas, Transit Priority Areas and Housing Element Sites, and the appropriate fields (MTC_PDA, MTC_TPA, MTC_HOUSING_ELEMENT_SITE) are updated.
+Once geocoding was complete, all records are checked to see whether they fall inside Priority Development Areas, Transit Priority Areas and Housing Element Sites, and the appropriate fields (MTC_PDA, MTC_TPA, MTC_HOUSING_ELEMENT_SITE) are updated.
+
+For a more detailed look at the code, review the [Geocoding and Spatial Analysis Notebook](notebooks/HCD_APR_Geocoding_Spatial_Analysis_2018_2019.ipynb)
 
 ## Results
 [Housing APR Data (Internal Access Only)](https://data.bayareametro.gov/dataset/Housing-APR-Data-2018-2019/briv-ikjp)
