@@ -1,76 +1,77 @@
 -- Draft --
 
 # Department of Housing and Community Development (HCD)
-## Housing Data 
 
+## Project Management
+
+[Box Directory (Internal Access Only)](https://mtcdrive.app.box.com/folder/108862836847?s=vmfbr9t4efl8rgavqvp1sx57dpx3sj86)
+[Asana Project](https://app.asana.com/0/1196225291559865/1196225291559890)
+
+## Table of Contents 
+- [Background](#background)
+- [Data Sources](#data-sources)
+	- [California Housing and Community Development Data](#california-housing-and-community-development-data)
+	- [MTC Growth Areas Data](mtc-growth-areas-data)
+- [Analysis Parameters]()
+	- [Annual Progress Report Background](#annual-progress-report-background)
+	- [Annual Progress Report Tables and Data Dictionaries](#annual-progress-report-tables-and-data-dictionaries)
+- [Methodology]()
+- [Results]()
+
+## Background
 From 2014-2017, MTC/ABAG underwent a process of collecting housing permit data from local jurisdictions based on their [Annual Progress Reports](https://www.hcd.ca.gov/community-development/housing-element/index.shtml). This was typically done via the use of a survey provided to jurisdictions, the results of which were then collated and analyzed to begin to provide a picture of housing production in the region. 
 
 Based on these data, a housing portal website was developed to allow users to visualize these trends broken down by year, housing type and income category [Housing Data Portal](http://housing.abag.ca.gov)
 
 Additionally, MTC used this housing permit data to inform it's [Housing Incentive Pool](https://mtc.ca.gov/our-work/fund-invest/investment-strategies-commitments/focused-growth/affordable-housing/housing) (HIP) grant program.
 
-In 2018, HCD provided a platform for jurisdictions county-wide to directly submit APR information to them via a web portal. Entitlement and certificate of occupancy data were collected along with housing permit data. 
+Starting in 2018, HCD provided a platform for jurisdictions county-wide to directly submit APR information to them via a web portal. Entitlement and certificate of occupancy data were collected along with housing permit data. 
 
 MTC now collects this housing data annually directly from HCD.
 
+## Data Sources
 
+### California Housing and Community Development Data
 
+[California Housing and Community Development (HCD) Website](https://www.hcd.ca.gov/community-development/housing-element/index.shtml)
 
-## Data Collection and Review Process
-The data are provided by HCD as a single excel spreadsheet containing data for the region, exported from their database. The data include the following fields:
+The data are provided by HCD as a single excel workbook containing the data for the region, exported from their database. The data cannot currently be downloaded from their website publicly. 
 
-| Field Name                  | Field Description                                                                                                                                               |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| JURS_NAME                   | Name of jurisdiction submitting the report pursuant to Government Code 65400                                                                                    |
-| CNTY_NAME                   | Name of the county that the jurisdiction is located in                                                                                                          |
-| YEAR                        | Reporting year of the APR                                                                                                                                       |
-| PRIOR_APN                   | Assessor's parcel number previously associated with the parcel, if applicable                                                                                   |
-| APN                         | Current available Assessors parcel number the projected is located on                                                                                           |
-| STREET_ADDRESS              | Number and name of the street the project is located on                                                                                                         |
-| PROJECT_NAME                | Name of the project                                                                                                                                             |
-| JURS_TRACKING_ID            | This may be the permit number or other identifier assigned by the reporting jurisdiction                                                                        |
-| UNIT_CAT_DESC               | Unit Category Description                                                                                                                                       |
-| TENURE                      | Tenure of project                                                                                                                                               |
-| VLOW_INCOME_DR              | Number of units entitled - <br>very low-income, deed restricted                                                                                                 |
-| VLOW_INCOME_NDR             | Number of units entitled - <br>very low-income, non deed restricted                                                                                             |
-| LOW_INCOME_DR               | Number of units entitled - <br>low-income, deed restricted                                                                                                      |
-| LOW_INCOME_NDR              | Number of units entitled - <br>low-income, non deed restricted                                                                                                  |
-| MOD_INCOME_DR               | Number of units entitled - <br>moderate income, deed restricted                                                                                                 |
-| MOD_INCOME_NDR              | Number of units entitled - <br>moderate income, non deed restricted                                                                                             |
-| ABOVE_MOD_INCOME            | Number of units entitled - <br>above moderate income                                                                                                            |
-| ENT_APPROVE_DT              | Date the entitlement was approved                                                                                                                               |
-| NO_ENTITLEMENTS             | Total number of units issued entitlements in the project                                                                                                        |
-| BP_VLOW_INCOME_DR           | Number of units issued building permits - <br>very low-income, deed   restricted                                                                                |
-| BP_VLOW_INCOME_NDR          | Number of units issued building permits - <br>very low-income, non deed   restricted                                                                            |
-| BP_LOW_INCOME_DR            | Number of units issued building permits - <br>low-income, deed restricted                                                                                       |
-| BP_LOW_INCOME_NDR           | Number of units issued building permits - <br>low-income, non deed restricted                                                                                   |
-| BP_MOD_INCOME_DR            | Number of units issued building permits - <br>moderate income, deed restricted                                                                                  |
-| BP_MOD_INCOME_NDR           | Number of units issued building permits - <br>moderate income, non deed restricted                                                                              |
-| BP_ABOVE_MOD_INCOME         | Number of units issued building permits - <br>above moderate income                                                                                             |
-| BP_ISSUE_DT                 | Date the building permits were issued                                                                                                                           |
-| NO_BILDING_PERMITS          | Total number of units issued building permits in the project                                                                                                    |
-| CO_VLOW_INCOME_DR           | Number of units issued certificates of occupancy - <br>very low-income, deed   restricted                                                                       |
-| CO_VLOW_INCOME_NDR          | Number of units issued certificates of occupancy - <br>very low-income, non   deed restricted                                                                   |
-| CO_LOW_INCOME_DR            | Number of units issued certificates of occupancy - <br>low-income, deed   restricted                                                                            |
-| CO_LOW_INCOME_NDR           | Number of units issued certificates of occupancy - <br>low-income, non deed   restricted                                                                        |
-| CO_MOD_INCOME_DR            | Number of units issued certificates of occupancy - <br>moderate income, deed   restricted                                                                       |
-| CO_MOD_INCOME_NDR           | Number of units issued certificates of occupancy - <br>moderate income, non   deed restricted                                                                   |
-| CO_ABOVE_MOD_INCOME         | Number of units issued certificates of occupancy - <br>above moderate income                                                                                    |
-| CO_ISSUE_DT                 | Date the certificates of occupancy or other form of readiness, <br>such as final inspection, was issued                                                         |
-| NO_OTHER_FORMS_OF_READINESS | Total number of units that were issued certificates of occupancy or other forms of readiness                                                                    |
-| EXTR_LOW_INCOME_UNITS       | Total number of units affordable to extremly low income residents                                                                                               |
-| APPROVE_SB35                | Indicates if the project was approved using Government Code section 65913.4, <br>subdivision (b) (Streamlined Ministerial Approval Process (SB 35 Streamlining) |
-| INFILL_UNITS                | Indicates if the project is considered "infill", per the definition described in the APR instructions                                                           |
-| FIN_ASSIST_NAME             | Assistance programs used for each development <br>(required only for those projects with lower or moderate income, deed restricted units)                       |
-| DR_TYPE                     | Indicates if the units are made affordable through a local policy or program, <br>such as inclusionary or denisty bonus ordinance                               |
-| NO_FA_DR                    | Description of how the units were determined to be affordable without deed restrictions                                                                         |
-| TERM_AFF_DR                 | How long the affordability term is                                                                                                                              |
-| DEM_DES_UNITS               | Number of demolished or destroyed units associated with the new project                                                                                         |
-| DEM_OR_DES_UNITS            | Indicates if the units were demolished or destroyed                                                                                                             |
-| DEM_DES_UNITS_OWN_RENT      | Indicates of the demolished or destroyed units were owner or renter occupied                                                                                    |
-| NOTES                       | Any notes included                                                                                                                                              |
+[Housing Element Sites](https://opendata.mtc.ca.gov/datasets/regional-housing-need-assessment-2015-2023-housing-element-sites?geometry=-122.410%2C37.801%2C-122.121%2C37.848)
 
-## Data Processing
+### MTC Growth Area Data
+
+[Priority Development Areas](https://opendata.mtc.ca.gov/datasets/priority-development-areas-plan-bay-area-2040)
+
+[Transit Priority Areas](https://opendata.mtc.ca.gov/datasets/d97b4f72543a40b2b85d59ac085e01a0_0?geometry=-122.635%2C37.229%2C-121.482%2C37.420)
+
+## Analysis Parameters
+
+### Annual Progress Report Background
+Each jurisdiction (city council or board of supervisors) must prepare an annual progress report on the jurisdiction’s status and progress in implementing its housing element. (Government Code Section 65400.)
+
+Each jurisdiction’s Annual Progress Report (APR) must be submitted to HCD and the Governor’s Office of Planning and Research (OPR) by April 1 of each year (covering the previous calendar year).
+
+New APR form and instructions - for calendar year (CY) 2018 and 2019
+
+AB 879 and SB 35 of the 2017 Housing Package, as well as AB 1486 (2019), added new data requirements for the Housing Element Annual Progress Reports (APRs). These changes are reflected in the new APR form and instructions, which are posted below.
+
+- [APR form for CY 2018 and 2019](https://www.hcd.ca.gov/community-development/housing-element/docs/Housing-Element-Annual-Progress-Report-2019.xlsm) (XLS)
+- [APR instructions for CY 2018 and 2019](https://www.hcd.ca.gov/community-development/housing-element/docs/Housing-Element-Annual-Progress-Report-Instructions-2019.pdf) (PDF)
+
+### Annual Progress Report Tables and Data Dictionaries
+
+1. Table A - Housing Development Applications 
+2. Table A2 - New Construction, Entitled, Permits, and Completed Units
+	- [Table A2 Data Dictionary](HCD_A2_Report_Data_Dictionary.csv)
+3. Table B - Regional Housing Needs Allocation Progress – Permitted Units Issued By Affordability
+4. Table C - Sites Identified or Rezoned to Accommodate Shortfall Housing Need
+5. Table D - Program Implementation Status pursuant to Government Code section 65583 
+6. Table E - Commercial Development Bonus Approved pursuant to Government Code
+
+## Methodology
+
+### Process Overview
 Once the data are received from HCD, MTC adds some additional fields that are required for internal analysis and in order to format the data for display in the housing portal. All fields added to the HCD dataset by MTC are prefaced with "MTC_".
 
 The following is a list of fields that MTC adds to the HCD data, including what steps are necessary to calculate those fields where applicable. Fields are calculated based on total units for entitlements, permits and certificates being greater than one. In situations where multiple stages are issues in the same year, the most recent stage is used. For example, if an address has both a permit and certificate of occupancy issued in the same year, the address is added as a certificate of occupancy.
@@ -118,11 +119,7 @@ All records are also checked to make sure that they fall within the bounds of th
 ## Spatial Analysis
 Once geocoding is complete, all records are checked to see whether they fall inside Priority Development Areas, Transit Priority Areas and Housing Element Sites, and the appropriate fields (MTC_PDA, MTC_TPA, MTC_HOUSING_ELEMENT_SITE) are updated.
 
-For 2018, these datasets were used:
+## Results
+[Housing APR Data (Internal Access Only)](https://data.bayareametro.gov/dataset/Housing-APR-Data-2018-2019/briv-ikjp)
 
-[Priority Development Areas](https://opendata.mtc.ca.gov/datasets/priority-development-areas-plan-bay-area-2040)
-
-[Transit Priority Areas](https://opendata.mtc.ca.gov/datasets/d97b4f72543a40b2b85d59ac085e01a0_0?geometry=-122.635%2C37.229%2C-121.482%2C37.420)
-
-[Housing Element Sites](https://opendata.mtc.ca.gov/datasets/regional-housing-need-assessment-2015-2023-housing-element-sites?geometry=-122.410%2C37.801%2C-122.121%2C37.848)
 
