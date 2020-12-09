@@ -10,11 +10,15 @@
 - [Data Sources](#data-sources)
 	- [California Housing and Community Development Data](#california-housing-and-community-development-data)
 	- [MTC Growth Areas Data](mtc-growth-areas-data)
-- [Analysis Parameters]()
+- [Analysis Parameters](#analysis-parameters)
 	- [Annual Progress Report Background](#annual-progress-report-background)
 	- [Annual Progress Report Tables and Data Dictionaries](#annual-progress-report-tables-and-data-dictionaries)
-- [Methodology]()
-- [Results]()
+- [Methodology](#methodology)
+	- [Process Overview](#process-overview)
+	- [Geocoding](#geocoding)
+	- [APN Matching](#apn-matching)
+	- [Spatial Analysis](#spatial-analysis)
+- [Results](#results)
 
 ## Background
 From 2014-2017, MTC/ABAG underwent a process of collecting housing permit data from local jurisdictions based on their [Annual Progress Reports](https://www.hcd.ca.gov/community-development/housing-element/index.shtml). This was typically done via the use of a survey provided to jurisdictions, the results of which were then collated and analyzed to begin to provide a picture of housing production in the region. 
@@ -103,7 +107,7 @@ The following is a list of fields that MTC adds to the HCD data, including what 
 | MTC_TPA                  | Is point in a Transit Priority Area?                      | TRUE;<br>FALSE                                                                                | MTC          | Checkbox |                                                                                                                                                                                                        |
 | MTC_HOUSING_ELEMENT_SITE | Is address on a housing element site?                     | TRUE;<br>FALSE                                                                                | MTC          | Checkbox |                                                                                                                                                                                                        |
 
-## Geocoding
+### Geocoding
 
 Geocoding is conducted using Google's geocoding engine. Records that return a geocoding type of ROOFTOP or RANGE_INTERPOLATED are considered accurate for the needs of the internal spatial analysis. Records returning geocoding types of GEOMETRIC_CENTER or APPROXIMATE are reviewed and manually geocoded where possible. 
 
@@ -114,7 +118,7 @@ All records are also checked to make sure that they fall within the bounds of th
 
 
 
-## Spatial Analysis
+### Spatial Analysis
 Once geocoding is complete, all records are checked to see whether they fall inside Priority Development Areas, Transit Priority Areas and Housing Element Sites, and the appropriate fields (MTC_PDA, MTC_TPA, MTC_HOUSING_ELEMENT_SITE) are updated.
 
 ## Results
