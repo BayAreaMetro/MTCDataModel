@@ -4,8 +4,8 @@
 
 ## Project Management
 
-[Box Directory (Internal Access Only)](https://mtcdrive.app.box.com/folder/108862836847?s=vmfbr9t4efl8rgavqvp1sx57dpx3sj86)
-[Asana Project](https://app.asana.com/0/1196225291559865/1196225291559890)
+- [Box Directory (Internal Access Only)](https://mtcdrive.app.box.com/folder/108862836847?s=vmfbr9t4efl8rgavqvp1sx57dpx3sj86)
+- [Asana Project](https://app.asana.com/0/1196225291559865/1196225291559890)
 
 ## Table of Contents 
 - [Background](#background)
