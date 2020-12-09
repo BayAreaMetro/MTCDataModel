@@ -1,5 +1,3 @@
--- Draft --
-
 # Department of Housing and Community Development (HCD)
 
 ## Project Management
