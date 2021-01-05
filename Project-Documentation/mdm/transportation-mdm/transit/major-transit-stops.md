@@ -6,11 +6,7 @@ This document provides a high-level overview which defines major transit stops a
 
 ## Project Resources
 
-Add links to:
-- Activity, Project, or Task on Asana 
-- Box directory where any related work products are stored (if applicable) 
-- ArcGIS Online Working Group (if applicable) 
-- Any other location where important related work products are stored/saved 
+[Asana](https://app.asana.com/0/229355710745434/1195212354291165)
 
 ### Table of Contents
 
