@@ -73,7 +73,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 - [Priority Production Areas]() | [Documentation and Process Notes]()
 - [Priority Conservation Areas]() | [Documentation and Process Notes]()
 - [Growth Geographies]() | [Documentation and Process Notes]()
-- [Transit Priority Areas]() [Documentation and Process Notes](policy-mdm/regional-policies/transportation-priority-areas.md) 
+- [Transit Priority Areas]() | [Documentation and Process Notes](policy-mdm/regional-policies/transportation-priority-areas.md) 
 
 
 ### [Land & People](land-people-mdm)
