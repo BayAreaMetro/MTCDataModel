@@ -2,17 +2,26 @@
 
 # Project Title
 
-### Define the Problem Statement
+## Define the Problem Statement
 
 A problem statement is a brief description of the questions to be addressed by the analysis. In addition to describing the initial request, it should provide the context of the work assignment and identify any key stakeholders or major initiatives that relate to the solution. It is used to guide the direction of the effort and will be used to validate that the outcomes of the analysis address the problem statement.
 
-### Project Resources
+## Project Resources
 
 Add links to:
 - Activity, Project, or Task on Asana 
 - Box directory where any related work products are stored (if applicable) 
 - ArcGIS Online Working Group (if applicable) 
-- Any other location where important related work products are stored/saved  
+- Any other location where important related work products are stored/saved 
+
+### Table of Contents
+
+- [Data Sources](#data-sources)
+- [Analysis Parameters](#analysis-parameters)
+- [Methodology](#methodology)
+- [Expected Outcomes](#expected-outcomes)
+- [Results](#results)
+- [Tags](#tags) 
 
 ## Data Sources
 
@@ -25,11 +34,11 @@ Analysis parameters are elements from the data as well as additional definitions
 - [Communities of Concern](https://github.com/BayAreaMetro/Spatial-Analysis-Mapping-Projects/tree/master/Project-Documentation/Communities-of-Concern)
 - [CASA](https://github.com/BayAreaMetro/Spatial-Analysis-Mapping-Projects/tree/master/Project-Documentation/CASA)
 
-## Methodology applied to solve problem
+## Methodology
 
 The analyst assigned to the project will document this information. The analyst will review the methodology (if applicable) with the project team to ensure that it meets the requirements and expectations of the solution or problem.
 
-## Expected Outcomes (if any)?
+## Expected Outcomes
 
 Provide your expectations (if any) for the results of this work. Your expectations will form the basis for deciding if the work is complete, or if we need to revisit the problem statement and/or refine the methodology used to solve the problem.
 
