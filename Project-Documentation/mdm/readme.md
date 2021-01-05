@@ -73,7 +73,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
 - [Priority Production Areas]() | [Documentation and Process Notes]()
 - [Priority Conservation Areas]() | [Documentation and Process Notes]()
 - [Growth Geographies]() | [Documentation and Process Notes]()
-- [Transit Priority Areas]() | [Documentation and Process Notes](policy-mdm/regional-policies/transportation-priority-areas.md) 
+- [Transit Priority Areas (Not Yet Added to Portal)]() | [Documentation and Process Notes](policy-mdm/regional-policies/transportation-priority-areas.md) 
 
 
 ### [Land & People](land-people-mdm)
@@ -100,4 +100,4 @@ Includes data that depicts and describes the region's Transportation Systems
 - [Transit Stops - Existing (2020)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=3faf8401623b48ae8d70f7a71d7365c9) | [Documentation and Process Notes](transportation-mdm/transit/transit-stops.md)
 - [Transit Stops - Planned and Potential (2020)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=18a6239819b048fab9c87bb4d7649560) | [Documentation and Process Notes](transportation-mdm/transit/transit-stops.md) 
 - [Transit Routes (2020)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2a519083d0a44a33940e469e427c8457) | [Documentation and Process Notes (None Added)]()
-- [Major Transit Stops]() | [Documentation and Process Notes](transportation-mdm/transit/major-transit-stops.md)
+- [Major Transit Stops (Not Yet Added to Portal)]() | [Documentation and Process Notes](transportation-mdm/transit/major-transit-stops.md)
