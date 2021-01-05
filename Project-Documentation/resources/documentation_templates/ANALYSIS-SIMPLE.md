@@ -4,7 +4,7 @@
 
 Define the Problem Statement
 
-### Project Resources
+## Project Resources
 
 Add links to:
 - Activity, Project, or Task on Asana 
@@ -12,13 +12,22 @@ Add links to:
 - ArcGIS Online Working Group (if applicable) 
 - Any other location where important related work products are stored/saved 
 
+### Table of Contents
+
+- [Data Sources](#data-sources)
+- [Analysis Parameters](#analysis-parameters)
+- [Methodology](#methodology)
+- [Expected Outcomes](#expected-outcomes)
+- [Results](#results)
+- [Tags](#tags)
+
 ## Data Sources
 
 ## Analysis Parameters
 
-## Methodology applied to solve problem
+## Methodology
 
-## Expected Outcomes (if any)?
+## Expected Outcomes
 
 ## Results
 
