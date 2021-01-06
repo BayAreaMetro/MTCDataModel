@@ -24,7 +24,7 @@ This document provides a high-level overview which defines major transit stops a
 
 ## Analysis Parameters
 
-A "Major Transit Stop" is defined in [California Public Resource Code, Section 21064.3](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PRC&sectionNum[…].3.&highlight=true&keyword=%22major%20transit%20stop%22): 
+A "Major Transit Stop" is defined in [California Public Resource Code, Section 21064.3](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PRC&sectionNum=21064.3.&highlight=true&keyword=%22major%20transit%20stop%22): 
 
 as a site containing any of the following:
 
