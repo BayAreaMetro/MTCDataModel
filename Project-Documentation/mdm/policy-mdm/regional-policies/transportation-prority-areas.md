@@ -21,7 +21,7 @@ This document provides a high-level overview which defines transportation priori
 
 ## Analysis Parameters
 
-A “Transit priority area” is defined in [Californaia Public Resource Code, Section 21099](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PRC&sectionNum[…]=true&keyword=transit%20priority%20area+major%20transit):
+A “Transit priority area” is defined in [Californaia Public Resource Code, Section 21099](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PRC&sectionNum=21099.&highlight=true&keyword=transit%20priority%20area+major%20transit):
 
 as an area within one-half mile of a major transit stop that is existing or planned, if the planned stop is scheduled to be completed within the planning horizon included in a Transportation Improvement Program or applicable regional transportation plan.
 
