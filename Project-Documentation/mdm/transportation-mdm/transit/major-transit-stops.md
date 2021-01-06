@@ -28,9 +28,9 @@ A "Major Transit Stop" is defined in [California Public Resource Code, Section 2
 
 as a site containing any of the following:
 
-A. An existing rail or bus rapid transit station.
-B. A ferry terminal served by either a bus or rail transit service.
-C. The intersection of two or more major bus routes with a frequency of service interval of 15 minutes or less during the morning and afternoon peak commute periods.
+- A. An existing rail or bus rapid transit station.
+- B. A ferry terminal served by either a bus or rail transit service.
+- C. The intersection of two or more major bus routes with a frequency of service interval of 15 minutes or less during the morning and afternoon peak commute periods.
 
 ## Methodology
 
