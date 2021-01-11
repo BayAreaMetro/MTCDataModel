@@ -24,12 +24,13 @@ This document provides a high-level overview which defines major transit stops a
 
 ## Analysis Parameters
 
-A "Major Transit Stop" is defined in [California Public Resource Code, Section 21064.3](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PRC&sectionNum[…].3.&highlight=true&keyword=%22major%20transit%20stop%22): 
+A "Major Transit Stop" is defined in [California Public Resource Code, Section 21064.3](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PRC&sectionNum=21064.3.&highlight=true&keyword=%22major%20transit%20stop%22): 
 
 as a site containing any of the following:
-(a) An existing rail or bus rapid transit station.
-(b) A ferry terminal served by either a bus or rail transit service.
-(c) The intersection of two or more major bus routes with a frequency of service interval of 15 minutes or less during the morning and afternoon peak commute periods.
+
+- A. An existing rail or bus rapid transit station.
+- B. A ferry terminal served by either a bus or rail transit service.
+- C. The intersection of two or more major bus routes with a frequency of service interval of 15 minutes or less during the morning and afternoon peak commute periods.
 
 ## Methodology
 
