@@ -12,4 +12,4 @@
 [Zoning](zoning.md)
 [Landmarks](landmarks.md)|{Add}
 [Urban Growth Boundaries](urban-growth-boundaries.md)|{Add}
-[Transportation Priority Areas](regional-policies/transportation-priority-areas.md) | Areas 1/2 mile from a major transit stop 
+[Transportation Priority Areas](regional-policies/transportation-prority-areas.md) | Areas 1/2 mile from a major transit stop 
