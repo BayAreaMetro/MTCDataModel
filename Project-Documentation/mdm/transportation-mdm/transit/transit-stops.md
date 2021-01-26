@@ -1,9 +1,8 @@
 -- Draft --
 
-# Plan Bay Area 2050 Transit Data Updates
+# Transit Stops
 
-
-Map new, planned and existing rail, ferry, and bus stops. Bus stops should contain a field flagging stops that qualify as a 'Major Transit Stop', as well as a field classifying stops served by routes meeting certain headway criteria.
+Map new, planned and existing rail, ferry, and bus stops. Bus stops should contain a field flagging stops that qualify as a 'Major Transit Stop', as well as a fields which provide route-level attributes for routes served. 
 
 ### Project Resources
 
@@ -12,10 +11,11 @@ Map new, planned and existing rail, ferry, and bus stops. Bus stops should conta
 ### Table of Contents
 - [Data Sources](#data-sources)
 - [Analysis Parameters](#analysis-parameters)
-	- [Existing Transit Stops](#existing-transit-stops)
-- [General Transit Feed Specification (GTFS)](#general-transit-feed-specification)
+	- [Major Transit Stop Defined](#major-transit-stop-definition)
+	- [Commute Time Periods](#commute-time-periods)
+	- [General Transit Feed Specification (GTFS)](#general-transit-feed-specification)
 - [Methodology](#methodology)
-	- [Planned or New Transit Stops Methodology](#planned-or-new-transit-stops-methodology)
+	- [Planned and Potential Stops Methodology](#planned-and-potential-transit-stops-methodology)
 	- [Existing Transit Stops Methodology](#existing-transit-stops-methodology)
 - [Expected Outcomes](#expected-outcomes)
 - [Results](#results)
@@ -60,7 +60,7 @@ The specification is made up of a number of text files. The data model below def
 
 ## Methodology
 
-Planned and Potential Transit stops and Existing Transit Stops developed from [GTFS](#general-transit-feed-specification) data were developed seperately and merged together. In the following two sections, the methdologies used to develop each dataset is outlined. 
+Planned and Potential Transit stops and Existing Transit Stops developed from [GTFS](#general-transit-feed-specification) data were developed seperately and merged together. In the following two sections, the methodologies used to develop each dataset is outlined. 
 
 ### Planned and Potential Transit Stops Methodology
 
@@ -82,12 +82,12 @@ The process was scripted in a jupyter notebook running in an ArcGIS Pro environm
 ## Expected Outcomes
 
 - Existing Planned, and Potential Transit Stops with Routes Meeting AM/PM Peak Headways
-	- Existing Transit Stops Metadata
+	- Existing Transit Stops Data Dictionary
 
 ## Results
 
-- Existing Planned, and Potential Transit Stops Web Layer
-	- [Existing Transit Stops Metadata](files/transit_stops_existing_schema.csv)
+- [Existing Planned, and Potential Transit Stops Web Layer (Internal Portal)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2c25d8c01ea64a768329673721c42a0b#overview)
+	- [Existing Transit Stops Dictionary](files/transit_stops_existing_planned_schema.csv)
 
 ## Related Work
 
