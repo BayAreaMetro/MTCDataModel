@@ -1,0 +1,17 @@
+﻿Field Name,Alias,Source,Description,Domain,Url
+stop_id,Stop ID,GTFS - stops.txt,"Identifies a stop, station, or station entrance.",,https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt
+route_id,Route ID,GTFS - routes.txt,Identifies a route.,,https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt
+agency_id,Transit Agency ID,GTFS- agency.txt,Indicates the agency or operator of a transit system. ,'BA'; 'SF'; 'WC'; 'SM'; 'GG'; 'AC'; 'DE'; 'SC'; 'CT'; 'SA'; 'FS';'SO'; 'UC'; 'SR'; '3D'; 'ST'; 'CC'; 'MA'; 'EM'; 'PE'; 'WH'; 'VN';'AM'; 'CE'; 'CM'; 'GF'; 'RV'; 'SB'; 'SI'; 'SS'; 'TD'; 'VC'; 'MS',https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#agencytxt
+stop_nm,Stop Name,GTFS - stops.txt,Name of the location. Use a name that people will understand in the local and tourist vernacular.,,https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#stopstxt
+agency_nm,Transit Agency Name,GTFS- agency.txt,Name of the agency or operator of a transit system. ,,https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#agencytxt
+route_s_nm,Route Short Name,GTFS - routes.txt,"Short name of a route. This will often be a short, abstract identifier like ""32"", ""100X"", or ""Green"" that riders use to identify a route, but which doesn't give any indication of what places the route serves. Either route_short_name or route_long_name must be specified, or potentially both if appropriate.",,
+route_l_nm,Route Long Name,GTFS - routes.txt,"Full name of a route. This name is generally more descriptive than the route_short_name and often includes the route's destination or stop. Either route_short_name or route_long_name must be specified, or potentially both if appropriate.",,
+route_type,Route Type,GTFS- routes.txt,Text type of transportation used on a route. Route type may be null if location is a transit station or transit center.,"0 - Tram, Streetcar, Light rail; 1 - Subway, Metro; 2 - Rail; 3 - Bus; 4 - Ferry; 5 - Cable tram; 6 - Aerial lift; 7 - Funicular; 11 - Trolleybus; 12 - Monorail; ",https://github.com/google/transit/blob/master/gtfs/spec/en/reference.md#routestxt
+am_av_hdwy,Morning Average Headway,Processing Script,Average headway of route during morning commute period (6:00 - 10:00 AM),,
+pm_av_hdwy,Evening Average Headway,Processing Script,Average headway of route during evening commute period (3:00 - 7:00 PM),,
+major_stop,Major Transit Stop,Processing Script,"To qualify as a 'Major Transit Stop', as defined by As defined by California Public Resource Code Section 21064.3, a stop must be a rail or ferry stop, or the stop must be served by 2 or more transit routes with headways of 15 minutes or less during BOTH the AM (6:00 - 10:00 AM) and PM (3:00 - 7:00 PM) peak commute periods. ",0; 1,https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=21064.3.&lawCode=PRC
+status,Status,Processing Script,Development status of transit stop.,Existing/Built; Final Blueprint; Open; Under Construction,
+pba50_id,Plan Bay Area 2050 ID,Manual Assignment,MTC assigned project identification number for proposed transit stop or station. Used in Plan Bay Area 2050. ,,
+ppa_name,Project Performance Name,Manual Assignment,The name given to a planned or potential stop as part of the MTC Project Performance process. ,,
+committed,Committed,Manual Assignment,Whether or not the stop is committed. ,,
+exp_open,Expected Open,Manual Assignment,Expected year a planned or potential stop will open. ,,
