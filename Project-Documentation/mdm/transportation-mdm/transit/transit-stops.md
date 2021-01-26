@@ -20,6 +20,8 @@ Map new, planned and existing rail, ferry, and bus stops. Bus stops should conta
 	- [Existing Transit Stops Methodology](#existing-transit-stops-methodology)
 - [Expected Outcomes](#expected-outcomes)
 - [Results](#results)
+	- [Web Layer](#web-layer)
+	- [Data Dictionary](#data-dictionary)
 - [Related Work](#related-work)
 
 ## Data Sources
@@ -87,8 +89,13 @@ The process was scripted in a jupyter notebook running in an ArcGIS Pro environm
 
 ## Results
 
-- [Existing Planned, and Potential Transit Stops Web Layer (Internal Portal)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2c25d8c01ea64a768329673721c42a0b#overview)
-	- [Existing Transit Stops Dictionary](files/transit_stops_existing_planned_schema.csv)
+### Web Layer
+
+[Existing Planned, and Potential Transit Stops Web Layer (Internal Portal)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2c25d8c01ea64a768329673721c42a0b#overview)
+
+### Data Dictionary
+
+[Existing Transit Stops Dictionary](files/transit_stops_existing_planned_schema.csv)
 
 ## Related Work
 
