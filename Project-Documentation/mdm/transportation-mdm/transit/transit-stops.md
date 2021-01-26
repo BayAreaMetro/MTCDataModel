@@ -1,5 +1,3 @@
--- Draft --
-
 # Transit Stops
 
 Map new, planned and existing rail, ferry, and bus stops. Bus stops should contain a field flagging stops that qualify as a 'Major Transit Stop', as well as a fields which provide route-level attributes for routes served. 
