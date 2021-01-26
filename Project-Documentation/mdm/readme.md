@@ -70,7 +70,7 @@ Includes data on Growth Management, State & Federal Law, Regional Policies, Envi
  
 #### Regional Policy Layers
 - [Growth Geographies](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=3922afc70d3a4475a98e6ae9973f2bfb) | [Documentation and Process Notes](https://github.com/BayAreaMetro/Spatial-Analysis-Mapping-Projects/tree/master/Project-Documentation/Plan-Bay-Area-2050-Growth-Framework)
-- [Transit Priority Areas](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=d7945556230c43bb95de899e487ff602) | [Documentation and Process Notes](policy-mdm/regional-policies/transportation-prority-areas.md) 
+- [Transit Priority Areas](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=d7945556230c43bb95de899e487ff602) | [Documentation and Process Notes](policy-mdm/regional-policies/transit-prority-areas.md) 
 
 
 ### [Land & People](land-people-mdm)
