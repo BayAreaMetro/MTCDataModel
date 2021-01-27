@@ -42,9 +42,12 @@ as a site containing any of the following:
 - C. The intersection of two or more major bus routes with a frequency of service interval of 15 minutes or less during the morning and afternoon peak commute periods.
 
 ## Methodology
+
+[Transit Priority Area Notebook](https://github.com/BayAreaMetro/BASIS-Data-Processing/blob/master/policy/regional-policies/transit_priority_area_processing_01_2021.ipynb)
+
 The dataset was developed from the [Transit Stops](https://github.com/BayAreaMetro/DataServices/blob/master/Project-Documentation/mdm/transportation-mdm/transit/transit-stops.md) dataset. Stops flagged as 'major stop' were buffered by 1/2 mile.  
 
-The process was scripted in a jupyter notebook running in an ArcGIS Pro environment. You can review the processing script [here (MTC Access Only)](https://mtcdrive.box.com/s/187pew7vfwutuh16w884cgxrh7o3see2). To run the script, you will need to download the ArcGIS Pro project which contains the jupyter nootebook as well as the data you would need to repeat the process which can be accessed [here (MTC Access Only)](https://mtcdrive.box.com/s/q62u4wfayj347b9xhosvsccyfvdo43ey).
+The process was scripted in a jupyter notebook running in an ArcGIS Pro environment. You can review the processing script [here (MTC Access Only)](https://github.com/BayAreaMetro/BASIS-Data-Processing/blob/master/policy/regional-policies/transit_priority_area_processing_01_2021.ipynb). To run the script, you will need to download the ArcGIS Pro project which contains the jupyter nootebook as well as the data you would need to repeat the process which can be accessed [here (MTC Access Only)](https://mtcdrive.box.com/s/q62u4wfayj347b9xhosvsccyfvdo43ey).
 
 ## Expected Outcomes
 
