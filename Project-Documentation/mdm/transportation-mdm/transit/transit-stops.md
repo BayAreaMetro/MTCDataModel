@@ -61,6 +61,8 @@ The specification is made up of a number of text files. The data model below def
 
 ## Methodology
 
+[Transit Stop Processing Notebook](https://github.com/BayAreaMetro/BASIS-Data-Processing/blob/master/transportation/transit/transit_stop_processing_01_2021.ipynb)
+
 Planned and Potential Transit stops and Existing Transit Stops developed from [GTFS](#general-transit-feed-specification) data were developed seperately and merged together. In the following two sections, the methodologies used to develop each dataset is outlined. 
 
 ### Planned and Potential Transit Stops Methodology
@@ -74,7 +76,7 @@ Planned transit stops refer to fully funded projects that have been approved for
 
 Existing transit stops represent all rail, bus, ferry, and light rail stops and were created from static General Transit Feed Specification data downloaded from the [Bay Area 511 GTFS API](https://511.org/open-data/transit). To create the existing transit stops, ESRI Public Transit tools were leveraged as well as open source python libraries such as Pandas. GTFS data was downloaded in early January 2020. Stops and associated headway information for transit routes served by stops are reflect the transit schedule information provided in the feed at the time of download and may not reflect current schedules. 
 
-The process was scripted in a jupyter notebook running in an ArcGIS Pro environment. You can review the processing script [here (MTC Access Only)](https://mtcdrive.box.com/s/k52n8u1v7zuefm5xgd29pqe97hd37hsa). To run the script, you will need to download the ArcGIS Pro project which contains the ESRI toolboxes, jupyter nootebooks as well as the data you would need to repeat the process which can be accessed [here (MTC Access Only)](https://mtcdrive.box.com/s/q62u4wfayj347b9xhosvsccyfvdo43ey).   
+The process was scripted in a jupyter notebook running in an ArcGIS Pro environment. You can review the processing script [here (MTC Access Only)](https://github.com/BayAreaMetro/BASIS-Data-Processing/blob/master/transportation/transit/transit_stop_processing_01_2021.ipynb). To run the script, you will need to download the ArcGIS Pro project which contains the ESRI toolboxes, jupyter nootebooks as well as the data you would need to repeat the process which can be accessed [here (MTC Access Only)](https://mtcdrive.box.com/s/q62u4wfayj347b9xhosvsccyfvdo43ey).   
 
 **Resource Links**
 - [ESRI Public Transit Tools](https://github.com/Esri/public-transit-tools)
