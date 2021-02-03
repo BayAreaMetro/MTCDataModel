@@ -47,11 +47,11 @@ as a site containing any of the following:
 
 - A. "Bus Rapid Transit" is defined in as a public mass transit service provided by a public agency or by a public-private partnership that includes all of the following features:
 
-- (1) Full-time dedicated bus lanes or operation in a separate right-of-way dedicated for public transportation with a frequency of service interval of 15 minutes or less during the morning and afternoon peak commute periods.
-- (2) Transit signal priority.
-- (3) All-door boarding.
-- (4) Fare collection system that promotes efficiency.
-- (5) Defined stations.
+	- 1. Full-time dedicated bus lanes or operation in a separate right-of-way dedicated for public transportation with a frequency of service interval of 15 minutes or less during the morning and afternoon peak commute periods.
+	- 2. Transit signal priority.
+	- 3. All-door boarding.
+	- 4. Fare collection system that promotes efficiency.
+	- 5. Defined stations.
 
 - B. “Bus rapid transit station” means a clearly defined bus station served by a bus rapid transit.
 
