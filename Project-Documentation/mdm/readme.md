@@ -94,6 +94,7 @@ Includes data that depicts and describes the region's Transportation Systems
 
 [Regional Transit Database](https://github.com/bayareametro/RegionalTransitDatabase)   
  
-- [Transit Stops](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2c25d8c01ea64a768329673721c42a0b) | [Documentation and Process Notes](transportation-mdm/transit/transit-stops.md)
+- Transit Stops | [Documentation and Process Notes](transportation-mdm/transit/transit-stops.md)
 - [Transit Routes (2020)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2a519083d0a44a33940e469e427c8457) | [Documentation and Process Notes (None Added)]()
+- Transit Service Areas | [Documentation and Process Notes](transportation-mdm/transit/transit-service-areas.md)
 
