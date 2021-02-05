@@ -40,7 +40,7 @@ Transit Service Areas were created by adding a 1/2 mile buffer around transit st
 
 ## Results
 
-[Transit Service Areas GeoJSON (MTC Access Only)](https://mtcdrive.box.com/s/7jhv3g004q1pzf6pvdztpu249142vr0s)
-[Transit Service Areas Feature Layer (MTC Access Only)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=5dc9826630c64288aedba80cad24c77d#overview)
+- [Transit Service Areas GeoJSON (MTC Access Only)](https://mtcdrive.box.com/s/7jhv3g004q1pzf6pvdztpu249142vr0s)
+- [Transit Service Areas Feature Layer (MTC Access Only)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=5dc9826630c64288aedba80cad24c77d#overview)
 
 ## Tags
