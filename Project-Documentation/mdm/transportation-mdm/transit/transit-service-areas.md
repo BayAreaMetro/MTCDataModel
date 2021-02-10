@@ -21,6 +21,7 @@ Generate Transit Service Areas which area areas 1/2 mile from Transit Stops.
 ## Data Sources
 
 Existing Transit Stops Using GTFS Data Downloaded January 2020
+
 [Transit Stops - Existing and Planned (2021) (MTC Access Only)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2c25d8c01ea64a768329673721c42a0b#overview)
 
 ## Analysis Parameters
