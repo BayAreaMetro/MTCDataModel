@@ -20,6 +20,7 @@ Generate Transit Service Areas which area areas 1/2 mile from Transit Stops.
 
 ## Data Sources
 
+Existing Transit Stops Using GTFS Data Downloaded January 2020
 [Transit Stops - Existing and Planned (2021) (MTC Access Only)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2c25d8c01ea64a768329673721c42a0b#overview)
 
 ## Analysis Parameters
@@ -35,7 +36,7 @@ Generate Transit Service Areas which area areas 1/2 mile from Transit Stops.
 
 [Transit Service Areas Processing Notebook](https://mtcdrive.box.com/s/mhk0ntgh6q85hjpqrtiglgian47d5832)
 
-Transit Service Areas were created by adding a 1/2 mile buffer around transit stops, then dissolving buffer polygon boundaries by agency_id, agency_nm, and route_type columns. 
+Transit Service Areas were created by adding a 1/2 mile buffer around existing transit stops, then dissolving buffer polygon boundaries by agency_id, agency_nm, and route_type columns. 
 
 
 ## Results
