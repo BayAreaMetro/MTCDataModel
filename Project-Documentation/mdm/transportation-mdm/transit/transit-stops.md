@@ -103,7 +103,7 @@ The process was scripted in a jupyter notebook running in an ArcGIS Pro environm
 
 ### Web Layer
 
-[Existing Planned, and Potential Transit Stops Web Layer (Internal Portal)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=2c25d8c01ea64a768329673721c42a0b#overview)
+[Existing Planned, and Potential Transit Stops Web Layer (Internal Portal)](https://arcgis.ad.mtc.ca.gov/portal/home/item.html?id=a4e761b25425464e978829db4c3563dc)
 
 ### Data Dictionary
 
