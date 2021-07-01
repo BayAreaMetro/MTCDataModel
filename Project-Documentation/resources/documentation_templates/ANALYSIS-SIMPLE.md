@@ -8,10 +8,10 @@ Define the Problem Statement
 
 Identify the scope of the project, and link to additional projects where necessary.
 
-**Data Collection**
-**Data Preparation/ Modeling**
-**Data Ingestion**
-**Data Catalog/ Publishing/ Added to BASIS MDM**
+- **Data Collection**
+- **Data Preparation/ Modeling**
+- **Data Ingestion**
+- **Data Catalog/ Publishing/ Added to BASIS MDM**
 
 ## Project Resources
 

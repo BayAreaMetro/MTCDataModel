@@ -10,10 +10,10 @@ A problem statement is a brief description of the questions to be addressed by t
 
 Identify the scope of the project, and link to additional projects where necessary.
 
-**Data Collection** (Indicate team members involved)
-**Data Preparation/ Modeling** (Indicate team members involved)
-**Data Ingestion** (Indicate team members involved)
-**Data Catalog/ Publishing/ Added to BASIS MDM** (Indicate team members involved)
+- **Data Collection** (Indicate team members involved)
+- **Data Preparation/ Modeling**  (Indicate team members involved)
+- **Data Ingestion**  (Indicate team members involved)
+- **Data Catalog/ Publishing/ Added to BASIS MDM**  (Indicate team members involved)
 
 ## Project Resources
 
