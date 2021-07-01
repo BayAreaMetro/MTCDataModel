@@ -6,6 +6,15 @@
 
 A problem statement is a brief description of the questions to be addressed by the analysis. In addition to describing the initial request, it should provide the context of the work assignment and identify any key stakeholders or major initiatives that relate to the solution. It is used to guide the direction of the effort and will be used to validate that the outcomes of the analysis address the problem statement.
 
+## Project Scope
+
+Identify the scope of the project, and link to additional projects where necessary.
+
+**Data Collection** (Indicate team members involved)
+**Data Preparation/ Modeling** (Indicate team members involved)
+**Data Ingestion** (Indicate team members involved)
+**Data Catalog/ Publishing/ Added to BASIS MDM** (Indicate team members involved)
+
 ## Project Resources
 
 Add links to:
